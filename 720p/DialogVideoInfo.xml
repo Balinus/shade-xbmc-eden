@@ -809,12 +809,14 @@
                                                     <visible>!IsEmpty(ListItem.Trailer)</visible>
                                             </control>
                                             <control type="button" id="13">
-                                                    <description>Get Logo</description>
+                                                    <description>Get Artwork</description>
                                                     <include>ButtonInfoDialogsCommonValues</include>
-                                                    <onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-                                                    <label>Get Logo</label>
-                                                    <visible>!Container.Content(Movies)</visible>
-                                            </control>
+						    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, medianame=$INFO[ListItem.TVShowTitle])</onclick>	
+						    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, medianame=$INFO[ListItem.Title],mediapath=$INFO[ListItem.Path])</onclick>
+		<visible>[Container.Content(tvshows)|Container.Content(movies)]+system.hasaddon(script.artwork.downloader)</visible>
+
+                                                    <label>Get Artwork</label>                                                    
+                                            </control>					    
                                     </control>
                             </control>
                     </control>
