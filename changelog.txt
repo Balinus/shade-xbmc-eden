@@ -1,0 +1,7 @@
+08/03/12 : Balinus : Changed DialogFullScreenInfo.xml and size of media tag
+06/11/10 04:50 : The Wizard : error fixes
+06/11/10 04:50 : The Wizard : error fixes
+06/11/10 04:50 : The Wizard : error fixes
+05/11/10 02:03 : The Wizard : error fixes
+28/10/10 14:50 : The Wizard : filename changes for hogfan
+22/10/10 04:17 : The Wizard : Fixed Smartplaylist XMLs

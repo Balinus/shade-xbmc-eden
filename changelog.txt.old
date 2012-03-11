@@ -1,0 +1,97 @@
+[B]1.1.3[/B]
+
+-Fixed issues with Linux namign conventions
+
+[B]1.1.2[/B]
+
+-Edited Upcoming Tv Show Screen
+-Named all images lowercase 
+
+
+[B]1.1.1[/B]
+
+[B]-------**BIG UPDATE**-------[/B]
+
+-Added Horizontal Home Screen option
+-Added new dialog to "HOME" button that gives new options
+-Added Upcoming TV Show page
+-Added "New Media" page
+-Horizontal Home has customizable Home items
+-Much more, I cant remember. :)
+
+[B]1.1.0[/B]
+
+- Made the Featured section grab a random item for each section
+- Added Customizable Plugins to home screen under Programs section
+- Added Customizable Scripts to home screen under Addons section
+- Added Icon to signify a "set" within movie views
+- Fixed RSS Feeds
+- Fixed Video Info on Episodes and Movies (Elapsed time, etc.)
+
+
+[B]1.0.9[/B]
+
+- Replaced missing folders
+
+[B]1.0.8[/B]
+
+- Updated changelog
+
+[B]1.0.7[/B]
+
+- Added watched icon to Episodes and Movies (Must be turned on)
+- Pandora on home screen with custom GUI and Visualization
+- Addons on home (SABNZB/CD Art Manager/GMAIL)
+- Added option to disable stars on item layout for episodes
+- Added fodster view
+- Added animations for all library views (on open and close) 
+- Animations added to home screen and other items
+- Layout change for Movies section on Home Screen
+- Program Section on Home screen now has direct access to scripts
+
+[B]1.0.6[/B]
+
+- Kiosk Mode
+- Scrollbar for LowList View (optional)
+- Ability to turn off popup on Wallstream View
+
+[B]1.0.5[/B]
+
+- Added option to turn off clock
+- Fixed Low List View title length
+
+
+[B]1.0.4[/B]
+
+- Added preview images that were missing
+- New Low List View
+- Breadcrumbs were incorrect in some views
+
+
+[B]1.0.3[/B]
+
+- Added subtitle script button under skin settings
+
+
+[B]1.0.2[/B]
+
+- Added ability to change home screen backgrounds for Home, Settings, and Shutdown
+- Added Addonbrowser.xml
+- Added DialogAddonInfo.xml
+- Added DialogAddonSettings.xml
+- Added DialogTextViewer.xml
+- Added addon button to home screen
+
+
+
+[B]1.0.1[/B]
+
+- Added ability to change home screen backgrounds
+- Added icon.png, and addon.xml for new build compatibility
+- Added button to "Get Logos" for TV Shows
+
+
+
+[B]1.0.0[/B]
+
+- Initial Commit to the Google Site
