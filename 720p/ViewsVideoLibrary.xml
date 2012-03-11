@@ -627,7 +627,7 @@
 			<visible>Control.IsVisible(508)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
-			<posy>440</posy>
+			<posy>440</posy>			
 			<control type="image">
 				<posx>0</posx>
 				<posy>-440</posy>
@@ -655,8 +655,10 @@
 				<aspectratio>stretch</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture>shade/vignette2.png</texture>
-				<visible>Skin.HasSetting(FanartHideAll) + !Skin.HasSetting(FanartOption1)</visible>
+<!-- 				<visible>Skin.HasSetting(FanartHideAll) + !Skin.HasSetting(FanartOption1)</visible> -->
 			</control>
+<!-- 			
+			
 			<control type="image">
 				<posx>0</posx>
 				<posy>-60</posy>
@@ -1017,6 +1019,7 @@
 					<texture background="true" diffuse="shade/thumbdiffuse.png">$INFO[ListItem.Property(fanart_image)]</texture>
 					<visible>!Skin.HasSetting(ScrollMovieThumbs)</visible>
 				</control>
+				
 				<control type="group">
 					<posx>900</posx>
 					<posy>280</posy>
