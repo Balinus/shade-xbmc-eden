@@ -2413,7 +2413,7 @@
 							<width>750</width>
 							<height>45</height>
 							<font>Shade_20_Bold_title</font>
-							<label>Logo Downloader for TV Shows</label>
+							<label>Artwork Downloader for TV Shows</label>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
@@ -2424,13 +2424,14 @@
 							<height>40</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<label>Get Logos</label>
+							<label>Get Artwork</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 							<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 							<font>Shade_20_Bold_title</font>
-							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=True)</onclick>
+							<onclick>XBMC.RunScript(script.artwork.downloader)</onclick>
+<!-- 							  ,clearart=True,logo=True,showthumb=True)</onclick> -->
 						</control>
 					</control>
 				</control>
