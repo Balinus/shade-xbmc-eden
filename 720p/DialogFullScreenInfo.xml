@@ -211,7 +211,7 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_38</font>
+					<font>Shade_30</font>
 					<textcolor>mainbluedarker</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -233,7 +233,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="3000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 
 				<control type="group">
@@ -426,11 +426,11 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>200</posx>
+					<posx>190</posx>
 					<posy>190</posy>
-					<width>550</width>
+					<width>525</width>
 					<align>left</align>
-					<itemgap>20</itemgap>
+					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="image">
 						<description>Video rez Image</description>
@@ -539,246 +539,6 @@
 						<description>Audio Channels Image</description>
 						<width>42</width>
 						<height>34</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
-					</control>
-				</control>
-			</control>
-
-
-
-			<!--Music Videos-->
-
-
-			<control type="group">
-				<visible>VideoPlayer.Content(MusicVideos)</visible>
-				<posx>0</posx>
-				<posy>0</posy>
-				<control type="label">
-					<posx>58</posx>
-					<posy>30</posy>
-					<width>1000</width>
-					<height>25</height>
-					<label>$INFO[VideoPlayer.Title]</label>
-					<scroll>true</scroll>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>Shade_30</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-
-				<control type="group">
-					<posx>-20</posx>
-					<posy>50</posy>
-					<control type="label">
-						<posy>30</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>Artist:</label>
-					</control>
-					<control type="label">
-						<posy>50</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>Album:</label>
-					</control>		
-					<control type="label">
-						<posy>70</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>Genre:</label>
-					</control>			
-					<control type="label">
-						<posy>90</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>Year:</label>
-					</control>
-					<control type="label">
-						<posx>200</posx>
-						<posy>30</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>$INFO[VideoPlayer.Artist]</label>
-					</control>
-					<control type="label">
-						<posx>200</posx>
-						<posy>50</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>$INFO[VideoPlayer.Album]</label>
-					</control>		
-					<control type="label">
-						<posx>200</posx>
-						<posy>70</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>$INFO[VideoPlayer.Genre]</label>
-					</control>			
-					<control type="label">
-						<posx>200</posx>
-						<posy>90</posy>
-						<width>160</width>
-						<height>25</height>
-						<font>Shade_15_Bold</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>left</align>
-						<label>$INFO[VideoPlayer.Year]</label>
-					</control>			
-				</control>
-				<control type="grouplist">
-					<description>Media Codec Flagging Images</description>
-					<posx>70</posx>
-					<posy>190</posy>
-					<width>550</width>
-					<align>left</align>
-					<itemgap>20</itemgap>
-					<orientation>horizontal</orientation>
-					<control type="image">
-						<description>Video rez Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/,.png]</texture>
-					</control>
-					<control type="image">
-						<description>Xvid Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/video/xvid.png</texture>
-						<visible>substring(VideoPlayer.VideoCodec,xvid)</visible>
-					</control>
-					<control type="image">
-						<description>Divx Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/video/divx.png</texture>
-						<visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) |substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5)</visible>
-					</control>
-					<control type="image">
-						<description>h264 Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/video/h264.png</texture>
-						<visible>substring(VideoPlayer.VideoCodec,h264)</visible>
-					</control>
-					<control type="image">
-						<description>avc1 Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/video/avc1.png</texture>
-						<visible>substring(VideoPlayer.VideoCodec,avc1)</visible>
-					</control>
-					<control type="image">
-						<description>wvc1 Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/video/wvc1.png</texture>
-						<visible>substring(VideoPlayer.VideoCodec,wvc1)</visible>
-					</control>
-					<control type="image">
-						<description>mpeg1video Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/video/mpeg1video.png</texture>
-						<visible>substring(VideoPlayer.VideoCodec,mpeg1video)</visible>
-					</control>
-					<control type="image">
-						<description>mp3 Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/audio/mp3.png</texture>
-						<visible>substring(VideoPlayer.AudioCodec,mp3)</visible>
-					</control>
-					<control type="image">
-						<description>dts Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/audio/dts.png</texture>
-						<visible>substring(VideoPlayer.AudioCodec,dca)</visible>
-					</control>
-					<control type="image">
-						<description>ac3 Image</description>
-						<width>35</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/audio/ac3.png</texture>
-						<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
-					</control>
-					<control type="image">
-						<description>aac Image</description>
-						<width>35</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/audio/aac.png</texture>
-						<visible>substring(VideoPlayer.AudioCodec,aac)</visible>
-					</control>
-					<control type="image">
-						<description>Dolby Digital Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/audio/dolbydigital.png</texture>
-						<visible>substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)</visible>
-					</control>
-					<control type="image">
-						<description>WMA Pro Codec Image</description>
-						<width>80</width>
-						<height>28</height>
-						<aspectratio>keep</aspectratio>
-						<texture>flags/audio/wmapro.png</texture>
-						<visible>substring(VideoPlayer.AudioCodec,wmapro)</visible>
-					</control>
-					<control type="image">
-						<description>Audio Channels Image</description>
-						<width>35</width>
-						<height>28</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
 					</control>
@@ -793,7 +553,7 @@
 				<posx>180</posx>
 				<posy>0</posy>
 				<control type="label">
-					<posx>130</posx>
+					<posx>120</posx>
 					<posy>30</posy>
 					<width>350</width>
 					<height>25</height>
@@ -801,12 +561,12 @@
 					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_30</font>
+					<font>Shade_28</font>
 					<textcolor>mainbluedarker</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>130</posx>
+					<posx>120</posx>
 					<posy>80</posy>
 					<width>870</width>
 					<height>25</height>
@@ -819,7 +579,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
-					<posx>-150</posx>
+					<posx>-160</posx>
 					<posy>35</posy>
 					<width>256</width>
 					<height>148</height>
@@ -835,7 +595,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="3000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="group">
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -915,7 +675,7 @@
 					</control>-->
 				</control>
 				<control type="label">
-					<posx>130</posx>
+					<posx>120</posx>
 					<posy>110</posy>
 					<width>360</width>
 					<height>20</height>
@@ -929,11 +689,11 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>130</posx>
+					<posx>110</posx>
 					<posy>180</posy>
 					<width>550</width>
 					<align>left</align>
-					<itemgap>0</itemgap>
+					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="image">
 						<description>Video rez Image</description>
