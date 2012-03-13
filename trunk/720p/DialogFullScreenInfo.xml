@@ -574,7 +574,7 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Shade_22</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -651,7 +651,7 @@
 					</control>-->
 					<control type="label">
 						<description>Popup Info</description>
-						<posx>884</posx>
+						<posx>874</posx>
 						<posy>-5</posy>
 						<width>240</width>
 						<height>20</height>
@@ -682,7 +682,7 @@
 					<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373] ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
