@@ -1544,8 +1544,8 @@
 			<posy>0</posy>
 			<control type="label">
 				<description>Play Trailer Label</description>
-				<posx>1050</posx>	
-				<posy>660</posy>
+				<posx>1035</posx>	
+				<posy>650</posy>
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<selectedcolor>selected</selectedcolor>				
@@ -2312,7 +2312,7 @@
 				</control>	
 				<control type="grouplist">
                                             <description>Media Codec Flagging Images</description>
-                                            <posx>400</posx>
+                                            <posx>445</posx>
                                             <posy>675</posy>
                                             <width>800</width>
                                             <align>left</align>
@@ -2449,8 +2449,8 @@
 			<posy>0</posy>
 			<control type="label">
 				<description>Play Trailer Label</description>
-				<posx>1050</posx>	
-				<posy>660</posy>
+				<posx>1035</posx>	
+				<posy>650</posy>
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<selectedcolor>selected</selectedcolor>				
