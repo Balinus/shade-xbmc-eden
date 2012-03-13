@@ -1150,6 +1150,7 @@
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableClock)</visible>
 			<visible>!Control.IsVisible(528)</visible>
+			<visible>!Control.IsVisible(552)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
