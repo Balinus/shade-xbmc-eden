@@ -2108,8 +2108,8 @@
 				<posy>-40</posy>
 				<width>1400</width>
 				<height>350</height>
-				<onleft>508</onleft>
-				<onright>508</onright>
+				<onleft>552</onleft>
+				<onright>552</onright>
 				<onup>2</onup>
 				<!--<ondown>60</ondown>-->
 				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
@@ -2312,11 +2312,11 @@
 				</control>	
 				<control type="grouplist">
                                             <description>Media Codec Flagging Images</description>
-                                            <posx>435</posx>
+                                            <posx>430</posx>
                                             <posy>675</posy>
                                             <width>800</width>
                                             <align>left</align>
-                                            <itemgap>30</itemgap>
+                                            <itemgap>20</itemgap>
                                             <orientation>horizontal</orientation>
                                             <include>VisibleFadeEffect</include>
                                             <animation effect="slide" time="0" start="0,0" end="-310,0" condition=" Container.Content(MusicVideos)">Conditional</animation>
@@ -5747,8 +5747,8 @@
 				<height>702</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
-				<onup>524</onup>
-				<ondown>524</ondown>
+				<onup>525</onup>
+				<ondown>525</ondown>
 				<viewtype label="Large Eps.">list</viewtype>
 				<focusposition>4</focusposition>
 				<pagecontrol>60</pagecontrol>
@@ -6760,8 +6760,8 @@
 				<height>702</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
-				<onup>531</onup>
-				<ondown>531</ondown>
+				<onup>532</onup>
+				<ondown>532</ondown>
 				<viewtype label="Season View">list</viewtype>
 				<focusposition>4</focusposition>
 				<pagecontrol>60</pagecontrol>
