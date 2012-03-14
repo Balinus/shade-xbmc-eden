@@ -29,7 +29,7 @@
 				<texture>shade/settings_bottom.png</texture>
 			</control>
 			<control type="image">
-				<posx>250</posx>
+				<posx>265</posx>
 				<posy>15</posy>
 				<width>35</width>
 				<height>35</height>

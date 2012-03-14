@@ -1,3 +1,4 @@
+14/03/12 : Balinus : error fixes
 11/03/12 : Balinus : Added new TV view, bug fixes
 08/03/12 : Balinus : Changed DialogFullScreenInfo.xml and size of media tag
 06/11/10 04:50 : The Wizard : error fixes
