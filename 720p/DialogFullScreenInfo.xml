@@ -230,10 +230,10 @@
 					<width>690</width>
 					<height>156</height>
 					<font>Shade_20</font>
-					<align>left</align>
+					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
-					<autoscroll time="3000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="3000" delay="8000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 
 				<control type="group">
@@ -258,7 +258,7 @@
 						<posy>-5</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_16_Bold</font>
+						<font>Shade_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -266,11 +266,11 @@
 					</control>
 					<control type="label">
 						<description>Popup Info</description>
-						<posx>650</posx>
+						<posx>675</posx>
 						<posy>-5</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_16_Bold</font>
+						<font>Shade_18_Bold</font>
 						<textcolor>mainbluedarker</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -290,11 +290,11 @@
 					</control>-->
 					<control type="label">
 						<description>Popup Info</description>
-						<posx>934</posx>
+						<posx>964</posx>
 						<posy>-5</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_16_Bold</font>
+						<font>Shade_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -558,10 +558,10 @@
 					<width>350</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.Title]</label>
-					<scroll>false</scroll>
+					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_28</font>
+					<font>Shade_32</font>
 					<textcolor>mainbluedarker</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -574,7 +574,7 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_22</font>
+					<font>Shade_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -592,10 +592,10 @@
 					<width>590</width>
 					<height>156</height>
 					<font>Shade_20</font>
-					<align>left</align>
+					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
-					<autoscroll time="3000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="3000" delay="8000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="group">
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -603,11 +603,11 @@
 					<posy>200</posy>
 					<control type="label">
 						<description>Popup Info</description>
-						<posx>422</posx>
+						<posx>415</posx>
 						<posy>-5</posy>
 						<width>250</width>
 						<height>20</height>
-						<font>Shade_16_Bold</font>
+						<font>Shade_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -627,11 +627,11 @@
 					</control>-->
 					<control type="label">
 						<description>Popup Info</description>
-						<posx>613</posx>
+						<posx>625</posx>
 						<posy>-5</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_16_Bold</font>
+						<font>Shade_18_Bold</font>
 						<textcolor>mainbluedarker</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -651,11 +651,11 @@
 					</control>-->
 					<control type="label">
 						<description>Popup Info</description>
-						<posx>874</posx>
+						<posx>850</posx>
 						<posy>-5</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_16_Bold</font>
+						<font>Shade_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -682,7 +682,7 @@
 					<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373] ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_20</font>
+					<font>Shade_22</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>

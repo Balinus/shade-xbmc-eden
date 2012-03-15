@@ -212,7 +212,71 @@
                                                     <aligny>center</aligny>
                                                     <label>Cast</label>
                                             </control>
-                                            <control type="textbox">
+			  <control type = "panel" id = "50">
+						<posx>900</posx>
+						<posy>425</posy>
+						<width>350</width>
+						<height>207</height>
+						<align>left</align>
+					<onleft>9000</onleft>
+					<onright>61</onright>
+					<onup>61</onup>
+					<ondown>9000</ondown>
+					<viewtype label = "">list</viewtype>
+					<pagecontrol>61</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<itemlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<texture border = "5">shade/menuitemnf.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</itemlayout>
+					<focusedlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>!Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</focusedlayout>
+				</control>
+                                            <!--<control type="textbox">
                                                     <description>Cast</description>
                                                     <posx>900</posx>
                                                     <posy>425</posy>
@@ -222,7 +286,7 @@
                                                     <textcolor>white</textcolor>
                                                     <align>left</align>
                                                     <label>$INFO[ListItem.CastandRole]</label>
-                                            </control>  
+                                            </control>  -->
                                     </control>
      
                                     <!--TVshows with banners-->
@@ -321,6 +385,7 @@
                                                     <aligny>center</aligny>
                                                     <label>Plot Summary</label>
                                             </control>
+					    
                                             <control type="textbox" id="400">
                                                     <description>Description Value for Movies</description>
                                                     <posx>375</posx>
@@ -333,7 +398,7 @@
                                                     <pagecontrol>61</pagecontrol>
                                                     <label>$INFO[ListItem.Plot]</label>
                                                     <autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-                                                    <visible>!Control.IsVisible(50)</visible>
+<!--                                                     <visible>!Control.IsVisible(50)</visible> -->
                                             </control>
                                             <control type="label">
                                                     <posx>900</posx>
@@ -346,7 +411,71 @@
                                                     <aligny>center</aligny>
                                                     <label>Cast</label>
                                             </control>
-                                            <control type="textbox">
+			    <control type = "panel" id = "50">
+						<posx>900</posx>
+						<posy>425</posy>
+						<width>350</width>
+						<height>207</height>
+						<align>left</align>
+					<onleft>9000</onleft>
+					<onright>61</onright>
+					<onup>61</onup>
+					<ondown>9000</ondown>
+					<viewtype label = "">list</viewtype>
+					<pagecontrol>61</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<itemlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<texture border = "5">shade/menuitemnf.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</itemlayout>
+					<focusedlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>!Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</focusedlayout>
+				</control>
+                                            <!--<control type="textbox">
                                                     <description>Cast</description>
                                                     <posx>900</posx>
                                                     <posy>425</posy>
@@ -356,7 +485,7 @@
                                                     <textcolor>white</textcolor>
                                                     <align>left</align>
                                                     <label>$INFO[ListItem.CastandRole]</label>
-                                            </control>  
+                                            </control>  -->
                                     </control>
      
                                     <!--Posters-->
@@ -457,7 +586,7 @@
                                                     <pagecontrol>61</pagecontrol>
                                                     <label>$INFO[ListItem.Plot]</label>
                                                     <autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-                                                    <visible>!Control.IsVisible(50)</visible>
+<!--                                                     <visible>!Control.IsVisible(50)</visible> -->
                                             </control>
                                             <control type="label">
                                                     <posx>900</posx>
@@ -470,7 +599,71 @@
                                                     <aligny>center</aligny>
                                                     <label>Cast</label>
                                             </control>
-                                            <control type="textbox">
+			    <control type = "panel" id = "50">
+						<posx>900</posx>
+						<posy>425</posy>
+						<width>350</width>
+						<height>207</height>
+						<align>left</align>
+					<onleft>9000</onleft>
+					<onright>61</onright>
+					<onup>61</onup>
+					<ondown>9000</ondown>
+					<viewtype label = "">list</viewtype>
+					<pagecontrol>61</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<itemlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<texture border = "5">shade/menuitemnf.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</itemlayout>
+					<focusedlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>!Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</focusedlayout>
+				</control>
+                                            <!--<control type="textbox">
                                                     <description>Cast</description>
                                                     <posx>900</posx>
                                                     <posy>425</posy>
@@ -480,7 +673,7 @@
                                                     <textcolor>white</textcolor>
                                                     <align>left</align>
                                                     <label>$INFO[ListItem.CastandRole]</label>
-                                            </control>  
+                                            </control>  -->
                                     </control>
      
      
@@ -582,7 +775,7 @@
                                                     <pagecontrol>61</pagecontrol>
                                                     <label>$INFO[ListItem.Plot]</label>
                                                     <autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-                                                    <visible>!Control.IsVisible(50)</visible>
+<!--                                                     <visible>!Control.IsVisible(50)</visible> -->
                                             </control>
                                             <control type="label">
                                                     <posx>900</posx>
@@ -595,7 +788,72 @@
                                                     <aligny>center</aligny>
                                                     <label>Cast</label>
                                             </control>
-                                            <control type="textbox">
+				<control type = "panel" id = "50">
+						<posx>900</posx>
+						<posy>425</posy>
+						<width>350</width>
+						<height>207</height>
+						<align>left</align>
+					<onleft>9000</onleft>
+					<onright>61</onright>
+					<onup>61</onup>
+					<ondown>9000</ondown>
+					<viewtype label = "">list</viewtype>
+					<pagecontrol>61</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<itemlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<texture border = "5">shade/menuitemnf.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</itemlayout>
+					<focusedlayout height = "40" width = "350">
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>!Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>350</width>
+							<height>40</height>
+							<visible>Control.HasFocus(50)</visible>
+							<texture border = "5">shade/button-focus-white.png</texture>
+						</control>
+						<control type = "label">
+							<posx>3</posx>
+							<posy>0</posy>
+							<width>340</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<info>ListItem.Label</info>
+						</control>
+					</focusedlayout>
+				</control>
+					    
+                                            <!--<control type="textbox">
                                                     <description>Cast</description>
                                                     <posx>900</posx>
                                                     <posy>425</posy>
@@ -605,7 +863,7 @@
                                                     <textcolor>white</textcolor>
                                                     <align>left</align>
                                                     <label>$INFO[ListItem.CastandRole]</label>
-                                            </control>  
+                                            </control>  -->
                                     </control>
      
      
