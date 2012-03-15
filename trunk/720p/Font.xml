@@ -219,6 +219,11 @@
 			<size>30</size>
 		</font>
 		<font>
+			<name>Shade_32</name>
+			<filename>HelveticaNeue_Thin.ttf</filename>
+			<size>32</size>
+		</font>
+		<font>
 			<name>Shade_35</name>
 			<filename>HelveticaNeue_Thin.ttf</filename>
 			<size>35</size>
@@ -503,6 +508,11 @@
 			<name>Shade_30</name>
 			<filename>Walkway_SemiBold.ttf</filename>
 			<size>30</size>
+		</font>
+		<font>
+			<name>Shade_32</name>
+			<filename>Walkway_SemiBold.ttf</filename>
+			<size>32</size>
 		</font>
 		<font>
 			<name>Shade_35</name>
