@@ -5807,7 +5807,7 @@
 						<posy>0</posy>
 						<width>660</width>
 						<height>220</height>
-						<texture border="2,2,2,2">shade/white.png</texture>
+						<texture border="2,2,2,2">shade/bgblack.png</texture>
 					</control>
 					<control type="label">
 						<posx>190</posx>
@@ -5815,7 +5815,7 @@
 						<width>500</width>
 						<height>20</height>
 						<font>Shade_24_Bold</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -5827,7 +5827,7 @@
 						<width>350</width>
 						<height>20</height>
 						<font>Shade_24_Bold</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -5839,7 +5839,7 @@
 						<width>300</width>
 						<height>20</height>
 						<font>Shade_20</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -5851,7 +5851,7 @@
 						<width>300</width>
 						<height>20</height>
 						<font>Shade_20</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -5864,8 +5864,8 @@
 						<width>530</width>
 						<height>74</height>
 						<font>Shade_20</font>
-						<textcolor>black</textcolor>
-						<align>left</align>
+						<textcolor>white</textcolor>
+						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
@@ -5876,7 +5876,7 @@
 						<height>35</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<posx>610</posx>
 						<posy>5</posy>
 						<width>238</width>
@@ -5884,7 +5884,7 @@
 						<align>right</align>
 						<texture>shade/rating.png</texture>
 						<visible>!Skin.HasSetting(RedStars)</visible>
-					</control>
+					</control>-->
 					<control type="image">
 						<posx>610</posx>
 						<posy>5</posy>
@@ -5916,9 +5916,9 @@
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<include>DarkAspectCodecFlaggingConditions</include>
-						<include>DarkVideoCodecFlaggingConditions</include>
-						<include>DarkAudioCodecFlaggingConditions</include>
+						<include>AspectCodecFlaggingConditions</include>
+						<include>VideoCodecFlaggingConditions</include>
+						<include>AudioCodecFlaggingConditions</include>
 					</control>			
 				</focusedlayout>
 			</control>			
@@ -6820,7 +6820,7 @@
 						<posy>0</posy>
 						<width>660</width>
 						<height>220</height>
-						<texture border="2,2,2,2">shade/white.png</texture>
+						<texture border="2,2,2,2">shade/bgblack.png</texture>
 					</control>
 					<control type="label">
 						<posx>190</posx>
@@ -6828,7 +6828,7 @@
 						<width>500</width>
 						<height>20</height>
 						<font>Shade_24_Bold</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -6840,7 +6840,7 @@
 						<width>350</width>
 						<height>20</height>
 						<font>Shade_24_Bold</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -6852,7 +6852,7 @@
 						<width>300</width>
 						<height>20</height>
 						<font>Shade_20</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -6864,7 +6864,7 @@
 						<width>300</width>
 						<height>20</height>
 						<font>Shade_20</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -6884,12 +6884,12 @@
 						<width>530</width>
 						<height>74</height>
 						<font>Shade_20</font>
-						<textcolor>black</textcolor>
+						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<posx>610</posx>
 						<posy>173</posy>
 						<width>238</width>
@@ -6897,7 +6897,7 @@
 						<align>right</align>
 						<texture>shade/rating.png</texture>
 						<visible>!Skin.HasSetting(RedStars)</visible>
-					</control>
+					</control>-->
 					<control type="image">
 						<posx>610</posx>
 						<posy>173</posy>
@@ -6934,9 +6934,9 @@
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<include>DarkAspectCodecFlaggingConditions</include>
-						<include>DarkVideoCodecFlaggingConditions</include>
-						<include>DarkAudioCodecFlaggingConditions</include>
+						<include>AspectCodecFlaggingConditions</include>
+						<include>VideoCodecFlaggingConditions</include>
+						<include>AudioCodecFlaggingConditions</include>
 					</control>			
 				</focusedlayout>
 			</control>			
