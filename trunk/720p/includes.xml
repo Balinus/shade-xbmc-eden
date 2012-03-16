@@ -1534,7 +1534,7 @@
 			<height>168</height>
 			<font>Shade_20</font>
 			<textcolor>white</textcolor>
-			<align>left</align>
+			<align>justify</align>
 			<label>$INFO[Container.ShowPlot]</label>
 			<include>Zoom</include>		
 		</control>

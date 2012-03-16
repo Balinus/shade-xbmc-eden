@@ -6004,7 +6004,7 @@
 						<posy>0</posy>
 						<width>660</width>
 						<height>220</height>
-						<texture border="2,2,2,2">shade/bgblack.png</texture>
+						<texture border="2,2,2,2">shade/vignette4.png</texture>
 					</control>
 					<control type="label">
 						<posx>190</posx>
@@ -7017,7 +7017,7 @@
 						<posy>0</posy>
 						<width>660</width>
 						<height>220</height>
-						<texture border="2,2,2,2">shade/bgblack.png</texture>
+						<texture border="2,2,2,2">shade/vignette4.png</texture>
 					</control>
 					<control type="label">
 						<posx>190</posx>

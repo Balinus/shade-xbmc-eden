@@ -212,7 +212,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Shade_30</font>
-					<textcolor>mainbluedarker</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
@@ -271,7 +271,7 @@
 						<width>240</width>
 						<height>20</height>
 						<font>Shade_18_Bold</font>
-						<textcolor>mainbluedarker</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Remaining: $INFO[Player.TimeRemaining]</label>
@@ -562,7 +562,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Shade_32</font>
-					<textcolor>mainbluedarker</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -632,7 +632,7 @@
 						<width>240</width>
 						<height>20</height>
 						<font>Shade_18_Bold</font>
-						<textcolor>mainbluedarker</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Remaining: $INFO[Player.TimeRemaining]</label>
