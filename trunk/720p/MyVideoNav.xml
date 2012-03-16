@@ -160,6 +160,8 @@
 			<include>ListInfoView</include>
 			<!-- view id = 550 -->
 			<include>LowListView</include>
+			<include>Episode-List</include>
+			<!-- view id = 548 -->
 
 		</control>
 		<include>BehindDialogFadeOut</include>
@@ -397,14 +399,14 @@
 						<selected>Skin.HasSetting(PosterPanelThumbs)</selected>
 						<visible>Control.IsVisible(544)</visible>
 					</control>
-					<control type="radiobutton" id="221">
+					<!--<control type="radiobutton" id="221">
 						<description>Toggle Info</description>
 						<include>ButtonMediaSubCommonValues</include>
 						<label>Use Thumbs</label>
 						<onclick>Skin.ToggleSetting(AeonMovieThumbs)</onclick>
 						<selected>Skin.HasSetting(AeonMovieThumbs)</selected>
 						<visible>Control.IsVisible(547)</visible>
-					</control>
+					</control>-->
 					<control type="radiobutton" id="222">
 						<description>Toggle Info</description>
 						<include>ButtonMediaSubCommonValues</include>
