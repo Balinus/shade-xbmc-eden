@@ -1351,7 +1351,7 @@
 							<font>Shade_35_UltraThin</font>
 							<textcolor>white</textcolor>
 						</control>	
-						<control type="label">
+						<!--<control type="label">
 							<description>Title label</description>
 							<posx>880</posx>
 							<posy>5</posy>
@@ -1362,7 +1362,7 @@
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>-->	
 						<control type="image">
 							<posx>470</posx>
 							<posy>-10</posy>
@@ -1384,7 +1384,7 @@
 						<control type="group">
 							<posx>450</posx>
 							<posy>-210</posy>			
-							<control type="label">
+							<!--<control type="label">
 								<description>Title label</description>
 								<posx>430</posx>
 								<posy>260</posy>
@@ -1395,8 +1395,8 @@
 								<aligny>center</aligny>
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
+							</control>-->	
+							<!--<control type="label">
 								<description>Title label</description>
 								<posx>800</posx>
 								<posy>260</posy>
@@ -1455,7 +1455,7 @@
 								<aligny>center</aligny>
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
-							</control>
+							</control>-->
 							<!--<control type="label">
 					<description>Title label</description>
 					<posx>430</posx>
@@ -2533,7 +2533,7 @@
 							<font>Shade_35_UltraThin</font>
 							<textcolor>white</textcolor>
 						</control>	
-						<control type="label">
+						<!--<control type="label">
 							<description>Title label</description>
 							<posx>880</posx>
 							<posy>5</posy>
@@ -2544,7 +2544,7 @@
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>	-->
 						<control type="image">
 							<posx>470</posx>
 							<posy>-10</posy>
@@ -2566,7 +2566,7 @@
 						<control type="group">
 							<posx>450</posx>
 							<posy>-210</posy>			
-							<control type="label">
+							<!--<control type="label">
 								<description>Title label</description>
 								<posx>430</posx>
 								<posy>260</posy>
@@ -2577,8 +2577,8 @@
 								<aligny>center</aligny>
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
+							</control>	-->
+							<!--<control type="label">
 								<description>Title label</description>
 								<posx>800</posx>
 								<posy>260</posy>
@@ -2589,8 +2589,8 @@
 								<aligny>center</aligny>
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
+							</control>	-->
+							<!--<control type="label">
 								<description>Title label</description>
 								<posx>430</posx>
 								<posy>290</posy>
@@ -2637,7 +2637,7 @@
 								<aligny>center</aligny>
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
-							</control>
+							</control>-->
 						</control>
 
 						<!--Posters for Bottom Section-->
