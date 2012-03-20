@@ -3836,7 +3836,7 @@
 							<item id="1">
 								<label>Action</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAction.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAction.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/action.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButtonAction)</visible>
@@ -3844,7 +3844,7 @@
 							<item id="2">
 								<label>Adult</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdult.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAdult.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/adult.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton2)</visible>
@@ -3852,7 +3852,7 @@
 							<item id="3">
 								<label>Adventure</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdventure.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAdventure.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/adventure.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton3)</visible>
@@ -3860,7 +3860,7 @@
 							<item id="4">
 								<label>Animation</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnimation.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAnimation.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/animation.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton4)</visible>
@@ -3868,7 +3868,7 @@
 							<item id="5">
 								<label>Anime</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnime.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAnime.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/anime.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton5)</visible>
@@ -3876,7 +3876,7 @@
 							<item id="6">
 								<label>Biography</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBiography.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreBiography.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/biography.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton6)</visible>
@@ -3884,7 +3884,7 @@
 							<item id="8">
 								<label>Bollywood</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBollywood.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreBollywood.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/bollywood.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton8)</visible>
@@ -3892,7 +3892,7 @@
 							<item id="9">
 								<label>Children</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChildren.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreChildren.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/children.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton9)</visible>
@@ -3900,7 +3900,7 @@
 							<item id="10">
 								<label>Christmas</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChristmas.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreChristmas.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/christmas.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton10)</visible>
@@ -3908,7 +3908,7 @@
 							<item id="11">
 								<label>Comedy</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreComedy.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreComedy.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/comedy.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton11)</visible>
@@ -3916,7 +3916,7 @@
 							<item id="12">
 								<label>Concert</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreConcert.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreConcert.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/concert.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton12)</visible>
@@ -3924,7 +3924,7 @@
 							<item id="13">
 								<label>Crime</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreCrime.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreCrime.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/crime.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton13)</visible>
@@ -3932,7 +3932,7 @@
 							<item id="14">
 								<label>Disaster</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDisaster.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreDisaster.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/disaster.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton14)</visible>
@@ -3940,7 +3940,7 @@
 							<item id="15">
 								<label>Documentary</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/documentary.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton15)</visible>
@@ -3948,7 +3948,7 @@
 							<item id="16">
 								<label>Drama</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDrama.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreDrama.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/drama.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton16)</visible>
@@ -3956,7 +3956,7 @@
 							<item id="17">
 								<label>Family</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFamily.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreFamily.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/family.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton17)</visible>
@@ -3964,7 +3964,7 @@
 							<item id="18">
 								<label>Fantasy</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFantasy.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreFantasy.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/fantasy.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton18)</visible>
@@ -3972,7 +3972,7 @@
 							<item id="19">
 								<label>Halloween</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHalloween.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHalloween.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/halloween.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton19)</visible>
@@ -3980,7 +3980,7 @@
 							<item id="20">
 								<label>Hentai</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHentai.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHentai.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/hentai.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton20)</visible>
@@ -3988,7 +3988,7 @@
 							<item id="21">
 								<label>History</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHistory.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHistory.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/history.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton21)</visible>
@@ -3996,7 +3996,7 @@
 							<item id="22">
 								<label>Horror</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHorror.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHorror.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/horror.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton22)</visible>
@@ -4004,7 +4004,7 @@
 							<item id="23">
 								<label>independent</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreIndependent.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreIndependent.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/independent.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton23)</visible>
@@ -4012,7 +4012,7 @@
 							<item id="24">
 								<label>monster</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMonster.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMonster.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/monster.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton24)</visible>
@@ -4020,7 +4020,7 @@
 							<item id="25">
 								<label>music</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusic.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMusic.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/music.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton25)</visible>
@@ -4028,7 +4028,7 @@
 							<item id="26">
 								<label>musical</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusical.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMusical.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/musical.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton26)</visible>
@@ -4036,7 +4036,7 @@
 							<item id="27">
 								<label>mystery</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMystery.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMystery.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/mystery.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton27)</visible>
@@ -4044,7 +4044,7 @@
 							<item id="28">
 								<label>nature</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreNature.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreNature.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/nature.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton28)</visible>
@@ -4052,7 +4052,7 @@
 							<item id="29">
 								<label>religion</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreReligion.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreReligion.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/religion.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton29)</visible>
@@ -4060,7 +4060,7 @@
 							<item id="30">
 								<label>romance</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreRomance.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreRomance.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/romance.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton30)</visible>
@@ -4068,7 +4068,7 @@
 							<item id="31">
 								<label>sci-fi</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSciFi.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSciFi.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/sci-fi.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton31)</visible>
@@ -4076,7 +4076,7 @@
 							<item id="32">
 								<label>short</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreShort.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreShort.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/short.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton32)</visible>
@@ -4084,7 +4084,7 @@
 							<item id="33">
 								<label>sport</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSports.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSports.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/sport.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton33)</visible>
@@ -4092,7 +4092,7 @@
 							<item id="34">
 								<label>superhero</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/superhero.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton34)</visible>
@@ -4100,7 +4100,7 @@
 							<item id="35">
 								<label>supernatural</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/supernatural.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton35)</visible>
@@ -4108,7 +4108,7 @@
 							<item id="36">
 								<label>Thriller</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreThriller.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreThriller.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/thriller.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton36)</visible>
@@ -4116,7 +4116,7 @@
 							<item id="37">
 								<label>war</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWar.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreWar.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/war.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton37)</visible>
@@ -4124,7 +4124,7 @@
 							<item id="38">
 								<label>western</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWestern.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreWestern.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/western.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton38)</visible>
@@ -4132,7 +4132,7 @@
 							<item id="39">
 								<label>wrestling</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWrestling.xsp)</onclick> 
+								<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreWrestling.xsp)</onclick> 
 								<icon>-</icon>
 								<thumb>special://skin/media/shade/genres/wrestling.jpg</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton39)</visible>
@@ -4754,7 +4754,7 @@
 						<item id="1">
 							<label>Action</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAction.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAction.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/action.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButtonAction)</visible>
@@ -4762,7 +4762,7 @@
 						<item id="2">
 							<label>Adult</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdult.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAdult.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/adult.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton2)</visible>
@@ -4770,7 +4770,7 @@
 						<item id="3">
 							<label>Adventure</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdventure.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAdventure.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/adventure.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton3)</visible>
@@ -4778,7 +4778,7 @@
 						<item id="4">
 							<label>Animation</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnimation.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAnimation.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/animation.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton4)</visible>
@@ -4786,7 +4786,7 @@
 						<item id="5">
 							<label>Anime</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnime.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreAnime.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/anime.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton5)</visible>
@@ -4794,7 +4794,7 @@
 						<item id="6">
 							<label>Biography</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBiography.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreBiography.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/biography.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton6)</visible>
@@ -4802,7 +4802,7 @@
 						<item id="8">
 							<label>Bollywood</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBollywood.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreBollywood.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/bollywood.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton8)</visible>
@@ -4810,7 +4810,7 @@
 						<item id="9">
 							<label>Children</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChildren.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreChildren.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/children.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton9)</visible>
@@ -4818,7 +4818,7 @@
 						<item id="10">
 							<label>Christmas</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChristmas.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreChristmas.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/christmas.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton10)</visible>
@@ -4826,7 +4826,7 @@
 						<item id="11">
 							<label>Comedy</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreComedy.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreComedy.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/comedy.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton11)</visible>
@@ -4834,7 +4834,7 @@
 						<item id="12">
 							<label>Concert</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreConcert.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreConcert.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/concert.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton12)</visible>
@@ -4842,7 +4842,7 @@
 						<item id="13">
 							<label>Crime</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreCrime.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreCrime.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/crime.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton13)</visible>
@@ -4850,7 +4850,7 @@
 						<item id="14">
 							<label>Disaster</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDisaster.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreDisaster.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/disaster.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton14)</visible>
@@ -4858,7 +4858,7 @@
 						<item id="15">
 							<label>Documentary</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/documentary.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton15)</visible>
@@ -4866,7 +4866,7 @@
 						<item id="16">
 							<label>Drama</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDrama.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreDrama.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/drama.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton16)</visible>
@@ -4874,7 +4874,7 @@
 						<item id="17">
 							<label>Family</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFamily.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreFamily.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/family.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton17)</visible>
@@ -4882,7 +4882,7 @@
 						<item id="18">
 							<label>Fantasy</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFantasy.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreFantasy.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/fantasy.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton18)</visible>
@@ -4890,7 +4890,7 @@
 						<item id="19">
 							<label>Halloween</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHalloween.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHalloween.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/halloween.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton19)</visible>
@@ -4898,7 +4898,7 @@
 						<item id="20">
 							<label>Hentai</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHentai.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHentai.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/hentai.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton20)</visible>
@@ -4906,7 +4906,7 @@
 						<item id="21">
 							<label>History</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHistory.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHistory.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/history.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton21)</visible>
@@ -4914,7 +4914,7 @@
 						<item id="22">
 							<label>Horror</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHorror.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreHorror.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/horror.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton22)</visible>
@@ -4922,7 +4922,7 @@
 						<item id="23">
 							<label>independent</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreIndependent.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreIndependent.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/independent.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton23)</visible>
@@ -4930,7 +4930,7 @@
 						<item id="24">
 							<label>monster</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMonster.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMonster.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/monster.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton24)</visible>
@@ -4938,7 +4938,7 @@
 						<item id="25">
 							<label>music</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusic.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMusic.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/music.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton25)</visible>
@@ -4946,7 +4946,7 @@
 						<item id="26">
 							<label>musical</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusical.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMusical.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/musical.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton26)</visible>
@@ -4954,7 +4954,7 @@
 						<item id="27">
 							<label>mystery</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMystery.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreMystery.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/mystery.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton27)</visible>
@@ -4962,7 +4962,7 @@
 						<item id="28">
 							<label>nature</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreNature.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreNature.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/nature.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton28)</visible>
@@ -4970,7 +4970,7 @@
 						<item id="29">
 							<label>religion</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreReligion.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreReligion.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/religion.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton29)</visible>
@@ -4978,7 +4978,7 @@
 						<item id="30">
 							<label>romance</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreRomance.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreRomance.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/romance.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton30)</visible>
@@ -4986,7 +4986,7 @@
 						<item id="31">
 							<label>sci-fi</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSciFi.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSciFi.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/sci-fi.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton31)</visible>
@@ -4994,7 +4994,7 @@
 						<item id="32">
 							<label>short</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreShort.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreShort.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/short.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton32)</visible>
@@ -5002,7 +5002,7 @@
 						<item id="33">
 							<label>sport</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSports.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSports.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/sport.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton33)</visible>
@@ -5010,7 +5010,7 @@
 						<item id="34">
 							<label>superhero</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/superhero.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton34)</visible>
@@ -5018,7 +5018,7 @@
 						<item id="35">
 							<label>supernatural</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/supernatural.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton35)</visible>
@@ -5026,7 +5026,7 @@
 						<item id="36">
 							<label>Thriller</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreThriller.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreThriller.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/thriller.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton36)</visible>
@@ -5034,7 +5034,7 @@
 						<item id="37">
 							<label>war</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWar.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreWar.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/war.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton37)</visible>
@@ -5042,7 +5042,7 @@
 						<item id="38">
 							<label>western</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWestern.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreWestern.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/western.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton38)</visible>
@@ -5050,7 +5050,7 @@
 						<item id="39">
 							<label>wrestling</label>
 							<label2>-</label2>
-							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWrestling.xsp)</onclick> 
+							<onclick>ActivateWindow(Videos,special://skin/extras/playlists/GenreWrestling.xsp)</onclick> 
 							<icon>-</icon>
 							<thumb>special://skin/media/shade/genres/wrestling.jpg</thumb>
 							<visible>Skin.HasSetting(HomeGenreButton39)</visible>
