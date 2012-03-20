@@ -1066,7 +1066,7 @@
                                                     <label>20410</label>
                                                     <visible>!IsEmpty(ListItem.Trailer)</visible>
                                             </control>
-                                            <control type="button" id="13">
+                                            <control type="button" id="14">
                                                     <description>Get Artwork</description>
                                                     <include>ButtonInfoDialogsCommonValues</include>
 						    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, medianame=$INFO[ListItem.TVShowTitle])</onclick>
