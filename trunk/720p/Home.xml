@@ -331,41 +331,41 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>342</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieTitles)</onclick>
+						<onclick>ActivateWindow(Videos,MovieTitles)</onclick>
 						<visible>Library.HasContent(Movies)</visible>
 					</control>
 					<control type="button" id="90102">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>20343</label>
-						<onclick>ActivateWindow(VideoLibrary,TvShowTitles)</onclick>
+						<onclick>ActivateWindow(Videos,TvShowTitles)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 					</control>
 					<control type="button" id="90103">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>20389</label>
-						<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles)</onclick>
+						<onclick>ActivateWindow(Videos,MusicVideoTitles)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</control>
 					<control type="button" id="90104">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>744</label>
-						<onclick>ActivateWindow(VideoFiles)</onclick>
+						<onclick>ActivateWindow(Videos,Files)</onclick>
 					</control>
 					<control type="button" id="90105">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>14022</label>
-						<onclick>ActivateWindow(VideoLibrary,$root)</onclick>
+						<onclick>ActivateWindow(Videos,$root)</onclick>
 						<visible>Library.HasContent(Videos)</visible>
 					</control>
 					<control type="button" id="90106">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>31007</label>
-						<onclick>ActivateWindow(VideoLibrary,Plugins)</onclick>
+						<onclick>ActivateWindow(Videos,Plugins)</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="9011">
@@ -646,49 +646,49 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>135</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieGenres)</onclick>
+						<onclick>ActivateWindow(Videos,MovieGenres)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesGenresButton)</visible>
 					</control>
 					<control type="button" id="90162">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>652</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieYears)</onclick>
+						<onclick>ActivateWindow(Videos,MovieYears)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesYearsButton)</visible>
 					</control>
 					<control type="button" id="90163">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>344</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieActors)</onclick>
+						<onclick>ActivateWindow(Videos,MovieActors)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesActorsButton)</visible>
 					</control>
 					<control type="button" id="90164">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>20348</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieDirectors)</onclick>
+						<onclick>ActivateWindow(Videos,MovieDirectors)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesDirectorsButton)</visible>
 					</control>
 					<control type="button" id="90165">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>20388</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieStudios)</onclick>
+						<onclick>ActivateWindow(Videos,MovieStudios)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesStudiosButton)</visible>
 					</control>
 					<control type="button" id="90166">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>31328</label>
-						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies)</onclick>
+						<onclick>ActivateWindow(Videos,RecentlyAddedMovies)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesRecentlyAddedButton)</visible>
 					</control>
 					<control type="button" id="90168">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>31007</label>
-						<onclick>ActivateWindow(VideoLibrary,Plugins)</onclick>
+						<onclick>ActivateWindow(Videos,Plugins)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesPluginsButton)</visible>
 					</control>
 				</control>
@@ -708,42 +708,42 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>135</label>
-						<onclick>ActivateWindow(VideoLibrary,TVShowGenres)</onclick>
+						<onclick>ActivateWindow(Videos,TVShowGenres)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVGenresButton)</visible>
 					</control>
 					<control type="button" id="90172">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>652</label>
-						<onclick>ActivateWindow(VideoLibrary,TVShowYears)</onclick>
+						<onclick>ActivateWindow(Videos,TVShowYears)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVYearsButton)</visible>
 					</control>
 					<control type="button" id="90173">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>344</label>
-						<onclick>ActivateWindow(VideoLibrary,TVShowActors)</onclick>
+						<onclick>ActivateWindow(Videos,TVShowActors)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVActorsButton)</visible>
 					</control>
 					<control type="button" id="90174">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>20388</label>
-						<onclick>ActivateWindow(VideoLibrary,TVShowStudios)</onclick>
+						<onclick>ActivateWindow(Videos,TVShowStudios)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVStudiosButton)</visible>
 					</control>
 					<control type="button" id="90175">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>31328</label>
-						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes)</onclick>	
+						<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes)</onclick>	
 						<visible>!Skin.HasSetting(SubMenuNoTVRecentlyAddedButton)</visible>
 					</control>
 					<control type="button" id="90176">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>31007</label>
-						<onclick>ActivateWindow(VideoLibrary,Plugins)</onclick>
+						<onclick>ActivateWindow(Videos,Plugins)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVPluginsButton)</visible>
 					</control>
 				</control>
@@ -916,7 +916,7 @@
 					<label>$LOCALIZE[342]</label>
 					<icon>homeicons/movies-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
+					<onclick>ActivateWindow(Videos,movietitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</item>
 				<item id="2">
@@ -924,7 +924,7 @@
 					<label>TV Shows</label>
 					<icon>homeicons/tv-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
+					<onclick>ActivateWindow(Videos,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</item>
 				<item id="3">
@@ -1094,7 +1094,7 @@
 					<label>$LOCALIZE[31500]</label>
 					<icon>homeicons/movies-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
+					<onclick>ActivateWindow(Videos,movietitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</item>
 				<item id="2">
@@ -1102,7 +1102,7 @@
 					<label>$LOCALIZE[31502]</label>
 					<icon>homeicons/tv-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
+					<onclick>ActivateWindow(Videos,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</item>
 				<item id="3">

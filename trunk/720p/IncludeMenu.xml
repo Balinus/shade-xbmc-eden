@@ -101,7 +101,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<icon>icon_home_tv_library.png</icon>
 			<label>TV Shows</label>
-			<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
+			<onclick>ActivateWindow(Videos,tvshowtitles)</onclick>
 		</item>
 	</include>
 
@@ -111,7 +111,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<icon>icon_home_movie_library.png</icon>
 			<label>$LOCALIZE[20342]</label>
-			<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
+			<onclick>ActivateWindow(Videos,movietitles)</onclick>
 		</item>
 	</include>
 
