@@ -189,7 +189,7 @@
 
 		<control type="group">
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>	
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>290</posy>
 				<width>1280</width>
@@ -198,7 +198,7 @@
 				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
-			</control>
+			</control>-->
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -221,9 +221,9 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>300</posy>
+				<posy>420</posy>
 				<width>1280</width>
-				<height>420</height>
+				<height>300</height>
 				<texture>shade/home_bottom.png</texture>
 				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
@@ -285,7 +285,7 @@
 			<colordiffuse>FFFFFFFF</colordiffuse>
 		</control>			
 
-		<control type="image">
+		<!--<control type="image">
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>	
 			<posx>480</posx>
 			<posy>570</posy>
@@ -297,7 +297,7 @@
 			<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
 			<visible>!Skin.HasSetting(UseAlternateHome)</visible>
 			<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Skin.HasSetting(homepageHideRecentlyAdded) | Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVButton) + Skin.HasSetting(homepageHideRecentlyAdded)]</visible>
-		</control>
+		</control>-->
 		<control type="group" id="9099">
 			<animation effect="fade" end="0" time="200">WindowClose</animation>
 			<animation effect="fade" end="100">WindowOpen</animation>
