@@ -1265,12 +1265,12 @@
 				</control>
 
 				<!--Davids Home Screen-->
-				<control type="group">
+			<control type="group">
 					<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 					<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
 					<control type="group">
 						<posx>10</posx>
-						<posy>430</posy>
+						<posy>360</posy>
 						<visible>!Skin.HasSetting(UseAlternateHome)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
@@ -1288,9 +1288,36 @@
 					      <label>Featured</label>
 					      <align>center</align>
 					      <aligny>center</aligny>
-					      <font>Shade_30</font>
+					      <font>Shade_35_UltraThin</font>
 					      <textcolor>white</textcolor>
-				      </control>	
+				      </control>
+				      <control type="label">
+-							<posx>5</posx>
+-							<posy>255</posy>
+-							<width>350</width>
+-							<height>30</height>
+-							<font>Shade_24</font>
+-							<textcolor>white</textcolor>
+-							<selectedcolor>selected</selectedcolor>
+-							<align>left</align>
+-							<aligny>center</aligny>
+-							<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
+-							<visible>[Container(9000).Hasfocus(1) + 													!Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
+-						</control>
+					<control type="fadelabel">
+-						<posx>5</posx>
+-						<posy>285</posy>
+-						<width>120</width>
+-						<height>30</height>
+-						<font>Shade_18_Bold</font>
+-						<textcolor>grey2</textcolor>
+-						<selectedcolor>selected</selectedcolor>
+-						<align>left</align>
+-						<scrollspeed>0</scrollspeed>
+-						<aligny>center</aligny>
+-						<label>$INFO[Window.Property(RandomMovie.1.Year)],$INFO[Window.Property(RandomMovie.1.RunningTime)]</label>
+-						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
+-					</control>
 				<control type="list" id="8005">
 					<posx>60</posx>
 					<posy>50</posy>
@@ -1339,6 +1366,7 @@
 							<visible>Control.HasFocus(8005)</visible>
 						</control>
 					</focusedlayout>
+					
 					<content>
 						<item id="1">
 							<label>-</label>
@@ -1350,62 +1378,12 @@
 					</content>
 				</control>
 						
-						<!--<control type="label">
-							<description>Title label</description>
-							<posx>5</posx>
-							<posy>5</posy>
-							<height>20</height>
-							<width>1260</width>
-							<label>Featured</label>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Shade_35_UltraThin</font>
-							<textcolor>white</textcolor>
-						</control>	
-						<control type="image">
-							<description>Main Icon</description>
-							<posx>5</posx>
-							<posy>95</posy>
-							<width>210</width>
-							<height>300</height>
-							<aspectratio align="left">stretch</aspectratio>
-							<fadetime>200</fadetime>
-							<texture background="true" diffuse="shade/posterdiffuse.png">$INFO[Window.Property(RandomMovie.1.Thumb)]</texture>
-							<bordertexture border="2">shade/folder-focus-white.png</bordertexture>
-							<bordersize>2</bordersize>
-						</control>
-						<control type="label">
-							<posx>5</posx>
-							<posy>55</posy>
-							<width>350</width>
-							<height>30</height>
-							<font>Shade_24</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(RandomMovie.1.Title)] ($INFO[Window.Property(RandomMovie.1.Year)])</label>
-							<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
-						</control>-->
-						<!--<control type="fadelabel">
-						<posx>5</posx>
-						<posy>85</posy>
-						<width>120</width>
-						<height>30</height>
-						<font>Shade_18_Bold</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<scrollspeed>0</scrollspeed>
-						<aligny>center</aligny>
-						<label>($INFO[Window.Property(RandomMovie.1.Year)]),$INFO[Window.Property(RandomMovie.1.RunningTime)]</label>
-						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
-					</control>-->					
-					</control>
+										
+			  </control>
 					
 					<control type="group">
 						<posx>-200</posx>
-						<posy>430</posy>
+						<posy>360</posy>
 						<visible>!Skin.HasSetting(UseAlternateHome)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
@@ -1429,7 +1407,7 @@
 						<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 						<posx>625</posx>
 						<posy>50</posy>
-						<width>750</width>
+						<width>850</width>
 						<height>500</height>
 						<onleft>8005</onleft>
 						<onright>8006</onright>

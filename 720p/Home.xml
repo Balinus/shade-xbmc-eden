@@ -219,7 +219,7 @@
 				<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
 			</control>
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>420</posy>
 				<width>1280</width>
@@ -228,7 +228,7 @@
 				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
-			</control>
+			</control>-->
 		</control>
 
 		<!-- New Home List Images-->
