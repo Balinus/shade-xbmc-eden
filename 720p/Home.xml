@@ -283,7 +283,18 @@
 			<texture>shade/vignette2.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<colordiffuse>FFFFFFFF</colordiffuse>
-		</control>			
+			<visible>!Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+		</control>	
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>shade/vignette4.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>FFFFFFFF</colordiffuse>
+			<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+		</control>	
 
 		<!--<control type="image">
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>	
