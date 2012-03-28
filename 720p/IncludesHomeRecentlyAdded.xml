@@ -1280,7 +1280,7 @@
 
 
 				      <control type="label">
-					<animation effect="slide" time="500" delay="800" start="0,500" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
+					<animation effect="slide" time="500" delay="800" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 					      <description>Title label</description>
 					      <posx>0</posx>
 					      <posy>-40</posy>
@@ -1322,7 +1322,7 @@
 -					</control>-->
 
 				<control type="list" id="8005">
-				  <animation effect="slide" time="500" delay="800" start="0,500" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
+				  <animation effect="slide" time="500" delay="800" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>360</width>
@@ -2081,7 +2081,7 @@
 
 
 				      <control type="label">
-					<animation effect="slide" time="500" delay="800" start="0,500" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
+					<animation effect="slide" time="500" delay="800" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 					      <description>Title label</description>
 					      <posx>0</posx>
 					      <posy>-40</posy>
@@ -2096,7 +2096,7 @@
 				      </control>
 				    
 				<control type="list" id="8007">
-				  <animation effect="slide" time="500" delay="800" start="0,500" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
+				  <animation effect="slide" time="500" delay="800" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>500</width>
@@ -2504,28 +2504,28 @@
 							</item>
 							<item id="2">
 								<label>$INFO[Window.Property(LatestEpisode.2.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.2.Fanart)]</thumb>
 							</item>
 							<item id="3">
 								<label>$INFO[Window.Property(LatestEpisode.3.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.3.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.3.Fanart)]</thumb>
 							</item>
 							<item id="4">
 								<label>$INFO[Window.Property(LatestEpisode.4.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.4.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.4.Fanart)]</thumb>
 							</item>
 							<item id="5">
 								<label>$INFO[Window.Property(LatestEpisode.5.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.5.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.5.RunningTime)]</thumb>
