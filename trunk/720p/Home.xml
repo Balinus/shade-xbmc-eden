@@ -1,6 +1,6 @@
 <window id="0"> 
 	<defaultcontrol always="true">8999</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>no</allowoverlay>	
 	<controls>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
@@ -36,9 +36,59 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomMovie.1.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(1) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomMovie.2.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(2) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomMovie.3.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(3) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomMovie.4.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(4) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomMovie.5.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(5) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8006).Hasfocus(1) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8006)+Container(8006).Hasfocus(1) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -48,7 +98,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8006).Hasfocus(2) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8006)+Container(8006).Hasfocus(2) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -58,7 +108,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8006).Hasfocus(3) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8006)+Container(8006).Hasfocus(3) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -68,7 +118,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8006).Hasfocus(4) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8006)+Container(8006).Hasfocus(4) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -78,7 +128,57 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8006).Hasfocus(5) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8006)+Container(8006).Hasfocus(5) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomEpisode.1.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8007)+Container(8007).Hasfocus(1) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomEpisode.2.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8007)+Container(8007).Hasfocus(2) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomEpisode.3.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8007)+Container(8007).Hasfocus(3) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomEpisode.4.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>			
+			<visible>Control.HasFocus(8007)+Container(8007).Hasfocus(4) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(RandomEpisode.5.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8007)+Container(8007).Hasfocus(5) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -88,7 +188,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8007).Hasfocus(1) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(1) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -98,7 +198,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8007).Hasfocus(2) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(2) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -108,7 +208,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8007).Hasfocus(3) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(3) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -118,7 +218,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>			
-			<visible>Container(8007).Hasfocus(4) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(4) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -128,7 +228,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(8007).Hasfocus(5) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
+			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(5) + Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(HomeAlternate)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
