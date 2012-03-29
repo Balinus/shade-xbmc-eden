@@ -388,12 +388,12 @@
 					<onleft>60</onleft>
 					<onright>60</onright>
 					<onup>9</onup>
-					<ondown>10</ondown>
+					<ondown>11</ondown>
 				</control>
 				<control type="button" id="10">
 					<description>Changelog button</description>
 					<posx>15</posx>
-					<posy>200</posy>
+					<posy>250</posy>
 					<width>230</width>
 					<height>51</height>
 					<textoffsetx>20</textoffsetx>
@@ -404,9 +404,23 @@
 					<texturefocus border="5">shade/menuitemfo.png</texturefocus>
 					<onleft>60</onleft>
 					<onright>60</onright>
-					<onup>8</onup>
+					<onup>11</onup>
 					<ondown>6</ondown>
 				</control>
+				<control type="button" id="11">
+					<description>Rollback button</description>
+					<posx>15</posx>
+					<posy>200</posy>
+					<width>230</width>
+					<height>51</height>
+					<align>right</align>
+					<font>Shade_18_Bold</font>
+					<label>24048</label>
+					<texturenofocus border="5">menuitemnf.png</texturenofocus>
+					<texturefocus border="5">shade/menuitemfo.png</texturefocus>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				  </control>
 			</control>
 		</control>
 	</controls>
