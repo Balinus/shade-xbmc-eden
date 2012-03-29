@@ -354,7 +354,7 @@
 				<width>1280</width>
 				<height>210</height>
 				<texture>shade/solid_menu.png</texture>
-				<visible>!Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages)</visible>
+				<visible>!Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages) + !Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008</visible>
 				<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
 			</control>
@@ -900,7 +900,7 @@
 			</control>
 		</control>
 		<control type="fixedlist" id="9000">
-			<visible>!Skin.HasSetting(HomeAlternate)</visible>
+			<visible>!Skin.HasSetting(HomeAlternate)+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
 			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
 			<posx>10</posx>
@@ -1651,7 +1651,7 @@
 				<font>Shade_30_UltraThin</font>
 				<textcolor>grey2</textcolor>
 			</control>	-->
-		<control type="image">
+		<!--<control type="image">
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>	
 			<posx>0</posx>
 			<posy>300</posy>
@@ -1661,7 +1661,7 @@
 			<visible>Skin.HasSetting(homepageHideRecentlyAdded) + [ControlGroup(9001).HasFocus + [Container(9000).Hasfocus(1) | Container(9000).Hasfocus(2) | Container(9000).Hasfocus(3) | Container(9000).Hasfocus(4) | Container(9000).Hasfocus(10) | Container(9000).Hasfocus(9) | Container(9000).Hasfocus(5)]]</visible>	
 			<animation effect="fade" end="100" time="0" condition="ControlGroup(9001).HasFocus">Conditional</animation>
 			<animation effect="fade" end="0" time="0" condition="ControlGroup(9000).HasFocus">Conditional</animation>
-		</control>
+		</control>-->
 
 		<control type="group">
 			<animation effect="slide" end="0,400" time="0" condition="Skin.HasSetting(HomeAlternate)">Conditional</animation>
