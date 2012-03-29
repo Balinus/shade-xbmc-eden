@@ -5800,7 +5800,7 @@
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
-						<label>Originally aired: [COLOR=grey4]$INFO[ListItem.Date][/COLOR]</label>
+						<label>Originally aired: [COLOR=grey2]$INFO[ListItem.Date][/COLOR]</label>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
