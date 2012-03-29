@@ -65,7 +65,7 @@
                                     <control type="label">
                                             <description>header label</description>
                                             <posx>375</posx>
-                                            <posy>130</posy>
+                                            <posy>140</posy>
                                             <width>650</width>
                                             <height>30</height>
                                             <font>Shade_20</font>
@@ -156,7 +156,7 @@
                                             <control type="fadelabel">
                                                     <posx>20</posx>
                                                     <posy>560</posy>
-                                                    <width>71</width>
+                                                    <width>100</width>
                                                     <height>30</height>
                                                     <font>Shade_20</font>
                                                     <textcolor>white</textcolor>
