@@ -2542,523 +2542,280 @@
 					<!--Music-->
 
 
-					<control type="group">
-						<posx>10</posx>
-						<posy>310</posy>
-						<visible>!Skin.HasSetting(UseAlternateHome)</visible>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						<include>VisibleFadeEffect</include>
-
-						<control type="label">
-							<description>Title label</description>
-							<posx>5</posx>
-							<posy>5</posy>
-							<height>20</height>
-							<width>1260</width>
-							<label>Featured</label>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Shade_35_UltraThin</font>
-							<textcolor>white</textcolor>
-						</control>	
+			  <control type="group">
+				<posx>10</posx>
+				<posy>450</posy>
+				<visible>Library.HasContent(Music)</visible>
+				<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
+				<include>VisibleFadeEffect</include>
+				<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation>
+				<control type="label">
+					<description>Title label</description>
+					<posx>30</posx>
+					<posy>20</posy>
+					<height>20</height>
+					<width>200</width>
+					<label>Featured</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Shade_30</font>
+					<textcolor>white</textcolor>
+				</control>	
+				<control type="list" id="8009">
+					<posx>43</posx>
+					<posy>50</posy>
+					<width>550</width>
+					<height>500</height>
+					<onleft>8009</onleft>
+					<onright>8010</onright>
+					<onup>9000</onup>
+					<ondown>-</ondown>
+					<viewtype label="535">list</viewtype>
+					<orientation>horizontal</orientation>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<itemlayout height="240" width="210">
 						<control type="image">
 							<description>Main Icon</description>
-							<posx>5</posx>
-							<posy>155</posy>
-							<width>440</width>
-							<height>240</height>
-							<aspectratio align="left">keep</aspectratio>
-							<bordertexture border="2">shade/folder-focus-white.png</bordertexture>
-							<bordersize>2</bordersize>
-							<texture background="true" diffuse="shade/episodemattenf.png">$INFO[Window.Property(RandomSong.1.Thumb)]</texture>
-						</control>
-						<control type="image">
-							<posx>470</posx>
-							<posy>260</posy>
-							<width>400</width>
-							<height>200</height>
-							<texture>shade/white.png</texture>
-							<fadetime>200</fadetime>
-							<animation effect="fade" start="100" end="50" time="0" condition="Skin.HasSetting(FadeWhiteBarHome)">Conditional</animation>
-						</control>
-						<control type="label">
-							<posx>5</posx>
-							<posy>55</posy>
-							<width>250</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>grey2</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
-							<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>5</posx>
-							<posy>85</posy>
-							<width>300</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>grey2</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(RandomSong.1.Album)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>5</posx>
-							<posy>115</posy>
+							<posx>0</posx>
+							<posy>0</posy>
 							<width>170</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
+							<height>170</height>
+							<aspectratio align="left">stretch</aspectratio>
+							<fadetime>200</fadetime>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<bordertexture border="8">thumbborder.png</bordertexture>
+							<bordersize>8</bordersize>
+						</control>		
+					</itemlayout>
+					<focusedlayout height="240" width="210">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>170</width>
+							<height>170</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<bordertexture border="8">thumbborder.png</bordertexture>
+							<bordersize>8</bordersize>
+						</control>
+						<control type="image">
+							<posx>51</posx>
+							<posy>50</posy>
+							<width>70</width>
+							<height>70</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>osdplay.png</texture>
+							<visible>Control.HasFocus(8009)</visible>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<label>-</label>
+							<label2>-</label2>
+							<onclick>PlayMedia($INFO[Window.Property(RandomSong.1.Path)])</onclick>
+							<icon>$INFO[Window.Property(RandomSong.1.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+					</content>
+				</control>				
+				<control type="label">
+					<description>Title label</description>
+					<posx>220</posx>
+					<posy>60</posy>
+					<height>20</height>
+					<width>300</width>
+					<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Shade_24_Bold</font>
+					<textcolor>grey2</textcolor>
+				</control>	
+				<control type="label">
+					<description>Title label</description>
+					<posx>220</posx>
+					<posy>95</posy>
+					<height>20</height>
+					<width>300</width>
+					<label>"$INFO[Window.Property(RandomSong.1.Title)]"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Shade_24_Bold</font>
+					<textcolor>grey2</textcolor>
+				</control>	
+				<control type="label">
+					<description>Title label</description>
+					<posx>220</posx>
+					<posy>130</posy>
+					<height>20</height>
+					<width>300</width>
+					<label>$INFO[Window.Property(Randomsong.1.Album)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Shade_24_Bold</font>
+					<textcolor>grey2</textcolor>
+				</control>
+			</control>
+
+
+			<control type="group">
+				<posx>10</posx>
+				<posy>450</posy>
+				<visible>Library.HasContent(Music)</visible>
+				<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<description>Title label</description>
+					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation>
+					<posx>352</posx>
+					<posy>20</posy>
+					<height>20</height>
+					<width>1260</width>
+					<label>Recently Added</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Shade_30</font>
+					<textcolor>white</textcolor>
+				</control>	
+
+				<control type="list" id="8010">
+					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation>
+					<posx>720</posx>
+					<posy>50</posy>
+					<width>540</width>
+					<height>500</height>
+					<onleft>8009</onleft>
+					<onright>8010</onright>
+					<onup>9000</onup>
+					<ondown>-</ondown>
+					<viewtype label="535">list</viewtype>
+					<orientation>horizontal</orientation>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<itemlayout height="270" width="180">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>170</width>
+							<height>170</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<bordertexture border="8">thumbborder.png</bordertexture>
+							<bordersize>8</bordersize>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>86</posx>
+							<posy>170</posy>
+							<height>20</height>
+							<width>160</width>
+							<label>$INFO[ListItem.label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Shade_16_Bold</font>
 							<textcolor>grey2</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>Released:  $INFO[Window.Property(RandomSong.1.Year)]</label>
-							<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-					</control>
-
-					<control type="group">
-						<posx>10</posx>
-						<posy>310</posy>
-						<visible>!Skin.HasSetting(UseAlternateHome)</visible>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						<include>VisibleFadeEffect</include>
-						<control type="label">
-							<description>Title label</description>
-							<posx>470</posx>
-							<posy>5</posy>
-							<height>20</height>
-							<width>1260</width>
-							<label>Recently Added</label>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Shade_35_UltraThin</font>
-							<textcolor>white</textcolor>
-						</control>	
-						<control type="label">
-							<description>Title label</description>
-							<posx>880</posx>
-							<posy>5</posy>
-							<height>20</height>
-							<width>1260</width>
-							<label>Statistics</label>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Shade_35_UltraThin</font>
-							<textcolor>white</textcolor>
-						</control>	
+						</control>				
+					</itemlayout>
+					<focusedlayout height="270" width="180">
 						<control type="image">
-							<posx>470</posx>
-							<posy>-10</posy>
-							<width>1</width>
-							<height>500</height>
-							<colordiffuse>95FFFFFF</colordiffuse>
-							<texture>shade/separatorwhite.png</texture>
-							<include>VisibleFadeEffect</include>
-						</control>
-						<control type="image">
-							<posx>870</posx>
-							<posy>-10</posy>
-							<width>1</width>
-							<height>500</height>
-							<colordiffuse>95FFFFFF</colordiffuse>
-							<texture>shade/separatorwhite.png</texture>
-							<include>VisibleFadeEffect</include>
-						</control>	
-						<control type="group">
-							<posx>450</posx>
-							<posy>-210</posy>			
-							<control type="label">
-								<description>Title label</description>
-								<posx>430</posx>
-								<posy>260</posy>
-								<height>20</height>
-								<width>275</width>
-								<label>Total Artists:</label>
-								<align>left</align>
-								<aligny>center</aligny>
-								<font>Shade_16_bold</font>
-								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
-								<description>Title label</description>
-								<posx>800</posx>
-								<posy>260</posy>
-								<height>20</height>
-								<width>275</width>
-								<label>$INFO[Window.Property(Music.ArtistsCount)]</label>
-								<align>right</align>
-								<aligny>center</aligny>
-								<font>Shade_16_bold</font>
-								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
-								<description>Title label</description>
-								<posx>430</posx>
-								<posy>290</posy>
-								<height>20</height>
-								<width>275</width>
-								<label>Total Albums:</label>
-								<align>left</align>
-								<aligny>center</aligny>
-								<font>Shade_16_bold</font>
-								<textcolor>grey2</textcolor>
-							</control>
-							<control type="label">
-								<description>Title label</description>
-								<posx>800</posx>
-								<posy>290</posy>
-								<height>20</height>
-								<width>275</width>
-								<label>$INFO[Window.Property(Music.AlbumsCount)]</label>
-								<align>right</align>
-								<aligny>center</aligny>
-								<font>Shade_16_bold</font>
-								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
-								<description>Title label</description>
-								<posx>430</posx>
-								<posy>320</posy>
-								<height>20</height>
-								<width>275</width>
-								<label>Total Tracks:</label>
-								<align>left</align>
-								<aligny>center</aligny>
-								<font>Shade_16_bold</font>
-								<textcolor>grey2</textcolor>
-							</control>	
-							<control type="label">
-								<description>Title label</description>
-								<posx>800</posx>
-								<posy>320</posy>
-								<height>20</height>
-								<width>275</width>
-								<label>$INFO[Window.Property(Music.SongsCount)]</label>
-								<align>right</align>
-								<aligny>center</aligny>
-								<font>Shade_16_bold</font>
-								<textcolor>grey2</textcolor>
-							</control>
-						</control>
-
-						<!--Posters for Bottom Section-->
-						<control type="image">
-							<description>Main Icon</description>
-							<posx>485</posx>
-							<posy>280</posy>
-							<width>120</width>
-							<height>120</height>
-							<texture>$INFO[Window.Property(LatestSong.1.thumb)]</texture>
-							<bordertexture border="3">shade/grey_border.png</bordertexture>
-							<bordersize>3</bordersize>
-							<visible>[Container(8008).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="image">
-							<description>Main Icon</description>
-							<posx>485</posx>
-							<posy>280</posy>
-							<width>120</width>
-							<height>120</height>
-							<texture>$INFO[Window.Property(LatestSong.2.thumb)]</texture>
-							<bordertexture border="3">shade/grey_border.png</bordertexture>
-							<bordersize>3</bordersize>
-							<visible>[Container(8008).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="image">
-							<description>Main Icon</description>
-							<posx>485</posx>
-							<posy>280</posy>
-							<width>120</width>
-							<height>120</height>
-							<texture>">$INFO[Window.Property(LatestSong.3.thumb)]</texture>
-						<bordertexture border="3">shade/grey_border.png</bordertexture>
-						<bordersize>3</bordersize>
-						<visible>[Container(8008).Hasfocus(3) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-					</control>	
-					<control type="image">
-						<description>Main Icon</description>
-						<posx>485</posx>
-						<posy>280</posy>
-						<width>120</width>
-						<height>120</height>
-						<texture>$INFO[Window.Property(LatestSong.4.thumb)]</texture>
-						<bordertexture border="3">shade/grey_border.png</bordertexture>
-						<bordersize>3</bordersize>
-						<visible>[Container(8008).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-					</control>		
-					<control type="image">
-						<description>Main Icon</description>
-						<posx>485</posx>
-						<posy>280</posy>
-						<width>120</width>
-						<height>120</height>
-						<texture>$INFO[Window.Property(LatestSong.5.thumb)]</texture>
-						<bordertexture border="3">shade/grey_border.png</bordertexture>
-						<bordersize>3</bordersize>
-						<visible>[Container(8008).Hasfocus(5) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-					</control>	
-
-					<!--Titles for Bottom Section-->
-
-					<control type="group">
-						<posx>620</posx>
-						<posy>285</posy>
-						<control type="label">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>250</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
+							<width>170</width>
+							<height>170</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<bordertexture border="8">thumbborder.png</bordertexture>
+							<bordersize>8</bordersize>
+						</control>
+						<control type="label">
+							<description>Title label</description>
+							<posx>86</posx>
+							<posy>170</posy>
+							<height>20</height>
+							<width>160</width>
+							<label>$INFO[ListItem.label]</label>
+							<align>center</align>
 							<aligny>center</aligny>
+							<font>Shade_16_Bold</font>
+							<textcolor>white</textcolor>
+							<visible>Control.HasFocus(8010)</visible>
+						</control>		
+						<control type="label">
+							<description>Title label</description>
+							<posx>86</posx>
+							<posy>170</posy>
+							<height>20</height>
+							<width>250</width>
+							<label>$INFO[ListItem.label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Shade_16_Bold</font>
+							<textcolor>grey2</textcolor>
+							<visible>!Control.HasFocus(8010)</visible>
+						</control>		
+						<control type="image">
+							<posx>51</posx>
+							<posy>50</posy>
+							<width>70</width>
+							<height>70</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>osdplay.png</texture>
+							<visible>Control.HasFocus(8010)</visible>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
 							<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>250</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
+							<label2>$INFO[Window.Property(LatestSong.1.Year)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestSong.1.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestSong.1.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestSong.1.RunningTime)]</thumb>
+						</item>
+						<item id="2">
 							<label>$INFO[Window.Property(LatestSong.2.Artist)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>250</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
+							<label2>$INFO[Window.Property(LatestSong.2.Year)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestSong.2.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestSong.2.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestSong.2.RunningTime)]</thumb>
+						</item>
+						<item id="3">
 							<label>$INFO[Window.Property(LatestSong.3.Artist)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(3) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>250</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
+							<label2>$INFO[Window.Property(LatestSong.3.Year)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestSong.3.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestSong.3.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestSong.3.RunningTime)]</thumb>
+						</item>
+						<item id="4">
 							<label>$INFO[Window.Property(LatestSong.4.Artist)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>250</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
+							<label2>$INFO[Window.Property(LatestSong.4.Year)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestSong.4.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestSong.4.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestSong.4.RunningTime)]</thumb>
+						</item>
+						<item id="5">
 							<label>$INFO[Window.Property(LatestSong.5.Artist)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(5) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-					</control>
-
-					<!--Years for Bottom Section-->
-
-					<control type="group">
-						<posx>620</posx>
-						<posy>330</posy>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(LatestSong.1.Year)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(LatestSong.2.Year)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(LatestSong.3.Year]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(3) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(LatestSong.4.Year)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>black</textcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(LatestSong.5.Year)]</label>
-							<wrapmultiline>true</wrapmultiline>
-							<visible>[Container(8008).Hasfocus(5) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-						</control>
-					</control>
-
-					<!--Ratings for Bottom Section-->
-
-					<control type="list" id="8008">
-						<posx>431</posx>
-						<posy>40</posy>
-						<width>475</width>
-						<height>500</height>
-						<onleft>9000</onleft>
-						<onright>9000</onright>
-						<onup>9000</onup>
-						<ondown>8008</ondown>
-						<viewtype label="535">list</viewtype>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>0</scrolltime>
-						<itemlayout height="40" width="400">
-							<control type="label">
-								<posx>50</posx>
-								<posy>15</posy>
-								<width>350</width>
-								<height>40</height>
-								<font>Shade_18_Bold</font>
-								<textcolor>white</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<align>left</align>
-								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
-								<wrapmultiline>true</wrapmultiline>
-							</control>						
-						</itemlayout>
-						<focusedlayout height="40" width="400">
-							<control type="image">
-								<posx>39</posx>
-								<posy>15</posy>
-								<width>400</width>
-								<height>40</height>
-								<texture border="2,2,2,2">shade/white.png</texture>
-								<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
-							</control>
-							<control type="label">
-								<posx>50</posx>
-								<posy>20</posy>
-								<width>350</width>
-								<height>30</height>
-								<font>Shade_18_Bold</font>
-								<textcolor>black</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<align>left</align>
-								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
-								<wrapmultiline>true</wrapmultiline>
-							</control>
-						</focusedlayout>
-						<content>
-							<item id="1">
-								<label>$INFO[Window.Property(LatestSong.1.Album)]</label>
-								<label2>$INFO[Window.Property(LatestSong.1.Year)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.1.Path)])</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Window.Property(LatestSong.1.RunningTime)]</thumb>
-							</item>
-							<item id="2">
-								<label>$INFO[Window.Property(LatestSong.2.Album)]</label>
-								<label2>$INFO[Window.Property(LatestSong.2.Year)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.2.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestSong.2.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestSong.2.RunningTime)]</thumb>
-							</item>
-							<item id="3">
-								<label>$INFO[Window.Property(LatestSong.3.Album)]</label>
-								<label2>$INFO[Window.Property(LatestSong.3.Year)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.3.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestSong.3.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestSong.3.RunningTime)]</thumb>
-							</item>
-							<item id="4">
-								<label>$INFO[Window.Property(LatestSong.4.Album)]</label>
-								<label2>$INFO[Window.Property(LatestSong.4.Year)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.4.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestSong.4.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestSong.4.RunningTime)]</thumb>
-							</item>
-							<item id="5">
-								<label>$INFO[Window.Property(LatestSong.5.Album)]</label>
-								<label2>$INFO[Window.Property(LatestSong.5.Year)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.5.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestSong.5.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestSong.5.RunningTime)]</thumb>
-							</item>
-							<!--<item id="6">
-							<label>$INFO[Window.Property(LatestSong.6.Title)]</label>
+							<label2>$INFO[Window.Property(LatestSong.5.Year)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestSong.5.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestSong.5.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestSong.5.RunningTime)]</thumb>
+						</item>
+						<item id="6">
+							<label>$INFO[Window.Property(LatestSong.6.Artist)]</label>
 							<label2>$INFO[Window.Property(LatestSong.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestSong.6.Path)])</onclick>
 							<icon>$INFO[Window.Property(LatestSong.6.Thumb)]</icon>
 							<thumb>$INFO[Window.Property(LatestSong.6.RunningTime)]</thumb>
-						</item>-->
-						</content>
-					</control>				
-				</control>
+						</item>
+						<item id="7">
+							<label>$INFO[Window.Property(LatestSong.7.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.7.Year)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestSong.7.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestSong.7.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestSong.7.RunningTime)]</thumb>
+						</item>
+					</content>
+				</control>				
+			</control>
 
 				<control type="group">
 					<posx>10</posx>
