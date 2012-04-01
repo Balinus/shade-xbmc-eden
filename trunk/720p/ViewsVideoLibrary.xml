@@ -267,7 +267,7 @@
 					<font>Shade_18</font>
 					<align>left</align>
 					<textcolor>white</textcolor>
-					<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+					<label>[B]$INFO[ListItem.Plot][/B]</label>
 					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(FanartPanelThumbs)</visible>
 				</control>
@@ -1290,7 +1290,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
-					<label>$INFO[ListItem.PlotOutline]</label>
+					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>					
 					<control type="group">
@@ -6356,7 +6356,7 @@
 						<font>Shade_18</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
-						<label>$INFO[ListItem.PlotOutline]</label>
+						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="group">
@@ -7447,8 +7447,8 @@
 			<posy>0</posy>
 			<control type="label">
 				<description>Play Trailer Label</description>
-				<posx>340</posx>	
-				<posy>650</posy>
+				<posx>320</posx>	
+				<posy>640</posy>
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<selectedcolor>selected</selectedcolor>				
@@ -9285,8 +9285,8 @@
 				<posy>-10</posy>
 				<control type="label">
 					<description>Play Trailer Label</description>
-					<posx>1050</posx>	
-					<posy>660</posy>
+					<posx>1030</posx>	
+					<posy>650</posy>
 					<font>Shade_30_UltraThin</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>				
@@ -11010,7 +11010,7 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+				<label>[B]$INFO[ListItem.Plot][/B]</label>
 				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<include>Zoom</include>
 			</control>
@@ -11036,8 +11036,8 @@
 				<posy>0</posy>
 				<control type="label">
 					<description>Play Trailer Label</description>
-					<posx>1050</posx>	
-					<posy>660</posy>
+					<posx>1030</posx>	
+					<posy>650</posy>
 					<font>Shade_30_UltraThin</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>				
@@ -11528,7 +11528,7 @@
 						<align>left</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+						<label>[B]$INFO[ListItem.Plot][/B]</label>
 						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="grouplist">
@@ -12521,8 +12521,8 @@
 				<posy>0</posy>
 				<control type="label">
 					<description>Play Trailer Label</description>
-					<posx>1050</posx>	
-					<posy>660</posy>
+					<posx>1030</posx>	
+					<posy>650</posy>
 					<font>Shade_30_UltraThin</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>				
@@ -13466,7 +13466,7 @@
 					<font>Shade_18</font>
 					<align>left</align>
 					<textcolor>white</textcolor>
-					<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+					<label>[B]$INFO[ListItem.Plot][/B]</label>
 					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(PosterPanelThumbs)</visible>
 				</control>
@@ -14604,7 +14604,7 @@
 						<font>Shade_18</font>
 						<align>left</align>
 						<textcolor>white</textcolor>
-						<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+						<label>[B]$INFO[ListItem.Plot][/B]</label>
 						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<!--control type="label">

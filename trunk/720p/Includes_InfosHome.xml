@@ -4,7 +4,7 @@
 	<control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8006) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>-720</posx>
-			      <posy>-340</posy>	
+			      <posy>-400</posy>	
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -106,6 +106,14 @@
 							<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>
+						<!--<control type="image">
+							<description>Thumb</description>
+							<posx>740</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>225</height>
+							<texture>$INFO[Window.Property(LatestMovie.1.Thumb)]</texture>		<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
+						</control>-->
 						<control type="image">
 							<description>Rating value</description>
 							<posx>640</posx>
@@ -131,7 +139,7 @@
 			    <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8006) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>-720</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -258,7 +266,7 @@
 					 <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8006) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>-720</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -385,7 +393,7 @@
 					<control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8006) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>-720</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -512,7 +520,7 @@
 					<control type="group">
 			     <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8006) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>-720</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -641,7 +649,7 @@
 		<control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8005) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -768,7 +776,7 @@
 		    <control type="group">
 			     <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8005) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -895,7 +903,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8005) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1022,7 +1030,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8005) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1149,7 +1157,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8005) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1279,7 +1287,7 @@
 	  <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8008) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>-580</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1420,7 +1428,7 @@
 		    <control type="group">
 			     <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8008) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>-580</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1548,7 +1556,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8008) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>-580</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1676,7 +1684,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8008) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>-580</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1804,7 +1812,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8008) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>-580</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -1935,7 +1943,7 @@
 	    <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8007) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -2076,7 +2084,7 @@
 		    <control type="group">
 			     <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8007) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -2204,7 +2212,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8007) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -2332,7 +2340,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8007) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
@@ -2460,7 +2468,7 @@
 		      <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8007) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>160</posx>
-			      <posy>-340</posy>
+			      <posy>-400</posy>
 			      <control type="image">
 					<posx>155</posx>
 					<posy>145</posy>
