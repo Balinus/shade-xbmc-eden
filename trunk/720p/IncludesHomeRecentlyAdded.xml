@@ -1918,7 +1918,7 @@
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
 							</control>
-							<control type="label">
+							<!--<control type="label">
 								<description>Title label</description>
 								<posx>430</posx>
 								<posy>350</posy>
@@ -1941,7 +1941,7 @@
 								<aligny>center</aligny>
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
-							</control>	
+							</control>	-->
 						</control>
 
 						<control type="group">
