@@ -981,7 +981,7 @@
 							<item id="11">
 								<label>20343</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/TV1.jpg</icon>
+								<icon>special://skin/backgrounds/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 							</item>
 							<item id="2">
