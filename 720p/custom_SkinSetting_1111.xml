@@ -589,7 +589,7 @@
 						<selected>Skin.HasSetting(TurnOffHomeImages)</selected>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 					</control>
-					<control type="radiobutton" id="225">
+					<!--<control type="radiobutton" id="225">
 						<width>900</width>
 						<height>40</height>
 						<font>Shade_20_Bold_title</font>
@@ -601,7 +601,7 @@
 						<onclick>Skin.ToggleSetting(HomeAlternate)</onclick>
 						<onclick>Skin.Reset(AlternateHome2)</onclick>
 						<selected>Skin.HasSetting(HomeAlternate)</selected>
-					</control>
+					</control>-->
 					<control type="radiobutton" id="227">
 						<description>enable weather info</description>
 						<posx>0</posx>
