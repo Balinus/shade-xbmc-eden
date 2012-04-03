@@ -1719,12 +1719,12 @@
 <!-- 						SYSTEM -->
 					<control type="group">
 						<posx>-865</posx>
-						<posy>430</posy>
+						<posy>550</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Container(9000).Hasfocus(10)</visible>
 						<include>VisibleFadeEffect</include>
 						<control type="group">
-							<posx>495</posx>
+							<posx>465</posx>
 							<control type="label">
 								<description>Title label</description>
 								<posx>880</posx>
@@ -1817,7 +1817,7 @@
 					</control>
 					<control type="group">
 						<posx>-865</posx>
-						<posy>530</posy>
+						<posy>550</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>Container(9000).Hasfocus(5)</visible>
