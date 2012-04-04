@@ -658,7 +658,23 @@
 						<onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
 					</control>
-					<control type="label" id="206">
+					<control type="radiobutton" id="206">
+						<description>Library and system statistics</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<label>- Show Library and System statistics</label>
+						<onclick>Skin.ToggleSetting(LibraryStats)</onclick>
+						<selected>Skin.HasSetting(LibraryStats)</selected>
+						<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+					</control>
+					<control type="label" id="207">
 						<width>750</width>
 						<height>45</height>
 						<font>Shade_20_Bold_title</font>
@@ -668,7 +684,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="208">
 						<description>Hide Videos Button</description>
 						<posx>0</posx>
 						<posy>0</posy>

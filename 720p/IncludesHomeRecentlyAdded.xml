@@ -1720,7 +1720,7 @@
 					<control type="group">
 						<posx>-865</posx>
 						<posy>550</posy>
-						<visible>!Skin.HasSetting(HomeAlternate)</visible>
+						<visible>!Skin.HasSetting(HomeAlternate)+Skin.HasSetting(LibraryStats)</visible>
 						<visible>Container(9000).Hasfocus(10)</visible>
 						<include>VisibleFadeEffect</include>
 						<control type="group">
@@ -1818,7 +1818,7 @@
 					<control type="group">
 						<posx>-865</posx>
 						<posy>550</posy>
-						<visible>!Skin.HasSetting(HomeAlternate)</visible>
+						<visible>!Skin.HasSetting(HomeAlternate)+Skin.HasSetting(LibraryStats)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>Container(9000).Hasfocus(5)</visible>
 						<include>VisibleFadeEffect</include>
