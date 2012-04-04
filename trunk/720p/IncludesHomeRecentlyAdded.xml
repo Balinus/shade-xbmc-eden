@@ -1310,7 +1310,7 @@
 						      <label>Recently added</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8005)</visible>
 					      </control>
@@ -1331,7 +1331,7 @@
 						      <label>Main menu</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8005)</visible>
 					      </control>
@@ -1547,7 +1547,7 @@
 						      <label>Featured</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8006)</visible>
 					      </control>
@@ -1568,7 +1568,7 @@
 						      <label>Main menu</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8006)</visible>
 					      </control>
@@ -2194,7 +2194,7 @@
 						      <label>Recently Added</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8007)</visible>
 					      </control>
@@ -2215,7 +2215,7 @@
 						      <label>Main menu</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8007)</visible>
 					      </control>
@@ -2468,7 +2468,7 @@
 						      <label>Featured</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8008)</visible>
 					      </control>
@@ -2489,7 +2489,7 @@
 						      <label>Main menu</label>
 						      <align>left</align>
 						      <aligny>center</aligny>
-						      <font>Shade_30_UltraThin</font>
+						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
 						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8008)</visible>
 					      </control>
