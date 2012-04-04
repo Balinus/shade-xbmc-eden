@@ -3383,7 +3383,7 @@
 		</control>
 
 
-<control type="group">
+		<control type="group">
 					<posx>10</posx>
 					<posy>310</posy>
 					<visible>Container(9000).Hasfocus(8)</visible>
