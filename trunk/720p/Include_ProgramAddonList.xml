@@ -1,0 +1,224 @@
+<includes> 
+	<include name="HomeProgramsAddonsList">
+		<control type="group" id="8002">
+
+			<control type="group">
+					<posx>10</posx>
+					<posy>310</posy>
+					<visible>Container(9000).Hasfocus(8)</visible>
+					<include>VisibleFadeEffect</include>
+					<control type="list" id="8011">
+						<posx>10</posx>
+						<posy>100</posy>
+						<width>1400</width>
+						<height>500</height>
+						<onleft>8011</onleft>
+						<onright>8011</onright>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
+						<orientation>horizontal</orientation>
+						<viewtype label="535">list</viewtype>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>0</scrolltime>
+						<visible>Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3)</visible>
+						<itemlayout height="150" width="465">
+							<control type="label">
+								<posx>150</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>40</height>
+								<font>Shade_24</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+								<wrapmultiline>true</wrapmultiline>
+							</control>	
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
+							</control>
+						</itemlayout>
+						<focusedlayout height="150" width="465">
+							<control type="label">
+								<posx>150</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>40</height>
+								<font>Shade_24</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+								<wrapmultiline>true</wrapmultiline>
+							</control>
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
+								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+							</control>
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
+								<visible>Control.HasFocus(9000)</visible>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+							  <label>$INFO[system.addontitle(Skin.String(HomeScriptButton1))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeScriptButton1)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton1))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeScriptButton1)</visible>
+							</item>
+							<item id="2">
+							    <label>$INFO[system.addontitle(Skin.String(HomeScriptButton2))]</label>
+							    <onclick>RunAddon($INFO[Skin.String(HomeScriptButton2)])</onclick>
+							    <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton2))]</icon>
+							    <thumb>-</thumb>
+							    <visible>Skin.HasSetting(HomeScriptButton2)</visible>
+							</item>
+							<item id="3">
+							  <label>$INFO[system.addontitle(Skin.String(HomeScriptButton3))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeScriptButton3)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton3))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeScriptButton3)</visible>
+							</item>
+						</content>
+					</control>
+				</control>
+
+				<control type="group">
+					<posx>10</posx>
+					<posy>310</posy>
+					<visible>Container(9000).Hasfocus(9)</visible>
+					<include>VisibleFadeEffect</include>
+					<control type="list" id="8012">
+						<posx>10</posx>
+						<posy>100</posy>
+						<width>1400</width>
+						<height>500</height>
+						<onleft>8012</onleft>
+						<onright>8012</onright>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
+						<orientation>horizontal</orientation>
+						<viewtype label="535">list</viewtype>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>0</scrolltime>
+						<visible>Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3)</visible>
+						<itemlayout height="150" width="465">
+							<control type="label">
+								<posx>150</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>40</height>
+								<font>Shade_24</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+								<wrapmultiline>true</wrapmultiline>
+							</control>	
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
+							</control>
+						</itemlayout>
+						<focusedlayout height="150" width="465">
+							<control type="label">
+								<posx>150</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>40</height>
+								<font>Shade_24</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+								<wrapmultiline>true</wrapmultiline>
+							</control>
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
+								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+							</control>
+							<control type="image">
+								<posx>50</posx>
+								<posy>30</posy>
+								<width>200</width>
+								<height>200</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
+								<visible>Control.HasFocus(9000)</visible>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+							  <label>$INFO[system.addontitle(Skin.String(HomeAddonButton1))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeAddonButton1)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton1))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeAddonButton1)</visible>
+							</item>
+							<item id="2">
+							    <label>$INFO[system.addontitle(Skin.String(HomeAddonButton2))]</label>
+							    <onclick>RunAddon($INFO[Skin.String(HomeAddonButton2)])</onclick>
+							    <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton2))]</icon>
+							    <thumb>-</thumb>
+							    <visible>Skin.HasSetting(HomeAddonButton2)</visible>
+							</item>
+							<item id="3">
+							  <label>$INFO[system.addontitle(Skin.String(HomeAddonButton3))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeAddonButton3)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton3))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeAddonButton3)</visible>
+							</item>
+						</content>
+					</control>
+				</control> 
+	</control>
+				</include>
+			      </includes>
