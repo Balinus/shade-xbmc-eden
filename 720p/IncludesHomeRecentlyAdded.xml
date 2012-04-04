@@ -1289,7 +1289,7 @@
 					      <label>Featured</label>
 					      <align>center</align>
 					      <aligny>center</aligny>
-					      <font>Shade_35_UltraThin</font>
+					      <font>Shade_30_UltraThin</font>
 					      <textcolor>white</textcolor>
 					      <shadowcolor>black</shadowcolor>
 				      </control>
@@ -1526,7 +1526,7 @@
 							<label>Recently Added</label>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>Shade_35_UltraThin</font>
+							<font>Shade_30_UltraThin</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 						</control>
@@ -2173,7 +2173,7 @@
 					      <label>Featured</label>
 					      <align>center</align>
 					      <aligny>center</aligny>
-					      <font>Shade_35_UltraThin</font>
+					      <font>Shade_30_UltraThin</font>
 					      <textcolor>white</textcolor>
 					      <shadowcolor>black</shadowcolor>
 				      </control>
@@ -2447,7 +2447,7 @@
 							<label>Recently Added</label>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>Shade_35_UltraThin</font>
+							<font>Shade_30_UltraThin</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 						</control>
