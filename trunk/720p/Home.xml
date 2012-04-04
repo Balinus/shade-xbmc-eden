@@ -981,6 +981,7 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8012)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -1004,6 +1005,7 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8012)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -1032,6 +1034,7 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8012)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -1058,6 +1061,7 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8012)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -1490,8 +1494,7 @@
 		</control>
 
 		<include condition="Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
-		<include condition="Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3)">HomeProgramsAddonsList</include>
-		<include condition="Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3)">HomeProgramsAddonsList</include>
+
 
 		<control type="button" id="8999">
 			<description>Run Recently added</description>
