@@ -2489,8 +2489,7 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
-							<label> - $LOCALIZE[31121]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1)][/COLOR]</label2>
+							<label> - $LOCALIZE[31121]</label>						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeScriptButton1))][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
@@ -2542,7 +2541,7 @@
 							<height>40</height>
 							<font>Shade_20</font>
 							<label> - $LOCALIZE[31121]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeScriptButton2))][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
@@ -2592,8 +2591,7 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
-							<label> - $LOCALIZE[31121]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3)][/COLOR]</label2>
+							<label> - $LOCALIZE[31121]</label>						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeScriptButton3))][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>

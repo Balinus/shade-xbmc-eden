@@ -899,6 +899,8 @@
 				</control>
 			</control>
 		</control>
+		
+		
 		<control type="fixedlist" id="9000">		  
 			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
 			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
@@ -1488,6 +1490,7 @@
 		</control>
 
 		<include condition="Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
+		<include condition="Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3)">HomeProgramsAddonsList</include>
 
 		<control type="button" id="8999">
 			<description>Run Recently added</description>
