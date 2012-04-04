@@ -3023,7 +3023,7 @@
 								<width>200</width>
 								<height>200</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="image">
 								<posx>50</posx>
@@ -3054,7 +3054,7 @@
 								<width>200</width>
 								<height>200</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
 								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
@@ -3069,28 +3069,25 @@
 						</focusedlayout>
 						<content>
 							<item id="1">
-								<label>$INFO[Skin.String(HomeScriptButton1_label)]</label>
-								<label2>-</label2>
-								<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton1_Path)])</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Skin.String(HomeScriptButton1_Image)]</thumb>
-								<visible>Skin.HasSetting(HomeScriptButton1)</visible>
+							  <label>$INFO[system.addontitle(Skin.String(HomeScriptButton1))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeScriptButton1)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton1))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeScriptButton1)</visible>
 							</item>
 							<item id="2">
-								<label>$INFO[Skin.String(HomeScriptButton2_label)]</label>
-								<label2>-</label2>
-								<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton2_Path)])</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Skin.String(HomeScriptButton2_Image)]</thumb>
-								<visible>Skin.HasSetting(HomeScriptButton2)</visible>
+							    <label>$INFO[system.addontitle(Skin.String(HomeScriptButton2))]</label>
+							    <onclick>RunAddon($INFO[Skin.String(HomeScriptButton2)])</onclick>
+							    <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton2))]</icon>
+							    <thumb>-</thumb>
+							    <visible>Skin.HasSetting(HomeScriptButton2)</visible>
 							</item>
 							<item id="3">
-								<label>$INFO[Skin.String(HomeScriptButton3_label)]</label>
-								<label2>-</label2>
-								<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton3_Path)])</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Skin.String(HomeScriptButton3_Image)]</thumb>
-								<visible>Skin.HasSetting(HomeScriptButton3)</visible>
+							  <label>$INFO[system.addontitle(Skin.String(HomeScriptButton3))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeScriptButton3)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton3))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeScriptButton3)</visible>
 							</item>
 						</content>
 					</control>
@@ -3135,7 +3132,7 @@
 								<width>200</width>
 								<height>200</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="image">
 								<posx>50</posx>
@@ -3166,7 +3163,7 @@
 								<width>200</width>
 								<height>200</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+								<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Icon]</texture>
 								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
@@ -3181,28 +3178,25 @@
 						</focusedlayout>
 						<content>
 							<item id="1">
-								<label>$INFO[Skin.String(HomeAddonButton1_label)]</label>
-								<label2>-</label2>
-								<onclick>$INFO[Skin.String(VideoButtonPath_1)]</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Skin.String(HomeAddonButton1_Image)]</thumb>
-								<visible>Skin.HasSetting(HomeAddonButton1)</visible>
+							  <label>$INFO[system.addontitle(Skin.String(HomeAddonButton1))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeAddonButton1)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton1))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeAddonButton1)</visible>
 							</item>
 							<item id="2">
-								<label>$INFO[Skin.String(HomeAddonButton2_label)]</label>
-								<label2>-</label2>
-								<onclick>$INFO[Skin.String(VideoButtonPath_2)]</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Skin.String(HomeAddonButton2_Image)]</thumb>
-								<visible>Skin.HasSetting(HomeAddonButton2)</visible>
+							    <label>$INFO[system.addontitle(Skin.String(HomeAddonButton2))]</label>
+							    <onclick>RunAddon($INFO[Skin.String(HomeAddonButton2)])</onclick>
+							    <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton2))]</icon>
+							    <thumb>-</thumb>
+							    <visible>Skin.HasSetting(HomeAddonButton2)</visible>
 							</item>
 							<item id="3">
-								<label>$INFO[Skin.String(HomeAddonButton3_label)]</label>
-								<label2>-</label2>
-								<onclick>$INFO[Skin.String(VideoButtonPath_3)]</onclick>
-								<icon>-</icon>
-								<thumb>$INFO[Skin.String(HomeAddonButton3_Image)]</thumb>
-								<visible>Skin.HasSetting(HomeAddonButton3)</visible>
+							  <label>$INFO[system.addontitle(Skin.String(HomeAddonButton3))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeAddonButton3)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton3))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeAddonButton3)</visible>
 							</item>
 						</content>
 					</control>

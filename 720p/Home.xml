@@ -15,7 +15,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true" fallback="special://skin/backgrounds/videos2.jpg">$INFO[Container(9000).ListItem.Thumb]</imagepath>
+			<imagepath background="true" fallback="special://skin/backgrounds/videos.jpg">$INFO[Container(9000).ListItem.Thumb]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>800</fadetime>
