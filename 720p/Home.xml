@@ -422,7 +422,7 @@
 			<texture>shade/vignette2.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<colordiffuse>FFFFFFFF</colordiffuse>
-<!-- 			<visible>!Skin.HasSetting(homepageHideRecentlyAdded)</visible> -->
+			<visible>!Container(9000).HasFocus(6)</visible>
 		</control>	
 		<!--<control type="image">
 			<posx>0</posx>
