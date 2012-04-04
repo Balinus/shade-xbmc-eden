@@ -13,6 +13,7 @@
 	<include file="IncludeAnims.xml" />
 	<include file="custom_HomeDialogPopup_1115.xml" />
 	<include file="Includes_InfosHome.xml"/>
+	<include file="Include_ProgramAddonList.xml" />
 
 
 	<constant name="FanartCrossfadeTime">500</constant>
