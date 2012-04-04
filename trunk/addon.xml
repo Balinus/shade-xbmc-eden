@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.Shade_work" 
+<addon id="skin.shade.eden.svn"
 version="2.4.0"
-name="Shade-Eden-dev"
+name="Shade-Eden"
 provider-name="igotdvds and Balinus">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
