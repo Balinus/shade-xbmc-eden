@@ -1268,6 +1268,16 @@
 			<control type="group">
 					<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 					<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+					<!--<control type="image">
+					      <posx>0</posx>
+					      <posy>0</posy>
+					      <width>1280</width>
+					      <height>720</height>
+					      <texture>shade/vignette2.png</texture>
+					      <aspectratio>stretch</aspectratio>
+					      <colordiffuse>FFFFFFFF</colordiffuse>
+					      <visible>Control.HasFocus(8005) | Control.HasFocus(8006)</visible>
+					</control>-->
 					<control type="group">
 						<posx>20</posx>
 						<posy>480</posy>
@@ -1363,6 +1373,8 @@
 -						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)+ Control.HasFocus(8005)]</visible>
 -					</control>-->
 
+
+
 				<control type="list" id="8005">
 				  <animation effect="slide" time="500" delay="800" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>				  
 					<posx>0</posx>
@@ -1376,7 +1388,7 @@
 					<viewtype label="535">list</viewtype>
 					<orientation>horizontal</orientation>
 					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
+					<scrolltime>200</scrolltime>		
 					<itemlayout height="240" width="120">
 							<control type="image">
 								<description>Main Icon</description>
@@ -2152,6 +2164,16 @@
 			    <control type="group">
 					<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 					<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+					<!--<control type="image">
+					      <posx>0</posx>
+					      <posy>0</posy>
+					      <width>1280</width>
+					      <height>720</height>
+					      <texture>shade/vignette2.png</texture>
+					      <aspectratio>stretch</aspectratio>
+					      <colordiffuse>FFFFFFFF</colordiffuse>
+					      <visible>Control.HasFocus(8007) | Control.HasFocus(8008) | Control.HasFocus(8009) | Control.HasFocus(8010)</visible>
+					</control>-->
 					<control type="group">
 						<posx>20</posx>
 						<posy>520</posy>
@@ -2295,6 +2317,18 @@
 								<textcolor>white</textcolor>
 <!-- 								<visible>Control.HasFocus(8007)</visible> -->
 							</control>
+							<control type="label">
+								<description>Title label</description>
+								<posx>112</posx>
+								<posy>100</posy>
+								<height>20</height>
+								<width>208</width>
+								<label>$INFO[ListItem.label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>Shade_16</font>
+								<textcolor>white</textcolor>
+							</control>
 						</itemlayout>
 						<focusedlayout height="24" width="260">
 							<!--<control type="image">
@@ -2366,6 +2400,27 @@
 								<textcolor>white</textcolor>
 <!-- 								<visible>Control.HasFocus(8007)</visible> -->
 							</control>
+							<control type="image">
+								<posx>4</posx>
+								<posy>103</posy>
+								<width>214</width>
+								<height>18</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>shade/black-back.png</texture>
+								<visible>Control.HasFocus(8007)</visible>
+							</control>
+							<control type="label">
+								<description>Title label</description>
+								<posx>112</posx>
+								<posy>100</posy>
+								<height>20</height>
+								<width>208</width>
+								<label>$INFO[ListItem.label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>Shade_16</font>
+								<textcolor>white</textcolor>
+							</control>
 							<!--<control type="image">
 								<posx>4</posx>
 								<posy>4</posy>
@@ -2389,36 +2444,36 @@
 										
 					<content>
 						<item id="1">
-							<label>-</label>
-							<label2>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeNumber)][/COLOR]</label2>
+							<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeNumber)][/COLOR]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.1.Path)])</onclick>
 							<icon>$INFO[Window.Property(RandomEpisode.1.Thumb)]</icon>
 <!-- 							<thumb>$INFO[Window.Property(RandomEpisode.1.Fanart)]</thumb>				 -->
 						</item>
 						<item id="2">
-							<label>-</label>
-							<label2>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.2.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.2.EpisodeNumber)][/COLOR]</label2>
+							<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.2.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.2.EpisodeNumber)][/COLOR]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.2.Path)])</onclick>
 							<icon>$INFO[Window.Property(RandomEpisode.2.Thumb)]</icon>
 <!-- 							<thumb>$INFO[Window.Property(RandomEpisode.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="3">
-							<label>-</label>
-							<label2>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.3.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.3.EpisodeNumber)][/COLOR]</label2>
+							<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.3.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.3.EpisodeNumber)][/COLOR]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.3.Path)])</onclick>
 							<icon>$INFO[Window.Property(RandomEpisode.3.Thumb)]</icon>
 <!-- 							<thumb>$INFO[Window.Property(RandomEpisode.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="4">
-							<label>-</label>
-							<label2>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.4.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.4.EpisodeNumber)][/COLOR]</label2>
+							<label>$INFO[Window.Property(RandomEpisode.4.ShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.4.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.4.EpisodeNumber)][/COLOR]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.4.Path)])</onclick>
 							<icon>$INFO[Window.Property(RandomEpisode.4.Thumb)]</icon>
 <!-- 							<thumb>$INFO[Window.Property(RandomEpisode.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="5">
-							<label>-</label>
-							<label2>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.5.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.5.EpisodeNumber)][/COLOR]</label2>
+							<label>$INFO[Window.Property(RandomEpisode.5.ShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.5.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.5.EpisodeNumber)][/COLOR]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.5.Path)])</onclick>
 							<icon>$INFO[Window.Property(RandomEpisode.5.Thumb)]</icon>			
 						</item>
@@ -2567,7 +2622,18 @@
 								<aligny>center</aligny>
 								<font>Shade_16</font>
 								<textcolor>white</textcolor>
-<!-- 								<visible>Control.HasFocus(8007)</visible> -->
+							</control>							
+							<control type="label">
+								<description>Title label</description>
+								<posx>112</posx>
+								<posy>100</posy>
+								<height>20</height>
+								<width>208</width>
+								<label>$INFO[ListItem.label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>Shade_16</font>
+								<textcolor>white</textcolor>
 							</control>
 						</itemlayout>
 						<focusedlayout height="24" width="260">
@@ -2638,7 +2704,27 @@
 								<aligny>center</aligny>
 								<font>Shade_16</font>
 								<textcolor>white</textcolor>
-<!-- 								<visible>Control.HasFocus(8007)</visible> -->
+							</control>
+							<control type="image">
+								<posx>4</posx>
+								<posy>103</posy>
+								<width>214</width>
+								<height>18</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>shade/black-back.png</texture>
+								<visible>Control.HasFocus(8008)</visible>
+							</control>
+							<control type="label">
+								<description>Title label</description>
+								<posx>112</posx>
+								<posy>100</posy>
+								<height>20</height>
+								<width>208</width>
+								<label>$INFO[ListItem.label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>Shade_16</font>
+								<textcolor>white</textcolor>
 							</control>
 							<!--<control type="image">
 								<posx>4</posx>
@@ -2662,37 +2748,37 @@
 						</focusedlayout>
 						<content>
 							<item id="1">
-								<label>$INFO[Window.Property(LatestEpisode.1.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
+								<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
+								<label2>S[COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.1.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.1.Fanart)]</thumb>
 <!-- 								<visible>Skin.HasSetting(UseLatestItems)</visible> -->
 							</item>
 							<item id="2">
-								<label>$INFO[Window.Property(LatestEpisode.2.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeNumber)][/COLOR]</label2>
+								<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
+								<label2>S[COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.2.Fanart)]</thumb>
 							</item>
 							<item id="3">
-								<label>$INFO[Window.Property(LatestEpisode.3.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeNumber)][/COLOR]</label2>
+								<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
+								<label2>S[COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.3.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.3.Fanart)]</thumb>
 							</item>
 							<item id="4">
-								<label>$INFO[Window.Property(LatestEpisode.4.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeNumber)][/COLOR]</label2>
+								<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label>
+								<label2>S[COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.4.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.4.Fanart)]</thumb>
 							</item>
 							<item id="5">
-								<label>$INFO[Window.Property(LatestEpisode.5.Title)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeNumber)][/COLOR]</label2>
+								<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label>
+								<label2>S[COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.5.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.5.RunningTime)]</thumb>
@@ -2710,12 +2796,14 @@
 
 
 			  <control type="group">
+			    
 				<posx>10</posx>
 				<posy>450</posy>
 				<visible>Library.HasContent(Music)</visible>
 				<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
 				<include>VisibleFadeEffect</include>
 				<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation>
+				
 				<control type="label">
 					<description>Title label</description>
 					<posx>30</posx>
