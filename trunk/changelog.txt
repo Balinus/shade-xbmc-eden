@@ -1,3 +1,4 @@
+04/04/12: Balinus : ver2.4.0, New home screen, new backgrounds
 16/03/12 : Balinus : added new episodes view, media codec on seekbar, new color for star ratings
 14/03/12 : Balinus : error fixes
 11/03/12 : Balinus : Added new TV view, bug fixes

@@ -1015,7 +1015,7 @@
 							<item id="4">
 								<label>0</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/programs.jpg</icon>
+								<icon>special://skin/backgrounds/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 							</item>
 							<item id="5">
@@ -1027,7 +1027,7 @@
 							<item id="6">
 								<label>Addons</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/addons.jpg</icon>
+								<icon>special://skin/backgrounds/scripts.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 							</item>
 							<item id="7">
@@ -1039,7 +1039,7 @@
 							<item id="12">
 								<label>Home</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/home.jpg</icon>
+								<icon>special://skin/backgrounds/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
 							</item>
 							<item id="13">
