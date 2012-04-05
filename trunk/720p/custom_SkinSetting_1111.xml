@@ -1,6 +1,8 @@
 <window id="1111">
 	<defaultcontrol always="true">9000</defaultcontrol>
+	
 	<controls>
+	  
 		<include>CommonSettingsBackground</include>
 		<include>CommonMediaPlayingBackground</include>
 		<control type="group">
@@ -57,6 +59,15 @@
 				<textcolor>white</textcolor>
 			</control>
 			<control type="list" id="9000">
+				<control type="image">
+				      <posx>0</posx>
+				      <posy>0</posy>
+				      <width>1280</width>
+				      <height>720</height>
+				      <texture>shade/vignette2.png</texture>
+				      <aspectratio>stretch</aspectratio>
+				      <colordiffuse>FFFFFFFF</colordiffuse>
+				</control>
 				<posx>220</posx>
 				<posy>-67</posy>
 				<width>900</width>
