@@ -3484,7 +3484,7 @@
 						<onleft>8011</onleft>
 						<onright>8011</onright>
 						<onup>9000</onup>
-						<ondown>9000</ondown>
+						<ondown>-</ondown>
 						<orientation>horizontal</orientation>
 						<viewtype label="535">list</viewtype>
 						<pagecontrol>-</pagecontrol>
