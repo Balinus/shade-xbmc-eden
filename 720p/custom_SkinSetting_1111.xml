@@ -695,7 +695,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="219">
 						<description>Hide Videos Button</description>
 						<posx>0</posx>
 						<posy>0</posy>

@@ -1,5 +1,8 @@
 <window id="0"> 
-	<defaultcontrol always="true">8999</defaultcontrol>
+      <onload>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True)</onload>
+      <onload>XBMC.RunScript(script.tv.show.next.aired,silent=true&amp;alarm=99)</onload>
+<!--       <onload>XBMC.RunScript(script.recentlyadded,limit=10&amp;totals=True&amp;albums=True&amp;unplayed=True)</onload> -->
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 		<animation type="WindowOpen" reversible="false">
@@ -1490,36 +1493,7 @@
 		</control>
 
 		<include condition="Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
-
-
-		<control type="button" id="8999">
-			<description>Run Recently added</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<label>-</label>
-			<font>-</font>
-			<onfocus>XBMC.RunScript(script.recentlyadded,limit=10&amp;totals=True&amp;albums=True&amp;unplayed=True)</onfocus>
-			<onfocus>SetFocus(9000)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="button" id="8999">
-			<description>Don't run Recently added</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<label>-</label>
-			<font>-</font>
-			<onfocus>SetFocus(9000)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-
+	
 		<control type="group">
 			<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)] | [Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)] | [Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>		

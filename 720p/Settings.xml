@@ -52,15 +52,7 @@
 				<texture/>
 			</control>
 			<control type="list" id="9000">
-				 <control type="image">
-				      <posx>0</posx>
-				      <posy>0</posy>
-				      <width>1280</width>
-				      <height>720</height>
-				      <texture>shade/vignette2.png</texture>
-				      <aspectratio>stretch</aspectratio>
-				      <colordiffuse>FFFFFFFF</colordiffuse>
-				</control>
+				 
 				<posx>10</posx>
 				<posy>-2</posy>
 				<width>260</width>
