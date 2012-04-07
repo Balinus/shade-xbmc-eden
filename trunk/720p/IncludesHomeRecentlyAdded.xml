@@ -3488,8 +3488,8 @@
 						<orientation>horizontal</orientation>
 						<viewtype label="535">list</viewtype>
 						<pagecontrol>-</pagecontrol>
-						<scrolltime>0</scrolltime>
-						<visible>Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3)</visible>
+						<scrolltime>300</scrolltime>
+						<visible>Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3) | Skin.HasSetting(HomeScriptButton4) | Skin.HasSetting(HomeScriptButton5)</visible>
 						<itemlayout height="150" width="465">
 							<!--<control type="label">
 								<posx>150</posx>
@@ -3577,7 +3577,38 @@
 							  <thumb>-</thumb>
 							  <visible>Skin.HasSetting(HomeScriptButton3)</visible>
 							</item>
+							<item id="4">
+							  <label>$INFO[system.addontitle(Skin.String(HomeScriptButton4))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeScriptButton4)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton4))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeScriptButton4)</visible>
+							</item>
+							<item id="5">
+							  <label>$INFO[system.addontitle(Skin.String(HomeScriptButton5))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeScriptButton5)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeScriptButton5))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeScriptButton5)</visible>
+							</item>
 						</content>
+					</control><control type="image">
+						<posx>10</posx>
+						<posy>215</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture background="true">shade/left_arrow.png</texture> 
+						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+						<visible>Container(8011).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>215</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture background="true" flipx="true">shade/left_arrow.png</texture> 
+						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+						<visible>Container(8011).HasNext</visible>
 					</control>
 				</control>
 
@@ -3598,8 +3629,8 @@
 						<orientation>horizontal</orientation>
 						<viewtype label="535">list</viewtype>
 						<pagecontrol>-</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<!--<visible>Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3)</visible>-->
+						<scrolltime>300</scrolltime>
+						<visible>Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3) | Skin.HasSetting(HomeAddonButton4) | Skin.HasSetting(HomeAddonButton5)</visible>
 						<itemlayout height="150" width="465">
 							<!--<control type="label">
 								<posx>150</posx>
@@ -3689,7 +3720,40 @@
 							  <thumb>-</thumb>
 							  <visible>Skin.HasSetting(HomeAddonButton3)</visible>
 							</item>
+							<item id="4">
+							  <label>$INFO[system.addontitle(Skin.String(HomeAddonButton4))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeAddonButton4)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton4))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeAddonButton4)</visible>
+							</item>
+							<item id="5">
+							  <label>$INFO[system.addontitle(Skin.String(HomeAddonButton5))]</label>
+							  <onclick>RunAddon($INFO[Skin.String(HomeAddonButton5)])</onclick>
+							  <icon>$INFO[system.addonicon(Skin.String(HomeAddonButton5))]</icon>
+							  <thumb>-</thumb>
+							  <visible>Skin.HasSetting(HomeAddonButton5)</visible>
+							</item>
 						</content>
+						
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>215</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture background="true">shade/left_arrow.png</texture> 
+						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+						<visible>Container(8012).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>1210</posx>
+						<posy>215</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture background="true" flipx="true">shade/left_arrow.png</texture> 
+						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+						<visible>Container(8012).HasNext</visible>
 					</control>
 				</control> 
 
