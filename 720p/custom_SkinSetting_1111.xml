@@ -2475,18 +2475,7 @@
 						<onright>9000</onright>
 						<onup>9006</onup>
 						<ondown>9006</ondown>
-						<!--<control type="radiobutton" id="601">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20_Bold_title</font>
-							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeScriptButton1))][/COLOR]</label2>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeScriptButton1,xbmc.addon.executable)</onclick>
-						</control>-->
+						
 						<control type="radiobutton" id="601">
 							<width>900</width>
 							<height>40</height>
@@ -2499,20 +2488,8 @@
 							<onclick>Skin.ToggleSetting(HomeScriptButton1)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton1)</selected>
 						</control>
-						<!--<control type="button" id="602">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31120]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_label)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetString(HomeScriptButton1_label)</onclick>
-							<visible>Skin.HasSetting(HomeScriptButton1)</visible>
-						</control>-->
-						<control type="button" id="603">
+						
+						<control type="button" id="602">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2524,21 +2501,7 @@
 							<onclick>Skin.SetAddon(HomeScriptButton1,xbmc.addon.executable)</onclick>
 							<visible>Skin.HasSetting(HomeScriptButton1)</visible>
 						</control>
-						<!--<control type="button" id="604">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31131]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_Image)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeScriptButton1,xbmc.addon.executable)</onclick>
-<!-- 							<onclick>Skin.SetImage(HomeScriptButton1_Image)</onclick> -->
-							<!--<visible>Skin.HasSetting(HomeScriptButton1)</visible>
-						</control>-->-->
-						<control type="radiobutton" id="605">
+						<control type="radiobutton" id="603">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20_Bold_title</font>
@@ -2549,21 +2512,8 @@
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton2)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton2)</selected>
-						</control>
-						<!--<control type="button" id="606">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31120]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_label)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetString(HomeScriptButton2_label)</onclick>
-							<visible>Skin.HasSetting(HomeScriptButton2)</visible>
-						</control>-->
-						<control type="button" id="607">
+						</control>						
+						<control type="button" id="604">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2576,20 +2526,8 @@
 							<onclick>Skin.SetAddon(HomeScriptButton2,xbmc.addon.executable)</onclick>
 							<visible>Skin.HasSetting(HomeScriptButton2)</visible>
 						</control>
-						<!--<control type="button" id="608">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31131]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_Image)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeScriptButton2,xbmc.addon.executable)</onclick>
-							<visible>Skin.HasSetting(HomeScriptButton2)</visible>
-						</control>-->
-						<control type="radiobutton" id="609">
+						
+						<control type="radiobutton" id="605">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20_Bold_title</font>
@@ -2600,21 +2538,8 @@
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton3)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton3)</selected>
-						</control>
-						<!--<control type="button" id="610">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31120]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_label)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetString(HomeScriptButton3_label)</onclick>
-							<visible>Skin.HasSetting(HomeScriptButton3)</visible>
-						</control>-->
-						<control type="button" id="611">
+						</control>						
+						<control type="button" id="606">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2626,19 +2551,55 @@
 							<onclick>Skin.SetAddon(HomeScriptButton3,xbmc.addon.executable)</onclick>
 							<visible>Skin.HasSetting(HomeScriptButton3)</visible>
 						</control>
-						<!--<control type="button" id="612">
+						<control type="radiobutton" id="607">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31119] [B]4[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeScriptButton4)</onclick>
+							<selected>Skin.HasSetting(HomeScriptButton4)</selected>
+						</control>						
+						<control type="button" id="608">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
-							<label> - $LOCALIZE[31131]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_Image)][/COLOR]</label2>
+							<label> - $LOCALIZE[31121]</label>						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeScriptButton4))][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeScriptButton2,xbmc.addon.executable)</onclick>
-							<visible>Skin.HasSetting(HomeScriptButton3)</visible>
-						</control>-->
+							<onclick>Skin.SetAddon(HomeScriptButton4,xbmc.addon.executable)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton4)</visible>
+						</control>
+						<control type="radiobutton" id="609">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31119] [B]5[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeScriptButton5)</onclick>
+							<selected>Skin.HasSetting(HomeScriptButton5)</selected>
+						</control>						
+						<control type="button" id="610">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<label> - $LOCALIZE[31121]</label>						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeScriptButton5))][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(HomeScriptButton5,xbmc.addon.executable)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton5)</visible>
+						</control>
+						
 					</control>
 				</control>
 				<control type="group">
@@ -2666,20 +2627,8 @@
 							<onclick>Skin.ToggleSetting(HomeAddonButton1)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton1)</selected>
 						</control>
-						<!--<control type="button" id="702">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31120]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton1_label)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetString(HomeAddonButton1_label)</onclick>
-							<visible>Skin.HasSetting(HomeAddonButton1)</visible>
-						</control>-->
-						<control type="button" id="703">
+						
+						<control type="button" id="702">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2693,20 +2642,8 @@
 							<!--<onclick>Skin.SetString(VideoButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_3)]))</onclick>-->
 							<visible>Skin.HasSetting(HomeAddonButton1)</visible>
 						</control>
-						<!--<control type="button" id="704">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31131]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton1_Image)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetImage(HomeAddonButton1_Image)</onclick>
-							<visible>Skin.HasSetting(HomeAddonButton1)</visible>
-						</control>-->
-						<control type="radiobutton" id="705">
+						
+						<control type="radiobutton" id="703">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20_Bold_title</font>
@@ -2718,20 +2655,8 @@
 							<onclick>Skin.ToggleSetting(HomeAddonButton2)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton2)</selected>
 						</control>
-						<!--<control type="button" id="706">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31120]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton2_label)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetString(HomeAddonButton2_label)</onclick>
-							<visible>Skin.HasSetting(HomeAddonButton2)</visible>
-						</control>-->
-						<control type="button" id="707">
+						
+						<control type="button" id="704">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2745,20 +2670,8 @@
 							<!--<onclick>Skin.SetString(VideoButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_3)]))</onclick>-->
 							<visible>Skin.HasSetting(HomeAddonButton2)</visible>
 						</control>
-						<!--<control type="button" id="708">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31131]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton2_Image)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetImage(HomeAddonButton2_Image)</onclick>
-							<visible>Skin.HasSetting(HomeAddonButton2)</visible>
-						</control>-->
-						<control type="radiobutton" id="709">
+						
+						<control type="radiobutton" id="705">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20_Bold_title</font>
@@ -2770,20 +2683,8 @@
 							<onclick>Skin.ToggleSetting(HomeAddonButton3)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton3)</selected>
 						</control>
-						<!--<control type="button" id="710">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20</font>
-							<label> - $LOCALIZE[31120]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton3_label)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetString(HomeAddonButton3_label)</onclick>
-							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
-						</control>-->
-						<control type="button" id="711">
+						
+						<control type="button" id="706">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2797,19 +2698,61 @@
 							<!--<onclick>Skin.SetString(VideoButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_3)]))</onclick>-->
 							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
 						</control>
-						<!--<control type="button" id="712">
+						
+						<control type="radiobutton" id="707">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31132] [B]4[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeAddonButton4)</onclick>
+							<selected>Skin.HasSetting(HomeAddonButton4)</selected>
+						</control>
+						<control type="button" id="708">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
-							<label> - $LOCALIZE[31131]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton3_Image)][/COLOR]</label2>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeAddonButton4))][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetImage(HomeAddonButton3_Image)</onclick>
-							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
-						</control>-->
+							<onclick>Skin.SetAddon(HomeAddonButton4,xbmc.addon.video)</onclick>
+							<!--<onclick>Skin.SetString(VideoButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_3)]))</onclick>-->
+							<visible>Skin.HasSetting(HomeAddonButton4)</visible>
+						</control>
+						
+						<control type="radiobutton" id="709">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31132] [B]5[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeAddonButton5)</onclick>
+							<selected>Skin.HasSetting(HomeAddonButton5)</selected>
+						</control>
+						<control type="button" id="710">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeAddonButton5))][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(HomeAddonButton5,xbmc.addon.video)</onclick>
+							<!--<onclick>Skin.SetString(VideoButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_3)]))</onclick>-->
+							<visible>Skin.HasSetting(HomeAddonButton5)</visible>
+						</control>
+						
 						<control type="radiobutton" id="713">
 							<posx>0</posx>
 							<posy>0</posy>

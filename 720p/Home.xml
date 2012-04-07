@@ -717,7 +717,7 @@
 						<visible>False</visible>
 					</control>
 				</control>
-				<control type="grouplist" id="9015">
+				<!--<control type="grouplist" id="9015">
 					<posx>0</posx>
 					<posy>-165</posy>
 					<width>1280</width>
@@ -728,8 +728,8 @@
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>Container(9000).HasFocus(9) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-					<control type="button" id="90151">
+					<visible>Container(9000).HasFocus(9) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>-->
+					<!--<control type="button" id="90151">
 						<description>Button1</description>
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<label>$INFO[Skin.String(HomeScriptButton1_label)]</label>
@@ -776,8 +776,8 @@
 						<onclick>Setfocus(9000)</onclick>
 						<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton6_Path)])</onclick>
 						<visible>Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))</visible>
-					</control>
-				</control>
+					</control>-->
+<!-- 				</control> -->
 				<control type="grouplist" id="9016">
 					<posx>0</posx>
 					<posy>-165</posy>
