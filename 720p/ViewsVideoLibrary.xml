@@ -10797,7 +10797,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
 				<focusposition>3</focusposition>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Movies)]</visible>
 				<itemlayout height="400" width="190">
@@ -11278,7 +11278,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>400</scrolltime>
 				<focusposition>3</focusposition>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
 <!-- 				<visible>Skin.HasSetting(EnableWeloView)</visible> -->
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Movies)]</visible>
