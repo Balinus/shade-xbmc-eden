@@ -11158,7 +11158,7 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>shade/vignette2.png</texture>
+				<texture>shade/vignette3.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -11276,7 +11276,7 @@
 				<ondown>540</ondown>
 				<viewtype label="Welo View">list</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>400</scrolltime>
+				<scrolltime>300</scrolltime>
 				<focusposition>3</focusposition>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
