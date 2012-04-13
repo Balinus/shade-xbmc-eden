@@ -1074,14 +1074,14 @@
 						</content>
 					</control>
 					<control type="image">
-						<posx>180</posx>
+						<posx>90</posx>
 						<posy>100</posy>
-						<width>580</width>
+						<width>760</width>
 						<height>435</height>
 						<texture>black-back.png</texture>
 					</control>
 					<control type="group">
-						<posx>190</posx>
+						<posx>100</posx>
 						<posy>110</posy>
 						<control type="group">
 							<visible>Container(9003).HasFocus(1)</visible>
@@ -1099,7 +1099,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Video_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1138,6 +1138,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Video_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Video_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1159,7 +1178,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Music_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1198,6 +1217,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Music_Folder,special://profile/Thumbnails/Music/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1219,7 +1257,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1258,6 +1296,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Pictures_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1279,7 +1336,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1318,6 +1375,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Programs_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1339,7 +1415,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Weather_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1378,6 +1454,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Weather_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Weather_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1399,7 +1494,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Addons_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1438,6 +1533,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Addons_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Addons_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1459,7 +1573,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1498,6 +1612,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Settings_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1519,7 +1652,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Movies_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1558,6 +1691,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Movies_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1579,7 +1731,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_TVShow_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1618,6 +1770,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_TVShow_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_TVShow_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1639,7 +1810,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Home_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1678,6 +1849,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Home_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1699,7 +1889,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1738,6 +1928,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Settings_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1759,7 +1968,7 @@
 								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Shutdown_Folder)</onclick>
-								<onleft>302</onleft>
+								<onleft>303</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1798,6 +2007,25 @@
 								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 								<onclick>Skin.Reset(Home_Custom_Back_Shutdown_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_Shutdown_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
