@@ -429,7 +429,7 @@
 			<texture>shade/vignette3.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<colordiffuse>FFFFFFFF</colordiffuse>
-			<visible>!Container(9000).HasFocus(11)</visible>
+			<visible>!Container(9000).HasFocus(12)</visible>
 		</control>	
 		
 
@@ -578,7 +578,7 @@
 						<visible>!Skin.HasSetting(SubMenuNoMusicPluginsButton)</visible>
 					</control>
 				</control>
-				<!--<control type="grouplist" id="9012">
+				<control type="grouplist" id="9012">
 					<posx>0</posx>
 					<posy>-165</posy>
 					<width>1280</width>
@@ -589,7 +589,7 @@
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>Container(9000).HasFocus(9)</visible>
+					<visible>Container(9000).HasFocus(11)</visible>
 					<control type="button" id="90121">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
@@ -602,7 +602,7 @@
 						<label>208</label>
 						<onclick>PlayDVD()</onclick>
 					</control>
-				</control>-->
+				</control>
 				<control type="grouplist" id="9013">
 					<posx>0</posx>
 					<posy>-165</posy>
@@ -614,7 +614,7 @@
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>Container(9000).HasFocus(11)</visible>
+					<visible>Container(9000).HasFocus(12)</visible>
 					<control type="button" id="90131">
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
@@ -1147,7 +1147,14 @@
 					<onclick>ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoSettingsButton)</visible>
 				</item>
+				
 				<item id="11">
+					<description>Play Disc</description>
+					<label>$LOCALIZE[341]</label>
+					<icon>homeicons/playdiscicon.png</icon>
+					<onclick>PlayDVD</onclick>
+				</item>
+				<item id="12">
 					<description>Shutdown</description>
 					<label>$LOCALIZE[13005]</label>
 					<icon>homeicons/shutdown-full.png</icon>
@@ -1155,12 +1162,6 @@
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoShutdownButton)</visible>
 				</item>
-				<!--<item id="11">
-					<description>Play Disc</description>
-					<label>$LOCALIZE[341]</label>
-					<icon>homeicons/playdiscicon.png</icon>
-					<onclick>PlayDVD</onclick>
-				</item>-->
 			</content>
 		</control>
 <!-- 	      </control> -->
@@ -1485,10 +1486,21 @@
 				<width>350</width>
 				<font>Shade_70_UltraThin</font>
 				<align>left</align>
-				<label>Shutdown</label>
+				<label>Play Disc</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container(9000).Hasfocus(11)</visible>
+			</control>
+			<control type="label">
+				<posx>20</posx>
+				<posy>190</posy>
+				<width>350</width>
+				<font>Shade_70_UltraThin</font>
+				<align>left</align>
+				<label>Shutdown</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Container(9000).Hasfocus(12)</visible>
 			</control>
 		</control>
 
