@@ -370,9 +370,9 @@
 					<control type="radiobutton" id="216">
 						<description>Toggle Info</description>
 						<include>ButtonMediaSubCommonValues</include>
-						<label>No Discs</label>
+						<label>Use Discs</label>
 						<onclick>Skin.ToggleSetting(TurnOffDiscs)</onclick>
-						<selected>Skin.HasSetting(TurnOffDiscs)</selected>
+						<selected>!Skin.HasSetting(TurnOffDiscs)</selected>
 						<visible>Control.IsVisible(539)</visible>
 					</control>
 					<control type="radiobutton" id="218">
@@ -418,9 +418,9 @@
 					<control type="radiobutton" id="223">
 						<description>Toggle Info</description>
 						<include>ButtonMediaSubCommonValues</include>
-						<label>No Discs</label>
+						<label>Use Discs</label>
 						<onclick>Skin.ToggleSetting(TurnOffDiscsWelo)</onclick>
-						<selected>Skin.HasSetting(TurnOffDiscsWelo)</selected>
+						<selected>!Skin.HasSetting(TurnOffDiscsWelo)</selected>
 						<visible>Control.IsVisible(540)</visible>
 					</control>
 					<control type="radiobutton" id="224">
