@@ -58,6 +58,17 @@
 			<fadetime>800</fadetime>
 			<visible>Container(9000).HasFocus(10)+!Control.HasFocus(8005)+!Control.HasFocus(8006) + !Control.HasFocus(8007) +!Control.HasFocus(8008)</visible>
 		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/shutdown.jpg">$INFO[Container(9000).ListItem.Thumb]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>800</fadetime>
+			<visible>Container(9000).HasFocus(12)+!Control.HasFocus(8005)+!Control.HasFocus(8006) + !Control.HasFocus(8007) +!Control.HasFocus(8008)</visible>
+		</control>
 		<control type="image">
 			<description>Main Icon</description>
 			<posx>0</posx>
