@@ -45,7 +45,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>							
 							<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -65,7 +65,7 @@
 							<font>Shade_20</font>
 							<textcolor>grey2</textcolor>
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
-						</control>	
+						</control>								
 						<control type="image">
 							<description>Rating value</description>
 							<posx>640</posx>
@@ -73,7 +73,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left) |  SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -83,7 +83,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -93,17 +93,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible> 
-							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
-						</control>
-						<control type="image">
-							<description>Rating value</description>
-							<posx>640</posx>
-							<posy>115</posy>
-							<width>108</width>
-							<height>21</height>
-							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),5.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>
 						<!--<control type="image">
@@ -120,8 +110,18 @@
 							<posy>115</posy>
 							<width>108</width>
 							<height>21</height>
+							<texture>rating2.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),3.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
+							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>640</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),2.,Left) | SubString(Window.Property(LatestMovie.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),1.,Left) | SubString(Window.Property(LatestMovie.1.Rating),2.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -131,7 +131,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left) | SubString(Window.Property(LatestMovie.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>
 					</control>
@@ -180,7 +180,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -208,7 +208,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.2.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.2.Rating),10.,Left) |  SubString(Window.Property(LatestMovie.2.Rating),9.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -218,7 +218,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.2.Rating),8.,Left) | SubString(Window.Property(LatestMovie.2.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.2.Rating),8.,Left) | SubString(Window.Property(LatestMovie.2.Rating),7.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -228,9 +228,17 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.2.Rating),6.,Left) | SubString(Window.Property(LatestMovie.2.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.2.Rating),6.,Left) | SubString(Window.Property(LatestMovie.2.Rating),5.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>
+						<!--<control type="image">
+							<description>Thumb</description>
+							<posx>740</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>225</height>
+							<texture>$INFO[Window.Property(LatestMovie.2.Thumb)]</texture>		<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
+						</control>-->
 						<control type="image">
 							<description>Rating value</description>
 							<posx>640</posx>
@@ -238,7 +246,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.2.Rating),5.,Left) | SubString(Window.Property(LatestMovie.2.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.2.Rating),3.,Left) | SubString(Window.Property(LatestMovie.2.Rating),4.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -248,7 +256,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.2.Rating),2.,Left) | SubString(Window.Property(LatestMovie.2.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.2.Rating),1.,Left) | SubString(Window.Property(LatestMovie.2.Rating),2.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -258,7 +266,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.2.Rating),0.,Left) | SubString(Window.Property(LatestMovie.2.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.2.Rating),0.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>
 					</control>
@@ -307,7 +315,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -335,7 +343,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.3.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.3.Rating),10.,Left) |  SubString(Window.Property(LatestMovie.3.Rating),9.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -345,7 +353,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.3.Rating),8.,Left) | SubString(Window.Property(LatestMovie.3.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.3.Rating),8.,Left) | SubString(Window.Property(LatestMovie.3.Rating),7.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -355,9 +363,17 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.3.Rating),6.,Left) | SubString(Window.Property(LatestMovie.3.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.3.Rating),6.,Left) | SubString(Window.Property(LatestMovie.3.Rating),5.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>
+						<!--<control type="image">
+							<description>Thumb</description>
+							<posx>740</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>225</height>
+							<texture>$INFO[Window.Property(LatestMovie.3.Thumb)]</texture>		<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
+						</control>-->
 						<control type="image">
 							<description>Rating value</description>
 							<posx>640</posx>
@@ -365,7 +381,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.3.Rating),5.,Left) | SubString(Window.Property(LatestMovie.3.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.3.Rating),3.,Left) | SubString(Window.Property(LatestMovie.3.Rating),4.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -375,7 +391,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.3.Rating),2.,Left) | SubString(Window.Property(LatestMovie.3.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.3.Rating),1.,Left) | SubString(Window.Property(LatestMovie.3.Rating),2.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -385,7 +401,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.3.Rating),0.,Left) | SubString(Window.Property(LatestMovie.3.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.3.Rating),0.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>
 					</control>
@@ -434,7 +450,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -462,7 +478,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.4.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.4.Rating),10.,Left) |  SubString(Window.Property(LatestMovie.4.Rating),9.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -472,7 +488,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.4.Rating),8.,Left) | SubString(Window.Property(LatestMovie.4.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.4.Rating),8.,Left) | SubString(Window.Property(LatestMovie.4.Rating),7.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -482,9 +498,17 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.4.Rating),6.,Left) | SubString(Window.Property(LatestMovie.4.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.4.Rating),6.,Left) | SubString(Window.Property(LatestMovie.4.Rating),5.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>
+						<!--<control type="image">
+							<description>Thumb</description>
+							<posx>740</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>225</height>
+							<texture>$INFO[Window.Property(LatestMovie.4.Thumb)]</texture>		<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
+						</control>-->
 						<control type="image">
 							<description>Rating value</description>
 							<posx>640</posx>
@@ -492,7 +516,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.4.Rating),5.,Left) | SubString(Window.Property(LatestMovie.4.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.4.Rating),3.,Left) | SubString(Window.Property(LatestMovie.4.Rating),4.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -502,7 +526,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.4.Rating),2.,Left) | SubString(Window.Property(LatestMovie.4.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.4.Rating),1.,Left) | SubString(Window.Property(LatestMovie.4.Rating),2.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -512,7 +536,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.4.Rating),0.,Left) | SubString(Window.Property(LatestMovie.4.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.4.Rating),0.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>
 					</control>
@@ -561,7 +585,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -589,7 +613,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.5.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.5.Rating),10.,Left) |  SubString(Window.Property(LatestMovie.5.Rating),9.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -599,7 +623,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.5.Rating),8.,Left) | SubString(Window.Property(LatestMovie.5.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.5.Rating),8.,Left) | SubString(Window.Property(LatestMovie.5.Rating),7.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -609,9 +633,17 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.5.Rating),6.,Left) | SubString(Window.Property(LatestMovie.5.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.5.Rating),6.,Left) | SubString(Window.Property(LatestMovie.5.Rating),5.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>
+						<!--<control type="image">
+							<description>Thumb</description>
+							<posx>740</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>225</height>
+							<texture>$INFO[Window.Property(LatestMovie.5.Thumb)]</texture>		<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
+						</control>-->
 						<control type="image">
 							<description>Rating value</description>
 							<posx>640</posx>
@@ -619,7 +651,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.5.Rating),5.,Left) | SubString(Window.Property(LatestMovie.5.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.5.Rating),3.,Left) | SubString(Window.Property(LatestMovie.5.Rating),4.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -629,7 +661,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.5.Rating),2.,Left) | SubString(Window.Property(LatestMovie.5.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.5.Rating),1.,Left) | SubString(Window.Property(LatestMovie.5.Rating),2.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>
 						<control type="image">
@@ -639,13 +671,13 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.5.Rating),0.,Left) | SubString(Window.Property(LatestMovie.5.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.5.Rating),0.,Left)</visible> 
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>
 					</control>
 		
 	</include>
-	 <include name="InfoRandomMovies">
+	 <include name="InfoWatchListMovies">
 		<control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8005) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 			      <posx>160</posx>
@@ -666,7 +698,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.1.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.1.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
@@ -679,7 +711,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.1.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.1.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8005)+Container(8005).HasFocus(1)]</visible>
@@ -690,8 +722,8 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
-							<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
+							<width>590</width>
+							<label>$INFO[Window.Property(WatchList_Movie.1.Label)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -704,7 +736,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>260</width>
-							<label>$INFO[Window.Property(RandomMovie.1.Year)], $INFO[Window.Property(RandomMovie.1.RunningTime)] min</label>
+							<label>$INFO[Window.Property(WatchList_Movie.1.Year)], $INFO[Window.Property(WatchList_Movie.1.RunningTime)] min</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -718,7 +750,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.1.Rating),10.,Left)| SubString(Window.Property(WatchList_Movie.1.Rating),9.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -728,7 +760,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),8.,Left) | SubString(Window.Property(RandomMovie.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.1.Rating),8.,Left) | SubString(Window.Property(WatchList_Movie.1.Rating),7.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -738,7 +770,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),6.,Left) | SubString(Window.Property(RandomMovie.1.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.1.Rating),6.,Left) | SubString(Window.Property(WatchList_Movie.1.Rating),5.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -748,7 +780,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),5.,Left) | SubString(Window.Property(RandomMovie.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.1.Rating),3.,Left) | SubString(Window.Property(WatchList_Movie.1.Rating),4.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -758,7 +790,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),2.,Left) | SubString(Window.Property(RandomMovie.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.1.Rating),2.,Left) | SubString(Window.Property(WatchList_Movie.1.Rating),1.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -768,7 +800,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),0.,Left) | SubString(Window.Property(RandomMovie.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.1.Rating),0.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>
 					</control>
@@ -793,7 +825,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.2.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.2.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
@@ -806,7 +838,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.2.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.2.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8005)+Container(8005).HasFocus(2)]</visible>
@@ -817,8 +849,8 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
-							<label>$INFO[Window.Property(RandomMovie.2.Title)]</label>
+							<width>590</width>
+							<label>$INFO[Window.Property(WatchList_Movie.2.Label)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -831,7 +863,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>260</width>
-							<label>$INFO[Window.Property(RandomMovie.2.Year)], $INFO[Window.Property(RandomMovie.2.RunningTime)] min</label>
+							<label>$INFO[Window.Property(WatchList_Movie.2.Year)], $INFO[Window.Property(WatchList_Movie.2.RunningTime)] min</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -845,7 +877,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.2.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.2.Rating),10.,Left)| SubString(Window.Property(WatchList_Movie.2.Rating),9.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -855,7 +887,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.2.Rating),8.,Left) | SubString(Window.Property(RandomMovie.2.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.2.Rating),8.,Left) | SubString(Window.Property(WatchList_Movie.2.Rating),7.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -865,7 +897,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.2.Rating),6.,Left) | SubString(Window.Property(RandomMovie.2.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.2.Rating),6.,Left) | SubString(Window.Property(WatchList_Movie.2.Rating),5.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -875,7 +907,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.2.Rating),5.,Left) | SubString(Window.Property(RandomMovie.2.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.2.Rating),3.,Left) | SubString(Window.Property(WatchList_Movie.2.Rating),4.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -885,7 +917,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.2.Rating),2.,Left) | SubString(Window.Property(RandomMovie.2.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.2.Rating),2.,Left) | SubString(Window.Property(WatchList_Movie.2.Rating),1.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -895,7 +927,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.2.Rating),0.,Left) | SubString(Window.Property(RandomMovie.2.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.2.Rating),0.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>
 					</control>
@@ -920,7 +952,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.3.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.3.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
@@ -933,7 +965,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.3.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.3.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8005)+Container(8005).HasFocus(3)]</visible>
@@ -944,8 +976,8 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
-							<label>$INFO[Window.Property(RandomMovie.3.Title)]</label>
+							<width>590</width>
+							<label>$INFO[Window.Property(WatchList_Movie.3.Label)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -958,7 +990,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>260</width>
-							<label>$INFO[Window.Property(RandomMovie.3.Year)], $INFO[Window.Property(RandomMovie.3.RunningTime)] min</label>
+							<label>$INFO[Window.Property(WatchList_Movie.3.Year)], $INFO[Window.Property(WatchList_Movie.3.RunningTime)] min</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -972,7 +1004,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.3.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.3.Rating),10.,Left) | SubString(Window.Property(WatchList_Movie.3.Rating),9.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -982,7 +1014,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.3.Rating),8.,Left) | SubString(Window.Property(RandomMovie.3.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.3.Rating),8.,Left) | SubString(Window.Property(WatchList_Movie.3.Rating),7.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -992,7 +1024,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.3.Rating),6.,Left) | SubString(Window.Property(RandomMovie.3.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.3.Rating),6.,Left) | SubString(Window.Property(WatchList_Movie.3.Rating),5.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1002,7 +1034,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.3.Rating),5.,Left) | SubString(Window.Property(RandomMovie.3.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.3.Rating),3.,Left) | SubString(Window.Property(WatchList_Movie.3.Rating),4.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1012,7 +1044,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.3.Rating),2.,Left) | SubString(Window.Property(RandomMovie.3.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.3.Rating),2.,Left) | SubString(Window.Property(WatchList_Movie.3.Rating),1.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1022,7 +1054,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.3.Rating),0.,Left) | SubString(Window.Property(RandomMovie.3.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.3.Rating),0.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 					</control>
@@ -1047,7 +1079,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.4.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.4.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
@@ -1060,7 +1092,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.4.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.4.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8005)+Container(8005).HasFocus(4)]</visible>
@@ -1071,8 +1103,8 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
-							<label>$INFO[Window.Property(RandomMovie.4.Title)]</label>
+							<width>590</width>
+							<label>$INFO[Window.Property(WatchList_Movie.4.Label)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -1085,7 +1117,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>260</width>
-							<label>$INFO[Window.Property(RandomMovie.4.Year)], $INFO[Window.Property(RandomMovie.4.RunningTime)] min</label>
+							<label>$INFO[Window.Property(WatchList_Movie.4.Year)], $INFO[Window.Property(WatchList_Movie.4.RunningTime)] min</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -1099,7 +1131,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.4.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.4.Rating),10.,Left) | SubString(Window.Property(WatchList_Movie.4.Rating),9.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1109,7 +1141,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.4.Rating),8.,Left) | SubString(Window.Property(RandomMovie.4.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.4.Rating),8.,Left) | SubString(Window.Property(WatchList_Movie.4.Rating),7.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1119,7 +1151,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.4.Rating),6.,Left) | SubString(Window.Property(RandomMovie.4.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.4.Rating),6.,Left) | SubString(Window.Property(WatchList_Movie.4.Rating),5.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1129,7 +1161,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.4.Rating),5.,Left) | SubString(Window.Property(RandomMovie.4.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.4.Rating),3.,Left) | SubString(Window.Property(WatchList_Movie.4.Rating),4.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1139,7 +1171,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.4.Rating),2.,Left) | SubString(Window.Property(RandomMovie.4.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.4.Rating),2.,Left) | SubString(Window.Property(WatchList_Movie.4.Rating),1.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1149,7 +1181,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.4.Rating),0.,Left) | SubString(Window.Property(RandomMovie.4.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.4.Rating),0.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>
 					</control>
@@ -1174,7 +1206,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.5.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.5.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
@@ -1187,7 +1219,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomMovie.5.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Movie.5.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8005)+Container(8005).HasFocus(5)]</visible>
@@ -1198,8 +1230,8 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
-							<label>$INFO[Window.Property(RandomMovie.5.Title)]</label>
+							<width>590</width>
+							<label>$INFO[Window.Property(WatchList_Movie.5.Label)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -1212,7 +1244,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>260</width>
-							<label>$INFO[Window.Property(RandomMovie.5.Year)], $INFO[Window.Property(RandomMovie.5.RunningTime)] min</label>
+							<label>$INFO[Window.Property(WatchList_Movie.5.Year)], $INFO[Window.Property(WatchList_Movie.5.RunningTime)] min</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -1226,7 +1258,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.5.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.5.Rating),10.,Left) | SubString(Window.Property(WatchList_Movie.5.Rating),9.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1236,7 +1268,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.5.Rating),8.,Left) | SubString(Window.Property(RandomMovie.5.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.5.Rating),8.,Left) | SubString(Window.Property(WatchList_Movie.5.Rating),7.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1246,7 +1278,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.5.Rating),6.,Left) | SubString(Window.Property(RandomMovie.5.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.5.Rating),6.,Left) | SubString(Window.Property(WatchList_Movie.5.Rating),5.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1256,7 +1288,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.5.Rating),5.,Left) | SubString(Window.Property(RandomMovie.5.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.5.Rating),3.,Left) | SubString(Window.Property(WatchList_Movie.5.Rating),4.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1266,7 +1298,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.5.Rating),2.,Left) | SubString(Window.Property(RandomMovie.5.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.5.Rating),2.,Left) | SubString(Window.Property(WatchList_Movie.5.Rating),1.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -1276,7 +1308,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.5.Rating),0.,Left) | SubString(Window.Property(RandomMovie.5.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Movie.5.Rating),0.,Left)</visible> 
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>
 					</control>
@@ -1328,7 +1360,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -1469,7 +1501,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -1597,7 +1629,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -1725,7 +1757,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -1853,7 +1885,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -1984,7 +2016,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -2125,7 +2157,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -2253,7 +2285,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -2381,7 +2413,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(RandomEpisode.4.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -2509,7 +2541,7 @@
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
-							<width>650</width>
+							<width>590</width>
 							<label>$INFO[Window.Property(RandomEpisode.5.ShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
