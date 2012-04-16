@@ -14,7 +14,6 @@
 	<include file="custom_HomeDialogPopup_1115.xml" />
 	<include file="Includes_InfosHome.xml"/>
 
-
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 
@@ -784,14 +783,13 @@
 		<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 		<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="group">
-			<posx>0</posx>
-			<posy>395</posy>
-			<visible>Player.HasAudio</visible>
+			<posx>150</posx>
+			<posy>100</posy>			<visible>Player.HasAudio+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>Title label</description>
-				<posx>40</posx>
-				<posy>-35</posy>
+				<posx>-220</posx>
+				<posy>70</posy>
 				<height>20</height>
 				<width>1260</width>
 				<label>Now Playing</label>
@@ -854,14 +852,13 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>395</posy>
-			<visible>Player.HasVideo</visible>
+			<posx>80</posx>
+			<posy>100</posy>			<visible>Player.HasVideo+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>Title label</description>
-				<posx>40</posx>
-				<posy>-35</posy>
+				<posx>-220</posx>
+				<posy>70</posy>
 				<height>20</height>
 				<width>1260</width>
 				<label>Now Playing</label>
@@ -907,7 +904,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>185</posy>
-				<width>370</width>
+				<width>280</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
 				<align>left</align>
@@ -922,7 +919,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>185</posy>
-				<width>370</width>
+				<width>280</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Director, | ]$INFO[VideoPlayer.Genre, | ]</label>
 				<align>left</align>
