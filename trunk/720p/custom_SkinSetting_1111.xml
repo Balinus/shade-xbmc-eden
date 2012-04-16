@@ -833,6 +833,21 @@
 						<selected>Skin.HasSetting(HomeMenuNoSettingsButton)</selected>
 					</control>
 					<control type="radiobutton" id="214">
+						<description>Hide PlayDisc Button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31111] - PlayDisc</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoPlayDiscButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoPlayDiscButton)</selected>
+					</control>
+					<control type="radiobutton" id="215">
 						<description>Hide Shutdown Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -1063,7 +1078,7 @@
 								<label>PlayDisc</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/videos.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 							</item>
 							<item id="15">
 								<label>Shutdown</label>
@@ -1954,6 +1969,85 @@
 						</control>
 						<control type="group">
 							<visible>Container(9003).HasFocus(14)</visible>
+							<control type="button" id="300">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31113</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetImage(Home_Custom_Back_PlayDisc_Folder)</onclick>
+								<onleft>303</onleft>
+								<onright>301</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="301">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31114</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetPath(Home_Custom_Back_PlayDisc_Folder)</onclick>
+								<onleft>300</onleft>
+								<onright>302</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="302">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>571</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.Reset(Home_Custom_Back_PlayDisc_Folder)</onclick>
+								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Fanart Image button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Fanart</label>
+								<font>Shade_20</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">shade/button-focus-white.png</texturefocus>
+								<onclick>Skin.SetString(Home_Custom_Back_PlayDisc_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
+								<onright>300</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9003).HasFocus(15)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
