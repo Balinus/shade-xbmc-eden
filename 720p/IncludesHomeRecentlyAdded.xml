@@ -1296,7 +1296,7 @@
 					      <posy>-40</posy>
 					      <height>20</height>
 					      <width>360</width>
-					      <label>Watch List</label>
+					      <label>Featured</label>
 					      <align>center</align>
 					      <aligny>center</aligny>
 					      <font>Shade_30_UltraThin</font>
@@ -1481,41 +1481,41 @@
 						<item id="1">							
 							<label>-</label>
 							<label2>-</label2>
-							<onclick>PlayMedia($INFO[Window.Property(WatchList_Movie.1.Path)])</onclick>
-							<icon>$INFO[Window.Property(WatchList_Movie.1.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(WatchList_Movie.1.Fanart)]</thumb>				 -->
+							<onclick>PlayMedia($INFO[Window.Property(RandomMovie.1.Path)])</onclick>
+							<icon>$INFO[Window.Property(RandomMovie.1.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(RandomMovie.1.Fanart)]</thumb>				 -->
 						</item>
 						<item id="2">
 							<label>-</label>
 							<label2>-</label2>
-							<onclick>PlayMedia($INFO[Window.Property(WatchList_Movie.2.Path)])</onclick>
-							<icon>$INFO[Window.Property(WatchList_Movie.2.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(WatchList_Movie.2.Fanart)]</thumb>				 -->
+							<onclick>PlayMedia($INFO[Window.Property(RandomMovie.2.Path)])</onclick>
+							<icon>$INFO[Window.Property(RandomMovie.2.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(RandomMovie.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="3">
 							<label>-</label>
 							<label2>-</label2>
-							<onclick>PlayMedia($INFO[Window.Property(WatchList_Movie.3.Path)])</onclick>
-							<icon>$INFO[Window.Property(WatchList_Movie.3.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(WatchList_Movie.2.Fanart)]</thumb>				 -->
+							<onclick>PlayMedia($INFO[Window.Property(RandomMovie.3.Path)])</onclick>
+							<icon>$INFO[Window.Property(RandomMovie.3.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(RandomMovie.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="4">
 							<label>-</label>
 							<label2>-</label2>
-							<onclick>PlayMedia($INFO[Window.Property(WatchList_Movie.4.Path)])</onclick>
-							<icon>$INFO[Window.Property(WatchList_Movie.4.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(WatchList_Movie.2.Fanart)]</thumb>				 -->
+							<onclick>PlayMedia($INFO[Window.Property(RandomMovie.4.Path)])</onclick>
+							<icon>$INFO[Window.Property(RandomMovie.4.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(RandomMovie.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="5">
 							<label>-</label>
 							<label2>-</label2>
-							<onclick>PlayMedia($INFO[Window.Property(WatchList_Movie.5.Path)])</onclick>
-							<icon>$INFO[Window.Property(WatchList_Movie.5.Thumb)]</icon>			
+							<onclick>PlayMedia($INFO[Window.Property(RandomMovie.5.Path)])</onclick>
+							<icon>$INFO[Window.Property(RandomMovie.5.Thumb)]</icon>			
 						</item>
 					</content>
 				</control>
 				
-				<include>InfoWatchListMovies</include>
+				<include>InfoRandomMovies</include>
 										
 			  </control>
 					
