@@ -1,9 +1,9 @@
 <window id="0"> 
-      <onload>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True)</onload>
-      <onload>XBMC.RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>
+      <onload>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True&amp;alarm=30)</onload>
+<!--       <onload>XBMC.RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload> -->
       <onload>XBMC.RunScript(script.tv.show.next.aired,silent=true&amp;alarm=99)</onload>
-<!--       <onload>XBMC.RunScript(script.recentlyadded,limit=10&amp;totals=True&amp;albums=True&amp;unplayed=True)</onload> -->
-	<defaultcontrol always="true">9000</defaultcontrol>
+
+<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 		<animation type="WindowOpen" reversible="false">
@@ -87,7 +87,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>200</fadetime>
-			<texture background="true">$INFO[Window.Property(WatchList_Movie.1.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(RandomMovie.1.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
 			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(1) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
@@ -98,7 +98,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>200</fadetime>
-			<texture background="true">$INFO[Window.Property(WatchList_Movie.2.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(RandomMovie.2.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
 			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(2) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
@@ -109,7 +109,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>200</fadetime>
-			<texture background="true">$INFO[Window.Property(WatchList_Movie.3.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(RandomMovie.3.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
 			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(3) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
@@ -120,7 +120,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>200</fadetime>
-			<texture background="true">$INFO[Window.Property(WatchList_Movie.4.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(RandomMovie.4.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
 			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(4) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
@@ -131,7 +131,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<fadetime>200</fadetime>
-			<texture background="true">$INFO[Window.Property(WatchList_Movie.5.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(RandomMovie.5.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
 			<visible>Control.HasFocus(8005)+Container(8005).Hasfocus(5) + Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
