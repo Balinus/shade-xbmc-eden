@@ -1163,7 +1163,9 @@
 					<description>Play Disc</description>
 					<label>$LOCALIZE[341]</label>
 					<icon>homeicons/playdiscicon.png</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<onclick>PlayDVD</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoPlayDiscButton)</visible>
 				</item>
 				<item id="12">
 					<description>Shutdown</description>
