@@ -1,7 +1,7 @@
 <window id="0"> 
       <onload>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True&amp;alarm=30)</onload>
 <!--       <onload>XBMC.RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload> -->
-      <onload>XBMC.RunScript(script.tv.show.next.aired,silent=true&amp;alarm=99)</onload>
+<!--       <onload>XBMC.RunScript(script.tv.show.next.aired,silent=true&amp;alarm=99)</onload> -->
 
 <defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
@@ -911,9 +911,10 @@
 		</control>
 		
 		
-		<control type="fixedlist" id="9000">		  
-			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
-			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<control type="fixedlist" id="9000">	
+		  <include>TopSlide</include>
+<!-- 			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation> -->
+<!-- 			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation> -->
 			<visible allowhiddenfocus="true">!Skin.HasSetting(HomeAlternate)+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 <!-- 			<visible>!Control.HasFocus(8009)+!Control.HasFocus(8010)</visible> -->
 			
