@@ -4,8 +4,7 @@ version="2.5.0"
 name="Shade-Eden-dev"
 provider-name="igotdvds and Balinus">
   <requires>
-    <import addon="xbmc.gui" version="2.11"/>
-	<import addon="script.recentlyadded" version="1.0.8"/> 
+    <import addon="xbmc.gui" version="2.11"/>	 
 	<import addon="script.artwork.downloader" version="1.0.7"/>	
 	<import addon="script.randomitems" version="1.0.2"/>	
 	<import addon="script.favourites" version="1.0.3"/>
