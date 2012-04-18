@@ -26,7 +26,6 @@
 
 				      <control type="label">
 					<include>BottomSlideRecent</include>
-<!-- 					<animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
 					      <description>Title label</description>
 					      <posx>0</posx>
 					      <posy>-40</posy>
@@ -55,7 +54,7 @@
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/down_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8005)</visible>
+						      <visible>Control.HasFocus(8005)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
@@ -68,20 +67,20 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8005)</visible>
+						      <visible>Control.HasFocus(8005)</visible>
 					      </control>
 					      <control type="image">
 						      <posx>505</posx>
-						      <posy>-460</posy>
+						      <posy>-485</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8005)</visible>
+						      <visible>Control.HasFocus(8005)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>570</posx>
-						      <posy>-455</posy>
+						      <posy>-480</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Main menu</label>
@@ -89,41 +88,13 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8005)</visible>
-					      </control>
-				    <!--  <control type="label">
--							<posx>600</posx>
--							<posy>185</posy>
--							<width>350</width>
--							<height>30</height>
--							<font>Shade_24</font>
--							<textcolor>white</textcolor>
--							<selectedcolor>selected</selectedcolor>
--							<align>left</align>
--							<aligny>center</aligny>
--							<label>$INFO[Window.Property(WatchList_Movie.1.Title)]</label>
--							<visible>[Container(9000).Hasfocus(1) + 													!Skin.HasSetting(HomeMenuNoMoviesButton)+ Control.HasFocus(8005)]</visible>
--						</control>
-					<control type="fadelabel">
--						<posx>600</posx>
--						<posy>210</posy>
--						<width>120</width>
--						<height>30</height>
--						<font>Shade_18_Bold</font>
--						<textcolor>grey2</textcolor>
--						<selectedcolor>selected</selectedcolor>
--						<align>left</align>
--						<scrollspeed>0</scrollspeed>
--						<aligny>center</aligny>
--						<label>$INFO[Window.Property(WatchList_Movie.1.Year)],$INFO[Window.Property(WatchList_Movie.1.RunningTime)]</label>
--						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)+ Control.HasFocus(8005)]</visible>
--					</control>-->
+						      <visible>Control.HasFocus(8005)</visible>
+					      </control>				  
 
 
 
 				<control type="list" id="8005">
 				  <include>BottomSlideRecent</include>
-<!-- 				  <animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>				   -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>360</width>
@@ -273,11 +244,9 @@
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 <!-- 						<include>VisibleFadeEffect</include> -->
-						<animation effect="slide" time="0" start="0,0" end="0,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation>
 
 						<control type="label">
 						  <include>BottomSlideRecent</include>
-<!-- 						  <animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
 							<description>Title label</description>
 							<posx>0</posx>
 							<posy>-40</posy>
@@ -296,7 +265,7 @@
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8006)</visible>
+						      <visible>Control.HasFocus(8006)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
@@ -309,20 +278,20 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8006)</visible>
+						      <visible>Control.HasFocus(8006)</visible>
 					      </control>
 					      <control type="image">
 						      <posx>-375</posx>
-						      <posy>-460</posy>
+						      <posy>-485</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/down_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8006)</visible>
+						      <visible>Control.HasFocus(8006)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>-310</posx>
-						      <posy>-455</posy>
+						      <posy>-480</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Main menu</label>
@@ -330,12 +299,12 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8006)</visible>
+						      <visible>Control.HasFocus(8006)</visible>
 					      </control>
 			
 				  <control type="list" id="8006">
 				    <include>BottomSlideRecent</include>
-<!-- 						<animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
+
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>360</width>
@@ -911,33 +880,18 @@
 			      <!--Davids Home Screen TV-->
 					
 			    <control type="group">
-			      <include>BottomSlideRecent</include>
-<!-- 					<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation> -->
-<!-- 					<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation> -->
-					<!--<control type="image">
-					      <posx>0</posx>
-					      <posy>0</posy>
-					      <width>1280</width>
-					      <height>720</height>
-					      <texture>shade/vignette2.png</texture>
-					      <aspectratio>stretch</aspectratio>
-					      <colordiffuse>FFFFFFFF</colordiffuse>
-					      <visible>Control.HasFocus(8007) | Control.HasFocus(8008) | Control.HasFocus(8009) | Control.HasFocus(8010)</visible>
-					</control>-->
 					<control type="group">
 						<posx>20</posx>
 						<posy>540</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(TVShows)</visible>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
-<!-- 						<include>VisibleFadeEffect</include> -->
-<!-- 						<animation effect="slide" time="0" start="0,0" end="0,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation> -->
+
 
 
 
 				      <control type="label">
 					<include>BottomSlideRecent</include>
-<!-- 					<animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
 					      <description>Title label</description>
 					      <posx>0</posx>
 					      <posy>-40</posy>
@@ -983,7 +937,7 @@
 					      </control>
 					      <control type="image">
 						      <posx>495</posx>
-						      <posy>-505</posy>
+						      <posy>-530</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
@@ -992,7 +946,7 @@
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>560</posx>
-						      <posy>-500</posy>
+						      <posy>-525</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Main menu</label>
@@ -1000,12 +954,12 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8007)</visible>
+						      <visible>Control.HasFocus(8007)</visible>
 					      </control>
 				    
 				<control type="list" id="8007">
 				  <include>BottomSlideRecent</include>
-<!-- 				  <animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
+
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>500</width>
@@ -1251,12 +1205,12 @@
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(TVShows)</visible>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
-<!-- 						<include>VisibleFadeEffect</include> -->
+
 						<animation effect="slide" time="0" start="0,0" end="0,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation>
 
 						<control type="label">
 						  <include>BottomSlideRecent</include>
-<!-- 						  <animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
+
 							<description>Title label</description>
 							<posx>0</posx>
 							<posy>-40</posy>
@@ -1275,7 +1229,7 @@
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8008)</visible>
+						      <visible>Control.HasFocus(8008)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
@@ -1288,20 +1242,20 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8008)</visible>
+						      <visible>Control.HasFocus(8008)</visible>
 					      </control>
 					      <control type="image">
 						      <posx>-245</posx>
-						      <posy>-505</posy>
+						      <posy>-530</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/down_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8008)</visible>
+						      <visible>Control.HasFocus(8008)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>-180</posx>
-						      <posy>-500</posy>
+						      <posy>-525</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Main menu</label>
@@ -1309,12 +1263,12 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8008)</visible>
+						      <visible>Control.HasFocus(8008)</visible>
 					      </control>
 			
 				  <control type="list" id="8008">
 				    <include>BottomSlideRecent</include>
-<!-- 						<animation effect="slide" time="500" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation> -->
+
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>500</width>
@@ -1564,9 +1518,7 @@
 				<posx>10</posx>
 				<posy>450</posy>
 				<visible>Library.HasContent(Music)</visible>
-				<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
-<!-- 				<include>VisibleFadeEffect</include> -->
-				
+				<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>		
 				
 				<control type="image">
 					      <posx>-10</posx>
@@ -1581,7 +1533,7 @@
 				
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 				  <animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<description>Title label</description>
 					<posx>30</posx>
 					<posy>20</posy>
@@ -1595,7 +1547,7 @@
 				</control>	
 				<control type="list" id="8009">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 				  <animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<posx>43</posx>
 					<posy>50</posy>
 					<width>550</width>
@@ -1655,7 +1607,7 @@
 				</control>				
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 				  <animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<description>Title label</description>
 					<posx>220</posx>
 					<posy>80</posy>
@@ -1669,7 +1621,7 @@
 				</control>	
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 				  <animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<description>Title label</description>
 					<posx>220</posx>
 					<posy>115</posy>
@@ -1683,7 +1635,7 @@
 				</control>	
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 				  <animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<description>Title label</description>
 					<posx>220</posx>
 					<posy>150</posy>
@@ -1707,7 +1659,7 @@
 				
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 				  <animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<description>Title label</description>
 					
 					<posx>352</posx>
@@ -1723,7 +1675,7 @@
 
 				<control type="list" id="8010">
 				  <include>BottomSlideMusicRecent</include>
-<!-- 					<animation effect="slide" time="400" delay="100" start="0,300" end="0,0" condition="[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation> -->
+
 					<posx>720</posx>
 					<posy>50</posy>
 					<width>540</width>
