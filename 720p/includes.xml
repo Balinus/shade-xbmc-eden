@@ -33,7 +33,7 @@
 	</include>
 	<include name="BottomSlideRecent">
 		<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,300" end="0,0" delay="800" time="300">WindowOpen</animation>
+		<animation effect="slide" start="0,300" end="0,0" delay="100" time="500">WindowOpen</animation>
 	</include>
 	<include name="BottomSlideMusicRecent">
 		<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
@@ -58,6 +58,52 @@
 		<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
 		<onfocus>SetFocus(50)</onfocus>
 	</include> 
+	<include name="fanart-extra-movies">
+		<control type="multiimage" id="6102">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
+		</control>
+	</include>
+	<include name="fanart-extra-tvshows">
+		<control type="multiimage" id="6105">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<visible>[Container.Content(TVShows) ] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
+		</control>
+		<control type="multiimage" id="6106">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
+		</control>
+	</include>
 	<include name="UpOptions">
 		<control type="group">
 			<include>BottomSlide</include>

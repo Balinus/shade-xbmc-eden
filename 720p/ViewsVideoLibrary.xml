@@ -2185,7 +2185,7 @@
 			
 			<control type="group">
 				<include>BottomSlide</include>
-				<visible>!Container.Content(TVShows)</visible>
+<!-- 				<visible>!Container.Content(TVShows)</visible> -->
 				<posx>0</posx>
 				<posy>-450</posy>
 				<!--<control type="image">
@@ -2250,6 +2250,13 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Container.Content(Seasons) + !Skin.HasSetting(SeasonLessInfo)</visible>
+				</control>								
+				<control type="image">
+					<posx>5</posx>
+					<posy>150</posy>
+					<width>710</width>
+					<height>220</height>
+					<texture flipy="true">shade/banner_strip_background.png</texture>
 				</control>
 				<control type="label">
 					<posx>31</posx>
@@ -2261,14 +2268,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>Plot Summary</label>
-					<visible>Container.Content(Seasons) + !Skin.HasSetting(SeasonLessInfo)</visible>
-				</control>				
-				<control type="image">
-					<posx>5</posx>
-					<posy>150</posy>
-					<width>710</width>
-					<height>220</height>
-					<texture flipy="true">shade/banner_strip_background.png</texture>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(SeasonLessInfo)</visible>
 				</control>
 				<control type="label">
 					<posx>31</posx>
@@ -2306,9 +2306,9 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
-					<label>$INFO[Container.ShowPlot]</label>
+					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Container.Content(Seasons) + !Skin.HasSetting(SeasonLessInfo)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(SeasonLessInfo)</visible>
 				</control>	
 				<control type="grouplist">
                                             <description>Media Codec Flagging Images</description>
@@ -2410,7 +2410,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Year]</label>
-						<visible>Container.Content(Movies) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>			
+						<visible>[Container.Content(Movies) | Container.Content(TVShows)]+ !Skin.HasSetting(ScrollMovieLessInfo)</visible>			
 					</control>
 					<control type="fadelabel">
 						<posx>360</posx>

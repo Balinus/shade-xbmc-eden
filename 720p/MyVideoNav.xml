@@ -6,14 +6,16 @@
 	<controls>
 		<include>CommonVideoBackground</include>
 		<control type="button" id="9999">
-            <description>trigger</description>
-            <include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
-            <include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-        </control>  
+		    <description>trigger</description>
+		    <include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
+		    <include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
+		    <texturenofocus>-</texturenofocus>
+		    <texturefocus>-</texturefocus>
+		</control>  
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>			
+			<include condition="Skin.HasSetting(MoviesExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-movies</include>
+			<include condition="Skin.HasSetting(TVShowsExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-tvshows</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -22,6 +24,7 @@
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<include>backgroundfade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
+				<visible>!Skin.HasSetting(MoviesExtraFanart)</visible>
 				<visible>![Skin.HasSetting(VideoLibraryMovieFanart) | Control.IsVisible(513)] | Control.IsVisible(508)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(521)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(549)</visible>
@@ -35,7 +38,7 @@
 				<include>backgroundfade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
-				<visible>!Skin.HasSetting(Multiple_TV_Fanart)</visible>
+				<visible>!Skin.HasSetting(TVShowsExtraFanart)</visible>
 				<visible>Container.Content(TVShows) | [Container.Content(Episodes) + substring(Container.FolderPath,videodb://5/)]</visible>
 			</control>
 			<control type="image">
@@ -48,7 +51,7 @@
 				<include>backgroundfade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
-				<visible>!Skin.HasSetting(Multiple_TV_Fanart)</visible>
+				<visible>!Skin.HasSetting(TVShowsExtraFanart)</visible>
 				<visible>Container.Content(Seasons) | [Container.Content(Episodes) + !substring(Container.FolderPath,videodb://5/)]</visible>
 			</control>
 			<control type="image">
