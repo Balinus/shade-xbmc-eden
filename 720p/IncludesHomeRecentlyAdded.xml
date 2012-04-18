@@ -15,7 +15,7 @@
 					
 					<control type="group">
 						<posx>20</posx>
-						<posy>480</posy>
+						<posy>500</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
@@ -41,7 +41,7 @@
 				      </control>
 				      <control type="image">
 					      <posx>-20</posx>
-					      <posy>30</posy>
+					      <posy>20</posy>
 					      <width>1280</width>
 					      <height>300</height>
 					      <aspectratio>stretch</aspectratio>
@@ -51,7 +51,7 @@
 				      </control>
 				      <control type="image">
 						      <posx>35</posx>
-						      <posy>195</posy>
+						      <posy>175</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/down_arrow.png</texture>
@@ -60,7 +60,7 @@
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>90</posx>
-						      <posy>200</posy>
+						      <posy>180</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Recently added</label>
@@ -129,7 +129,7 @@
 					<width>360</width>
 					<height>500</height>
 					<onleft>8005</onleft>
-					<onright>8006</onright>
+					<onright>8005</onright>
 					<onup>9000</onup>
 					<ondown>8006</ondown>
 					<viewtype label="535">list</viewtype>
@@ -268,7 +268,7 @@
 					
 			    <control type="group">
 						<posx>900</posx>
-						<posy>480</posy>
+						<posy>500</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
@@ -292,7 +292,7 @@
 						</control>
 						<control type="image">
 						      <posx>80</posx>
-						      <posy>195</posy>
+						      <posy>175</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
@@ -301,7 +301,7 @@
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>135</posx>
-						      <posy>200</posy>
+						      <posy>180</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Featured</label>
@@ -340,7 +340,7 @@
 						<posy>0</posy>
 						<width>360</width>
 						<height>500</height>
-						<onleft>8005</onleft>
+						<onleft>8006</onleft>
 						<onright>8006</onright>
 						<onup>8005</onup>
 						<ondown>9000</ondown>
@@ -926,7 +926,7 @@
 					</control>-->
 					<control type="group">
 						<posx>20</posx>
-						<posy>520</posy>
+						<posy>540</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(TVShows)</visible>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
@@ -952,7 +952,7 @@
 				      </control>
 				      <control type="image">
 					      <posx>-20</posx>
-					      <posy>0</posy>
+					      <posy>-20</posy>
 					      <width>1280</width>
 					      <height>300</height>
 					      <aspectratio>stretch</aspectratio>
@@ -962,16 +962,16 @@
 				      </control>
 				      <control type="image">
 						      <posx>100</posx>
-						      <posy>145</posy>
+						      <posy>130</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/down_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8007)</visible>
+						      <visible>Control.HasFocus(8007)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>155</posx>
-						      <posy>150</posy>
+						      <posy>135</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Recently Added</label>
@@ -979,7 +979,7 @@
 						      <aligny>center</aligny>
 						      <font>Shade_26_UltraThin</font>
 						      <textcolor>white</textcolor>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8007)</visible>
+						      <visible>Control.HasFocus(8007)</visible>
 					      </control>
 					      <control type="image">
 						      <posx>495</posx>
@@ -987,7 +987,7 @@
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
-						      <visible>!Skin.HasSetting(KioskMode)+Control.HasFocus(8007)</visible>
+						      <visible>Control.HasFocus(8007)</visible>
 						</control>
 					      <control type="label">
 						      <description>View Options</description>
@@ -1011,7 +1011,7 @@
 					<width>500</width>
 					<height>500</height>
 					<onleft>8007</onleft>
-					<onright>8008</onright>
+					<onright>8007</onright>
 					<onup>9000</onup>
 					<ondown>8008</ondown>
 					<viewtype label="535">list</viewtype>
@@ -1247,7 +1247,7 @@
 					
 			    <control type="group">
 						<posx>760</posx>
-						<posy>520</posy>
+						<posy>540</posy>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 						<visible>Library.HasContent(TVShows)</visible>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
@@ -1271,7 +1271,7 @@
 						</control>
 						<control type="image">
 						      <posx>150</posx>
-						      <posy>145</posy>
+						      <posy>130</posy>
 						      <width>35</width>
 						      <height>35</height>
 						      <texture>shade/up_arrow.png</texture>
@@ -1280,7 +1280,7 @@
 					      <control type="label">
 						      <description>View Options</description>
 						      <posx>205</posx>
-						      <posy>150</posy>
+						      <posy>135</posy>
 						      <height>20</height>
 						      <width>275</width>
 						      <label>Featured</label>
@@ -1319,7 +1319,7 @@
 						<posy>0</posy>
 						<width>500</width>
 						<height>500</height>
-						<onleft>8007</onleft>
+						<onleft>8008</onleft>
 						<onright>8008</onright>
 						<onup>8007</onup>
 						<ondown>9000</ondown>
@@ -2273,13 +2273,12 @@
 					      <aspectratio>stretch</aspectratio>
 					      <fadetime>IconCrossfadeTime</fadetime>
 					      <texture>shade/scrollfloor.png</texture>					      
-					      <include>BottomSlide</include>
+					      <include>BottomSlideRecent</include>
 				      </control>
 					<control type="list" id="8011">
-					  <animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+					  <include>BottomSlideRecent</include>
 						<posx>10</posx>
-						<posy>100</posy>
+						<posy>125</posy>
 						<width>1400</width>
 						<height>500</height>
 						<onleft>8011</onleft>
@@ -2395,21 +2394,23 @@
 						</content>
 					</control><control type="image">
 						<posx>10</posx>
-						<posy>215</posy>
+						<posy>240</posy>
 						<width>35</width>
 						<height>35</height>
 						<texture background="true">shade/left_arrow.png</texture> 
 						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 						<visible>Container(8011).HasPrevious</visible>
+						<include>BottomSlideRecent</include>
 					</control>
 					<control type="image">
 						<posx>1210</posx>
-						<posy>215</posy>
+						<posy>240</posy>
 						<width>35</width>
 						<height>35</height>
 						<texture background="true" flipx="true">shade/left_arrow.png</texture> 
 						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 						<visible>Container(8011).HasNext</visible>
+						<include>BottomSlideRecent</include>
 					</control>
 				</control>
 
@@ -2426,14 +2427,14 @@
 					      <aspectratio>stretch</aspectratio>
 					      <fadetime>IconCrossfadeTime</fadetime>
 					      <texture>shade/scrollfloor.png</texture>					      
-					      <include>BottomSlide</include>
+					      <include>BottomSlideRecent</include>
 				      </control>
 					<control type="list" id="8012">
-					  <include>BottomSlide</include>
+					  <include>BottomSlideRecent</include>
 <!-- 					  <animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation> -->
 <!-- 		<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation> -->
 						<posx>10</posx>
-						<posy>100</posy>
+						<posy>125</posy>
 						<width>1400</width>
 						<height>500</height>
 						<onleft>8012</onleft>
@@ -2553,21 +2554,23 @@
 					</control>
 					<control type="image">
 						<posx>10</posx>
-						<posy>215</posy>
+						<posy>240</posy>
 						<width>35</width>
 						<height>35</height>
 						<texture background="true">shade/left_arrow.png</texture> 
 						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 						<visible>Container(8012).HasPrevious</visible>
+						<include>BottomSlideRecent</include>
 					</control>
 					<control type="image">
 						<posx>1210</posx>
-						<posy>215</posy>
+						<posy>240</posy>
 						<width>35</width>
 						<height>35</height>
 						<texture background="true" flipx="true">shade/left_arrow.png</texture> 
 						<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 						<visible>Container(8012).HasNext</visible>
+						<include>BottomSlideRecent</include>
 					</control>
 				</control> 
 
