@@ -1,6 +1,6 @@
 <window id="0"> 
-      <onload>XBMC.RunScript(script.randomitems,limit=6&amp;unplayed=True&amp;random=True&amp;alarm=30)</onload>
-      <onload>XBMC.RunScript(script.watchlist,movies=false&amp;episodes=true&amp;albums=false&amp;limit=6)</onload>
+      <onload>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True&amp;alarm=30)</onload>
+      <onload>XBMC.RunScript(script.watchlist,movies=false&amp;episodes=true&amp;albums=false&amp;limit=10)</onload>
 <!--       <onload>XBMC.RunScript(script.tv.show.next.aired,silent=true&amp;alarm=99)</onload> -->
 
 <defaultcontrol always="true">9000</defaultcontrol>
