@@ -2264,7 +2264,7 @@
 					<posx>10</posx>
 					<posy>310</posy>
 					<visible>Container(9000).Hasfocus(8)</visible>
-					<include>VisibleFadeEffect</include>
+<!-- 					<include>VisibleFadeEffect</include> -->
 					<control type="image">
 					      <posx>-10</posx>
 					      <posy>185</posy>
@@ -2417,7 +2417,7 @@
 					<posx>10</posx>
 					<posy>310</posy>
 					<visible>Container(9000).Hasfocus(9)</visible>
-					<include>VisibleFadeEffect</include>
+<!-- 					<include>VisibleFadeEffect</include> -->
 					<control type="image">
 					      <posx>-10</posx>
 					      <posy>185</posy>

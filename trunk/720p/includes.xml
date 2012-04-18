@@ -33,11 +33,11 @@
 	</include>
 	<include name="BottomSlideRecent">
 		<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,300" end="0,0" delay="100" time="500">WindowOpen</animation>
+		<animation effect="slide" start="0,300" end="0,0" delay="800" time="500">WindowOpen</animation>
 	</include>
 	<include name="BottomSlideMusicRecent">
 		<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,300" end="0,0" delay="100" time="400">WindowOpen</animation>
+		<animation effect="slide" start="0,300" end="0,0" delay="500" time="400">WindowOpen</animation>
 	</include>	
 	<include name="TopSlide">
 		<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
