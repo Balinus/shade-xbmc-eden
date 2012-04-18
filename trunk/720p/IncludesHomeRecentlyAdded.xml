@@ -943,7 +943,7 @@
 					      <posy>-40</posy>
 					      <height>20</height>
 					      <width>500</width>
-					      <label>Featured</label>
+					      <label>Watch List</label>
 					      <align>center</align>
 					      <aligny>center</aligny>
 					      <font>Shade_30_UltraThin</font>
@@ -1206,42 +1206,42 @@
 										
 					<content>
 						<item id="1">
-							<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
-							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeNumber)][/COLOR]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.1.Path)])</onclick>
-							<icon>$INFO[Window.Property(RandomEpisode.1.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(RandomEpisode.1.Fanart)]</thumb>				 -->
+							<label>$INFO[Window.Property(WatchList_Episode.1.TVShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(WatchList_Episode.1.Season)][/COLOR] - E[COLOR=white]$INFO[Window.Property(WatchList_Episode.1.Episode)][/COLOR]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(WatchList_Episode.1.Path)])</onclick>
+							<icon>$INFO[Window.Property(WatchList_Episode.1.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(WatchList_Episode.1.Fanart)]</thumb>				 -->
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
-							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.2.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.2.EpisodeNumber)][/COLOR]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.2.Path)])</onclick>
-							<icon>$INFO[Window.Property(RandomEpisode.2.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(RandomEpisode.2.Fanart)]</thumb>				 -->
+							<label>$INFO[Window.Property(WatchList_Episode.2.TVShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(WatchList_Episode.2.Season)][/COLOR] - E[COLOR=white]$INFO[Window.Property(WatchList_Episode.2.Episode)][/COLOR]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(WatchList_Episode.2.Path)])</onclick>
+							<icon>$INFO[Window.Property(WatchList_Episode.2.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(WatchList_Episode.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)]</label>
-							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.3.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.3.EpisodeNumber)][/COLOR]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.3.Path)])</onclick>
-							<icon>$INFO[Window.Property(RandomEpisode.3.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(RandomEpisode.2.Fanart)]</thumb>				 -->
+							<label>$INFO[Window.Property(WatchList_Episode.3.TVShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(WatchList_Episode.3.Season)][/COLOR] - E[COLOR=white]$INFO[Window.Property(WatchList_Episode.3.Episode)][/COLOR]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(WatchList_Episode.3.Path)])</onclick>
+							<icon>$INFO[Window.Property(WatchList_Episode.3.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(WatchList_Episode.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="4">
-							<label>$INFO[Window.Property(RandomEpisode.4.ShowTitle)]</label>
-							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.4.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.4.EpisodeNumber)][/COLOR]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.4.Path)])</onclick>
-							<icon>$INFO[Window.Property(RandomEpisode.4.Thumb)]</icon>
-<!-- 							<thumb>$INFO[Window.Property(RandomEpisode.2.Fanart)]</thumb>				 -->
+							<label>$INFO[Window.Property(WatchList_Episode.4.TVShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(WatchList_Episode.4.Season)][/COLOR] - E[COLOR=white]$INFO[Window.Property(WatchList_Episode.4.Episode)][/COLOR]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(WatchList_Episode.4.Path)])</onclick>
+							<icon>$INFO[Window.Property(WatchList_Episode.4.Thumb)]</icon>
+<!-- 							<thumb>$INFO[Window.Property(WatchList_Episode.2.Fanart)]</thumb>				 -->
 						</item>
 						<item id="5">
-							<label>$INFO[Window.Property(RandomEpisode.5.ShowTitle)]</label>
-							<label2>S[COLOR=white]$INFO[Window.Property(RandomEpisode.5.EpisodeSeason)][/COLOR] - E[COLOR=white]$INFO[Window.Property(RandomEpisode.5.EpisodeNumber)][/COLOR]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.5.Path)])</onclick>
-							<icon>$INFO[Window.Property(RandomEpisode.5.Thumb)]</icon>			
+							<label>$INFO[Window.Property(WatchList_Episode.5.TVShowTitle)]</label>
+							<label2>S[COLOR=white]$INFO[Window.Property(WatchList_Episode.5.Season)][/COLOR] - E[COLOR=white]$INFO[Window.Property(WatchList_Episode.5.Episode)][/COLOR]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(WatchList_Episode.5.Path)])</onclick>
+							<icon>$INFO[Window.Property(WatchList_Episode.5.Thumb)]</icon>			
 						</item>
 					</content>
 				</control>
-				<include>InfoRandomTVShows</include>		
+				<include>InfoWatchListTVShows</include>		
 										
 			  </control>
 					

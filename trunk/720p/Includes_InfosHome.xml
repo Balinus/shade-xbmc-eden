@@ -1971,7 +1971,7 @@
 	  </include>
 	  
 	  
-	  <include name="InfoRandomTVShows">
+	  <include name="InfoWatchListTVShows">
 	    <control type="group">
 			      <animation effect="fade" time="500" delay="100" start="0" end="200" condition="[Container(9000).Hasfocus(1) + Control.HasFocus(8007) + !Skin.HasSetting(HomeMenuNoEpisodesButton)]">Conditional</animation>
 			      <posx>160</posx>
@@ -1992,7 +1992,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.1.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.1.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
@@ -2005,19 +2005,19 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.1.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.1.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8007)+Container(8007).HasFocus(1)]</visible>
 				</control>
-<!-- 						<visible>!Skin.HasSetting(UseRandomItems)</visible> -->
+<!-- 						<visible>!Skin.HasSetting(UseWatchList_Items)</visible> -->
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
 							<width>590</width>
-							<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
+							<label>$INFO[Window.Property(WatchList_Episode.1.TVShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -2030,7 +2030,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>370</width>
-							<label>"$INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]"</label>
+							<label>"$INFO[Window.Property(WatchList_Episode.1.Label)]"</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -2044,7 +2044,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>260</width>
-							<label>$INFO[Window.Property(RandomEpisode.1.Year)], $INFO[Window.Property(RandomEpisode.1.RunningTime)] min</label>
+							<label>$INFO[Window.Property(WatchList_Episode.1.Year)], $INFO[Window.Property(WatchList_Episode.1.RunningTime)] min</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -2058,7 +2058,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.1.Rating),10.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2068,7 +2068,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.1.Rating),8.,Left) | SubString(Window.Property(WatchList_Episode.1.Rating),9.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2078,7 +2078,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.1.Rating),6.,Left) | SubString(Window.Property(WatchList_Episode.1.Rating),7.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2088,7 +2088,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.1.Rating),5.,Left) | SubString(Window.Property(WatchList_Episode.1.Rating),4.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2098,7 +2098,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.1.Rating),2.,Left) | SubString(Window.Property(WatchList_Episode.1.Rating),3.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2108,7 +2108,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.1.Rating),0.,Left) | SubString(Window.Property(WatchList_Episode.1.Rating),1.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>
 					</control>
@@ -2133,7 +2133,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.2.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.2.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
@@ -2146,19 +2146,19 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.2.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.2.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8007)+Container(8007).HasFocus(2)]</visible>
 				</control>
-<!-- 						<visible>!Skin.HasSetting(UseRandomItems)</visible> -->
+<!-- 						<visible>!Skin.HasSetting(UseWatchList_Items)</visible> -->
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
 							<width>590</width>
-							<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
+							<label>$INFO[Window.Property(WatchList_Episode.2.TVShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -2171,7 +2171,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>370</width>
-							<label>"$INFO[Window.Property(RandomEpisode.2.EpisodeTitle)]"</label>
+							<label>"$INFO[Window.Property(WatchList_Episode.2.Label)]"</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -2186,7 +2186,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.2.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.2.Rating),10.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2196,7 +2196,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.2.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.2.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.2.Rating),8.,Left) | SubString(Window.Property(WatchList_Episode.2.Rating),9.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2206,7 +2206,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.2.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.2.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.2.Rating),6.,Left) | SubString(Window.Property(WatchList_Episode.2.Rating),7.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2216,7 +2216,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.2.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.2.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.2.Rating),5.,Left) | SubString(Window.Property(WatchList_Episode.2.Rating),4.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2226,7 +2226,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.2.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.2.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.2.Rating),2.,Left) | SubString(Window.Property(WatchList_Episode.2.Rating),3.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2236,7 +2236,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.2.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.2.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.2.Rating),0.,Left) | SubString(Window.Property(WatchList_Episode.2.Rating),1.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>
 						</control>
 					</control>
@@ -2261,7 +2261,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.3.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.3.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
@@ -2274,19 +2274,19 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.3.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.3.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8007)+Container(8007).HasFocus(3)]</visible>
 				</control>
-<!-- 						<visible>!Skin.HasSetting(UseRandomItems)</visible> -->
+<!-- 						<visible>!Skin.HasSetting(UseWatchList_Items)</visible> -->
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
 							<width>590</width>
-							<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)]</label>
+							<label>$INFO[Window.Property(WatchList_Episode.3.TVShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -2299,7 +2299,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>370</width>
-							<label>"$INFO[Window.Property(RandomEpisode.3.EpisodeTitle)]"</label>
+							<label>"$INFO[Window.Property(WatchList_Episode.3.Label)]"</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -2314,7 +2314,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.3.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.3.Rating),10.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2324,7 +2324,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.3.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.3.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.3.Rating),8.,Left) | SubString(Window.Property(WatchList_Episode.3.Rating),9.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2334,7 +2334,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.3.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.3.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.3.Rating),6.,Left) | SubString(Window.Property(WatchList_Episode.3.Rating),7.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2344,7 +2344,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.3.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.3.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.3.Rating),5.,Left) | SubString(Window.Property(WatchList_Episode.3.Rating),4.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2354,7 +2354,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.3.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.3.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.3.Rating),2.,Left) | SubString(Window.Property(WatchList_Episode.3.Rating),3.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2364,7 +2364,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.3.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.3.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.3.Rating),0.,Left) | SubString(Window.Property(WatchList_Episode.3.Rating),1.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>
 						</control>
 					</control>
@@ -2389,7 +2389,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.4.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.4.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
@@ -2402,19 +2402,19 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.4.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.4.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8007)+Container(8007).HasFocus(4)]</visible>
 				</control>
-<!-- 						<visible>!Skin.HasSetting(UseRandomItems)</visible> -->
+<!-- 						<visible>!Skin.HasSetting(UseWatchList_Items)</visible> -->
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
 							<width>590</width>
-							<label>$INFO[Window.Property(RandomEpisode.4.ShowTitle)]</label>
+							<label>$INFO[Window.Property(WatchList_Episode.4.TVShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -2427,7 +2427,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>370</width>
-							<label>"$INFO[Window.Property(RandomEpisode.4.EpisodeTitle)]"</label>
+							<label>"$INFO[Window.Property(WatchList_Episode.4.Label)]"</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -2442,7 +2442,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.4.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.4.Rating),10.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2452,7 +2452,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.4.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.4.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.4.Rating),8.,Left) | SubString(Window.Property(WatchList_Episode.4.Rating),9.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2462,7 +2462,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.4.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.4.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.4.Rating),6.,Left) | SubString(Window.Property(WatchList_Episode.4.Rating),7.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2472,7 +2472,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.4.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.4.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.4.Rating),5.,Left) | SubString(Window.Property(WatchList_Episode.4.Rating),4.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2482,7 +2482,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.4.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.4.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.4.Rating),2.,Left) | SubString(Window.Property(WatchList_Episode.4.Rating),3.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2492,7 +2492,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.4.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.4.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.4.Rating),0.,Left) | SubString(Window.Property(WatchList_Episode.4.Rating),1.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>
 						</control>
 					</control>
@@ -2517,7 +2517,7 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.5.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.5.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
@@ -2530,19 +2530,19 @@
 					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<align>justify</align>
-					<label>$INFO[Window.Property(RandomEpisode.5.Plot)]</label>
+					<label>$INFO[Window.Property(WatchList_Episode.5.Plot)]</label>
 					<autoscroll time="2000" delay="5000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 					<visible>[Control.HasFocus(8007)+Container(8007).HasFocus(5)]</visible>
 				</control>
-<!-- 						<visible>!Skin.HasSetting(UseRandomItems)</visible> -->
+<!-- 						<visible>!Skin.HasSetting(UseWatchList_Items)</visible> -->
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
 							<posy>80</posy>
 							<height>20</height>
 							<width>590</width>
-							<label>$INFO[Window.Property(RandomEpisode.5.ShowTitle)]</label>
+							<label>$INFO[Window.Property(WatchList_Episode.5.TVShowTitle)]</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_35_UltraThin</font>
@@ -2555,7 +2555,7 @@
 							<posy>115</posy>
 							<height>20</height>
 							<width>370</width>
-							<label>"$INFO[Window.Property(RandomEpisode.5.EpisodeTitle)]"</label>
+							<label>"$INFO[Window.Property(WatchList_Episode.5.Label)]"</label>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
@@ -2570,7 +2570,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.5.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.5.Rating),10.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2580,7 +2580,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.5.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.5.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.5.Rating),8.,Left) | SubString(Window.Property(WatchList_Episode.5.Rating),9.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2590,7 +2590,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.5.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.5.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.5.Rating),6.,Left) | SubString(Window.Property(WatchList_Episode.5.Rating),7.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2600,7 +2600,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.5.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.5.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.5.Rating),5.,Left) | SubString(Window.Property(WatchList_Episode.5.Rating),4.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2610,7 +2610,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.5.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.5.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.5.Rating),2.,Left) | SubString(Window.Property(WatchList_Episode.5.Rating),3.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
 						</control>
 						<control type="image">
@@ -2620,7 +2620,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.5.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.5.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(WatchList_Episode.5.Rating),0.,Left) | SubString(Window.Property(WatchList_Episode.5.Rating),1.,Left)</visible> 
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>
 						</control>
 					</control>
