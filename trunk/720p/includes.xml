@@ -66,8 +66,8 @@
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
@@ -82,12 +82,12 @@
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
+			<fadetime>IconCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(TVShows) ] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
+			<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
 		</control>
 		<control type="multiimage" id="6106">
 			<posx>0</posx>
@@ -96,7 +96,7 @@
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
+			<fadetime>IconCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
@@ -187,7 +187,19 @@
 			<imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
+			<fadetime>IconCrossfadeTime</fadetime>	
+			<visible>!Skin.HasSetting(MoviesExtraFanart) | !Skin.HasSetting(TVShowsExtraFanart)</visible>
+		</control>		
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>IconCrossfadeTime</fadetime>	
+			<visible>[Skin.HasSetting(MoviesExtraFanart) | Skin.HasSetting(TVShowsExtraFanart)]+![Container.Content(Seasons) |Container.Content(Episodes)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -197,7 +209,8 @@
 			<imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<visible>!Skin.HasSetting(MoviesExtraFanart) | !Skin.HasSetting(TVShowsExtraFanart)</visible>
 			<visible>Container.Content(Movies) + [!IsEmpty(Skin.String(Home_Custom_Back_Movies_Folder)) + Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 		</control>
 		<control type="multiimage">
@@ -208,7 +221,7 @@
 			<imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
+			<fadetime>IconCrossfadeTime</fadetime>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons) |Container.Content(Episodes)] + [!IsEmpty(Skin.String(Home_Custom_Back_TVShow_Folder) + Skin.HasSetting(HomeMenuNoTVShowsButton)])</visible>
 		</control>
 	</include>
