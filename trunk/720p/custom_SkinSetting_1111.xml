@@ -2732,15 +2732,27 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
+							<label>Use ExtraFanart for Movies</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(MoviesExtraFanart)</onclick>
+						<selected>Skin.HasSetting(MoviesExtraFanart)</selected>
+						</control>
+						<control type="radiobutton" id="511">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
 							<label>Use ExtraFanart for TV Shows</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(Multiple_TV_Fanart)</onclick>
-							<selected>Skin.HasSetting(Multiple_TV_Fanart)</selected>
+							<onclick>Skin.ToggleSetting(TVShowsExtraFanart)</onclick>
+						<selected>Skin.HasSetting(TVShowsExtraFanart)</selected>
 						</control>
-						<control type="radiobutton" id="511">
+						<control type="radiobutton" id="512">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2752,7 +2764,7 @@
 							<onclick>Skin.ToggleSetting(EnableWatchedIconMovies)</onclick>
 							<selected>Skin.HasSetting(EnableWatchedIconMovies)</selected>
 						</control>
-						<control type="radiobutton" id="512">
+						<control type="radiobutton" id="513">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2764,7 +2776,7 @@
 							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
 							<selected>Skin.HasSetting(UseTvTunes)</selected>
 						</control>
-						<control type="label" id="513">
+						<control type="label" id="514">
 							<width>750</width>
 							<height>45</height>
 							<font>Shade_20_Bold_title</font>
@@ -2774,7 +2786,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="514">
+						<control type="button" id="515">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
