@@ -1553,12 +1553,13 @@
 			<posx>90</posx>
 			<posy>400</posy>
 			<width>384</width>
-			<height>168</height>
+			<height>196</height>
 			<font>Shade_20</font>
 			<textcolor>white</textcolor>
 			<align>justify</align>
 			<label>$INFO[Container.ShowPlot]</label>
-			<include>Zoom</include>		
+			<include>Zoom</include>
+			<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>
 	</control>
 	<control type="group">

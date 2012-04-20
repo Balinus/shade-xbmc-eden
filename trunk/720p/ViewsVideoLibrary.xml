@@ -255,7 +255,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(FanartPanelThumbs)</visible>
 				</control>
 				<control type="textbox">
@@ -268,7 +268,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(FanartPanelThumbs)</visible>
 				</control>
 				<!--control type="label">
@@ -758,7 +758,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -770,7 +770,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="image">
@@ -983,7 +983,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -995,7 +995,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="multiimage">
@@ -1866,7 +1866,7 @@
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(Movies) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 				</control>	
 				<control type="textbox" id="400">
@@ -1880,7 +1880,7 @@
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(SeasonLessInfo)</visible>
 				</control>	
 				<control type="grouplist">
@@ -2236,7 +2236,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Container.Content(Seasons)</visible>
 					<include>RightSlide</include>
 				</control>
@@ -4990,7 +4990,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="largeimage">
 					<posx>60</posx>
@@ -5436,7 +5436,7 @@
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!Skin.HasSetting(UseFlags)</visible>
 					</control>
 					<control type="image">
@@ -5637,7 +5637,7 @@
 						<textcolor>white</textcolor>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="image">
 						<posx>555</posx>
@@ -5930,7 +5930,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="group">
 						<posx>-60</posx>
@@ -6657,7 +6657,7 @@
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<!--<control type="image">
 						<posx>610</posx>
@@ -7244,7 +7244,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -7256,7 +7256,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 
@@ -7576,7 +7576,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[Container.ShowPlot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -7588,7 +7588,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[Container.ShowPlot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="image">
@@ -7884,7 +7884,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -7896,7 +7896,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="image">
@@ -8213,7 +8213,7 @@
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(Movies) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 				</control>	
 				<control type="textbox" id="400">
@@ -8227,7 +8227,7 @@
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$INFO[Container.ShowPlot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(Seasons) + !Skin.HasSetting(SeasonLessInfo)</visible>
 				</control>	
 				<control type="group">
@@ -9363,7 +9363,7 @@
 				<textcolor>white</textcolor>
 				<align>justify</align>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!Skin.HasSetting(BolderPlot)</visible>
 			</control>
 			<control type="textbox">
@@ -9375,7 +9375,7 @@
 				<textcolor>white</textcolor>
 				<align>justify</align>
 				<label>[B]$INFO[ListItem.Plot][/B]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>Skin.HasSetting(BolderPlot)</visible>
 			</control>
 			<control type="image">
@@ -9646,7 +9646,7 @@
 				<textcolor>white</textcolor>
 				<align>justify</align>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!Skin.HasSetting(BolderPlot)</visible>
 			</control>
 			<control type="textbox">
@@ -9658,7 +9658,7 @@
 				<textcolor>white</textcolor>
 				<align>justify</align>
 				<label>[B]$INFO[ListItem.Plot][/B]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>Skin.HasSetting(BolderPlot)</visible>
 			</control>
 			<control type="image">
@@ -10263,7 +10263,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist">
 					<description>Studio Codec Flagging Images</description>
@@ -10584,7 +10584,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$INFO[ListItem.Plot][/B]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<include>Zoom</include>
 			</control>
 			<control type="textbox">
@@ -10598,7 +10598,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$INFO[ListItem.Plot][/B]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 				<include>Zoom</include>
 			</control>
@@ -11103,7 +11103,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="grouplist">
 						<description>MPAA Flagging Conditions Images</description>
@@ -11269,7 +11269,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="grouplist">
 						<description>MPAA Flagging Conditions Images</description>
@@ -11550,7 +11550,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<!--control type="label">
 						<posx>880</posx>
@@ -11781,7 +11781,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -11793,7 +11793,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="multiimage">
@@ -12067,7 +12067,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>[B]$INFO[ListItem.Plot][/B]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 			</control>
 			<!--<control type="scrollbar" id="60">
@@ -12452,7 +12452,7 @@
 						<textcolor>white</textcolor>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!Skin.HasSetting(BolderPlot)</visible>
 					</control>
 					<control type="textbox">
@@ -12464,7 +12464,7 @@
 						<textcolor>white</textcolor>
 						<align>justify</align>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>Skin.HasSetting(BolderPlot)</visible>
 					</control>
 					<control type="multiimage">
@@ -12721,7 +12721,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="grouplist">
 						<description>Media Codec Flagging Images</description>
@@ -13028,7 +13028,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(PosterPanelThumbs)</visible>
 				</control>
 				<control type="textbox">
@@ -13041,7 +13041,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(PosterPanelThumbs)</visible>
 				</control>
 				<!--control type="label">
@@ -13193,7 +13193,7 @@
 				<align>left</align>
 				<textcolor>white</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="largeimage">
 				<posx>60</posx>
@@ -13490,7 +13490,7 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="fadelabel">
 					<posx>880</posx>
@@ -13823,7 +13823,7 @@
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="fadelabel">
 						<posx>1060</posx>
@@ -14180,7 +14180,7 @@
 						<align>left</align>
 						<textcolor>white</textcolor>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
-						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<!--control type="label">
 						<posx>880</posx>
@@ -14519,7 +14519,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -14531,7 +14531,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="multiimage">
@@ -14859,7 +14859,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="textbox">
@@ -14871,7 +14871,7 @@
 					<textcolor>white</textcolor>
 					<align>justify</align>
 					<label>[B]$INFO[ListItem.Plot][/B]</label>
-					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Skin.HasSetting(BolderPlot)</visible>
 				</control>
 				<control type="image">
