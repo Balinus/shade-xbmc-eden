@@ -10,7 +10,7 @@ provider-name="igotdvds and Balinus">
 	<import addon="script.watchlist" version="0.1.13"/>
 	<import addon="script.favourites" version="1.0.3"/>
 	<import addon="script.cu.lyrics" version="0.9.7"/>
-	<import addon="script.tv.show.next.aired" version="2.0.1"/>	
+	<import addon="script.tv.show.next.aired" version="4.1.15"/>	
   </requires>
   <extension point="xbmc.gui.skin" 
   defaultresolution="720p" 
@@ -19,8 +19,10 @@ provider-name="igotdvds and Balinus">
   effectslowdown="1.0" 
   debugging="false"/>
   <extension point="xbmc.addon.metadata">
-    <summary>A skin for XBMC designed by DJeglin and igotdvds and maintained for Eden by Balinus.  Tons of views with a simple sleek design.</summary>
-    <description>Shade - A sleek skin with a multitude of options and customizations!  Informative views with great layouts make this skin truly unique!</description>
+    <summary lang="en">A skin for XBMC designed by DJeglin and igotdvds and maintained for Eden by Balinus.  Tons of views with a simple sleek design.</summary>
+    <summary lang="fr">Un skin pour XBMC développé par DJeglin et igotdvds et maintenu pour Eden par Balinus. Une multitude de vues avec un design minimaliste.</summary>
+    <description lang="en">Shade - A sleek skin with a multitude of options and customizations!  Informative views with great layouts make this skin truly unique!</description>
+    <description lang="fr">Shade - Un skin minimaliste, avec une multitude d'options et de vues</description>
     <platform>all</platform>
   </extension>
 </addon>

@@ -225,7 +225,7 @@
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.1.airday)] at $INFO[Window(Home).Property(NextAired.1.shortime)] on $INFO[Window(Home).Property(NextAired.1.network)]</label>
+				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.1.Airday)] at $INFO[Window(Home).Property(NextAired.1.ShortTime)] on $INFO[Window(Home).Property(NextAired.1.Network)]</label>
 			</control>		
 			<control type="label">
 				<posx>535</posx>
@@ -236,7 +236,7 @@
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.2.airday)] at $INFO[Window(Home).Property(NextAired.2.shortime)] on $INFO[Window(Home).Property(NextAired.2.network)]</label>
+				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.2.AirDay)] at $INFO[Window(Home).Property(NextAired.2.ShortTime)] on $INFO[Window(Home).Property(NextAired.2.Network)]</label>
 			</control>		
 			<control type="label">
 				<posx>535</posx>
@@ -247,7 +247,7 @@
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.3.airday)] at $INFO[Window(Home).Property(NextAired.3.shortime)] on $INFO[Window(Home).Property(NextAired.3.network)]</label>
+				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.3.AirDay)] at $INFO[Window(Home).Property(NextAired.3.ShortTime)] on $INFO[Window(Home).Property(NextAired.3.Network)]</label>
 			</control>		
 			<control type="label">
 				<posx>535</posx>
@@ -258,7 +258,7 @@
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.4.airday)] at $INFO[Window(Home).Property(NextAired.4.shortime)] on $INFO[Window(Home).Property(NextAired.4.network)]</label>
+				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.4.AirDay)] at $INFO[Window(Home).Property(NextAired.4.ShortTime)] on $INFO[Window(Home).Property(NextAired.4.nNtwork)]</label>
 			</control>		
 			<control type="label">
 				<posx>535</posx>
@@ -269,7 +269,7 @@
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.5.airday)] at $INFO[Window(Home).Property(NextAired.5.shortime)] on $INFO[Window(Home).Property(NextAired.5.network)]</label>
+				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.5.AirDay)] at $INFO[Window(Home).Property(NextAired.5.ShortTime)] on $INFO[Window(Home).Property(NextAired.5.Network)]</label>
 			</control>		
 		</control>		
 
