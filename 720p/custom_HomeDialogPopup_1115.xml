@@ -134,7 +134,7 @@
 					<item id="1">
 						<label>WHAT'S ON TV TONIGHT</label>
 						<label2>-</label2>
-						<onclick>XBMC.ActivateWindow(1116)</onclick>
+						<onclick>RunScript(script.tv.show.next.aired)</onclick>
 						<onclick>Dialog.Close(1115)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>

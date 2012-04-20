@@ -13,6 +13,8 @@
 	<include file="IncludeAnims.xml" />
 	<include file="custom_HomeDialogPopup_1115.xml" />
 	<include file="Includes_InfosHome.xml"/>
+	<include file="IncludeExtra.xml"/>
+	
 
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
@@ -33,11 +35,11 @@
 	</include>
 	<include name="BottomSlideRecent">
 		<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,300" end="0,0" delay="800" time="500">WindowOpen</animation>
+		<animation effect="slide" start="0,300" end="0,0" delay="0" time="500">WindowOpen</animation>
 	</include>
 	<include name="BottomSlideMusicRecent">
 		<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,300" end="0,0" delay="500" time="400">WindowOpen</animation>
+		<animation effect="slide" start="0,300" end="0,0" delay="0" time="500">WindowOpen</animation>
 	</include>	
 	<include name="TopSlide">
 		<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
@@ -58,52 +60,7 @@
 		<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
 		<onfocus>SetFocus(50)</onfocus>
 	</include> 
-	<include name="fanart-extra-movies">
-		<control type="multiimage" id="6102">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
-		</control>
-	</include>
-	<include name="fanart-extra-tvshows">
-		<control type="multiimage" id="6105">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
-		</control>
-		<control type="multiimage" id="6106">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo]</visible>
-		</control>
-	</include>
+	
 	<include name="UpOptions">
 		<control type="group">
 			<include>BottomSlide</include>
@@ -851,7 +808,7 @@
 		<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="group">
 			<posx>150</posx>
-			<posy>100</posy>			<visible>Player.HasAudio+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
+			<posy>120</posy>			<visible>Player.HasAudio+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>Title label</description>
@@ -906,7 +863,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>185</posy>
-				<width>370</width>
+				<width>220</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
 				<align>left</align>
@@ -915,7 +872,7 @@
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
+				<pauseatend>2000</pauseatend>				
 			</control>
 		</control>
 		<control type="group">
@@ -971,7 +928,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>185</posy>
-				<width>280</width>
+				<width>250</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
 				<align>left</align>
@@ -986,7 +943,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>185</posy>
-				<width>280</width>
+				<width>250</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Director, | ]$INFO[VideoPlayer.Genre, | ]</label>
 				<align>left</align>

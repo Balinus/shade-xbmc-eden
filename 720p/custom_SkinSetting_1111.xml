@@ -2738,7 +2738,7 @@
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(MoviesExtraFanart)</onclick>
-						<selected>Skin.HasSetting(MoviesExtraFanart)</selected>
+							<selected>Skin.HasSetting(MoviesExtraFanart)</selected>
 						</control>
 						<control type="radiobutton" id="511">
 							<width>900</width>
@@ -2750,7 +2750,7 @@
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(TVShowsExtraFanart)</onclick>
-						<selected>Skin.HasSetting(TVShowsExtraFanart)</selected>
+							<selected>Skin.HasSetting(TVShowsExtraFanart)</selected>
 						</control>
 						<control type="radiobutton" id="512">
 							<width>900</width>
