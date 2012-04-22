@@ -2234,6 +2234,7 @@
 					      <fadetime>IconCrossfadeTime</fadetime>
 					      <texture>shade/scrollfloor.png</texture>					      
 					      <include>BottomSlideRecent</include>
+					      <visible>Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3) | Skin.HasSetting(HomeScriptButton4) | Skin.HasSetting(HomeScriptButton5)</visible>
 				      </control>
 					<control type="list" id="8011">
 					  <include>BottomSlideRecent</include>
@@ -2388,6 +2389,7 @@
 					      <fadetime>IconCrossfadeTime</fadetime>
 					      <texture>shade/scrollfloor.png</texture>					      
 					      <include>BottomSlideRecent</include>
+					      <visible>Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3) | Skin.HasSetting(HomeAddonButton4) | Skin.HasSetting(HomeAddonButton5)</visible>
 				      </control>
 					<control type="list" id="8012">
 					  <include>BottomSlideRecent</include>
