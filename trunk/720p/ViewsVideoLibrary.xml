@@ -407,7 +407,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(547)</visible>
 			<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
-			<include>VisibleFadeEffect</include>
+<!-- 			<include>VisibleFadeEffect</include> -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<control type="image">
@@ -420,7 +420,8 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>RightOpenTVGuide</include>
-			<include>TVBreadCrumbs</include>			
+			<include>TVBreadCrumbs</include>
+<!-- 			<include>Weather</include> -->
 			<control type="wraplist" id="547">
 				<include>Zoom</include>
 				<posx>90</posx>
@@ -428,11 +429,11 @@
 				<width>820</width>
 				<height>500</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1116,TVShows,return)</onright>
+				<onright>RunScript(script.tv.show.next.aired)</onright>
 				<onup>547</onup>
 				<ondown>547</ondown>
 				<viewtype label="Alt. Banner List">list</viewtype>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
