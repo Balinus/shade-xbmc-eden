@@ -61,6 +61,7 @@
 		<onfocus>SetFocus(50)</onfocus>
 	</include> 
 	
+	
 	<include name="UpOptions">
 		<control type="group">
 			<include>BottomSlide</include>
@@ -83,6 +84,32 @@
 				<aligny>center</aligny>
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>	
+		</control>	
+	</include>
+	<include name="RightOpenTVGuide">
+		<control type="group">
+			<include>BottomSlide</include>
+			<control type="image">
+				<posx>150r</posx>
+				<posy>650</posy>
+				<width>35</width>
+				<height>35</height>
+				<texture>shade/right_arrow.png</texture>
+			</control>
+			<control type="label">
+				<description>View Options</description>
+				<posx>170r</posx>
+				<posy>655</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>TV Guide</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Shade_30_UltraThin</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>	
 		</control>	
 	</include>
@@ -108,6 +135,7 @@
 				<aligny>center</aligny>
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>	
 		</control>	
 	</include>
@@ -1194,7 +1222,7 @@
 			<font>Shade_40_UltraThin</font>
 			<textcolor>grey2</textcolor>
 			<label>$INFO[System.Time]</label>				
-		</control>
+		</control>		
 	</control>
 </include>
 <include name="Weather">
@@ -1211,7 +1239,7 @@
 		<!--<control type="image">
 				<description>Weather image</description>
 				<posx>-115</posx>
-				<posy>-14</posy>
+				<posy>-8</posy>
 				<width>45</width>
 				<height>45</height>
 				<colordiffuse>80FFFFFF</colordiffuse>
@@ -1231,6 +1259,15 @@
 			<textcolor>grey2</textcolor>
 			<label>$INFO[Weather.Temperature]</label>
 		</control>
+		<!--<control type="image">
+			<posx>-115</posx>
+			<posy>-9</posy>
+			<width>48</width>
+			<height>48</height>
+			<align>left</align>
+			<texture>$INFO[Weather.Conditions]</texture>
+			<visible>!Skin.HasSetting(NoHomeWeather)</visible>
+		</control>-->
 	</control>
 </include>
 <include name="Poster-view-panel1">
