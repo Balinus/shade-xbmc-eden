@@ -1417,7 +1417,7 @@
 				<onright>508</onright>
 				<onup>2</onup>
 				<!--<ondown>60</ondown>-->
-				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
+				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Fanart">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -1686,7 +1686,7 @@
 				<onright>552</onright>
 				<onup>2</onup>
 				<!--<ondown>60</ondown>-->
-				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
+				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Alt. Fanart">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -4660,7 +4660,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
+			<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 			<onup>2</onup>
 			<onleft>520</onleft>
 			<onright>520</onright>
@@ -4728,8 +4728,8 @@
 			<posy>0</posy>
 			<control type="label">
 				<description>Play Trailer Label</description>
-				<posx>610</posx>	
-				<posy>650</posy>
+				<posx>580</posx>	
+				<posy>645</posy>
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<selectedcolor>selected</selectedcolor>				
@@ -6788,7 +6788,7 @@
 				<width>870</width>
 				<height>720</height>
 				<onleft>2</onleft>
-				<onright>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</onright>
+				<onright>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</onright>
 				<onup>533</onup>
 				<ondown>533</ondown>
 				<viewtype label="Poster List">list</viewtype>
@@ -8835,7 +8835,7 @@
 				<width>1280</width>
 				<height>720</height>		
 				<onup>9000</onup>
-				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
+				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<onleft>534</onleft>
 				<onright>534</onright>
 				<pagecontrol>70</pagecontrol>
@@ -10366,7 +10366,7 @@
 				<onleft>539</onleft>
 				<onright>539</onright>
 				<onup>2</onup>
-				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
+				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Poster View">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -11937,7 +11937,7 @@
 				<onleft>542</onleft>
 				<onright>542</onright>
 				<onup>2</onup>
-				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</ondown>
+				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Poster View 2">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
