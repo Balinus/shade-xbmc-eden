@@ -5,7 +5,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<timeperimage>5000</timeperimage>
+			<timeperimage>7000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
@@ -21,7 +21,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<timeperimage>5000</timeperimage>
+			<timeperimage>7000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
@@ -35,7 +35,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<timeperimage>5000</timeperimage>
+			<timeperimage>7000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
