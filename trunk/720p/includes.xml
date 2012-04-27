@@ -1225,6 +1225,30 @@
 		</control>		
 	</control>
 </include>
+<include name="Clock_VidPlayer">
+		<control type="group">
+			<visible>!Skin.HasSetting(DisableClock)</visible>			
+			<visible>!Player.Paused</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>VisibleFadeEffect2</include>
+		<control type="label">
+			<description>time label</description>
+			
+			<posx>15</posx>
+			<posy>680</posy>
+			<width>400</width>
+			<height>28</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<colordiffuse>80FFFFFF</colordiffuse>
+			<font>Shade_40_UltraThin</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[System.Time]</label>				
+		</control>		
+	</control>
+</include>
 <include name="Weather">
 	<control type="group">
 		<posx>1245</posx>
@@ -1437,6 +1461,10 @@
 <include name="VisibleFadeEffect">
 	<animation effect="fade" time="300">Visible</animation>
 	<animation effect="fade" time="300">Hidden</animation>
+</include>
+<include name="VisibleFadeEffect2">
+	<animation effect="fade" time="300">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
 </include>
 <include name="VisibleFadeEffectHome">
 	<animation effect="fade" time="1000">Visible</animation>
