@@ -201,7 +201,25 @@
 					<animation effect="fade" start="100" end="30" time="100" condition="!Player.CanRecord">Conditional</animation>
 				</control>
 			</control>
-			<include>Clock</include>
+
+		  <control type="group">
+			      <visible>!Skin.HasSetting(DisableClock)</visible>
+			      <posx>0</posx>
+			      <posy>0</posy>
+		      <control type="label">
+			      <description>time label</description>
+			      <posx>15</posx>
+			      <posy>15</posy>
+			      <width>400</width>
+			      <height>28</height>
+			      <align>left</align>
+			      <aligny>center</aligny>
+			      <colordiffuse>80FFFFFF</colordiffuse>
+			      <font>Shade_40_UltraThin</font>
+			      <textcolor>grey2</textcolor>
+			      <label>$INFO[System.Time]</label>				
+		      </control>		
+		  </control>
 		</control>
 	</controls>
 </window>
