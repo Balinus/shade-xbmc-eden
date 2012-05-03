@@ -1674,7 +1674,7 @@
 				<posy>-430</posy>
 				<include>UpOptions</include>
 			</control>			
-
+			<include>Clock-Alt</include>
 			<control type="fixedlist" id="552">
 				<include>BottomSlide</include>				
 				<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
@@ -1761,7 +1761,7 @@
 				<include>BottomSlide</include>
 <!-- 				<visible>!Container.Content(TVShows)</visible> -->
 				<posx>0</posx>
-				<posy>-450</posy>
+				<posy>-460</posy>
 				<!--<control type="image">
 					<posx>30</posx>
 					<posy>660</posy>
@@ -5289,7 +5289,8 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>EpisodeBreadCrumbs</include>
-			<include>RightOpenTVGuide</include>
+			<include>Clock-Alt</include>
+<!-- 			<include>RightOpenTVGuide</include> -->
 			<control type="fixedlist" id="548">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -7126,6 +7127,7 @@
 			<visible>Control.IsVisible(534)</visible>
 			<visible>Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 			<include>VisibleFadeEffect</include>
+<!-- 			<include>Clock-Alt</include> -->
 			<control type="image">
 				<posx>-640</posx>
 				<posy>-400</posy>
@@ -8110,7 +8112,7 @@
 			</control>	
 
 			<!--Season and Movie View with all info-->
-
+			
 			<control type="group">
 				<include>BottomSlide</include>
 				<visible>!Container.Content(TVShows)</visible>
@@ -8827,8 +8829,10 @@
 		<control type="group">
 
 			<include>ScrollLetterList</include>
+			
 			<control type="list" id="534">
 				<visible>Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
+				
 				<viewtype label="Scroll">Wraplist of Posters</viewtype>
 				<posx>600</posx>
 				<posy>0</posy>
