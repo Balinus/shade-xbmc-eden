@@ -77,9 +77,22 @@
 						<texture border="2,2,2,2" diffuse="shade/rowdiffuse.png">shade/row.png</texture>
 					</control>
 					<control type="label">
+						<posx>825</posx>
+						<posy>0</posy>
+						<width>550</width>
+						<height>60</height>
+						<font>Shade_24_Bold</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>![container.content(Songs) | container.content(addons)]</visible>
+					</control>
+					<control type="label">
 						<posx>200</posx>
 						<posy>0</posy>
-						<width>520</width>
+						<width>550</width>
 						<height>60</height>
 						<font>Shade_24_Bold</font>
 						<textcolor>white</textcolor>
@@ -87,6 +100,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>container.content(Songs) | container.content(addons)</visible>
 					</control>
 					<control type="label">
 						<posx>865</posx>
@@ -99,7 +113,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
-<!-- 						<visible>!Window.IsVisible(Videos)</visible> -->
+						<visible>container.content(Songs) | container.content(addons)</visible>
 					</control>
 					<!--<control type="image">
 						<posx>665</posx>
@@ -120,9 +134,22 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
+						<posx>825</posx>
+						<posy>0</posy>
+						<width>550</width>
+						<height>60</height>
+						<font>Shade_24_Bold</font>
+						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>![container.content(Songs) | container.content(addons)]</visible>
+					</control>
+					<control type="label">
 						<posx>200</posx>
 						<posy>0</posy>
-						<width>520</width>
+						<width>550</width>
 						<height>60</height>
 						<font>Shade_24_Bold</font>
 						<textcolor>black</textcolor>
@@ -130,6 +157,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>container.content(Songs) | container.content(addons)</visible>
 					</control>					
 					<control type="label">
 						<posx>865</posx>
@@ -142,7 +170,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
-<!-- 						<visible>!Window.IsVisible(Videos)</visible> -->
+						<visible>container.content(Songs) | container.content(addons)</visible>
 					</control>
 					<!--<control type="image">
 						<posx>665</posx>
