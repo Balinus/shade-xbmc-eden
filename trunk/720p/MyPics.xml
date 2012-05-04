@@ -151,7 +151,7 @@
 					<ondown>50</ondown>
 				</control>
 				<control type="button" id="7">
-					<description>Recersive Slideshow</description>
+					<description>Recursive Slideshow</description>
 					<posx>820</posx>
 					<posy>90</posy>
 					<include>ButtonCommonValues</include>
@@ -220,7 +220,7 @@
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>	
 			<control type="image">
-				<posx>1020</posx>
+				<posx>1000</posx>
 				<posy>1178</posy>
 				<width>35</width>
 				<height>35</height>
@@ -228,7 +228,7 @@
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>
 			<control type="image">
-				<posx>1060</posx>
+				<posx>1040</posx>
 				<posy>1178</posy>
 				<width>35</width>
 				<height>35</height>
@@ -237,7 +237,7 @@
 			</control>
 			<control type="label">
 				<description>View Options</description>
-				<posx>1115</posx>
+				<posx>1095</posx>
 				<posy>1186</posy>
 				<height>20</height>
 				<width>275</width>
