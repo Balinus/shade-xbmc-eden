@@ -1282,6 +1282,7 @@
 			<visible>!Control.IsVisible(514)</visible>
 			<visible>!Control.IsVisible(515)</visible>
 			<visible>!Control.IsVisible(516)</visible>
+			<visible>!Control.IsVisible(534)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
@@ -1308,7 +1309,7 @@
 <include name="Clock-Alt">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableClock)</visible>
-			<visible>Control.IsVisible(548) | Control.IsVisible(534) | Control.IsVisible(552) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(516)</visible>
+			<visible>Control.IsVisible(548) | Control.IsVisible(534) | Control.IsVisible(552) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(516) | Control.IsVisible(534)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
@@ -1318,7 +1319,7 @@
 		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="label">
 			<description>time label</description>
-			<posx>208r</posx>
+			<posx>180r</posx>
 			<posy>15</posy>
 			<width>400</width>
 			<height>28</height>
