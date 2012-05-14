@@ -2641,6 +2641,22 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
+							<label>Disable Bread Crumbs</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+<!-- 							<radiowidth>83</radiowidth> -->
+<!-- 							<radioheight>67</radioheight> -->
+							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(DisableBreadCrumbs)</onclick>
+							<selected>Skin.HasSetting(DisableBreadCrumbs)</selected>
+						</control>
+						<control type="radiobutton" id="504">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
@@ -2649,7 +2665,7 @@
 							<onclick>Skin.ToggleSetting(UseLandscape)</onclick>
 							<selected>Skin.HasSetting(UseLandscape)</selected>
 						</control>
-						<control type="radiobutton" id="504">
+						<control type="radiobutton" id="505">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2661,7 +2677,7 @@
 							<onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
 							<selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
 						</control>
-						<control type="button" id="505">
+						<control type="button" id="506">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_18</font>
@@ -2674,7 +2690,7 @@
 							<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
 							<visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
 						</control>
-						<control type="radiobutton" id="506">
+						<control type="radiobutton" id="507">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -2688,7 +2704,7 @@
 							<onclick>Skin.ToggleSetting(DisableClock)</onclick>
 							<selected>Skin.HasSetting(DisableClock)</selected>
 						</control>
-						<control type="radiobutton" id="507">
+						<control type="radiobutton" id="508">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -2702,7 +2718,7 @@
 							<onclick>Skin.ToggleSetting(TVClearart)</onclick>
 							<selected>Skin.HasSetting(TVClearart)</selected>
 						</control>
-						<control type="radiobutton" id="508">
+						<control type="radiobutton" id="509">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -2716,7 +2732,7 @@
 							<onclick>Skin.ToggleSetting(MovieClearart)</onclick>
 							<selected>Skin.HasSetting(MovieClearart)</selected>
 						</control>
-						<control type="radiobutton" id="509">
+						<control type="radiobutton" id="510">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2728,7 +2744,7 @@
 							<onclick>Skin.ToggleSetting(KioskMode)</onclick>
 							<selected>Skin.HasSetting(KioskMode)</selected>
 						</control>
-						<control type="radiobutton" id="510">
+						<control type="radiobutton" id="511">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2740,7 +2756,7 @@
 							<onclick>Skin.ToggleSetting(MoviesExtraFanart)</onclick>
 							<selected>Skin.HasSetting(MoviesExtraFanart)</selected>
 						</control>
-						<control type="radiobutton" id="511">
+						<control type="radiobutton" id="512">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2752,7 +2768,7 @@
 							<onclick>Skin.ToggleSetting(TVShowsExtraFanart)</onclick>
 							<selected>Skin.HasSetting(TVShowsExtraFanart)</selected>
 						</control>
-						<control type="radiobutton" id="512">
+						<control type="radiobutton" id="513">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2764,7 +2780,7 @@
 							<onclick>Skin.ToggleSetting(EnableWatchedIconMovies)</onclick>
 							<selected>Skin.HasSetting(EnableWatchedIconMovies)</selected>
 						</control>
-						<control type="radiobutton" id="513">
+						<control type="radiobutton" id="514">
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
@@ -2776,7 +2792,7 @@
 							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
 							<selected>Skin.HasSetting(UseTvTunes)</selected>
 						</control>
-						<control type="label" id="514">
+						<control type="label" id="515">
 							<width>750</width>
 							<height>45</height>
 							<font>Shade_20_Bold_title</font>
@@ -2786,7 +2802,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="515">
+						<control type="button" id="516">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>

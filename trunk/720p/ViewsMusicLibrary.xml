@@ -456,6 +456,503 @@
 			</control>-->
 		</control>
 	</include>
+	<include name="Artist-List-View">
+		<control type="group">
+			<visible>Control.IsVisible(514)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			
+			
+			<include>Overlay</include>
+			<include>Clock-Alt</include>
+			<include>LeftOptions</include>
+			<include>ArtistBreadCrumbs</include>
+<!-- 			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include> -->
+<!-- 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include> -->
+<!-- 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include> -->
+			<control type="fixedlist" id="514">
+				<include>Zoom</include>		
+				<posx>544</posx>
+				<posy>120</posy>
+				<width>930</width>
+				<height>540</height>
+				<onleft>2</onleft>
+<!-- 				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include> -->
+<!-- 				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include> -->
+<!-- 				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include> -->
+				<onup>514</onup>
+				<ondown>514</ondown>
+				<viewtype label="Artist List">list</viewtype>
+				<focusposition>2</focusposition>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<visible>Container.Content(Artists)</visible>
+				<itemlayout height="80" width="500">
+					<control type="group">
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<posx>45</posx>
+						<control type="image">
+							<posx>0</posx>
+							<posy>17</posy>
+							<width>40</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>shade/banners/$INFO[ListItem.Overlay]</texture>
+						</control>
+						<control type="label">
+							<posx>135</posx>
+							<posy>8</posy>
+							<width>500</width>
+							<height>30</height>
+							<font>Shade_24</font>
+							<textcolor>grey2</textcolor>
+							<align>left</align>
+							<label>$INFO[ListItem.artist]</label>
+						</control>					
+					</control>	
+				</itemlayout>
+				<focusedlayout height="220" width="800">
+					<control type="label">
+						<posx>255</posx>
+						<posy>77</posy>
+						<width>450</width>
+						<height>20</height>
+						<font>Shade_30</font>
+						<textcolor>white</textcolor>
+						<scroll>false</scroll>
+						<scrollspeed>0</scrollspeed>
+						<align>left</align>
+						<label>$INFO[ListItem.Artist]</label>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>4</posy>
+						<width>190</width>
+						<height>190</height>
+						<align>right</align>
+						<aspect>stretch</aspect>
+						<texture>DefaultFolderBack.png</texture>
+						<bordertexture border="8">shade/thumbborder.png</bordertexture>
+						<bordersize>8</bordersize>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>4</posy>
+						<width>190</width>
+						<height>190</height>
+						<align>right</align>
+						<aspect>stretch</aspect>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<bordertexture border="8">shade/thumbborder.png</bordertexture>
+						<bordersize>8</bordersize>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="group">
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<posy>-15</posy>
+				<include>Zoom</include>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>150</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Shade_40</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<scrollspeed>50</scrollspeed>
+					<align>left</align>
+					<label>$INFO[ListItem.Artist]</label>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>210</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Shade_24</font>
+					<textcolor>yellow</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>Genre: [COLOR=grey2]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>240</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Shade_24</font>
+					<textcolor>yellow</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>Style: [COLOR=grey2]$INFO[ListItem.Property(Artist_Style)][/COLOR]</label>
+				</control>
+			<!--	<control type="label">
+					<posx>90</posx>
+					<posy>270</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Shade_24</font>
+					<textcolor>yellow</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>Years Active: [COLOR=grey2]$INFO[ListItem.Property(Artist_YearsActive)][/COLOR]</label>
+				</control>-->				
+				<control type="textbox">
+					<posx>90</posx>
+					<posy>300</posy>
+					<width>400</width>
+					<height>192</height>
+					<font>Shade_20</font>
+					<textcolor>white</textcolor>
+					<align>justify</align>
+					<label>$INFO[ListItem.Property(Artist_Description)]</label>
+				</control>
+							<control type="image">
+								<posx>90</posx>
+								<posy>490</posy> 
+								<width>400</width>
+								<height>155</height>
+								<aligny>center</aligny>
+								<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
+								<aspectratio>keep</aspectratio>
+								<include>VisibleFadeEffect</include>
+								<fadetime>IconCrossfadeTime</fadetime>
+							</control>
+			</control>
+		</control>
+	</include>
+	<include name="Artist-Wall-View">
+		<control type="group">
+			<visible>Control.IsVisible(515)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<!--<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>720</height>
+				<texture>shade/vignette3.png</texture>
+			</control>-->
+			
+			<include>Overlay</include>
+			<include>Clock-Alt</include>
+			<include>ArtistBreadCrumbs</include>
+
+		<control type="group">
+		<animation effect="slide" end="40,0" time="200" tween="cubic" easing="inout" condition="Container(515).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-40,0" time="200" tween="cubic" easing="inout" condition="Container(515).Column(7)">Conditional</animation>
+		<animation effect="slide" end="0,20" time="200" tween="cubic" easing="inout" condition="Container(515).Row(0)">Conditional</animation>
+			<control type="Panel" id="515">
+				<include>Zoom</include>		
+				<posx>-40</posx>
+				<posy>110</posy>
+				<width>1330</width>
+				<height>577</height>
+				<onleft>2</onleft>
+<!-- 				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include> -->
+<!-- 				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include> -->
+<!-- 				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include> -->
+				<onup>515</onup>
+				<ondown>515</ondown>
+				<viewtype label="Artist Wall">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<preloaditems>300</preloaditems>
+				<orientation>vertical</orientation>
+				<visible>Container.Content(Artists)</visible>
+				<itemlayout height="155" width="155">
+					<control type="group">
+						<control type="image">
+							<posx>62</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="shade/artist-fallback.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>62</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="shade/artist-fallback.png">DefaultFolderBack.png</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>62</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture>shade/wall-grain.png</texture>
+						</control>
+					</control>	
+				</itemlayout>
+				<focusedlayout height="510" width="390">
+					<control type="image">
+						<posx>62</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="shade/artist-fallback.png">$INFO[ListItem.Thumb]</texture>
+						<bordertexture border="4">shade/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>62</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="shade/artist-fallback.png">DefaultFolderBack.png</texture>
+						<bordertexture border="4">shade/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>62</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">shade/actor-fade5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+					</control>
+					<control type="label">
+						<posx>137</posx>
+						<posy>99</posy>
+						<width>220</width>
+						<height>150</height>
+						<font>Shade_24</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<animation type="Focus" reversible="false">
+							<effect type="fade" start="0" end="100" time="200" delay="200"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>62</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="shade/artist-fallback.png">shade/poster-border5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+					</control>
+				</focusedlayout>
+			</control>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>610</posy>	
+				<width>1280</width>
+				<height>110</height>
+				<aspect>stretch</aspect>
+				<texture>shade/wall-bottom.png</texture>
+			</control>
+			<include>LeftOptions</include>
+<!-- 			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include> -->
+<!-- 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include> -->
+<!-- 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include> -->
+			
+		</control>
+	</include>
+	<include name="Album-Wall-View">
+		<control type="group">
+			<visible>Control.IsVisible(516)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<!--<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>720</height>
+				<texture>shade/vignette3.png</texture>
+			</control>-->
+			
+			<include>Overlay</include>
+			<include>Clock-Alt</include>
+			<include>AlbumBreadCrumbs</include>
+		<control type="group">
+		<animation effect="slide" end="40,0" time="200" tween="cubic" easing="inout" condition="Container(516).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-40,0" time="200" tween="cubic" easing="inout" condition="Container(516).Column(7)">Conditional</animation>
+		<animation effect="slide" end="0,20" time="200" tween="cubic" easing="inout" condition="Container(516).Row(0)">Conditional</animation>
+			<control type="Panel" id="516">
+				<include>Zoom</include>		
+				<posx>22</posx>
+				<posy>120</posy>
+				<width>1260</width>
+				<height>577</height>
+				<onleft>2</onleft>
+<!-- 				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include> -->
+<!-- 				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include> -->
+<!-- 				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include> -->
+				<onup>516</onup>
+				<ondown>516</ondown>
+				<viewtype label="Album Wall">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<preloaditems>300</preloaditems>
+				<orientation>vertical</orientation>
+				<visible>Container.Content(Albums)</visible>
+				<itemlayout height="155" width="155">
+					<control type="group">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="shade/album-fallback.png">DefaultFolderBack.png</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="shade/album-fallback.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+							<visible>!StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">shade/all-albums.png</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture>shade/wall-grain.png</texture>
+						</control>
+					</control>	
+				</itemlayout>
+				<focusedlayout height="510" width="210">
+			
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="shade/album-fallback.png">DefaultFolderBack.png</texture>
+						<bordertexture border="4">shade/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="shade/album-fallback.png">$INFO[ListItem.Thumb]</texture>
+						<bordertexture border="4">shade/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">shade/all-albums.png</texture>
+						<bordertexture border="4">shade/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+						<visible>StringCompare(ListItem.label,* All albums)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="shade/album-fallback.png">shade/poster-border5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
+						</animation>
+					</control>
+				</focusedlayout>
+			</control>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>610</posy>	
+				<width>1280</width>
+				<height>110</height>
+				<aspect>stretch</aspect>
+				<texture>shade/wall-bottom.png</texture>
+			</control>
+<!-- 			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include> -->
+<!-- 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include> -->
+<!-- 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include> -->
+			<include>LeftOptions</include>
+			
+		</control>
+	</include>
 	<include name="MusicVideoInfoListView">
 		<control type="group">
 			<visible>Control.IsVisible(511)</visible>

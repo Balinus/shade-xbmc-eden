@@ -123,14 +123,24 @@
                                             <posy>15</posy>
                                             <posx>20</posx>
                                             <include>VisibleFadeEffect</include>
-                                            <control type="image">
+                                            <!--<control type="image">
                                                     <description>Rating value</description>
                                                     <posx>20</posx>
                                                     <posy>460</posy>
                                                     <width>150</width>
                                                     <height>30</height>
                                                     <texture>$INFO[Listitem.StarRating]</texture>
-                                            </control>
+                                            </control>-->
+					    <control type="image">
+										<description>Star</description>
+										<posx>20</posx>
+										<posy>460</posy>
+										<width>150</width>
+										<height>30</height>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+									</control>
+							
                                             <control type="grouplist">
                                                     <description>MPAA Flagging Conditions Images</description>
                                                     <posx>190</posx>
@@ -321,13 +331,15 @@
                                             <posx>20</posx>
                                             <include>VisibleFadeEffect</include>
                                             <control type="image">
-                                                    <description>Rating value</description>
-                                                    <posx>20</posx>
-                                                    <posy>460</posy>
-                                                    <width>150</width>
-                                                    <height>30</height>
-                                                    <texture>$INFO[Listitem.StarRating]</texture>
-                                            </control>
+										<description>Star</description>
+										<posx>20</posx>
+										<posy>460</posy>
+										<width>150</width>
+										<height>30</height>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+									</control>
+						
                                             <control type="grouplist">
                                                     <description>MPAA Flagging Conditions Images</description>
                                                     <posx>21</posx>
@@ -509,14 +521,16 @@
                                             <posy>15</posy>
                                             <posx>20</posx>
                                             <include>VisibleFadeEffect</include>
-                                            <control type="image">
-                                                    <description>Rating value</description>
-                                                    <posx>20</posx>
-                                                    <posy>460</posy>
-                                                    <width>150</width>
-                                                    <height>30</height>
-                                                    <texture>$INFO[Listitem.StarRating]</texture>
-                                            </control>
+                                           <control type="image">
+										<description>Star</description>
+										<posx>20</posx>
+										<posy>460</posy>
+										<width>150</width>
+										<height>30</height>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+									</control>
+							
                                             <control type="grouplist">
                                                     <description>MPAA Flagging Conditions Images</description>
                                                     <posx>188</posx>
@@ -698,14 +712,16 @@
                                             <posy>15</posy>
                                             <posx>20</posx>
                                             <include>VisibleFadeEffect</include>
-                                            <control type="image">
-                                                    <description>Rating value</description>
-                                                    <posx>20</posx>
-                                                    <posy>460</posy>
-                                                    <width>150</width>
-                                                    <height>30</height>
-                                                    <texture>$INFO[Listitem.StarRating]</texture>
-                                            </control>
+                                           <control type="image">
+										<description>Star</description>
+										<posx>20</posx>
+										<posy>460</posy>
+										<width>150</width>
+										<height>30</height>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+									</control>
+						
                                             <control type="grouplist">
                                                     <description>MPAA Flagging Conditions Images</description>
                                                     <posx>21</posx>

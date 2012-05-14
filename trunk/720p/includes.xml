@@ -1169,6 +1169,83 @@
 			</control>
 		</control>
 	</include>
+	<include name="ArtistBreadCrumbs">
+		<control type="group">
+			<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
+			<control type="label">
+				<description>Title label</description>
+				<posx>90</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Artists</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_50</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Container.Content(Artists)</visible>
+				<include>TopSlide</include>
+			</control>	
+			<control type="label">
+				<description>Title label</description>
+				<posx>260</posx>
+				<posy>49</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_20</font>
+				<textcolor>grey2</textcolor>
+				<visible>Container.Content(Artists)</visible>
+				<include>TopSlide</include>
+			</control>	
+		</control>	
+	</include>
+	<include name="AlbumBreadCrumbs">
+		<control type="group">
+			<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
+			<control type="label">
+				<description>Title label</description>
+				<posx>90</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Albums</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_50</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Container.Content(Albums)</visible>
+				<include>TopSlide</include>
+			</control>	
+			<control type="label">
+				<description>Title label</description>
+				<posx>280</posx>
+				<posy>49</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_20</font>
+				<textcolor>grey2</textcolor>
+				<visible>Container.Content(Albums)</visible>
+				<include>TopSlide</include>
+			</control>	
+		</control>	
+	</include>
+	<include name="Overlay">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1290</width>
+			<height>730</height>
+			<texture>shade/background-overlay.png</texture>
+		</control>
+	</include>
 	<include name="ScrollOffsetLabel">
 		<control type="group">
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
@@ -1202,6 +1279,9 @@
 			<visible>!Control.IsVisible(528)</visible>
 			<visible>!Control.IsVisible(552)</visible>
 			<visible>!Control.IsVisible(548)</visible>
+			<visible>!Control.IsVisible(514)</visible>
+			<visible>!Control.IsVisible(515)</visible>
+			<visible>!Control.IsVisible(516)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
@@ -1228,7 +1308,7 @@
 <include name="Clock-Alt">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableClock)</visible>
-			<visible>Control.IsVisible(548) | Control.IsVisible(534) | Control.IsVisible(552)</visible>
+			<visible>Control.IsVisible(548) | Control.IsVisible(534) | Control.IsVisible(552) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(516)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
@@ -1238,8 +1318,8 @@
 		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="label">
 			<description>time label</description>
-			<posx>250r</posx>
-			<posy>38</posy>
+			<posx>208r</posx>
+			<posy>15</posy>
 			<width>400</width>
 			<height>28</height>
 			<align>left</align>

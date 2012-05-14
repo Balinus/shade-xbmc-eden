@@ -410,13 +410,13 @@
 <!-- 			<include>VisibleFadeEffect</include> -->
 			<posx>0</posx>
 			<posy>0</posy>
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1290</width>
 				<height>720</height>
 				<texture>shade/vignette3.png</texture>
-			</control>
+			</control>-->
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>RightOpenTVGuide</include>
@@ -1632,6 +1632,7 @@
 	</include>
 	
 	<include name="fanart2">
+		
 		<control type="group">
 			<visible>Control.IsVisible(552)</visible>
 			<include>VisibleFadeEffect</include>
@@ -1674,7 +1675,11 @@
 				<posy>-430</posy>
 				<include>UpOptions</include>
 			</control>			
-			<include>Clock-Alt</include>
+			<control type="group">
+			  <posx>0</posx>
+			  <posy>-440</posy>
+			  <include>Clock-Alt</include>
+			</control>
 			<control type="fixedlist" id="552">
 				<include>BottomSlide</include>				
 				<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
@@ -5279,13 +5284,13 @@
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>0</posy>
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1290</width>
 				<height>720</height>
 				<texture>shade/vignette4.png</texture>
-			</control>
+			</control>-->
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>EpisodeBreadCrumbs</include>
