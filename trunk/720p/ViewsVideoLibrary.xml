@@ -323,13 +323,22 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Genre]</label>
 				</control>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>880</posx>
 					<posy>175</posy>
 					<width>150</width>
 					<height>30</height>
 					<texture>$INFO[Listitem.StarRating]</texture>
+				</control>-->
+				<control type="image">
+					<description>Star</description>
+					<posx>880</posx>
+					<posy>175</posy>
+					<width>150</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 				</control>
 
 			</control>
@@ -577,7 +586,7 @@
 						<include>StudioFlaggingConditionsBigColor</include>
 						<visible>Skin.HasSetting(UseColoredFlags)</visible>		
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>880</posx>
 						<posy>365</posy>
@@ -585,6 +594,16 @@
 						<height>30</height>
 						<align>left</align>						
 						<texture>$INFO[Listitem.StarRating]</texture>						
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>365</posy>
+						<width>154</width>
+						<height>30</height>
+						<align>left</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 					</control>
 					<control type="image">
 						<posx>1050</posx>
@@ -1790,7 +1809,7 @@
 				</control>-->	
 				<control type="label">
 					<description>header label</description>
-					<posx>30</posx>
+					<posx>25</posx>
 					<posy>45</posy>
 					<width>1000</width>
 					<height>30</height>
@@ -1804,7 +1823,7 @@
 				</control>
 				<control type="label">
 					<description>header label</description>
-					<posx>30</posx>
+					<posx>25</posx>
 					<posy>45</posy>
 					<width>1000</width>
 					<height>30</height>
@@ -1934,13 +1953,23 @@
 						<include>AudioCodecFlaggingConditionsSmall</include>
 						<visible>!Skin.HasSetting(Noflags) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>-->
-					<control type="image">
+				<!--	<control type="image">
 						<description>Rating value</description>
 						<posx>20</posx>
 						<posy>460</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+						<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>20</posx>
+						<posy>458</posy>
+						<width>170</width>
+						<height>33</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>
 					<control type="image">
@@ -2304,7 +2333,7 @@
 					<visible>!Container.Content(Seasons)</visible>
 					<include>RightSlide</include>
 				</control>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>880</posx>
 					<posy>175</posy>
@@ -2313,7 +2342,18 @@
 					<texture>$INFO[Listitem.StarRating]</texture>
 					<visible>!Container.Content(Seasons)</visible>
 					<include>RightSlide</include>
-				</control>
+				</control>-->
+				<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>175</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+						<visible>!Container.Content(Seasons)</visible>
+						<include>RightSlide</include>
+					</control>
 
 			</control>
 			<control type="grouplist">
@@ -5168,13 +5208,24 @@
 						<scroll>true</scroll>
 						<visible>container.content(TVShows)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>480</posx>
 						<posy>10</posy>
 						<width>130</width>
 						<height>40</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+						<control type="image">
+						<description>Star</description>
+						<posx>480</posx>
+						<posy>10</posy>
+						<width>130</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+<!-- 						<visible>!Container.Content(Seasons)</visible> -->
+<!-- 						<include>RightSlide</include> -->
 					</control>
 				</itemlayout>
 				<focusedlayout height="140" width="850">
@@ -5209,7 +5260,7 @@
 
 			<control type="group">
 				<include>LeftSlide</include>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>380</posx>
 					<posy>290</posy>
@@ -5217,7 +5268,17 @@
 					<height>20</height>
 					<align>right</align>
 					<texture>$INFO[Listitem.StarRating]</texture>
-				</control>
+				</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>380</posx>
+						<posy>290</posy>
+						<width>130</width>
+						<height>20</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 				<control type="label">
 					<posx>505</posx>
 					<posy>317</posy>
@@ -5383,7 +5444,7 @@
 						<label>Originally aired: [COLOR=grey2]$INFO[ListItem.Date][/COLOR]</label>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>270</posx>
 						<posy>76</posy>
@@ -5392,6 +5453,17 @@
 						<align>right</align>
 						<texture>$INFO[Listitem.StarRating]</texture>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>270</posx>
+						<posy>76</posy>
+						<width>154</width>
+						<height>30</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>		
 					</control>
 					<control type="image">
 						<posx>450</posx>
@@ -5567,7 +5639,7 @@
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<visible>Skin.HasSetting(DisableStars2)</visible>
 					</control>
-					<control type="image">
+				<!--	<control type="image">
 						<description>Rating value</description>
 						<posx>641</posx>
 						<posy>9</posy>
@@ -5576,6 +5648,17 @@
 						<align>right</align>
 						<texture>$INFO[Listitem.StarRating]</texture>
 						<visible>!Skin.HasSetting(DisableStars2)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>641</posx>
+						<posy>9</posy>
+						<width>183</width>
+						<height>33</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
+						<visible>!Skin.HasSetting(DisableStars2)</visible>	
 					</control>
 				</itemlayout>
 				<focusedlayout height="220" width="850">
@@ -5671,7 +5754,7 @@
 						<texture>shade/rating_red.png</texture>
 						<visible>Skin.HasSetting(RedStars)</visible>
 					</control>						
-					<control type="image">
+				<!--	<control type="image">
 						<description>Rating value</description>
 						<posx>641</posx>
 						<posy>9</posy>
@@ -5679,6 +5762,16 @@
 						<height>33</height>
 						<align>right</align>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>641</posx>
+						<posy>9</posy>
+						<width>183</width>
+						<height>33</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="grouplist">
 						<description>Media Codec Flagging Images</description>
@@ -6151,13 +6244,22 @@
 						<scroll>true</scroll>
 						<visible>container.content(TVShows)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</itemlayout>
 				<focusedlayout height="50" width="850">
@@ -6200,21 +6302,30 @@
 						<texture>shade/rating_red.png</texture>
 						<visible>Skin.HasSetting(RedStars)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
-					</control>		
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="group">
 				<include>LeftSlide</include>
 				<posx>20</posx>
 				<posy>240</posy>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>325</posx>
 					<posy>290</posy>
@@ -6222,7 +6333,17 @@
 					<height>33</height>
 					<align>right</align>
 					<texture>$INFO[Listitem.StarRating]</texture>
-				</control>
+				</control>-->
+				<control type="image">
+						<description>Star</description>
+						<posx>325</posx>
+						<posy>290</posy>
+						<width>183</width>
+						<height>33</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 				<control type="label">
 					<posx>385</posx>
 					<posy>327</posy>
@@ -6367,13 +6488,22 @@
 						<scroll>true</scroll>
 						<visible>container.content(TVShows)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</itemlayout>
 				<focusedlayout height="100" width="850">
@@ -6440,14 +6570,23 @@
 						<label>$INFO[ListItem.Episode] Episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
 						<visible>container.content(TVShows)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
-					</control>	
+					</control>-->	
+						<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>				
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 					<control type="grouplist">
 						<description>Dark Studio Codec Flagging Images</description>
 						<posx>587</posx>
@@ -6580,7 +6719,7 @@
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<visible>Skin.HasSetting(DisableStars)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>641</posx>
 						<posy>9</posy>
@@ -6588,6 +6727,17 @@
 						<height>33</height>
 						<align>right</align>
 						<texture>$INFO[Listitem.StarRating]</texture>
+						<visible>!Skin.HasSetting(DisableStars)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>641</posx>
+						<posy>9</posy>
+						<width>183</width>
+						<height>33</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars)</visible>
 					</control>
 				</itemlayout>
@@ -6693,7 +6843,7 @@
 						<aspect>stretch</aspect>
 						<texture background="false" diffuse="shade/episodediffuse.png">$INFO[ListItem.thumb]</texture>
 					</control>					
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>641</posx>
 						<posy>177</posy>
@@ -6701,6 +6851,16 @@
 						<height>33</height>
 						<align>right</align>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>641</posx>
+						<posy>177</posy>
+						<width>183</width>
+						<height>33</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="grouplist">
 						<description>Media Codec Flagging Images</description>
@@ -6824,13 +6984,22 @@
 						<scroll>false</scroll>
 						<visible>container.content(Movies)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>						
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</itemlayout>
 				<focusedlayout height="50" width="850">
@@ -6874,14 +7043,23 @@
 						<texture>shade/rating_red.png</texture>
 						<visible>Skin.HasSetting(RedStars)</visible>
 					</control>					
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
-					</control>		
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>						
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="group">
@@ -7142,6 +7320,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture>shade/vignette3.png</texture>
 			</control>
+			
 			<control type="image">
 				<posx>-640</posx>
 				<posy>68</posy>
@@ -8266,13 +8445,23 @@
 						<include>AudioCodecFlaggingConditionsSmall</include>
 						<visible>!Skin.HasSetting(Noflags) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>-->
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>20</posx>
 						<posy>460</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+						<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>20</posx>
+						<posy>460</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>
 					<control type="image">
@@ -8831,6 +9020,7 @@
 			</control>
 
 		</control>
+		
 		<control type="group">
 
 			<include>ScrollLetterList</include>
@@ -9050,13 +9240,23 @@
 						<visible>container.content(TVShows)</visible>
 						<visible>Skin.HasSetting(DisableStars3)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+						<visible>!Skin.HasSetting(DisableStars3)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars3)</visible>
 					</control>
 					<control type="image">
@@ -9124,13 +9324,23 @@
 						<texture>shade/rating_red.png</texture>
 						<visible>Skin.HasSetting(RedStars) + !Skin.HasSetting(DisableStars3)</visible>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>500</posx>
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+						<visible>!Skin.HasSetting(DisableStars3)</visible>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>500</posx>
+						<posy>10</posy>
+						<width>183</width>
+						<height>33</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars3)</visible>
 					</control>
 					<control type="image">
@@ -10030,7 +10240,7 @@
 				<include>Zoom</include>
 				<posx>160</posx>
 				<posy>-50</posy>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>380</posx>
 					<posy>290</posy>
@@ -10038,7 +10248,17 @@
 					<height>20</height>
 					<align>right</align>
 					<texture>$INFO[Listitem.StarRating]</texture>
-				</control>
+				</control>-->
+				<control type="image">
+						<description>Star</description>
+						<posx>380</posx>
+						<posy>290</posy>
+						<width>130</width>
+						<height>20</height>
+						<align>right</align>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 				<control type="label">
 					<posx>415</posx>
 					<posy>317</posy>
@@ -11292,13 +11512,22 @@
 						<orientation>horizontal</orientation>
 						<include>TVMPAAFlaggingConditions</include>
 					</control>
-					<control>
+					<!--<control>
 						<description>Rating value</description>
 						<posx>290</posx>
 						<posy>300</posy>
 						<width>130</width>
 						<height>40</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>290</posx>
+						<posy>300</posy>
+						<width>130</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="group">
 						<posx>920</posx>
@@ -11621,14 +11850,23 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Genre]</label>
 				</control>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>880</posx>
 					<posy>175</posy>
 					<width>150</width>
 					<height>30</height>
 					<texture>$INFO[Listitem.StarRating]</texture>
-				</control>
+				</control>-->
+				<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>175</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 
 			</control>
 
@@ -13106,14 +13344,23 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Genre]</label>
 				</control>
-				<control type="image">
+			<!--	<control type="image">
 					<description>Rating value</description>
 					<posx>880</posx>
 					<posy>175</posy>
 					<width>150</width>
 					<height>30</height>
 					<texture>$INFO[Listitem.StarRating]</texture>
-				</control>
+				</control>-->
+				<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>175</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 
 			</control>
 			<control type="grouplist">
@@ -13562,14 +13809,23 @@
 					<aligny>center</aligny>
 					<label>Season:  $INFO[ListItem.Season]  Episode:  $INFO[ListItem.Episode]</label>
 				</control>
-				<control type="image">
+				<!--<control type="image">
 					<description>Rating value</description>
 					<posx>880</posx>
 					<posy>175</posy>
 					<width>150</width>
 					<height>30</height>
 					<texture>$INFO[Listitem.StarRating]</texture>
-				</control>
+				</control>-->
+				<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>175</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
+					</control>
 
 			</control>
 			<control type="grouplist">
@@ -13908,13 +14164,22 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<description>Rating value</description>
 						<posx>880</posx>
 						<posy>170</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>170</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</control>
 			</control>
@@ -14244,13 +14509,22 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Genre]</label>
 					</control>
-					<control type="image">
+				<!--	<control type="image">
 						<description>Rating value</description>
 						<posx>880</posx>
 						<posy>150</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>-->
+					<control type="image">
+						<description>Star</description>
+						<posx>880</posx>
+						<posy>150</posy>
+						<width>150</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 
 				</control>
