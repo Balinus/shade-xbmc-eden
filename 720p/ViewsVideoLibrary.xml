@@ -10511,13 +10511,13 @@
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>0</posy>
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1290</width>
 				<height>720</height>
 				<texture>shade/vignette2.png</texture>
-			</control>
+			</control>-->
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -10951,13 +10951,13 @@
 				<visible>Skin.HasSetting(VideoLibraryMovieFanart)</visible>
 				<include>Zoom</include>
 			</control>
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
 				<texture>shade/vignette3.png</texture>
-			</control>
+			</control>-->
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -11930,13 +11930,13 @@
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>0</posy>
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1290</width>
 				<height>720</height>
 				<texture>shade/vignette2.png</texture>
-			</control>
+			</control>-->
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -12062,13 +12062,13 @@
 				</control>
 				<control type="group">
 					<include>BottomSlide</include>
-					<posx>900</posx>
+					<posx>880</posx>
 					<posy>280</posy>
 					<control type="label">
 						<posy>0</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_16</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -12079,7 +12079,7 @@
 						<posy>30</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -12090,7 +12090,7 @@
 						<posy>50</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -12101,7 +12101,7 @@
 						<posy>70</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -12112,7 +12112,7 @@
 						<posy>90</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -12120,11 +12120,11 @@
 						<label>Writer:</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>160</posx>
 						<posy>30</posy>
-						<width>160</width>
+						<width>220</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -12132,38 +12132,41 @@
 						<label>$INFO[ListItem.Year]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>160</posx>
 						<posy>50</posy>
-						<width>160</width>
+						<width>220</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>20</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Director]</label>
 					</control>		
 					<control type="label">
-						<posx>200</posx>
+						<posx>160</posx>
 						<posy>70</posy>
-						<width>160</width>
+						<width>220</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>20</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Genre]</label>
 					</control>			
 					<control type="label">
-						<posx>200</posx>
+						<posx>160</posx>
 						<posy>90</posy>
-						<width>160</width>
+						<width>220</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>20</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Writer]</label>
 					</control>			
