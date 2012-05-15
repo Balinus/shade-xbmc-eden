@@ -191,7 +191,7 @@
 					<posx>100</posx>
 					<posy>210</posy>
 					<width>420</width>
-					<height>220</height>
+					<height>320</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -234,10 +234,10 @@
 				</control>
 				<control type="label">
 					<posx>100</posx>
-					<posy>430</posy>
+					<posy>530</posy>
 					<width>420</width>
 					<height>60</height>
-					<font>Shade_24_Bold</font>
+					<font>Shade_30_Bold</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>

@@ -337,7 +337,7 @@
 					<posy>175</posy>
 					<width>150</width>
 					<height>30</height>
-					<aspectratio>keep</aspectratio>
+<!-- 					<aspectratio>keep</aspectratio> -->
 					<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 				</control>
 
@@ -602,7 +602,7 @@
 						<width>154</width>
 						<height>30</height>
 						<align>left</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 					</control>
 					<control type="image">
@@ -1657,15 +1657,7 @@
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>440</posy>			
-			<!--<control type="image">
-				<posx>0</posx>
-				<posy>-440</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-			</control>-->
+
 			<control type="image">
 				<posx>0</posx>
 				<posy>-440</posy>
@@ -1674,9 +1666,8 @@
 				<aspectratio>stretch</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture>shade/vignette3.png</texture>
-<!-- 				<visible>Skin.HasSetting(FanartOption1)</visible> -->
 			</control>		
-			
+
 			<control type="image">
 				<posx>0</posx>
 				<posy>-60</posy>
@@ -1697,6 +1688,7 @@
 			<control type="group">
 			  <posx>0</posx>
 			  <posy>-440</posy>
+<!-- 			  <include>Overlay</include> -->
 			  <include>Clock-Alt</include>
 			</control>
 			<control type="fixedlist" id="552">
@@ -1819,6 +1811,7 @@
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
 					<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 				</control>
 				<control type="label">
@@ -1833,6 +1826,7 @@
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
 					<visible>Container.Content(Seasons) + !Skin.HasSetting(SeasonLessInfo)</visible>
 				</control>
 				<control type="label">
@@ -1968,7 +1962,8 @@
 						<posy>458</posy>
 						<width>170</width>
 						<height>33</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<shadowcolor>black</shadowcolor> -->
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>
@@ -1998,8 +1993,8 @@
 					</control>
 					<control type="grouplist">
 						<description>MPAA Flagging Conditions Images</description>
-						<posx>423</posx>
-						<posy>450</posy>
+						<posx>433</posx>
+						<posy>455</posy>
 						<width>130</width>
 						<align>left</align>
 						<itemgap>0</itemgap>
@@ -2021,7 +2016,7 @@
 						<visible>[Container.Content(Movies) | Container.Content(TVShows)]+ !Skin.HasSetting(ScrollMovieLessInfo)</visible>			
 					</control>
 					<control type="fadelabel">
-						<posx>360</posx>
+						<posx>370</posx>
 						<posy>460</posy>
 						<width>71</width>
 						<height>30</height>
@@ -2349,7 +2344,7 @@
 						<posy>175</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Container.Content(Seasons)</visible>
 						<include>RightSlide</include>
@@ -5222,7 +5217,7 @@
 						<posy>10</posy>
 						<width>130</width>
 						<height>40</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 <!-- 						<visible>!Container.Content(Seasons)</visible> -->
 <!-- 						<include>RightSlide</include> -->
@@ -5276,7 +5271,7 @@
 						<width>130</width>
 						<height>20</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				<control type="label">
@@ -5461,7 +5456,7 @@
 						<width>154</width>
 						<height>30</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>		
 					</control>
@@ -5656,7 +5651,7 @@
 						<width>183</width>
 						<height>33</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars2)</visible>	
 					</control>
@@ -5770,7 +5765,7 @@
 						<width>183</width>
 						<height>33</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="grouplist">
@@ -6258,7 +6253,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</itemlayout>
@@ -6316,7 +6311,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</focusedlayout>
@@ -6341,7 +6336,7 @@
 						<width>183</width>
 						<height>33</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				<control type="label">
@@ -6502,7 +6497,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</itemlayout>
@@ -6584,7 +6579,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>				
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="grouplist">
@@ -6736,7 +6731,7 @@
 						<width>183</width>
 						<height>33</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars)</visible>
 					</control>
@@ -6859,7 +6854,7 @@
 						<width>183</width>
 						<height>33</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="grouplist">
@@ -6998,7 +6993,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>						
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</itemlayout>
@@ -7057,7 +7052,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>						
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</focusedlayout>
@@ -8460,7 +8455,7 @@
 						<posy>460</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Container.Content(Seasons) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>
@@ -9255,7 +9250,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars3)</visible>
 					</control>
@@ -9339,7 +9334,7 @@
 						<posy>10</posy>
 						<width>183</width>
 						<height>33</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 						<visible>!Skin.HasSetting(DisableStars3)</visible>
 					</control>
@@ -10256,7 +10251,7 @@
 						<width>130</width>
 						<height>20</height>
 						<align>right</align>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				<control type="label">
@@ -11526,7 +11521,7 @@
 						<posy>300</posy>
 						<width>130</width>
 						<height>40</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="group">
@@ -11864,7 +11859,7 @@
 						<posy>175</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 
@@ -13358,7 +13353,7 @@
 						<posy>175</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 
@@ -13823,7 +13818,7 @@
 						<posy>175</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 
@@ -14178,7 +14173,7 @@
 						<posy>170</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 				</control>
@@ -14523,7 +14518,7 @@
 						<posy>150</posy>
 						<width>150</width>
 						<height>30</height>
-						<aspectratio>keep</aspectratio>
+<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 
