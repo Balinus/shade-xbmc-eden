@@ -9419,7 +9419,7 @@
 						<visible>!Skin.HasSetting(DisableStars3)</visible>
 					</control>
 					<control type="image">
-						<posx>650</posx>
+						<posx>700</posx>
 						<posy>7</posy>
 						<width>35</width>
 						<height>35</height>
@@ -9504,7 +9504,7 @@
 						<visible>!Skin.HasSetting(DisableStars3)</visible>
 					</control>
 					<control type="image">
-						<posx>650</posx>
+						<posx>700</posx>
 						<posy>7</posy>
 						<width>35</width>
 						<height>35</height>
@@ -9720,6 +9720,7 @@
 				<align>left</align>
 				<label>Watched:  </label>
 				<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+				<visible>Skin.HasSetting(EnableWatchedIcon)</visible>
 			</control>
 				<control type="image">
 						<posx>1073</posx>
@@ -11467,7 +11468,7 @@
 					<posy>160</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -11519,7 +11520,7 @@
 						<width>590</width>
 						<height>60</height>
 						<font>Shade_16</font>
-						<align>left</align>
+						<align>justify</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
@@ -11688,7 +11689,7 @@
 						<width>590</width>
 						<height>60</height>
 						<font>Shade_16</font>
-						<align>left</align>
+						<align>justify</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>[B]$INFO[ListItem.Plot][/B]</label>
@@ -11713,15 +11714,14 @@
 						<height>40</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
 					</control>-->
-					<control type="image">
+				<!--	<control type="image">
 						<description>Star</description>
 						<posx>290</posx>
 						<posy>300</posy>
 						<width>130</width>
 						<height>40</height>
-<!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
-					</control>
+					</control>-->
 					<control type="group">
 						<posx>900</posx>
 						<posy>500</posy>
