@@ -625,14 +625,14 @@
 <!-- 						<aspectratio>keep</aspectratio> -->
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>
 					</control>
-					<control type="image">
+					<!--<control type="image">
 						<posx>1050</posx>
 						<posy>359</posy>
 						<width>42</width>
 						<height>42</height>
 						<fadetime>200</fadetime>
 						<texture>shade/banners/$INFO[ListItem.Overlay]</texture>
-					</control>
+					</control>-->
 					<control type="label">
 						<description>Title</description>
 						<posx>880</posx>
