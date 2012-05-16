@@ -2772,13 +2772,13 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Shade_20</font>
-							<label>Enable Watched Icon for Movie Views</label>
+							<label>Enable Watched Icon Overlay</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
 							<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(EnableWatchedIconMovies)</onclick>
-							<selected>Skin.HasSetting(EnableWatchedIconMovies)</selected>
+							<onclick>Skin.ToggleSetting(EnableWatchedIcon)</onclick>
+							<selected>Skin.HasSetting(EnableWatchedIcon)</selected>
 						</control>
 						<control type="radiobutton" id="514">
 							<width>900</width>
