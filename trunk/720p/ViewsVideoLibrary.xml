@@ -1499,6 +1499,15 @@
 						<fadetime>200</fadetime>
 						<texture background="true" flipy="true" diffuse="shade/posterreflectiondiffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
+					<control type="image">
+							<posx>115</posx>
+							<posy>190</posy>
+							<width>35</width>
+							<height>35</height>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+					</control>
 				</itemlayout>
 				<focusedlayout height="410" width="168">
 					<control type="image">
@@ -1531,6 +1540,17 @@
 						<texture background="true" flipy="true" diffuse="shade/posterreflectiondiffuse.png">$INFO[ListItem.Icon]</texture>
 						<animation reversible="false" effect="zoom" start="-2,28,158,198" end="-5,22,180,230" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="-2,28,158,198" start="-5,22,180,230" time="200">unfocus</animation>
+					</control>
+					<control type="image">
+							<posx>115</posx>
+							<posy>190</posy>
+							<width>35</width>
+							<height>35</height>
+							<texture>overlaywatched.png</texture>
+							<animation reversible="false" effect="zoom" start="-2,28,35,35" end="-5,22,40,40" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,28,35,35" start="-5,22,40,40" time="200">unfocus</animation>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1765,6 +1785,16 @@
 						<fadetime>200</fadetime>
 						<texture background="true" flipy="true" diffuse="shade/posterreflectiondiffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
+					<control type="image">
+							<posx>115</posx>
+							<posy>190</posy>
+							<width>35</width>
+							<height>35</height>
+							<texture>overlaywatched.png</texture>
+							
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+					</control>
 				</itemlayout>
 				<focusedlayout height="410" width="168">
 					<control type="image">
@@ -1797,6 +1827,17 @@
 						<texture background="true" flipy="true" diffuse="shade/posterreflectiondiffuse.png">$INFO[ListItem.Icon]</texture>
 						<animation reversible="false" effect="zoom" start="-2,28,158,198" end="-5,22,180,230" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="-2,28,158,198" start="-5,22,180,230" time="200">unfocus</animation>
+					</control>
+					<control type="image">
+							<posx>115</posx>
+							<posy>190</posy>
+							<width>35</width>
+							<height>35</height>
+							<texture>overlaywatched.png</texture>
+							<animation reversible="false" effect="zoom" start="-2,28,35,35" end="-5,22,40,40" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,28,35,35" start="-5,22,40,40" time="200">unfocus</animation>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -4583,6 +4624,17 @@
 						<texture background="false">views/poster/posterview/poster_overlay.png</texture>
 						<visible>!IsEmpty(Container(520).ListItemNoWrap(0).Thumb)</visible>
 					</control>
+					<control type="image">
+							<posx>220</posx>
+							<posy>340</posy>
+							<width>50</width>
+							<height>50</height>
+							<texture>overlaywatched.png</texture>
+							<!--<animation reversible="false" effect="zoom" start="-2,28,35,35" end="-5,22,40,40" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,28,35,35" start="-5,22,40,40" time="200">unfocus</animation>-->
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+					</control>
 				</control>
 				<!-- Panel 2 -->
 				<!--control type="group">
@@ -4740,8 +4792,10 @@
 			<orientation>horizontal</orientation>
 			<scrolltime>300</scrolltime>
 			<itemlayout height="512" width="256">
+			
 			</itemlayout>
 			<focusedlayout height="512" width="256">
+			  
 			</focusedlayout>
 		</control>	
 
@@ -14495,7 +14549,7 @@
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<bordertexture border="3">shade/folder-Focus.png</bordertexture>
 							<bordersize>3</bordersize>
-							<texture background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+							<texture background="true">DefaultFolderBack.png</texture>
 							<visible>stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="image">
@@ -14542,8 +14596,17 @@
 							<aligny>center</aligny>
 							<font>Shade_12</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>							
 					</control>	
+					<control type="image">
+							<posx>180</posx>
+							<posy>130</posy>
+							<width>35</width>
+							<height>35</height>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+						</control>
 				</itemlayout>
 				<focusedlayout height="265" width="213">
 					<control type="image">
@@ -14566,7 +14629,7 @@
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<bordertexture border="3">shade/folder-Focus.png</bordertexture>
 							<bordersize>3</bordersize>
-							<texture background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+							<texture background="true">DefaultFolderBack.png</texture>
 							<!---<animation type="focus">
 							<effect type="slide" start="0,0" end="0,-4" time="200" tween="back" easing="out" reversible="false"/>
 							<effect type="zoom" start="100" end="123" center="auto" time="200" tween="back" easing="out" reversible="false" />
@@ -14597,6 +14660,15 @@
 							<visible>!stringcompare(ListItem.Label,..)</visible>
 						</control>
 					</control>
+					<control type="image">
+							<posx>180</posx>
+							<posy>130</posy>
+							<width>35</width>
+							<height>35</height>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+						</control>
 				</focusedlayout>
 			</control>
 			<control type="group">
