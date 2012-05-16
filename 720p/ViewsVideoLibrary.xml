@@ -34,6 +34,7 @@
 				<textcolor>white</textcolor>
 				<visible>!Container.Content(Seasons)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -48,6 +49,7 @@
 				<textcolor>white</textcolor>
 				<visible>!Container.Content(Seasons)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="group">
 				<control type="label">
@@ -113,7 +115,8 @@
 						<posy>120</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>
 					<control type="image">
@@ -211,7 +214,8 @@
 						<posy>120</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 						<animation type="focus">
 							<effect type="slide" start="0,0" end="15,10" time="200" tween="back" easing="out" reversible="false"/>
@@ -448,13 +452,21 @@
 				<scrolltime>300</scrolltime>
 				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="85" width="680">
-					<control type="image">
+				<!--	<control type="image">
 						<posx>33</posx>
 						<posy>17</posy>
 						<width>42</width>
 						<height>42</height>
 						<texture>shade\banners\$INFO[ListItem.Overlay]</texture>
-					</control>	
+					</control>-->
+					<control type="image">
+						<posx>20</posx>
+						<posy>17</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>
 					<control type="label">
 						<description>Title</description>
 						<posx>100</posx>
@@ -555,7 +567,15 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>200</fadetime>
 						<texture background="true" diffuse="shade/bannerdiffuse.png">shade/banner-gloss.png</texture>
-					</control>	
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>17</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="group">
@@ -707,6 +727,7 @@
 					<font>Shade_50_UltraThin</font>
 					<visible>container.content(Movies)</visible>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -719,6 +740,7 @@
 					<aligny>center</aligny>
 					<font>Shade_24_UltraThin</font>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 			</control>	
 
@@ -825,6 +847,7 @@
 					<font>Shade_50_UltraThin</font>
 					<visible>container.content(TVShows)</visible>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -837,15 +860,16 @@
 					<aligny>center</aligny>
 					<font>Shade_24_UltraThin</font>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="group">
-					<posx>900</posx>
+					<posx>880</posx>
 					<posy>280</posy>
 					<control type="label">
 						<posy>0</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_16</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -856,7 +880,7 @@
 						<posy>30</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -867,7 +891,7 @@
 						<posy>50</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -878,7 +902,7 @@
 						<posy>70</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -889,7 +913,7 @@
 						<posy>90</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -897,50 +921,54 @@
 						<label>Unwatched:</label>
 					</control>					
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>30</posy>
-						<width>130</width>
+						<width>180</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Year]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>50</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Genre]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>70</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Episode]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>90</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 					</control>
@@ -2144,20 +2172,21 @@
 			<animation effect="slide" end="-610,0" time="0" reversible="true" condition="Container.Content(Seasons) + Control.IsVisible(520)">Conditional</animation>
 			<visible>Control.IsVisible(520)</visible>
 			<control type="group">
-				<control type="image">
+			  <include>Overlay</include>
+				<!--<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1290</width>
 					<height>770</height>
 					<texture>shade/solid.png</texture>
-				</control>
-				<control type="image">
+				</control>-->
+				<!--<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1290</width>
 					<height>770</height>
 					<texture>shade/vignette2.png</texture>
-				</control>
+				</control>-->
 				<control type="image">
 					<posx>860</posx>
 					<posy>0</posy>
@@ -2181,6 +2210,7 @@
 					<textcolor>white</textcolor>
 					<visible>!Container.Content(Seasons)</visible>
 					<include>TopSlide</include>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -2195,6 +2225,7 @@
 					<textcolor>white</textcolor>
 					<visible>!Container.Content(Seasons)</visible>
 					<include>TopSlide</include>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -4874,6 +4905,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -4887,6 +4919,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<include>UpOptions</include>
 			<control type="panel" id="522">
@@ -4912,7 +4945,7 @@
 						<width>186</width>
 						<height>146</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">DefaultFolderBack.png</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -4932,6 +4965,14 @@
 						<texture diffuse="shade/paneldiffuse.png" background="true">black-back.png</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>		
 						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>10</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="205" width="211">
@@ -4970,7 +5011,7 @@
 						<width>186</width>
 						<height>146</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">DefaultFolderBack.png</texture>
 						<animation type="focus">
 							<effect type="slide" start="0,0" end="0,-4" time="200" tween="back" easing="out" reversible="false"/>
 							<effect type="zoom" start="100" end="123" center="auto" time="200" tween="back" easing="out" reversible="false" />
@@ -5014,6 +5055,22 @@
 							<effect type="zoom" start="123" end="100" center="auto" time="200" tween="back" easing="out" reversible="false" />
 						</animation>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>10</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+						<animation type="focus">
+							<effect type="slide" start="0,0" end="0,-4" time="200" tween="back" easing="out" reversible="false"/>
+							<effect type="zoom" start="0,0,35,35" end="-20,-10,35,35" center="auto" time="200" tween="back" easing="out" reversible="false" />
+						</animation>
+						<animation type="unfocus">
+							<effect type="slide" start="0,-4" end="0,0" time="200" tween="back" easing="out" reversible="false"/>
+							<effect type="zoom" start="-20,-10,35,35" end="0,0,35,35" center="auto" time="200" tween="back" easing="out" reversible="false" />
+						</animation>
 					</control>
 				</focusedlayout>
 			</control>
@@ -5091,7 +5148,7 @@
 				<include>TVMPAAFlaggingConditionsSmall</include>
 				<include>RightSlide</include>
 			</control>
-			<control type="label">
+	<!--		<control type="label">
 				<posx>1085</posx>
 				<posy>307</posy>
 				<width>300</width>
@@ -5107,12 +5164,13 @@
 			</control>
 			<control type="image">
 				<posx>1180</posx>
-				<posy>297</posy>
+				<posy>302</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>$INFO[ListItem.Overlay]</texture>
+				<texture>overlaywatched.png</texture>
+				<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 				<include>RightSlide</include>
-			</control>			
+			</control>-->			
 		</control>
 		<control type="image">
 			<posx>1232</posx>
@@ -5152,6 +5210,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -5165,6 +5224,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="wraplist" id="524">
 				<include>RightSlide</include>
@@ -5222,6 +5282,14 @@
 <!-- 						<visible>!Container.Content(Seasons)</visible> -->
 <!-- 						<include>RightSlide</include> -->
 					</control>
+						<control type="image">
+						<posx>10</posx>
+						<posy>12</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>
 				</itemlayout>
 				<focusedlayout height="140" width="850">
 					<control type="image">
@@ -5250,6 +5318,14 @@
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>  
+					<control type="image">
+						<posx>10</posx>
+						<posy>12</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>
 				</focusedlayout>
 			</control>
 
@@ -5310,7 +5386,7 @@
 					<orientation>horizontal</orientation>
 					<include>StudioFlaggingConditions</include>
 				</control>
-				<control type="label">
+<!--				<control type="label">
 					<posx>270</posx>
 					<posy>382</posy>
 					<width>300</width>
@@ -5330,7 +5406,7 @@
 					<width>35</width>
 					<height>35</height>
 					<texture>$INFO[ListItem.Overlay]</texture>
-				</control>			
+				</control>-->			
 			</control>
 		</control>
 	</include>
@@ -5373,11 +5449,12 @@
 						<posx>65</posx>
 						<control type="image">
 							<posx>0</posx>
-							<posy>17</posy>
-							<width>40</width>
-							<height>40</height>
+							<posy>25</posy>
+							<width>35</width>
+							<height>35</height>
 							<align>left</align>
-							<texture>shade/banners/$INFO[ListItem.Overlay]</texture>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						</control>
 						<control type="label">
 							<posx>110</posx>
@@ -5462,11 +5539,12 @@
 					</control>
 					<control type="image">
 						<posx>450</posx>
-						<posy>73</posy>
-						<width>40</width>
-						<height>40</height>
+						<posy>76</posy>
+						<width>35</width>
+						<height>35</height>
 						<align>left</align>
-						<texture>shade/banners/$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<control type="group">
 						<visible>Skin.HasSetting(UseFlags)</visible>
@@ -5631,8 +5709,9 @@
 						<posy>15</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>Skin.HasSetting(DisableStars2)</visible>
+						<texture>overlaywatched.png</texture>
+<!-- 						<visible>Skin.HasSetting(DisableStars2)</visible> -->
+<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 				<!--	<control type="image">
 						<description>Rating value</description>
@@ -5725,11 +5804,12 @@
 						<autoscroll time="2000" delay="4000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 					<control type="image">
-						<posx>555</posx>
-						<posy>44</posy>
+						<posx>560</posx>
+						<posy>46</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<!--<control type="image">
 						<posx>610</posx>
@@ -5905,8 +5985,9 @@
 							<posy>180</posy>
 							<width>35</width>
 							<height>35</height>
-							<texture>$INFO[ListItem.Overlay]</texture>
+							<texture>overlaywatched.png</texture>
 							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						</control>
 					</control>		
 				</itemlayout>
@@ -5963,8 +6044,9 @@
 							<posy>180</posy>
 							<width>35</width>
 							<height>35</height>
-							<texture>$INFO[ListItem.Overlay]</texture>
+							<texture>overlaywatched.png</texture>
 							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						</control>
 					</control>
 				</focusedlayout>
@@ -6188,6 +6270,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -6201,6 +6284,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="wraplist" id="530">
 				<include>RightSlide</include>
@@ -6432,6 +6516,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -6445,6 +6530,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="wraplist" id="531">
 				<include>RightSlide</include>
@@ -6711,8 +6797,9 @@
 						<posy>15</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>Skin.HasSetting(DisableStars)</visible>
+						<texture>overlaywatched.png</texture>
+<!-- 						<visible>Skin.HasSetting(DisableStars)</visible> -->
+<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<!--<control type="image">
 						<description>Rating value</description>
@@ -6794,11 +6881,12 @@
 						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<control type="image">
-						<posx>555</posx>
-						<posy>44</posy>
+						<posx>560</posx>
+						<posy>46</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<control type="textbox">
 						<posx>260</posx>
@@ -6928,6 +7016,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -6941,6 +7030,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="fixedlist" id="533">
 				<include>RightSlide</include>
@@ -7358,6 +7448,7 @@
 					<font>Shade_50_UltraThin</font>
 					<visible>container.content(Movies)</visible>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -7370,6 +7461,7 @@
 					<aligny>center</aligny>
 					<font>Shade_24_UltraThin</font>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 			</control>	
 			<control type="group">
@@ -7795,13 +7887,13 @@
 				</control>
 				<include>UpOptions</include>
 				<control type="group">
-					<posx>900</posx>
+					<posx>880</posx>
 					<posy>280</posy>
 					<control type="label">
 						<posy>0</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_16</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -7812,7 +7904,7 @@
 						<posy>30</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -7823,7 +7915,7 @@
 						<posy>50</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -7834,7 +7926,7 @@
 						<posy>70</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -7842,38 +7934,41 @@
 						<label>Unwatched:</label>
 					</control>					
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>30</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Genre]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>50</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Episode]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>70</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 					</control>
@@ -7989,6 +8084,7 @@
 					<font>Shade_50_UltraThin</font>
 					<visible>container.content(TVShows)</visible>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -8001,6 +8097,7 @@
 					<aligny>center</aligny>
 					<font>Shade_24_UltraThin</font>
 					<textcolor>white</textcolor>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 			</control>	
 
@@ -8092,13 +8189,13 @@
 				</control>
 				<include>UpOptions</include>
 				<control type="group">
-					<posx>900</posx>
+					<posx>880</posx>
 					<posy>280</posy>
 					<control type="label">
 						<posy>0</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_16</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8109,7 +8206,7 @@
 						<posy>30</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8120,7 +8217,7 @@
 						<posy>50</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8131,7 +8228,7 @@
 						<posy>70</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8142,7 +8239,7 @@
 						<posy>90</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8150,11 +8247,11 @@
 						<label>Unwatched:</label>
 					</control>					
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>30</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8162,11 +8259,11 @@
 						<label>$INFO[ListItem.Year]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>50</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8174,11 +8271,11 @@
 						<label>$INFO[ListItem.Genre]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>70</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -8186,11 +8283,11 @@
 						<label>$INFO[ListItem.Episode]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>90</posy>
-						<width>130</width>
+						<width>160</width>
 						<height>25</height>
-						<font>Shade_13_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -9168,6 +9265,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -9181,6 +9279,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="wraplist" id="535">
 				<include>RightSlide</include>
@@ -9259,8 +9358,9 @@
 						<posy>7</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>Skin.HasSetting(DisableStars3)</visible>
+						<texture>overlaywatched.png</texture>
+<!-- 						<visible>Skin.HasSetting(DisableStars3)</visible> -->
+<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>	
 				</itemlayout>
 				<focusedlayout height="50" width="850">
@@ -9343,8 +9443,9 @@
 						<posy>7</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>Skin.HasSetting(DisableStars3)</visible>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+<!-- 						<visible>Skin.HasSetting(DisableStars3)</visible> -->
 					</control>		
 				</focusedlayout>
 			</control>
@@ -9505,6 +9606,7 @@
 				<visible>container.content(TVShows)</visible>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -9518,6 +9620,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 		</control>
 		<control type="group">
@@ -9552,13 +9655,21 @@
 				<label>Watched:  </label>
 				<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 			</control>
-			<control type="image">
+				<control type="image">
+						<posx>1073</posx>
+						<posy>223</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>
+<!--			<control type="image">
 				<posx>1073</posx>
 				<posy>220</posy>
 				<width>35</width>
 				<height>35</height>
 				<texture>$INFO[ListItem.Overlay]</texture>
-			</control>
+			</control>-->
 			<control type="grouplist">
 				<description>Studio Codec Flagging Images</description>
 				<posx>1150</posx>
@@ -9614,13 +9725,13 @@
 				<visible>Skin.HasSetting(UseLandscape)</visible>
 			</control>
 			<control type="group">
-				<posx>900</posx>
+				<posx>880</posx>
 				<posy>280</posy>
 				<control type="label">
 					<posy>0</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_16</font>
+					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9631,7 +9742,7 @@
 					<posy>30</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9642,7 +9753,7 @@
 					<posy>50</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9653,7 +9764,7 @@
 					<posy>70</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9664,7 +9775,7 @@
 					<posy>90</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9672,11 +9783,11 @@
 					<label>Unwatched:</label>
 				</control>					
 				<control type="label">
-					<posx>200</posx>
+					<posx>180</posx>
 					<posy>30</posy>
-					<width>130</width>
+					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9684,11 +9795,11 @@
 					<label>$INFO[ListItem.Year]</label>
 				</control>
 				<control type="label">
-					<posx>200</posx>
+					<posx>180</posx>
 					<posy>50</posy>
-					<width>130</width>
+					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9696,11 +9807,11 @@
 					<label>$INFO[ListItem.Genre]</label>
 				</control>
 				<control type="label">
-					<posx>200</posx>
+					<posx>180</posx>
 					<posy>70</posy>
-					<width>130</width>
+					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9708,11 +9819,11 @@
 					<label>$INFO[ListItem.Episode]</label>
 				</control>
 				<control type="label">
-					<posx>200</posx>
+					<posx>180</posx>
 					<posy>90</posy>
-					<width>130</width>
+					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9901,7 +10012,7 @@
 					<posy>30</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9912,7 +10023,7 @@
 					<posy>50</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9924,7 +10035,7 @@
 					<posy>70</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9936,7 +10047,7 @@
 					<posy>70</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9948,7 +10059,7 @@
 					<posy>50</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9960,7 +10071,7 @@
 					<posy>90</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9973,7 +10084,7 @@
 					<posy>30</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9985,7 +10096,7 @@
 					<posy>50</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -9998,7 +10109,7 @@
 					<posy>50</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -10011,7 +10122,7 @@
 					<posy>70</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -10035,7 +10146,7 @@
 					<posy>90</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -10048,7 +10159,7 @@
 					<posy>90</posy>
 					<width>160</width>
 					<height>25</height>
-					<font>Shade_13_Bold</font>
+					<font>Shade_16_Bold</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -10186,6 +10297,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -10199,6 +10311,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="wraplist" id="537">
 				<include>Zoom</include>
@@ -10332,6 +10445,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -10345,6 +10459,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="group">
 				<include>Zoom</include>
@@ -10540,6 +10655,7 @@
 					<font>Shade_50_UltraThin</font>
 					<textcolor>white</textcolor>
 					<visible>Container.Content(Movies)</visible>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -10553,6 +10669,7 @@
 					<font>Shade_24_UltraThin</font>
 					<textcolor>white</textcolor>
 					<visible>Container.Content(Movies)</visible>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -10566,6 +10683,7 @@
 					<font>Shade_50_UltraThin</font>
 					<textcolor>white</textcolor>
 					<visible>Container.Content(TVShows)</visible>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 				<control type="label">
 					<description>Title label</description>
@@ -10579,6 +10697,7 @@
 					<font>Shade_24_UltraThin</font>
 					<textcolor>white</textcolor>
 					<visible>Container.Content(TVShows)</visible>
+					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
 			</control>	
 			<control type="fixedlist" id="539">
@@ -10660,7 +10779,8 @@
 							<posy>175</posy>
 							<width>35</width>
 							<height>35</height>
-							<texture>$INFO[ListItem.Overlay]</texture>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 						</control>
 						<control type="image">
@@ -10742,7 +10862,8 @@
 								<posy>175</posy>
 								<width>35</width>
 								<height>35</height>
-								<texture>$INFO[ListItem.Overlay]</texture>
+								<texture>overlaywatched.png</texture>
+								<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 								<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 							</control>
 							<control type="image">
@@ -11019,6 +11140,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -11033,6 +11155,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -11047,6 +11170,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -11061,6 +11185,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="fixedlist" id="540">
 				<include>Zoom</include>
@@ -11156,7 +11281,8 @@
 							<posy>175</posy>
 							<width>35</width>
 							<height>35</height>
-							<texture>$INFO[ListItem.Overlay]</texture>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 						</control>
 						<control type="image">
@@ -11235,7 +11361,8 @@
 								<posy>175</posy>
 								<width>35</width>
 								<height>35</height>
-								<texture>$INFO[ListItem.Overlay]</texture>
+								<texture>overlaywatched.png</texture>
+								<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 								<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 							</control>
 							<control type="image">
@@ -11256,12 +11383,13 @@
 				<control type="label">
 					<posx>1250</posx>
 					<posy>120</posy>
-					<width>550</width>
+					<width>750</width>
 					<height>25</height>
 					<font>Shade_50_UltraThin</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scroll>false</scroll>
+					<scroll>true</scroll>
+					<scrollspeed>40</scrollspeed>
 					<align>right</align>
 					<aligny>center</aligny>
 					<fadetime>200</fadetime>
@@ -11354,13 +11482,13 @@
 						<include>AudioCodecFlaggingConditions</include>
 					</control>
 					<control type="group">
-						<posx>880</posx>
+						<posx>860</posx>
 						<posy>500</posy>
 						<control type="label">
 							<posy>0</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_16</font>
+							<font>Shade_20</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11371,7 +11499,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11382,7 +11510,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11393,7 +11521,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11404,7 +11532,7 @@
 							<posy>90</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11412,11 +11540,11 @@
 							<label>Writer:</label>
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>30</posy>
-							<width>160</width>
+							<width>230</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11424,38 +11552,41 @@
 							<label>$INFO[ListItem.Year]</label>
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>50</posy>
-							<width>160</width>
+							<width>230</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<scroll>false</scroll>
+							<scroll>true</scroll>
+							<scrollspeed>30</scrollspeed>
 							<align>left</align>
 							<label>$INFO[ListItem.Director]</label>
 						</control>		
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>70</posy>
-							<width>160</width>
+							<width>230</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<scroll>false</scroll>
+							<scroll>true</scroll>
+							<scrollspeed>30</scrollspeed>
 							<align>left</align>
 							<label>$INFO[ListItem.Genre]</label>
 						</control>			
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>90</posy>
-							<width>160</width>
+							<width>230</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<scroll>false</scroll>
+							<scroll>true</scroll>
+							<scrollspeed>30</scrollspeed>
 							<align>left</align>
 							<label>$INFO[ListItem.Writer]</label>
 						</control>			
@@ -11525,13 +11656,13 @@
 						<texture>$INFO[ListItem.Rating,flags/stars/,.png]</texture>				
 					</control>
 					<control type="group">
-						<posx>920</posx>
+						<posx>900</posx>
 						<posy>500</posy>
 						<control type="label">
 							<posy>0</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_16</font>
+							<font>Shade_20</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11542,7 +11673,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11553,7 +11684,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11564,7 +11695,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11575,7 +11706,7 @@
 							<posy>90</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11583,11 +11714,11 @@
 							<label>Unwatched:</label>
 						</control>					
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>30</posy>
-							<width>130</width>
+							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11595,11 +11726,11 @@
 							<label>$INFO[ListItem.Year]</label>
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>50</posy>
-							<width>130</width>
+							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11607,11 +11738,11 @@
 							<label>$INFO[ListItem.Genre]</label>
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>70</posy>
-							<width>130</width>
+							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11619,11 +11750,11 @@
 							<label>$INFO[ListItem.Episode]</label>
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>180</posx>
 							<posy>90</posy>
-							<width>130</width>
+							<width>160</width>
 							<height>25</height>
-							<font>Shade_13_Bold</font>
+							<font>Shade_16_Bold</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -11671,6 +11802,7 @@
 				<textcolor>white</textcolor>
 				<visible>!Container.Content(Seasons)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -11685,6 +11817,7 @@
 				<textcolor>white</textcolor>
 				<visible>!Container.Content(Seasons)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<!--control type="image">
 					<posx>860</posx>
@@ -11755,6 +11888,14 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="shade/bannerdiffuse.png" background="true">black-back.png</texture>
 					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>
 				</itemlayout>
 				<focusedlayout height="150" width="600">	
 					<control type="image">
@@ -11766,6 +11907,16 @@
 						<height>100</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="shade/bannerdiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="image">
+						  <animation reversible="false" effect="zoom"  end="-75,-20,40,40" time="100">focus</animation>
+						<animation reversible="false" effect="zoom" start="-75,-20,40,40" time="100">unfocus</animation>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>35</width>
+						<height>35</height>					
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -11812,7 +11963,7 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Year]</label>
 				</control>
-				<control type="label">
+			<!--	<control type="label">
 					<posx>1080</posx>
 					<posy>130</posy>
 					<width>300</width>
@@ -11825,13 +11976,21 @@
 					<label>Watched:  </label>
 					<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 				</control>
-				<control type="image">
+					<control type="image">
+						<posx>1175</posx>
+						<posy>122</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+					</control>-->
+			<!--	<control type="image">
 					<posx>1175</posx>
 					<posy>120</posy>
 					<width>35</width>
 					<height>35</height>
 					<texture>$INFO[ListItem.Overlay]</texture>
-				</control>
+				</control>-->
 				<control type="label">
 					<posx>880</posx>
 					<posy>55</posy>
@@ -11956,6 +12115,7 @@
 				<aligny>center</aligny>
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<include>TopSlide</include>
@@ -11969,6 +12129,7 @@
 				<aligny>center</aligny>
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="group">
 				<include>BottomSlide</include>
@@ -12231,7 +12392,8 @@
 							<posy>175</posy>
 							<width>35</width>
 							<height>35</height>
-							<texture>$INFO[ListItem.Overlay]</texture>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 							<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 						</control>
 					</control>	
@@ -12294,7 +12456,8 @@
 								<posy>175</posy>
 								<width>35</width>
 								<height>35</height>
-								<texture>$INFO[ListItem.Overlay]</texture>
+								<texture>overlaywatched.png</texture>
+								<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 								<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 							</control>
 						</control>			
@@ -12461,6 +12624,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -12474,6 +12638,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 
 			<control type="group">
@@ -12539,7 +12704,8 @@
 								<posy>115</posy>
 								<width>25</width>
 								<height>25</height>
-								<texture>$INFO[ListItem.Overlay]</texture>
+								<texture>overlaywatched.png</texture>
+								<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 								<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 							</control>					
 						</control>		
@@ -12643,7 +12809,8 @@
 								<posy>115</posy>
 								<width>25</width>
 								<height>25</height>
-								<texture>$INFO[ListItem.Overlay]</texture>
+								<texture>overlaywatched.png</texture>
+								<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 								<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 							</control>	
 						</control>	
@@ -13047,6 +13214,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -13061,6 +13229,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -13075,6 +13244,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -13089,6 +13259,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="group">
 				<control type="label">
@@ -13155,7 +13326,8 @@
 						<posy>130</posy>
 						<width>25</width>
 						<height>25</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>	
 				</itemlayout>
@@ -13245,7 +13417,8 @@
 						<posy>130</posy>
 						<width>25</width>
 						<height>25</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 						<animation type="focus">
 							<effect type="slide" start="0,0" end="9,12" time="200" tween="back" easing="out" reversible="false"/>
@@ -13628,8 +13801,9 @@
 						<posy>115</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>Skin.HasSetting(EnableWatchedIcon)</visible>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+<!-- 						<visible>Skin.HasSetting(EnableWatchedIcon)</visible> -->
 					</control>
 				</itemlayout>
 				<focusedlayout height="205" width="311">
@@ -13718,8 +13892,9 @@
 						<posy>115</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>Skin.HasSetting(EnableWatchedIcon)</visible>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+<!-- 						<visible>Skin.HasSetting(EnableWatchedIcon)</visible> -->
 						<animation type="focus">
 							<effect type="slide" start="0,0" end="50,28" time="200" tween="back" easing="out" reversible="false"/>
 							<effect type="zoom" start="100" end="160" center="auto" time="200" tween="back" easing="out" reversible="false" />
@@ -13779,7 +13954,8 @@
 					<posy>117</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>overlaywatched.png</texture>
+					<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 				</control>
 				<control type="label">
 					<posx>880</posx>
@@ -13993,8 +14169,9 @@
 							<posy>120</posy>
 							<width>35</width>
 							<height>35</height>
-							<texture>$INFO[ListItem.Overlay]</texture>
-							<visible>Skin.HasSetting(EnableWatchedIcon2)</visible>
+							<texture>overlaywatched.png</texture>
+							<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
+<!-- 							<visible>Skin.HasSetting(EnableWatchedIcon2)</visible> -->
 						</control>
 					</itemlayout>
 					<focusedlayout height="205" width="341">
@@ -14143,11 +14320,12 @@
 						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<control type="image">
-						<posx>1220</posx>
-						<posy>-171</posy>
+						<posx>1230</posx>
+						<posy>-169</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 					</control>
 					<control type="label">
 						<posx>915</posx>
@@ -14237,6 +14415,7 @@
 				<textcolor>white</textcolor>
 				<visible>!Container.Content(Seasons)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -14251,6 +14430,7 @@
 				<textcolor>white</textcolor>
 				<visible>!Container.Content(Seasons)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<!--control type="image">
 					<posx>860</posx>
@@ -14606,6 +14786,7 @@
 				<font>Shade_50_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -14619,6 +14800,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="image">
 				<posx>60</posx>
@@ -14688,7 +14870,8 @@
 						<posy>10</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>	
 				</itemlayout>
@@ -14746,7 +14929,8 @@
 						<posy>10</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>	
 				</focusedlayout>
@@ -15044,6 +15228,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Movies)</visible> 
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -15058,6 +15243,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Movies)</visible> 
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -15072,6 +15258,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(TVShows)</visible> 
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -15086,6 +15273,7 @@
 				<textcolor>white</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
+				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			</control>	
 			<control type="group">
 				<include>BottomSlide</include>
@@ -15391,7 +15579,8 @@
 						<posy>10</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>	
 				</itemlayout>
@@ -15431,7 +15620,8 @@
 						<posy>10</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture>overlaywatched.png</texture>
+						<visible>Substring(ListItem.Overlay,Watched.png) + !Substring(ListItem.Overlay,Unwatched.png)</visible>
 						<visible>Skin.HasSetting(EnableWatchedIconMovies)</visible>
 					</control>	
 				</focusedlayout>
