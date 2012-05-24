@@ -1320,7 +1320,7 @@
 		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="label">
 			<description>time label</description>
-			<posx>180r</posx>
+			<posx>200r</posx>
 			<posy>15</posy>
 			<width>400</width>
 			<height>28</height>
