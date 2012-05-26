@@ -7,7 +7,7 @@
 			<height>720</height>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>IconCrossfadeTime</fadetime>
+			<fadetime>FanartCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
@@ -23,7 +23,7 @@
 			<height>720</height>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>IconCrossfadeTime</fadetime>
+			<fadetime>FanartCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
@@ -37,7 +37,7 @@
 			<height>720</height>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
-			<fadetime>IconCrossfadeTime</fadetime>
+			<fadetime>FanartCrossfadeTime</fadetime>
 			<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>

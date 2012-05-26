@@ -14,8 +14,8 @@
 		</control>  
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>			
-			<include condition="Skin.HasSetting(MoviesExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-movies</include>
-			<include condition="Skin.HasSetting(TVShowsExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-tvshows</include>
+			<include condition="Skin.HasSetting(MoviesExtraFanart)">fanart-extra-movies</include>
+			<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows</include>
 			<!--<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -52,7 +52,7 @@
 				<texture background="true">$INFO[Fanart.Image]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>VisibleFadeEffect</include>
+<!-- 				<include>VisibleFadeEffect</include> -->
 				<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 				<visible>[[Container.Content(Seasons) | Container.Content(Episodes)] + stringcompare(ListItem.Label,..)] + ![Container.Content(Seasons) + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105)) + !stringcompare(ListItem.Label,..)] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6106)) + !stringcompare(ListItem.Label,..)] + !IsEmpty(Fanart.Image) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 			</control>
@@ -64,7 +64,7 @@
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>VisibleFadeEffect</include>
+<!-- 				<include>VisibleFadeEffect</include> -->
 				<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 				<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !IsEmpty(Control.GetLabel(6102))] + ![[Container.Content(TVShows) | Container.Content(Seasons)] + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6105))] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !IsEmpty(Control.GetLabel(6106))] + !IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)]] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 			</control>
