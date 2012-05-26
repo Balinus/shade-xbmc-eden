@@ -1714,7 +1714,7 @@
 				<width>1280</width>
 				<height>700</height>
 				<aspectratio>stretch</aspectratio>
-				<fadetime>IconCrossfadeTime</fadetime>
+<!-- 				<fadetime>FanartCrossfadeTime</fadetime> -->
 				<texture>shade/vignette3.png</texture>
 			</control>		
 
@@ -1724,7 +1724,7 @@
 				<width>1280</width>
 				<height>527</height>
 				<aspectratio>stretch</aspectratio>
-				<fadetime>IconCrossfadeTime</fadetime>
+<!-- 				<fadetime>IconCrossfadeTime</fadetime> -->
 				<texture>shade/scrollfloor.png</texture>
 				<include>BottomSlide</include>
 			</control>				
@@ -1801,7 +1801,7 @@
 				<focusedlayout height="410" width="168">
 					<control type="image">
 						<posx>-110</posx>
-						<posy>-20</posy>
+						<posy>-0</posy>
 						<width>400</width>
 						<height>350</height>
 						<colordiffuse>EEFFFFFF</colordiffuse>

@@ -16,8 +16,8 @@
 	<include file="IncludeExtra.xml"/>
 	
 
-	<constant name="FanartCrossfadeTime">500</constant>
-	<constant name="IconCrossfadeTime">400</constant>
+	<constant name="FanartCrossfadeTime">200</constant>
+	<constant name="IconCrossfadeTime">200</constant>
 
 	<include name="Zoom">
 		<animation type="WindowOpen" reversible="false">
