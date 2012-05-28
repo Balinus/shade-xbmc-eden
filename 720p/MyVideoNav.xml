@@ -1,5 +1,10 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
+	
+<!-- 	<onload condition="Skin.HasSetting(UseTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload> -->
+	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
+
+
 	<allowoverlay>no</allowoverlay>
 	<views>50,53,500,501,508,552,504,503,505,511,512,513,516,517,518,520,522,523,524,525,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,555</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
