@@ -79,8 +79,8 @@
 				<viewtype label="Fanart Panel">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
-				<preloaditems>4</preloaditems>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="155" width="199">	
 					<control type="image">
@@ -449,7 +449,7 @@
 				<preloaditems>2</preloaditems>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="85" width="680">
 				<!--	<control type="image">
@@ -1469,11 +1469,11 @@
 				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Fanart">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
 				<movement>3</movement>
 				<orientation>horizontal</orientation>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="310" width="154">
 					<control type="image">
 						<posx>2</posx>
@@ -1755,11 +1755,11 @@
 				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Alt. Fanart">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
 				<movement>3</movement>
 				<orientation>horizontal</orientation>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="310" width="154">
 					<control type="image">
 						<posx>2</posx>
@@ -4792,7 +4792,7 @@
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<orientation>horizontal</orientation>
-			<scrolltime>300</scrolltime>
+			<scrolltime>200</scrolltime>
 			<itemlayout height="512" width="256">
 			
 			</itemlayout>
@@ -4991,8 +4991,8 @@
 				<viewtype label="TV Panel">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
-				<preloaditems>4</preloaditems>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows)</visible>
 				<itemlayout height="155" width="199">	
 					<control type="image">
@@ -5298,7 +5298,8 @@
 				<viewtype label="Banner List">list</viewtype>
 				<focusposition>3</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="60" width="580">
 					<control type="image">
@@ -5502,7 +5503,8 @@
 				<viewtype label="Episode List">list</viewtype>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Episodes)</visible>
 				<itemlayout height="80" width="500">
 					<control type="group">
@@ -5737,7 +5739,8 @@
 				<viewtype label="Large Eps.">list</viewtype>
 				<focusposition>4</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Episodes)</visible>
 				<itemlayout height="60" width="580">
 					<control type="image">
@@ -6003,7 +6006,7 @@
 				<ondown>528</ondown>
 				<viewtype label="Wallstream">panel</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
 				<visible>Container.Content(Movies)</visible>
@@ -6363,7 +6366,8 @@
 				<viewtype label="Poster List">list</viewtype>
 				<focusposition>5</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="50" width="580">
 					<control type="image">
@@ -6609,7 +6613,8 @@
 				<viewtype label="Alt. Poster List">list</viewtype>
 				<focusposition>5</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="50" width="580">
 					<control type="image">
@@ -6826,7 +6831,8 @@
 				<viewtype label="Season View">list</viewtype>
 				<focusposition>4</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Episodes)</visible>
 				<itemlayout height="60" width="580">
 					<control type="image">
@@ -7110,7 +7116,8 @@
 				<viewtype label="Poster List">list</viewtype>
 				<focusposition>6</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="50" width="580">
 					<control type="image">
@@ -9197,7 +9204,7 @@
 				<pagecontrol>70</pagecontrol>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<itemlayout height="512" width="256">
 				</itemlayout>
 				<focusedlayout height="512" width="256">
@@ -9359,7 +9366,8 @@
 				<viewtype label="Alt. Banners">list</viewtype>
 				<focusposition>5</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="50" width="580">
 					<control type="image">
@@ -10252,12 +10260,12 @@
 				<onleft>536</onleft>
 				<onright>536</onright>
 				<pagecontrol>70</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>1</focusposition>
 				<itemspacing>25</itemspacing>
 				<movement>3</movement>
 				<orientation>horizontal</orientation>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<itemlayout height="290" width="470">
 					<control type="largeimage">
 						<posx>20</posx>
@@ -10394,7 +10402,8 @@
 				<viewtype label="Clear Showcase">list</viewtype>
 				<focusposition>1</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
 				<itemlayout height="60" width="580">						
 				</itemlayout>
@@ -10543,8 +10552,9 @@
 					<viewtype label="Side Banners">list</viewtype>
 					<focusposition>3</focusposition>
 					<pagecontrol>60</pagecontrol>
-					<scrolltime>300</scrolltime>
+					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
 					<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 					<itemlayout height="400" width="95">					
 						<control type="image">
@@ -10780,7 +10790,7 @@
 				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Poster View">list</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>3</focusposition>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
@@ -11267,7 +11277,7 @@
 				<ondown>540</ondown>
 				<viewtype label="Welo View">list</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>3</focusposition>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
@@ -11935,8 +11945,8 @@
 				<orientation>vertical</orientation>
 				<focusposition>1</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
-				<preloaditems>4</preloaditems>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 				<itemlayout height="150" width="600">	
 					<control type="image">
@@ -12415,7 +12425,7 @@
 				<ondown>XBMC.PlayMedia($INFO[ListItem.Trailer],noresume)</ondown>
 				<viewtype label="Poster View 2">list</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>3</focusposition>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
@@ -12739,7 +12749,7 @@
 					<ondown>543</ondown>
 					<viewtype label="Mini Wall">panel</viewtype>
 					<pagecontrol>60</pagecontrol>
-					<scrolltime>300</scrolltime>
+					<scrolltime>200</scrolltime>
 					<preloaditems>2</preloaditems>
 					<orientation>horizontal</orientation>
 					<visible>Container.Content(Movies)</visible>
@@ -13360,8 +13370,8 @@
 				<viewtype label="Poster Panel">list</viewtype>
 				<orientation>horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
-				<preloaditems>4</preloaditems>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Movies)]</visible>
 				<itemlayout height="180" width="150">	
 					<control type="image">
@@ -13833,9 +13843,9 @@
 				<viewtype label="Episode Panel">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
 				<focusposition>1</focusposition>
-				<preloaditems>4</preloaditems>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Episodes)</visible>
 				<itemlayout height="175" width="309">	
 					<control type="image">
@@ -14191,9 +14201,9 @@
 					<viewtype label="Wide Panel">list</viewtype>
 					<orientation>Horizontal</orientation>
 					<pagecontrol>60</pagecontrol>
-					<scrolltime>300</scrolltime>
+					<scrolltime>200</scrolltime>
 					<focusposition>2</focusposition>
-					<preloaditems>4</preloaditems>
+					<preloaditems>2</preloaditems>
 					<visible>Container.Content(Episodes)</visible>
 					<itemlayout height="175" width="309">	
 						<control type="image">
@@ -14570,8 +14580,8 @@
 				<orientation>Horizontal</orientation>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
-				<preloaditems>4</preloaditems>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="155" width="213">	
 					<control type="group">
@@ -14940,7 +14950,8 @@
 				<viewtype label="List Info">list</viewtype>
 				<focusposition>4</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="50" width="580">
 					<control type="image">
@@ -15658,7 +15669,8 @@
 				<viewtype label="Low List">list</viewtype>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>300</scrolltime>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
 				<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 				<itemlayout height="50" width="580">
 					<control type="image">
