@@ -1,8 +1,10 @@
 <window type="dialog" id="142">
 	<defaultcontrol always="true">603</defaultcontrol>
 	<controls>
+	  
 <!-- 	  <include condition="VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)">Clock_VidPlayer</include> -->
 		<control type="group">
+		  
 <!-- 			<animation effect="slide" start="0,-300" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation> -->
 <!-- 			<animation effect="slide" start="0,0" end="0,-300" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation> -->
 <!-- 			<animation effect="slide" start="0,0" end="0,-300" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog)">Conditional</animation> -->
@@ -39,21 +41,22 @@
 				<visible>VideoPlayer.Content(Movies)</visible>				
 				<posx>0</posx>
 				<posy>0</posy>
+				
 				<control type="label">
-					<posx>210</posx>
-					<posy>30</posy>
-					<width>350</width>
+					<posx>30</posx>
+					<posy>5</posy>
+					<width>750</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_30</font>
+					<font>Shade_32</font>					
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
-					<posx>30</posx>
+					<posx>1100</posx>
 					<posy>13</posy>
 					<width>150</width>
 					<height>205</height>
@@ -62,10 +65,10 @@
 				</control>
 				<control type="textbox">
 					<description>Description Value The Movie</description>
-					<posx>580</posx>
-					<posy>30</posy>
+					<posx>30</posx>
+					<posy>45</posy>
 					<width>690</width>
-					<height>156</height>
+					<height>125</height>
 					<font>Shade_20</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -73,14 +76,14 @@
 					<autoscroll time="3000" delay="8000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 
-				<control type="group">
+				<!--<control type="group">
 					<visible>VideoPlayer.Content(Movies)</visible>
 					<posx>160</posx>
 					<posy>200</posy>
 					<control type="label">
 						<description>Popup Info</description>
 						<posx>422</posx>
-						<posy>-5</posy>
+						<posy>0</posy>
 						<width>250</width>
 						<height>20</height>
 						<font>Shade_16_Bold</font>
@@ -92,10 +95,10 @@
 					<control type="label">
 						<description>Popup Info</description>
 						<posx>492</posx>
-						<posy>-5</posy>
+						<posy>0</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_18_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -104,15 +107,15 @@
 					<control type="label">
 						<description>Popup Info</description>
 						<posx>675</posx>
-						<posy>-5</posy>
+						<posy>0</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_18_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Remaining: $INFO[Player.TimeRemaining]</label>
-					</control>
+					</control>-->
 				<!--	<control type="label">
 						<description>Popup Info</description>
 						<posx>655</posx>
@@ -125,18 +128,18 @@
 						<aligny>center</aligny>
 						<label>$INFO[Player.TimeRemaining]</label>
 					</control>-->
-					<control type="label">
+					<!--<control type="label">
 						<description>Popup Info</description>
 						<posx>964</posx>
-						<posy>-5</posy>
+						<posy>0</posy>
 						<width>240</width>
 						<height>20</height>
-						<font>Shade_18_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Finish: $INFO[Player.FinishTime]</label>
-					</control>
+					</control>-->
 				<!--	<control type="label">
 						<description>Popup Info</description>
 						<posx>783</posx>
@@ -149,7 +152,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[Player.FinishTime]</label>
 					</control>-->
-				</control>
+<!-- 				</control> -->
 
 
 				<control type="label">
@@ -166,10 +169,10 @@
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="group">
-					<posx>130</posx>
+					<posx>680</posx>
 					<posy>50</posy>
 					<control type="label">
-						<posy>30</posy>
+						<posy>0</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -180,7 +183,7 @@
 						<label>Year:</label>
 					</control>
 					<control type="label">
-						<posy>52</posy>
+						<posy>25</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -191,7 +194,7 @@
 						<label>Director:</label>
 					</control>		
 					<control type="label">
-						<posy>74</posy>
+						<posy>58</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -202,7 +205,7 @@
 						<label>Genre:</label>
 					</control>			
 					<control type="label">
-						<posy>96</posy>
+						<posy>91</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -214,7 +217,7 @@
 					</control>
 					<control type="label">
 						<posx>180</posx>
-						<posy>30</posy>
+						<posy>0</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -226,7 +229,7 @@
 					</control>
 					<control type="label">
 						<posx>180</posx>
-						<posy>52</posy>
+						<posy>25</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -238,7 +241,7 @@
 					</control>		
 					<control type="label">
 						<posx>180</posx>
-						<posy>74</posy>
+						<posy>58</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -250,7 +253,7 @@
 					</control>			
 					<control type="label">
 						<posx>180</posx>
-						<posy>96</posy>
+						<posy>91</posy>
 						<width>160</width>
 						<height>25</height>
 						<font>Shade_18</font>
@@ -263,124 +266,126 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>210</posx>
-					<posy>190</posy>
-					<width>525</width>
-					<align>left</align>
-					<itemgap>10</itemgap>
+					<posx>30</posx>
+					<posy>180</posy>
+					<width>690</width>
+					<align>center</align>
+					<itemgap>100</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="image">
 						<description>Video rez Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/,.png]</texture>
 					</control>
 					<control type="image">
 						<description>Xvid Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/video/xvid.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,xvid)</visible>
 					</control>
 					<control type="image">
 						<description>Divx Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/video/divx.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) |substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5)</visible>
 					</control>
 					<control type="image">
 						<description>h264 Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/video/h264.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,h264)</visible>
 					</control>
 					<control type="image">
 						<description>avc1 Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/video/avc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,avc1)</visible>
 					</control>
 					<control type="image">
 						<description>wvc1 Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/video/wvc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,wvc1)</visible>
 					</control>
 					<control type="image">
 						<description>mpeg1video Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/video/mpeg1video.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,mpeg1video)</visible>
 					</control>
 					<control type="image">
 						<description>mp3 Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/mp3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,mp3)</visible>
 					</control>
 					<control type="image">
 						<description>dts Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/dts.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,dca)</visible>
 					</control>
 					<control type="image">
 						<description>ac3 Image</description>
-						<width>38</width>
-						<height>30</height>
+						<width>48</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/ac3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
 						<description>aac Image</description>
-						<width>38</width>
-						<height>30</height>
+						<width>48</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/aac.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,aac)</visible>
 					</control>
 					<control type="image">
 						<description>Dolby Digital Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/dolbydigital.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
 						<description>WMA Pro Codec Image</description>
-						<width>86</width>
-						<height>30</height>
+						<width>108</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/wmapro.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,wmapro)</visible>
 					</control>
 					<control type="image">
 						<description>Audio Channels Image</description>
-						<width>38</width>
-						<height>30</height>
+						<width>48</width>
+						<height>38</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
 					</control>
 				</control>
+				
 			</control>
+			
 
 
 			<!--TV-->
