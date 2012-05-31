@@ -3,9 +3,28 @@
 	<controls>
 <!-- 	  <include condition="VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)">Clock_VidPlayer</include> -->
 		<control type="group">
-			<animation effect="slide" start="0,-300" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-300" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-300" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog)">Conditional</animation>
+<!-- 			<animation effect="slide" start="0,-300" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation> -->
+<!-- 			<animation effect="slide" start="0,0" end="0,-300" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation> -->
+<!-- 			<animation effect="slide" start="0,0" end="0,-300" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog)">Conditional</animation> -->
+			
+			 <animation type="Visible">
+			    <effect type="fade" time="400" start="0" end="100" />
+			    <effect type="slide" time="400" start="0,-300" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="Hidden">
+			    <effect type="fade" time="400" start="100" end="0" />
+			    <effect type="slide" time="400" start="0,0" end="0,-300" easing="in" tween="cubic" />
+			</animation>
+			<animation type="WindowOpen">
+			    <effect type="fade" time="400" start="0" end="100" />
+			    <effect type="slide" time="400" start="0,-300" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+			    <effect type="fade" time="400" start="100" end="0" />
+			    <effect type="slide" time="400" start="0,0" end="0,-300" easing="in" tween="cubic" />
+			</animation>
+			
+			
 			<control type="image">
 				<posx>0</posx>
 				<posy>-120</posy>
@@ -153,7 +172,7 @@
 						<posy>30</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -161,10 +180,10 @@
 						<label>Year:</label>
 					</control>
 					<control type="label">
-						<posy>50</posy>
+						<posy>52</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -172,10 +191,10 @@
 						<label>Director:</label>
 					</control>		
 					<control type="label">
-						<posy>70</posy>
+						<posy>74</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -183,10 +202,10 @@
 						<label>Genre:</label>
 					</control>			
 					<control type="label">
-						<posy>90</posy>
+						<posy>96</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -194,11 +213,11 @@
 						<label>Writer:</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
+						<posx>180</posx>
 						<posy>30</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -206,11 +225,11 @@
 						<label>$INFO[VideoPlayer.Year]</label>
 					</control>
 					<control type="label">
-						<posx>200</posx>
-						<posy>50</posy>
+						<posx>180</posx>
+						<posy>52</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -218,11 +237,11 @@
 						<label>$INFO[VideoPlayer.Director]</label>
 					</control>		
 					<control type="label">
-						<posx>200</posx>
-						<posy>70</posy>
+						<posx>180</posx>
+						<posy>74</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -230,11 +249,11 @@
 						<label>$INFO[VideoPlayer.Genre]</label>
 					</control>			
 					<control type="label">
-						<posx>200</posx>
-						<posy>90</posy>
+						<posx>180</posx>
+						<posy>96</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_15_Bold</font>
+						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
