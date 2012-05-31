@@ -16,6 +16,11 @@
 			<size>12</size>
 		</font>
 		<font>
+			<name>font11</name>
+			<filename>Default.ttf</filename>
+			<size>13</size>
+		</font>
+		<font>
 			<name>font12</name>
 			<filename>Default.ttf</filename>
 			<size>16</size>
