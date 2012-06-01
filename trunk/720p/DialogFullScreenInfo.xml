@@ -155,7 +155,7 @@
 <!-- 				</control> -->
 
 
-				<control type="label">
+				<!--<control type="label">
 					<posx>0</posx>
 					<posy>67</posy>
 					<width>360</width>
@@ -167,7 +167,7 @@
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
-				</control>
+				</control>-->
 				<control type="group">
 					<posx>680</posx>
 					<posy>50</posy>
@@ -267,7 +267,7 @@
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
 					<posx>30</posx>
-					<posy>180</posy>
+					<posy>190</posy>
 					<width>690</width>
 					<align>center</align>
 					<itemgap>100</itemgap>
@@ -392,14 +392,14 @@
 
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
-				<posx>180</posx>
+				<posx>0</posx>
 				<posy>0</posy>
 				<control type="label">
-					<posx>120</posx>
-					<posy>30</posy>
-					<width>350</width>
+					<posx>30</posx>
+					<posy>5</posy>
+					<width>690</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<label>$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.TVShowTitle])</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -407,21 +407,21 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="label">
-					<posx>120</posx>
-					<posy>80</posy>
+				<!--<control type="label">
+					<posx>680</posx>
+					<posy>50</posy>
 					<width>870</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-				</control>
+				</control>-->
 				<control type="image">
-					<posx>-160</posx>
+					<posx>994</posx>
 					<posy>35</posy>
 					<width>256</width>
 					<height>148</height>
@@ -429,21 +429,21 @@
 				</control>
 				<control type="textbox">
 					<description>Description Value The Movie</description>
-					<posx>500</posx>
-					<posy>30</posy>
-					<width>590</width>
-					<height>156</height>
+					<posx>30</posx>
+					<posy>45</posy>
+					<width>690</width>
+					<height>125</height>
 					<font>Shade_20</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
 					<autoscroll time="3000" delay="8000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
-				<control type="group">
+				<!--<control type="group">
 					<visible>VideoPlayer.Content(Episodes)</visible>
 					<posx>85</posx>
-					<posy>200</posy>
-					<control type="label">
+					<posy>200</posy>-->
+					<!--<control type="label">
 						<description>Popup Info</description>
 						<posx>415</posx>
 						<posy>-5</posy>
@@ -454,7 +454,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Elapsed: $INFO[Player.Time]</label>
-					</control>
+					</control>-->
 					<!--<control type="label">
 						<description>Popup Info</description>
 						<posx>492</posx>
@@ -467,7 +467,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[Player.Time]</label>
 					</control>-->
-					<control type="label">
+					<!--<control type="label">
 						<description>Popup Info</description>
 						<posx>625</posx>
 						<posy>-5</posy>
@@ -478,7 +478,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Remaining: $INFO[Player.TimeRemaining]</label>
-					</control>
+					</control>-->
 				<!--	<control type="label">
 						<description>Popup Info</description>
 						<posx>655</posx>
@@ -491,7 +491,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[Player.TimeRemaining]</label>
 					</control>-->
-					<control type="label">
+					<!--<control type="label">
 						<description>Popup Info</description>
 						<posx>850</posx>
 						<posy>-5</posy>
@@ -502,7 +502,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Finish: $INFO[Player.FinishTime]</label>
-					</control>
+					</control>-->
 					<!--<control type="label">
 						<description>Popup Info</description>
 						<posx>783</posx>
@@ -515,13 +515,26 @@
 						<aligny>center</aligny>
 						<label>$INFO[Player.FinishTime]</label>
 					</control>-->
+<!-- 				</control> -->
+				<control type="label">
+					<posx>790</posx>
+					<posy>80</posy>
+					<width>260</width>
+					<height>20</height>
+					<label>$LOCALIZE[20373]: $INFO[VideoPlayer.Season]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Shade_22</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="label">
-					<posx>120</posx>
-					<posy>110</posy>
-					<width>360</width>
+					<posx>790</posx>
+					<posy>120</posy>
+					<width>260</width>
 					<height>20</height>
-					<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373] ] &#32;&#32;&#32; $INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</label>
+					<label>$LOCALIZE[20359]: $INFO[VideoPlayer.Episode]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Shade_22</font>
@@ -531,11 +544,11 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>120</posx>
-					<posy>180</posy>
-					<width>550</width>
-					<align>left</align>
-					<itemgap>10</itemgap>
+					<posx>30</posx>
+					<posy>190</posy>
+					<width>690</width>
+					<align>center</align>
+					<itemgap>100</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="image">
 						<description>Video rez Image</description>
