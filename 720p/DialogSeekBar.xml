@@ -1,8 +1,24 @@
 <window id="115">
 	<defaultcontrol>1</defaultcontrol>
 	<visible>!Control.HasFocus(9000) + [VideoPlayer.IsFullscreen + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(142)]]</visible>
-	<animation effect="slide" start="0,120" end="0,0" time="100">WindowOpen</animation>
-	<animation effect="slide" start="0,0" end="0,120" time="100">WindowClose</animation>
+	<animation type="Visible">
+			    <effect type="fade" time="400" start="0" end="100" />
+			    <effect type="slide" time="400" start="0,120" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="Hidden">
+			    <effect type="fade" time="400" start="100" end="0" />
+			    <effect type="slide" time="400" start="0,0" end="0,120" easing="in" tween="cubic" />
+			</animation>
+			<animation type="WindowOpen">
+			    <effect type="fade" time="400" start="0" end="100" />
+			    <effect type="slide" time="400" start="0,120" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+			    <effect type="fade" time="400" start="100" end="0" />
+			    <effect type="slide" time="400" start="0,0" end="0,120" easing="in" tween="cubic" />
+			</animation>
+	<!--<animation effect="slide" start="0,120" end="0,0" time="100">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="0,120" time="100">WindowClose</animation>-->
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
