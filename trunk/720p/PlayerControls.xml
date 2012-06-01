@@ -26,7 +26,7 @@
 				<label>-</label>
 				<texturefocus>osdprevtrackfo.png</texturefocus>
 				<texturenofocus>osdprevtracknf.png</texturenofocus>
-				<onleft>608</onleft>
+				<onleft>609</onleft>
 				<onright>601</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
@@ -100,7 +100,7 @@
 				<label>-</label>
 				<texturefocus>osdnexttrackfo.png</texturefocus>
 				<texturenofocus>osdnexttracknf.png</texturenofocus>
-				<onleft>604</onleft>nah nvidia
+				<onleft>604</onleft>
 				<onright>606</onright>
 				<onup>300</onup>
 				<ondown>200</ondown>
@@ -123,6 +123,20 @@
 				<animation effect="fade" start="100" end="30" time="100" condition="!Player.CanRecord">Conditional</animation>
 			</control>
 			<control type="button" id="607">
+				<posx>280</posx>
+				<posy>0</posy>
+				<width>40</width>
+				<height>40</height>
+				<label>-</label>
+				<texturefocus>shade/fullscreen_v1FO.png</texturefocus>
+				<texturenofocus>shade/fullscreen_v1NF.png</texturenofocus>
+				<onleft>606</onleft>
+				<onright>608</onright>
+				<onup>300</onup>
+				<ondown>200</ondown>
+				<onclick>Fullscreen</onclick>
+			</control>
+			<control type="button" id="608">
 				<posx>365</posx>
 				<posy>0</posy>
 				<width>40</width>
@@ -131,8 +145,8 @@
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>XBMC.PlayerControl(Repeat)</onclick>
-				<onleft>606</onleft>
-				<onright>608</onright>
+				<onleft>607</onleft>
+				<onright>609</onright>
 				<onup>100</onup>
 				<ondown>100</ondown>
 			</control>
@@ -143,7 +157,7 @@
 				<height>40</height>
 				<texture>osdrepeatnf.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
-				<visible>!Control.HasFocus(607)</visible>
+				<visible>!Control.HasFocus(608)</visible>
 			</control>
 			<control type="image">
 				<posx>365</posx>
@@ -152,7 +166,7 @@
 				<height>40</height>
 				<texture>osdrepeatfo.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
-				<visible>Control.HasFocus(607)</visible>
+				<visible>Control.HasFocus(608)</visible>
 			</control>
 			<control type="image">
 				<posx>365</posx>
@@ -161,7 +175,7 @@
 				<height>40</height>
 				<texture>osdrepeatonenf.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
-				<visible>!Control.HasFocus(607)</visible>
+				<visible>!Control.HasFocus(608)</visible>
 			</control>
 			<control type="image">
 				<posx>365</posx>
@@ -170,7 +184,7 @@
 				<height>40</height>
 				<texture>osdrepeatonefo.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
-				<visible>Control.HasFocus(607)</visible>
+				<visible>Control.HasFocus(608)</visible>
 			</control>
 			<control type="image">
 				<posx>365</posx>
@@ -179,7 +193,7 @@
 				<height>40</height>
 				<texture>osdrepeatallnf.png</texture>
 				<visible>Playlist.IsRepeat</visible>
-				<visible>!Control.HasFocus(607)</visible>
+				<visible>!Control.HasFocus(608)</visible>
 			</control>
 			<control type="image">
 				<posx>365</posx>
@@ -188,9 +202,9 @@
 				<height>40</height>
 				<texture>osdrepeatallfo.png</texture>
 				<visible>Playlist.IsRepeat</visible>
-				<visible>Control.HasFocus(607)</visible>
+				<visible>Control.HasFocus(608)</visible>
 			</control>
-			<control type="togglebutton" id="608">
+			<control type="togglebutton" id="609">
 				<posx>405</posx>
 				<posy>0</posy>
 				<width>40</width>
@@ -202,7 +216,7 @@
 				<alttexturefocus>osdrandomonfo.png</alttexturefocus>
 				<alttexturenofocus>osdrandomonnf.png</alttexturenofocus>
 				<onclick>XBMC.PlayerControl(Random)</onclick>
-				<onleft>607</onleft>
+				<onleft>608</onleft>
 				<onright>600</onright>
 				<onup>100</onup>
 				<ondown>100</ondown>
