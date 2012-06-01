@@ -1,6 +1,6 @@
 <window id="115">
 	<defaultcontrol>1</defaultcontrol>
-	<visible>!Control.HasFocus(9000) + [VideoPlayer.IsFullscreen + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible>
+	<visible>!Control.HasFocus(9000) + [VideoPlayer.IsFullscreen + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(142)]]</visible>
 	<animation effect="slide" start="0,120" end="0,0" time="100">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,120" time="100">WindowClose</animation>
 	<coordinates>
@@ -17,7 +17,7 @@
 					<align>center</align>
 					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>[VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)]</visible>
+					<visible>[VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)]+ Player.Paused</visible>
 					<control type="image">
 						<description>Video rez Image</description>
 						<width>96</width>
@@ -131,6 +131,7 @@
 		      </control>
 		<control type="group">
 			<animation effect="slide" end="0,120" start="0,0" time="100" condition="[Window.IsVisible(Visualisation) + Player.ShowInfo]">Conditional</animation>
+			
 			<control type="image">
 				<posx>0</posx>
 				<posy>20</posy>
@@ -146,7 +147,7 @@
 				<texture>$INFO[Player.FolderPath]../clearart.png</texture>
 				<texture>$INFO[Player.FolderPath]/clearart.png</texture>
 				<aspectratio>keep</aspectratio>
-				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart)</visible>
+				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart) + Player.Paused</visible>
 			</control>
 			<control type="largeimage">
 				<posx>1020</posx>
@@ -155,7 +156,7 @@
 				<height>300</height>
 				<texture diffuse="shade/posterdiffuse.png">$INFO[VideoPlayer.Cover]</texture>
 				<aspectratio>keep</aspectratio>
-				<visible>VideoPlayer.Content(movies) + Skin.HasSetting(MovieClearart)</visible>
+				<visible>VideoPlayer.Content(movies) + Skin.HasSetting(MovieClearart) + Player.Paused</visible>
 			</control>
 			<control type="group">
 				<posx>0</posx>
