@@ -47,7 +47,7 @@
 					<posy>5</posy>
 					<width>890</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<label>[B]$INFO[VideoPlayer.Title][/B]</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -218,7 +218,7 @@
 					<control type="label">
 						<posx>180</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>210</width>
 						<height>25</height>
 						<font>Shade_18</font>
 						<textcolor>white</textcolor>
@@ -230,36 +230,37 @@
 					<control type="label">
 						<posx>180</posx>
 						<posy>30</posy>
-						<width>160</width>
+						<width>210</width>
 						<height>25</height>
 						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Director]</label>
 					</control>		
 					<control type="label">
 						<posx>180</posx>
 						<posy>63</posy>
-						<width>160</width>
+						<width>210</width>
 						<height>25</height>
 						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Genre]</label>
 					</control>			
 					<control type="label">
 						<posx>180</posx>
 						<posy>96</posy>
-						<width>160</width>
+						<width>210</width>
 						<height>25</height>
 						<font>Shade_18</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
+						<scrollspeed>20</scrollspeed>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Writer]</label>
 					</control>			
@@ -399,7 +400,7 @@
 					<posy>5</posy>
 					<width>890</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.TVShowTitle])</label>
+					<label>[B]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.TVShowTitle])[/B]</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
