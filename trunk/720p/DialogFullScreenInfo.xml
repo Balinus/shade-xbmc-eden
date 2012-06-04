@@ -27,13 +27,20 @@
 			</animation>
 			
 			
-			<control type="image">
+			<!--<control type="image">
 				<posx>0</posx>
 				<posy>-120</posy>
 				<width>1280</width>
 				<height>350</height>
 				<texture border="20,20,20,2">shade/sidebar.png</texture>
 				<colordiffuse>EEFFFFFF</colordiffuse>
+			</control>-->
+			<control type="image" id="1">
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>450</height>
+				<texture flipy="true">HomeNowPlayingBack.png</texture>
 			</control>
 			
 
@@ -236,6 +243,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>true</scroll>
+						<scrollspeed>20</scrollspeed>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Director]</label>
 					</control>		
@@ -248,6 +256,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>true</scroll>
+						<scrollspeed>20</scrollspeed>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Genre]</label>
 					</control>			
