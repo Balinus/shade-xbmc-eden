@@ -2,35 +2,35 @@
 	<include name="TVMPAAFlaggingConditions">
 		<control type="image">
 			<description>Rated PG</description>
-			<width>90</width>
+			<width>72</width>
 			<aspectratio>keep</aspectratio>
 			<texture>tv rating/tv-pg.png</texture>
 			<visible>substring(listitem.mpaa,TV-PG)</visible>
 		</control>
 		<control type="image">
 			<description>Rated Y</description>
-			<width>90</width>
+			<width>72</width>
 			<aspectratio>keep</aspectratio>
 			<texture>tv rating/tv-y.png</texture>
 			<visible>substring(listitem.mpaa,TV-Y)</visible>
 		</control>
 		<control type="image">
 			<description>Rated MA</description>
-			<width>90</width>
+			<width>72</width>
 			<aspectratio>keep</aspectratio>
 			<texture>tv rating/tv-ma.png</texture>
 			<visible>substring(listitem.mpaa,TV-MA)</visible>
 		</control>
 		<control type="image">
 			<description>Rated G</description>
-			<width>90</width>
+			<width>72</width>
 			<aspectratio>keep</aspectratio>
 			<texture>tv rating/tv-g.png</texture>
 			<visible>substring(listitem.mpaa,TV-G)</visible>
 		</control>
 		<control type="image">
 			<description>Rated 14</description>
-			<width>90</width>
+			<width>72</width>
 			<aspectratio>keep</aspectratio>
 			<texture>tv rating/tv-14.png</texture>
 			<visible>substring(listitem.mpaa,TV-14)</visible>
@@ -55,7 +55,7 @@
 		</control>
 		<control type="image">
 			<description>Rated Y7</description>
-			<width>90</width>
+			<width>72</width>
 			<aspectratio>keep</aspectratio>
 			<texture>tv rating/tv-y7.png</texture>
 			<visible>substring(listitem.mpaa,TV-Y7)</visible>
@@ -237,55 +237,56 @@
 	<include name="VideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Video rez Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoResolution,flags/video/,.png]</texture>
 		</control>
 		<control type="image">
 			<description>Xvid Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/xvid.png</texture>
 			<visible>substring(ListItem.VideoCodec,xvid)</visible>
 		</control>
 		<control type="image">
 			<description>Divx Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/divx.png</texture>
 			<visible>substring(ListItem.VideoCodec,divx) | substring(ListItem.VideoCodec,div3) |substring(ListItem.VideoCodec,div4) | substring(ListItem.VideoCodec,div5)</visible>
 		</control>
 		<control type="image">
 			<description>h264 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+<!-- 			<posy>-20</posy> -->
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/h264.png</texture>
 			<visible>substring(ListItem.VideoCodec,h264)</visible>
 		</control>
 		<control type="image">
 			<description>avc1 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/avc1.png</texture>
 			<visible>substring(ListItem.VideoCodec,avc1)</visible>
 		</control>
 		<control type="image">
 			<description>wvc1 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/wvc1.png</texture>
 			<visible>substring(ListItem.VideoCodec,wvc1)</visible>
 		</control>
 		<control type="image">
 			<description>mpeg1video Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/mpeg1video.png</texture>
 			<visible>substring(ListItem.VideoCodec,mpeg1video)</visible>
@@ -294,16 +295,16 @@
 	<include name="VideoTypeHackFlaggingConditions">
 		<control type="image">
 			<description>Bluray Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/bluray.png</texture>
 			<visible>substring(ListItem.filename,bluray)</visible>
 		</control>
 		<control type="image">
 			<description>HDDVD Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/video/hddvd.png</texture>
 			<visible>substring(ListItem.filename,hddvd)</visible>
@@ -317,7 +318,7 @@
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
 				<id>88</id>    
-				<width>90</width>		
+				<width>72</width>		
 				<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
@@ -359,56 +360,56 @@
 	<include name="AudioCodecFlaggingConditions">
 		<control type="image">
 			<description>mp3 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/audio/mp3.png</texture>
 			<visible>substring(ListItem.AudioCodec,mp3)</visible>
 		</control>
 		<control type="image">
 			<description>dts Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/audio/dts.png</texture>
 			<visible>substring(ListItem.AudioCodec,dca)</visible>
 		</control>
 		<control type="image">
 			<description>ac3 Image</description>
-			<width>45</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/audio/ac3.png</texture>
 			<visible>substring(ListItem.AudioCodec,ac3) + !substring(ListItem.AudioChannels,6)</visible>
 		</control>
 		<control type="image">
 			<description>aac Image</description>
-			<width>45</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/audio/aac.png</texture>
 			<visible>substring(ListItem.AudioCodec,aac)</visible>
 		</control>
 		<control type="image">
 			<description>Dolby Digital Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/audio/dolbydigital.png</texture>
 			<visible>substring(ListItem.AudioCodec,ac3) + substring(ListItem.AudioChannels,6)</visible>
 		</control>
 		<control type="image">
 			<description>WMA Pro Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flags/audio/wmapro.png</texture>
 			<visible>substring(ListItem.AudioCodec,wmapro)</visible>
 		</control>
 		<control type="image">
 			<description>Audio Channels Image</description>
-			<width>45</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioChannels,flags/audio/,.png]</texture>
 		</control>
@@ -416,8 +417,8 @@
 	<include name="AspectCodecFlaggingConditions">
 		<control type="image">
 			<description>Aspectratio Image</description>
-			<width>60</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
 		</control>
@@ -427,7 +428,7 @@
 		<control type="image">
 			<description>Audio Channels Image</description>
 			<width>45</width>
-			<height>33</height>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioChannels,flags/audio/,.png]</texture>
 		</control>
@@ -438,55 +439,55 @@
 	<include name="DarkVideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Video rez Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoResolution,shade/dark codec flags/video/,.png]</texture>
 		</control>
 		<control type="image">
 			<description>Xvid Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/xvid.png</texture>
 			<visible>substring(ListItem.VideoCodec,xvid)</visible>
 		</control>
 		<control type="image">
 			<description>Divx Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/divx.png</texture>
 			<visible>substring(ListItem.VideoCodec,divx) | substring(ListItem.VideoCodec,div3) |substring(ListItem.VideoCodec,div4) | substring(ListItem.VideoCodec,div5)</visible>
 		</control>
 		<control type="image">
 			<description>h264 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/h264.png</texture>
 			<visible>substring(ListItem.VideoCodec,h264)</visible>
 		</control>
 		<control type="image">
 			<description>avc1 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/avc1.png</texture>
 			<visible>substring(ListItem.VideoCodec,avc1)</visible>
 		</control>
 		<control type="image">
 			<description>wvc1 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/wvc1.png</texture>
 			<visible>substring(ListItem.VideoCodec,wvc1)</visible>
 		</control>
 		<control type="image">
 			<description>mpeg1video Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/mpeg1video.png</texture>
 			<visible>substring(ListItem.VideoCodec,mpeg1video)</visible>
@@ -495,16 +496,16 @@
 	<include name="DarkVideoTypeHackFlaggingConditions">
 		<control type="image">
 			<description>Bluray Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/bluray.png</texture>
 			<visible>substring(ListItem.filename,bluray)</visible>
 		</control>
 		<control type="image">
 			<description>HDDVD Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/video/hddvd.png</texture>
 			<visible>substring(ListItem.filename,hddvd)</visible>
@@ -513,16 +514,16 @@
 	<include name="DarkAudioCodecFlaggingConditions">
 		<control type="image">
 			<description>mp3 Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/audio/mp3.png</texture>
 			<visible>substring(ListItem.AudioCodec,mp3)</visible>
 		</control>
 		<control type="image">
 			<description>dts Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/audio/dts.png</texture>
 			<visible>substring(ListItem.AudioCodec,dca)</visible>
@@ -530,7 +531,7 @@
 		<control type="image">
 			<description>ac3 Image</description>
 			<width>45</width>
-			<height>33</height>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/audio/ac3.png</texture>
 			<visible>substring(ListItem.AudioCodec,ac3) + !substring(ListItem.AudioChannels,6)</visible>
@@ -538,23 +539,23 @@
 		<control type="image">
 			<description>aac Image</description>
 			<width>45</width>
-			<height>33</height>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/audio/aac.png</texture>
 			<visible>substring(ListItem.AudioCodec,aac)</visible>
 		</control>
 		<control type="image">
 			<description>Dolby Digital Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/audio/dolbydigital.png</texture>
 			<visible>substring(ListItem.AudioCodec,ac3) + substring(ListItem.AudioChannels,6)</visible>
 		</control>
 		<control type="image">
 			<description>WMA Pro Codec Image</description>
-			<width>90</width>
-			<height>33</height>
+			<width>72</width>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>shade/dark codec flags/audio/wmapro.png</texture>
 			<visible>substring(ListItem.AudioCodec,wmapro)</visible>
@@ -562,7 +563,7 @@
 		<control type="image">
 			<description>Audio Channels Image</description>
 			<width>45</width>
-			<height>33</height>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioChannels,shade/dark codec flags/audio/,.png]</texture>
 		</control>
@@ -571,7 +572,7 @@
 		<control type="image">
 			<description>Aspectratio Image</description>
 			<width>60</width>
-			<height>33</height>
+			<height>26</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoAspect,shade/dark codec flags/aspectratio/,.png]</texture>
 		</control>

@@ -2044,11 +2044,11 @@
 				</control>	
 				<control type="grouplist">
                                             <description>Media Codec Flagging Images</description>
-                                            <posx>430</posx>
-                                            <posy>675</posy>
-                                            <width>800</width>
-                                            <align>left</align>
-                                            <itemgap>20</itemgap>
+                                            <posx>0</posx>
+                                            <posy>685</posy>
+                                            <width>1280</width>
+                                            <align>center</align>
+                                            <itemgap>30</itemgap>
                                             <orientation>horizontal</orientation>
                                             <include>VisibleFadeEffect</include>
                                             <animation effect="slide" time="0" start="0,0" end="-310,0" condition=" Container.Content(MusicVideos)">Conditional</animation>
