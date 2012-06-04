@@ -39,7 +39,7 @@
 				<posx>0</posx>
 				<posy>-120</posy>
 				<width>1280</width>
-				<height>450</height>
+				<height>480</height>
 				<texture flipy="true">HomeNowPlayingBack.png</texture>
 			</control>
 			
@@ -409,7 +409,7 @@
 					<posy>5</posy>
 					<width>890</width>
 					<height>25</height>
-					<label>[B]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.TVShowTitle])[/B]</label>
+					<label>[B]$INFO[VideoPlayer.Title] - $INFO[VideoPlayer.TVShowTitle][/B]</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -433,7 +433,7 @@
 				<control type="image">
 					<posx>994</posx>
 					<posy>35</posy>
-					<width>256</width>
+					<width>263</width>
 					<height>148</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
 				</control>
@@ -537,7 +537,7 @@
 					<label>$LOCALIZE[20373]: $INFO[VideoPlayer.Season]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -550,7 +550,7 @@
 					<label>$LOCALIZE[20359]: $INFO[VideoPlayer.Episode]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Shade_20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -559,7 +559,7 @@
 						<posy>60</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -570,7 +570,7 @@
 						<posy>90</posy>
 						<width>160</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -582,7 +582,7 @@
 						<posy>60</posy>
 						<width>140</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>true</scroll>
@@ -594,7 +594,7 @@
 						<posy>90</posy>
 						<width>140</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Shade_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>true</scroll>
