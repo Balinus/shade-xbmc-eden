@@ -10,20 +10,20 @@
 <!-- 			<animation effect="slide" start="0,0" end="0,-300" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog)">Conditional</animation> -->
 			
 			 <animation type="Visible">
-			    <effect type="fade" time="400" start="0" end="100" />
-			    <effect type="slide" time="400" start="0,-300" end="0,0" easing="out" tween="cubic" />
+			    <effect type="fade" time="300" start="0" end="100" />
+			    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
 			</animation>
 			<animation type="Hidden">
-			    <effect type="fade" time="400" start="100" end="0" />
-			    <effect type="slide" time="400" start="0,0" end="0,-300" easing="in" tween="cubic" />
+			    <effect type="fade" time="300" start="100" end="0" />
+			    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
 			</animation>
 			<animation type="WindowOpen">
-			    <effect type="fade" time="400" start="0" end="100" />
-			    <effect type="slide" time="400" start="0,-300" end="0,0" easing="out" tween="cubic" />
+			    <effect type="fade" time="300" start="0" end="100" />
+			    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
 			</animation>
 			<animation type="WindowClose">
-			    <effect type="fade" time="400" start="100" end="0" />
-			    <effect type="slide" time="400" start="0,0" end="0,-300" easing="in" tween="cubic" />
+			    <effect type="fade" time="300" start="100" end="0" />
+			    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
 			</animation>
 			
 			
