@@ -2,20 +2,20 @@
 	<defaultcontrol>1</defaultcontrol>
 	<visible>!Control.HasFocus(9000) + [VideoPlayer.IsFullscreen + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(142)]]</visible>
 	<animation type="Visible">
-			    <effect type="fade" time="400" start="0" end="100" />
-			    <effect type="slide" time="400" start="0,120" end="0,0" easing="out" tween="cubic" />
+			    <effect type="fade" time="300" start="0" end="100" />
+			    <effect type="slide" time="300" start="0,120" end="0,0" easing="out" tween="cubic" />
 			</animation>
 			<animation type="Hidden">
-			    <effect type="fade" time="400" start="100" end="0" />
-			    <effect type="slide" time="400" start="0,0" end="0,120" easing="in" tween="cubic" />
+			    <effect type="fade" time="300" start="100" end="0" />
+			    <effect type="slide" time="300" start="0,0" end="0,120" easing="in" tween="cubic" />
 			</animation>
 			<animation type="WindowOpen">
-			    <effect type="fade" time="400" start="0" end="100" />
-			    <effect type="slide" time="400" start="0,120" end="0,0" easing="out" tween="cubic" />
+			    <effect type="fade" time="300" start="0" end="100" />
+			    <effect type="slide" time="300" start="0,120" end="0,0" easing="out" tween="cubic" />
 			</animation>
 			<animation type="WindowClose">
-			    <effect type="fade" time="400" start="100" end="0" />
-			    <effect type="slide" time="400" start="0,0" end="0,120" easing="in" tween="cubic" />
+			    <effect type="fade" time="300" start="100" end="0" />
+			    <effect type="slide" time="300" start="0,0" end="0,120" easing="in" tween="cubic" />
 			</animation>
 	<!--<animation effect="slide" start="0,120" end="0,0" time="100">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,120" time="100">WindowClose</animation>-->
@@ -375,19 +375,19 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>415</posx>
+				<posx>365</posx>
 				<posy>-10</posy>
-				<width>450</width>
+				<width>550</width>
 				<height>50</height>
 				<texture>shade/popuposd.png</texture>
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
-				<posx>422</posx>
+				<posx>372</posx>
 				<posy>-5</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_16_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -395,11 +395,11 @@
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
-				<posx>492</posx>
-				<posy>-5</posy>
+				<posx>452</posx>
+				<posy>-4</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_16_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -407,11 +407,11 @@
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
-				<posx>568</posx>
+				<posx>555</posx>
 				<posy>-5</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_16_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -420,10 +420,10 @@
 			<control type="label">
 				<description>Popup Info</description>
 				<posx>655</posx>
-				<posy>-5</posy>
+				<posy>-4</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_16_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -431,11 +431,11 @@
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
-				<posx>734</posx>
+				<posx>760</posx>
 				<posy>-5</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_16_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -443,11 +443,11 @@
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
-				<posx>783</posx>
-				<posy>-5</posy>
+				<posx>817</posx>
+				<posy>-4</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_16_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -459,7 +459,7 @@
 				<posy>37</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_15_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>white</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -472,7 +472,7 @@
 				<posy>37</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_15_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>white</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -485,7 +485,7 @@
 				<posy>37</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_15_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -498,7 +498,7 @@
 				<posy>37</posy>
 				<width>240</width>
 				<height>20</height>
-				<font>Shade_15_Bold</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
