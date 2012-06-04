@@ -40,7 +40,7 @@
 				<posy>-120</posy>
 				<width>1280</width>
 				<height>480</height>
-				<texture flipy="true">HomeNowPlayingBack.png</texture>
+				<texture flipy="true">homenowplayingback.png</texture>
 			</control>
 			
 
