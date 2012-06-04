@@ -36,16 +36,16 @@
 				<width>1280</width>
 				<height>156</height>
 				<texture>HomeNowPlayingBack.png</texture>
-				<visible>Player.Paused</visible>
+<!-- 				<visible>Player.Paused</visible> -->
 			</control>
-		      <control type="image">
+		   <!--   <control type="image">
 			      <posx>0</posx>
 			      <posy>20</posy>
 			      <width>1280</width>
 			      <height>280</height>
 			      <texture border="20,20,20,2">shade/sidebar.png</texture>
 			      <visible>!Player.Paused</visible>
-		      </control>
+		      </control>-->
 			<control type="largeimage">
 				<posx>970</posx>
 				<posy>-125</posy> 
@@ -265,7 +265,7 @@
 					<visible>Player.Rewinding</visible>
 				</control>
 			</control>
-		<!--	<control type="image">
+			<control type="image">
 				<posx>365</posx>
 				<posy>-10</posy>
 				<width>550</width>
@@ -343,7 +343,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Player.FinishTime]</label>
-			</control>-->
+			</control>
 			<control type="label">
 				<description>Elapsed Time Label</description>
 				<posx>197</posx>
@@ -451,7 +451,7 @@
 		<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
 					<posx>0</posx>
-					<posy>-12</posy>
+					<posy>-50</posy>
 					<width>1280</width>
 					<align>center</align>
 					<itemgap>20</itemgap>
