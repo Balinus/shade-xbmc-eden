@@ -35,7 +35,7 @@
 				<posy>-70</posy>
 				<width>1280</width>
 				<height>156</height>
-				<texture>HomeNowPlayingBack.png</texture>
+				<texture>homenowplayingback.png</texture>
 <!-- 				<visible>Player.Paused</visible> -->
 			</control>
 		   <!--   <control type="image">
