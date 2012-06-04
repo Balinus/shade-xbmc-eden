@@ -27,9 +27,9 @@
 	<controls>
 		<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>422</posx>
-					<posy>-60</posy>
-					<width>440</width>
+					<posx>0</posx>
+					<posy>-12</posy>
+					<width>1280</width>
 					<align>center</align>
 					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
@@ -374,7 +374,7 @@
 					<visible>Player.Rewinding</visible>
 				</control>
 			</control>
-			<control type="image">
+		<!--	<control type="image">
 				<posx>365</posx>
 				<posy>-10</posy>
 				<width>550</width>
@@ -452,7 +452,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Player.FinishTime]</label>
-			</control>
+			</control>-->
 			<control type="label">
 				<description>Elapsed Time Label</description>
 				<posx>197</posx>
