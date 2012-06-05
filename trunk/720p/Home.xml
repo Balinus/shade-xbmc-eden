@@ -292,9 +292,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Window.Property(LatestSong.1.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.1.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(1) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(1) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -302,9 +302,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Window.Property(LatestSong.2.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.2.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(2) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(2) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -312,9 +312,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Window.Property(LatestSong.3.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.3.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(3) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(3) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -322,9 +322,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Window.Property(LatestSong.4.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.4.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>				
-			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(4) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(4) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -332,9 +332,29 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Window.Property(LatestSong.5.Fanart)]</texture>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.5.Fanart)]</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Control.HasFocus(8008)+Container(8008).Hasfocus(5) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(5) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.6.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(6) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+		</control>
+		<control type="image">
+			<description>Main Icon</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Window.Property(LatestAlbum.7.Fanart)]</texture>
+			<include>VisibleFadeEffectHome</include>
+			<visible>Control.HasFocus(8010)+Container(8010).Hasfocus(7) + Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 
 		<control type="group">
@@ -360,45 +380,46 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>180</height>
+<!-- 				<texture flipy="true">homenowplayingback.png</texture> -->
 				<texture>shade/solid_menu.png</texture>
 				<animation type="Visible">
-			    <effect type="fade" time="300" start="0" end="100" />
-			    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
-			</animation>
-			<animation type="Hidden">
-			    <effect type="fade" time="300" start="100" end="0" />
-			    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
-			</animation>
-			<animation type="WindowOpen">
-			    <effect type="fade" time="300" start="0" end="100" />
-			    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
-			</animation>
-			<animation type="WindowClose">
-			    <effect type="fade" time="300" start="100" end="0" />
-			    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
-			</animation>
+				    <effect type="fade" time="300" start="0" end="100" />
+				    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
+				</animation>
+				<animation type="Hidden">
+				    <effect type="fade" time="300" start="100" end="0" />
+				    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
+				</animation>
+				<animation type="WindowOpen">
+				    <effect type="fade" time="300" start="0" end="100" />
+				    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
+				</animation>
+				<animation type="WindowClose">
+				    <effect type="fade" time="300" start="100" end="0" />
+				    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
+				</animation>
 <!-- 				<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation> -->
 <!-- 				<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation> -->
 				<visible>Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages)+ !Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 <!-- 				<visible>!Control.HasFocus(8009)+!Control.HasFocus(8010)</visible> -->
 			</control>
 			<control type="image">
-			  <animation type="Visible">
-			    <effect type="fade" time="300" start="0" end="100" />
-			    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
-			</animation>
-			<animation type="Hidden">
-			    <effect type="fade" time="300" start="100" end="0" />
-			    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
-			</animation>
-			<animation type="WindowOpen">
-			    <effect type="fade" time="300" start="0" end="100" />
-			    <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
-			</animation>
-			<animation type="WindowClose">
-			    <effect type="fade" time="300" start="100" end="0" />
-			    <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
-			</animation>
+				<animation type="Visible">
+				  <effect type="fade" time="300" start="0" end="100" />
+				  <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
+			      </animation>
+			      <animation type="Hidden">
+				  <effect type="fade" time="300" start="100" end="0" />
+				  <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
+			      </animation>
+			      <animation type="WindowOpen">
+				  <effect type="fade" time="300" start="0" end="100" />
+				  <effect type="slide" time="300" start="0,-300" end="0,0" easing="out" tween="cubic" />
+			      </animation>
+			      <animation type="WindowClose">
+				  <effect type="fade" time="300" start="100" end="0" />
+				  <effect type="slide" time="300" start="0,0" end="0,-300" easing="in" tween="cubic" />
+			      </animation>
 <!-- 			  <animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation> -->
 <!-- 				<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation> -->
 				<posx>0</posx>
