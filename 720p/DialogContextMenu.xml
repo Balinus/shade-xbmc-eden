@@ -1,26 +1,34 @@
 <window id="106">
 	<defaultcontrol>1000</defaultcontrol>
 <!--   <zorder>6</zorder> -->
+<animation type="WindowOpen">
+    <effect type="fade" start="0" end="100" time="200"/>
+    <effect type="zoom" easing="out" start="0" end="100" center="auto" time="200"/>
+  </animation>
+  <animation type="WindowClose">
+    <effect type="fade" start="100" end="0" time="100"/>
+    <effect type="zoom" easing="in" start="100" end="0" center="auto" time="100"/>
+  </animation>
   <coordinates>
     <system>1</system>
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
-  <include>Animation_DialogZoom</include>
+<!--   <include>Animation_DialogZoom</include> -->
   <controls>
 <!--     <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Home</include> -->
     <control type="image" id="999">
       <description>background image</description>
       <posx>0</posx>
       <posy>0</posy>
-      <width>308</width>
+      <width>350</width>
       <height>720</height>
       <texture>dialogs/context_middle.png</texture>
     </control>
     <control type="grouplist" id="996">
       <posx>0</posx>
       <posy>0</posy>
-      <width>308</width>
+      <width>350</width>
       <height max="720">auto</height>
       <itemgap>0</itemgap>
     </control>
@@ -28,7 +36,7 @@
       <description>background top image</description>
       <posx>0</posx>
       <posy>-26</posy>
-      <width>308</width>
+      <width>350</width>
       <height>26</height>
       <texture>dialogs/context_top.png</texture>
     </control>
@@ -36,7 +44,7 @@
       <description>background bottom image</description>
       <posx>0</posx>
       <posy>390</posy>
-      <width>308</width>
+      <width>350</width>
       <height>27</height>
       <texture>dialogs/context_bottom.png</texture>
     </control>
@@ -45,7 +53,7 @@
       <posx>0</posx>
       <posy>0</posy>
       <height>39</height>
-      <width>308</width>
+      <width>350</width>
       <textcolor>grey2</textcolor>
       <focusedcolor>FFdfdfdf</focusedcolor>
       <texturenofocus>-</texturenofocus>
