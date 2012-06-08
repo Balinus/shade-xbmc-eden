@@ -1,19 +1,6 @@
 <fonts>
 	<fontset id="Default" unicode="true">
 		<font>
-			<name>Font_Bartowski_MainMenu</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>88</size>
-			<linespacing>1</linespacing>
-		</font>
-		<font>
-			<name>Font_Bartowski_MainMenu_Focus</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>148</size>
-			<linespacing>1</linespacing>
-		</font>	
-	  
-		<font>
 			<name>font9</name>
 			<filename>Default.ttf</filename>
 			<size>11</size>
@@ -329,19 +316,6 @@
 	</fontset>
 
 <fontset id="Ubuntu" unicode="true">
-  
-		<font>
-			<name>Font_Bartowski_MainMenu</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>88</size>
-			<linespacing>1</linespacing>
-		</font>
-		<font>
-			<name>Font_Bartowski_MainMenu_Focus</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>148</size>
-			<linespacing>1</linespacing>
-		</font>	
 		<font>
 			<name>font9</name>
 			<filename>Default.ttf</filename>
@@ -668,18 +642,6 @@
 
 	<fontset id="Better Font" unicode="true">
 		<font>
-			<name>Font_Bartowski_MainMenu</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>88</size>
-			<linespacing>1</linespacing>
-		</font>
-		<font>
-			<name>Font_Bartowski_MainMenu_Focus</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>148</size>
-			<linespacing>1</linespacing>
-		</font>	
-		<font>
 			<name>font10</name>
 			<filename>Default.ttf</filename>
 			<size>12</size>
@@ -989,19 +951,6 @@
 		</font>
 	</fontset>
 	<fontset id="Arial" unicode="true">
-		
-		<font>
-			<name>Font_Bartowski_MainMenu</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>88</size>
-			<linespacing>1</linespacing>
-		</font>
-		<font>
-			<name>Font_Bartowski_MainMenu_Focus</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>148</size>
-			<linespacing>1</linespacing>
-		</font>	
 		<font>
 			<name>font9</name>
 			<filename>Default.ttf</filename>

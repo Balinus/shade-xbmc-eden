@@ -14,7 +14,6 @@
 	<include file="custom_HomeDialogPopup_1115.xml" />
 	<include file="Includes_InfosHome.xml"/>
 	<include file="IncludeExtra.xml"/>
-	<include file="Includes_Home_Horizontal.xml"/>
 	
 
 	<constant name="FanartCrossfadeTime">200</constant>
@@ -71,16 +70,6 @@
 		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onfocus>		
 		<onfocus>SetFocus(50)</onfocus>
 	</include> 
-	<include name="Animation_Bartowski_Context_Zoom_Up">
-		<animation type="WindowOpen">
-			<effect type="zoom" time="400" center="640,660" start="180" end="100" tween="cubic" easing="out" />
-			<effect type="fade" time="400" start="0" end="100" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="zoom" time="400" center="640,660" start="100" end="280" tween="cubic" easing="in" />
-			<effect type="fade" time="400" start="100" end="0" />
-		</animation>	
-	</include>
 	
 	
 	<include name="UpOptions">
