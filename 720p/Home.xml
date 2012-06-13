@@ -363,29 +363,13 @@
 			<include>CommonWeatherBackground</include>
 		</control>
 		
-  <!-- 		##################### -->
-<!-- 		NIGHT HOMESCREEN -->
-<!-- 		################## -->
-		<control type="group">
-		    <visible>Skin.HasSetting(NightHome)</visible>
-		    <control type="image">
-			    <posx>0</posx>
-			    <posy>0</posy>
-			    <width>1280</width>
-			    <height>720</height>
-			    <include>Dimensions_Fullscreen</include>
-			    <texture flipy="true">mainmenu/home_bottom_align.png</texture>
-<!-- 			    <include>Animation_CommonFadeNoHide</include> -->
-			    <visible>Skin.HasSetting(NightHome)</visible>
-		    </control>
-		    <include condition="Skin.HasSetting(NightHome)">NightHome</include>
-		</control>
+
 		
 <!-- STANDARD HOMESCREEN -->
 
 		<control type="group">
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>	
-			<visible>!Skin.HasSetting(NightHome)</visible>
+			
 			<!--<control type="image">
 				<posx>0</posx>
 				<posy>290</posy>
@@ -448,7 +432,7 @@
 				<width>1280</width>
 				<height>215</height>
 				<texture>shade/solid_menu.png</texture>
-				<visible>!Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(NightHome) + !Skin.HasSetting(TurnOffHomeImages) + !Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
+				<visible>!Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages) + !Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 <!-- 				<visible>!Control.HasFocus(8009)+!Control.HasFocus(8010)</visible> -->
 				
 			</control>
@@ -1008,7 +992,7 @@
 <!-- 			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation> -->
 <!-- 			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation> -->
 			
-		  <visible allowhiddenfocus="true">!Skin.HasSetting(HomeAlternate)+!Skin.HasSetting(NightHome)+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
+		  <visible allowhiddenfocus="true">!Skin.HasSetting(HomeAlternate)+!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 <!-- 			<visible>!Control.HasFocus(8009)+!Control.HasFocus(8010)</visible> -->
 			
 			
