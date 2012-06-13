@@ -330,7 +330,7 @@
 
 <fontset id="Ubuntu" unicode="true">
 		
-  <font>
+		<font>
 			<name>Font_Bartowski_MainMenu</name>
 			<filename>alaska_thin.ttf</filename>
 			<size>88</size>
@@ -342,7 +342,7 @@
 			<size>148</size>
 			<linespacing>1</linespacing>
 		</font>	
-  <font>
+		<font>
 			<name>font9</name>
 			<filename>Default.ttf</filename>
 			<size>11</size>
@@ -667,7 +667,7 @@
 
 
 	<fontset id="Better Font" unicode="true">
-	<font>
+		<font>
 			<name>Font_Bartowski_MainMenu</name>
 			<filename>alaska_thin.ttf</filename>
 			<size>88</size>
@@ -680,7 +680,7 @@
 			<linespacing>1</linespacing>
 		</font>		
 	  
-	  <font>
+		<font>
 			<name>font10</name>
 			<filename>Default.ttf</filename>
 			<size>12</size>
@@ -990,7 +990,7 @@
 		</font>
 	</fontset>
 	<fontset id="Arial" unicode="true">
-	<font>
+		<font>
 			<name>Font_Bartowski_MainMenu</name>
 			<filename>alaska_thin.ttf</filename>
 			<size>88</size>
@@ -1003,7 +1003,7 @@
 			<linespacing>1</linespacing>
 		</font>		
 	  
-	  <font>
+		<font>
 			<name>font9</name>
 			<filename>Default.ttf</filename>
 			<size>11</size>

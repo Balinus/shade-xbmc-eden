@@ -552,24 +552,7 @@
 						<onclick condition="Skin.HasSetting(NightHome)">Skin.ToggleSetting(NightHome)</onclick>
 						<selected>Skin.HasSetting(AlternateHome2)</selected>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
-					</control>
-					<control type="radiobutton" id="225">
-						<description>Use Night Home Screen</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>900</width>
-						<height>40</height>
-						<font>Shade_20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-						<label>Use Night Home Screen</label>
-						<onclick>Skin.ToggleSetting(NightHome)</onclick>
-						<onclick condition="Skin.HasSetting(AlternateHome2)">Skin.ToggleSetting(AlternateHome2)</onclick>
-						<selected>Skin.HasSetting(NightHome)</selected>
-<!-- 						<visible>!Skin.HasSetting(HomeAlternate2)</visible> -->
-					</control>
+					</control>					
 					<control type="radiobutton" id="222">
 						<description>Fade Bottom Section</description>
 						<posx>0</posx>
