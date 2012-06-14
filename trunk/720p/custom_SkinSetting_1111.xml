@@ -556,7 +556,7 @@
 					<control type="radiobutton" id="225">
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Shade_20</font>
 						<label>Use Night Home Screen Layout</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -1067,7 +1067,7 @@
 							<item id="12">
 								<label>Home</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/videos.jpg</icon>
+								<icon>special://skin/backgrounds/shade2.png</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
 							</item>
 							<item id="13">
