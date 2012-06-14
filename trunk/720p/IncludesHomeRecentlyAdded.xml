@@ -1,8 +1,19 @@
 <includes> 
 	<include name="HomeRecentlyAddedInfo">
 		<control type="group" id="8002">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>shade/vignette3.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>FFFFFFFF</colordiffuse>
+			<include>VisibleFadeEffect</include>
+			<visible>Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)</visible>
+		</control>
 			<control type="group">
-				<visible>!Skin.HasSetting(HomeAlternate)</visible>	
+<!-- 				<visible>!Skin.HasSetting(HomeAlternate)</visible>	 -->
 				<visible>!Window.IsVisible(Favourites)</visible>
 <!-- 				<include>VisibleFadeEffect</include> -->
 				
@@ -13,12 +24,12 @@
 <!-- 					<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation> -->
 <!-- 					<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation> -->
 					
-					<control type="group">
-						<posx>24</posx>
-						<posy>500</posy>
-						<visible>!Skin.HasSetting(HomeAlternate)</visible>
-						<visible>Library.HasContent(Movies)</visible>
-						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
+				    <control type="group">
+					    <posx>24</posx>
+					    <posy>500</posy>
+<!-- 					    <visible>!Skin.HasSetting(HomeAlternate)</visible> -->
+					    <visible>Library.HasContent(Movies)</visible>
+					    <visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 <!-- 						<include>VisibleFadeEffect</include> -->
 <!-- 						<animation effect="slide" time="0" start="0,0" end="0,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation> -->
 
