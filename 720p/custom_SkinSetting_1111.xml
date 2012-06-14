@@ -552,7 +552,20 @@
 						<onclick condition="Skin.HasSetting(NightHome)">Skin.ToggleSetting(NightHome)</onclick>
 						<selected>Skin.HasSetting(AlternateHome2)</selected>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
-					</control>					
+					</control>
+					<control type="radiobutton" id="225">
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20_Bold_title</font>
+						<label>Use Night Home Screen Layout</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(NightHome)</onclick>
+						<onclick condition="Skin.HasSetting(AlternateHome2)">Skin.ToggleSetting(AlternateHome2)</onclick>
+						<selected>Skin.HasSetting(NightHome)</selected>
+					</control>
 					<control type="radiobutton" id="222">
 						<description>Fade Bottom Section</description>
 						<posx>0</posx>
@@ -601,19 +614,7 @@
 						<selected>Skin.HasSetting(TurnOffHomeImages)</selected>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 					</control>
-					<!--<control type="radiobutton" id="225">
-						<width>900</width>
-						<height>40</height>
-						<font>Shade_20_Bold_title</font>
-						<label>Use Alternate Home Screen Layout</label>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
-						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HomeAlternate)</onclick>
-						<onclick>Skin.Reset(AlternateHome2)</onclick>
-						<selected>Skin.HasSetting(HomeAlternate)</selected>
-					</control>-->
+				
 					<control type="radiobutton" id="227">
 						<description>enable weather info</description>
 						<posx>0</posx>

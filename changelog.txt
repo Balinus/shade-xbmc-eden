@@ -1,3 +1,4 @@
+14/06/12: ver 2.7.0 : Added Night Home Screen Layout
 20/04/12 : ver 2.5.0, Extrafanart for Movies and TV shows. Next aired correct support
 04/04/12: Balinus : ver2.4.0, New home screen, new backgrounds
 16/03/12 : Balinus : added new episodes view, media codec on seekbar, new color for star ratings
