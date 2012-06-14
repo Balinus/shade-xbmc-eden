@@ -552,7 +552,7 @@
 				<control type="grouplist" id="9010">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9010</onleft>
 					<onright>9010</onright>
@@ -605,7 +605,7 @@
 				<control type="grouplist" id="9011">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
@@ -667,7 +667,7 @@
 				<control type="grouplist" id="9012">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9012</onleft>
 					<onright>9012</onright>
@@ -692,7 +692,7 @@
 				<control type="grouplist" id="9013">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9013</onleft>
 					<onright>9013</onright>
@@ -750,7 +750,7 @@
 				<control type="grouplist" id="9014">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9014</onleft>
 					<onright>9014</onright>
@@ -806,7 +806,7 @@
 				<!--<control type="grouplist" id="9015">
 					<posx>0</posx>
 					<posy>-165</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9015</onleft>
 					<onright>9015</onright>
@@ -867,7 +867,7 @@
 				<control type="grouplist" id="9016">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9016</onleft>
 					<onright>9016</onright>
@@ -929,7 +929,7 @@
 				<control type="grouplist" id="9017">
 					<posx>0</posx>
 					<posy>-200</posy>
-					<width>1280</width>
+					<width>1250</width>
 					<height>550</height>
 					<onleft>9017</onleft>
 					<onright>9017</onright>
