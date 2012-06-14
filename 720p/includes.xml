@@ -1404,6 +1404,40 @@
 		</control>		
 	</control>
 </include>
+<include name="Clock_Night">
+		<control type="group">
+			<visible>!Skin.HasSetting(DisableClock)</visible>
+			<visible>!Control.IsVisible(528)</visible>
+			<visible>!Control.IsVisible(552)</visible>
+			<visible>!Control.IsVisible(548)</visible>
+			<visible>!Control.IsVisible(514)</visible>
+			<visible>!Control.IsVisible(515)</visible>
+			<visible>!Control.IsVisible(516)</visible>
+			<visible>!Control.IsVisible(534)</visible>
+			<visible>!Control.IsVisible(510)</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<animation effect="fade" start="100" end="0" time="300" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="Container.Content(Movies) + Control.IsVisible(534) + !Skin.HasSetting(ScrollMovieLessInfo)">conditional</animation>-->
+		<!--<animation effect="slide" start="0,0" end="210,0" delay="0" time="0" condition="Window.Next(Home) | Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">WindowClose</animation>
+			<animation effect="slide" start="210,0" end="0,0" delay="0" time="0" condition="Window.Previous(Home) | Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">WindowOpen</animation>-->
+		<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300" easing="out" tween="cubic" >WindowClose</animation>
+		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300" easing="out" tween="cubic" >WindowOpen</animation>
+		<control type="label">
+			<description>time label</description>
+			<posx>15</posx>
+			<posy>15</posy>
+			<width>400</width>
+			<height>28</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<colordiffuse>80FFFFFF</colordiffuse>
+			<font>Shade_40_UltraThin</font>
+			<textcolor>mainblue</textcolor>
+			<label>$INFO[System.Time]</label>				
+		</control>		
+	</control>
+</include>
 <include name="Clock_VidPlayer">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableClock)</visible>			
@@ -1461,6 +1495,51 @@
 			<colordiffuse>80FFFFFF</colordiffuse>
 			<font>Shade_40_UltraThin</font>
 			<textcolor>grey2</textcolor>
+			<label>$INFO[Weather.Temperature]</label>
+		</control>
+		<!--<control type="image">
+			<posx>-115</posx>
+			<posy>-9</posy>
+			<width>48</width>
+			<height>48</height>
+			<align>left</align>
+			<texture>$INFO[Weather.Conditions]</texture>
+			<visible>!Skin.HasSetting(NoHomeWeather)</visible>
+		</control>-->
+	</control>
+</include>
+<include name="Weather_Night">
+	<control type="group">
+		<posx>1245</posx>
+		<posy>15</posy>
+		<align>right</align>
+		<animation effect="slide" start="0,0" end="-60,0" delay="0" time="300" condition="Window.IsVisible(MuteBug)">conditional</animation>
+		<!--<animation effect="slide" start="0,0" end="510,0" delay="0" time="300">WindowClose</animation>
+			<animation effect="slide" start="510,0" end="0,0" delay="0" time="300">WindowOpen</animation>-->
+		<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
+		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<visible>!Skin.HasSetting(homepageWeatherinfo) + Weather.IsFetched</visible>
+		<!--<control type="image">
+				<description>Weather image</description>
+				<posx>-115</posx>
+				<posy>-8</posy>
+				<width>45</width>
+				<height>45</height>
+				<colordiffuse>80FFFFFF</colordiffuse>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Weather.Conditions]</texture>
+			</control>-->
+		<control type="label">
+			<description>time label</description>
+			<posx>15</posx>
+			<posy>0</posy>
+			<width>100</width>
+			<height>28</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<colordiffuse>80FFFFFF</colordiffuse>
+			<font>Shade_40_UltraThin</font>
+			<textcolor>mainblue</textcolor>
 			<label>$INFO[Weather.Temperature]</label>
 		</control>
 		<!--<control type="image">
