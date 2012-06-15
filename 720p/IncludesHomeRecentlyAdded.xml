@@ -11,7 +11,7 @@
 			<colordiffuse>FFFFFFFF</colordiffuse>
 			<include>VisibleFadeEffect</include>
 			<visible>Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)</visible>
-			<visible>!Skin.HasSetting(SimplicityHome)</visible>
+<!-- 			<visible>!Skin.HasSetting(SimplicityHome)</visible> -->
 		</control>
 			<control type="group">
 <!-- 				<visible>!Skin.HasSetting(HomeAlternate)</visible>	 -->
