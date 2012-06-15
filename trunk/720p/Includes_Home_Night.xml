@@ -985,7 +985,7 @@
 		</control>
 		
 	  <include condition="Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
-	  <include>Clock_Night</include>
-	  <include>Weather_Night</include>
+	  <include>Clock</include>
+	  <include>Weather</include>
 	</include>
 </includes>

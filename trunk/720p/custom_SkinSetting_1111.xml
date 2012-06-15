@@ -550,8 +550,8 @@
 						<label>Use Alternate Icon Layout</label>
 						<onclick>Skin.ToggleSetting(AlternateHome2)</onclick>
 						<onclick condition="Skin.HasSetting(NightHome)">Skin.ToggleSetting(NightHome)</onclick>
+						<onclick condition="Skin.HasSetting(SimplicityHome)">Skin.ToggleSetting(SimplicityHome)</onclick>
 						<selected>Skin.HasSetting(AlternateHome2)</selected>
-						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 					</control>
 					<control type="radiobutton" id="225">
 						<width>900</width>
@@ -564,7 +564,35 @@
 						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(NightHome)</onclick>
 						<onclick condition="Skin.HasSetting(AlternateHome2)">Skin.ToggleSetting(AlternateHome2)</onclick>
+						<onclick condition="Skin.HasSetting(SimplicityHome)">Skin.ToggleSetting(SimplicityHome)</onclick>
 						<selected>Skin.HasSetting(NightHome)</selected>
+					</control>
+					<control type="radiobutton" id="228">
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<label>Use Simplicity Home Screen Layout</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(SimplicityHome)</onclick>
+						<onclick condition="Skin.HasSetting(AlternateHome2)">Skin.ToggleSetting(AlternateHome2)</onclick>
+						<onclick condition="Skin.HasSetting(NightHome)">Skin.ToggleSetting(NightHome)</onclick>
+						<selected>Skin.HasSetting(SimplicityHome)</selected>
+					</control>
+					<control type="radiobutton" id="229">
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<label>- Use Simplicity Icons instead of Label</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(SimplicityIcons)</onclick>						
+						<selected>Skin.HasSetting(SimplicityIcons)</selected>
+						<visible>Skin.HasSetting(SimplicityHome)</visible>
 					</control>
 					<control type="radiobutton" id="222">
 						<description>Fade Bottom Section</description>
