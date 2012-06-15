@@ -262,6 +262,11 @@
 			<size>50</size>
 		</font>
 		<font>
+			<name>Shade_170</name>
+			<filename>HelveticaNeue_Thin.ttf</filename>
+			<size>170</size>
+		</font>
+		<font>
 			<name>Shade_12_Bold</name>
 			<filename>HelveticaNeue_Bold.ttf</filename>
 			<size>12</size>
@@ -300,6 +305,11 @@
 			<name>Shade_24_Bold</name>
 			<filename>HelveticaNeue_Bold.ttf</filename>
 			<size>24</size>
+		</font>
+		<font>
+			<name>Shade_26_Bold</name>
+			<filename>HelveticaNeue_Bold.ttf</filename>
+			<size>26</size>
 		</font>
 		<font>
 			<name>Shade_30_Bold</name>
@@ -516,6 +526,11 @@
 			<size>70</size>
 		</font>
 		<font>
+			<name>Shade_170</name>
+			<filename>Ubuntu-L.ttf</filename>
+			<size>170</size>
+		</font>
+		<font>
 			<name>Shade_12</name>
 			<filename>Ubuntu-L.ttf</filename>
 			<size>12</size>
@@ -631,6 +646,12 @@
 			<name>Shade_24_Bold</name>
 			<filename>Ubuntu-L.ttf</filename>
 			<size>24</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>Shade_26_Bold</name>
+			<filename>Ubuntu-L.ttf</filename>
+			<size>26</size>
 			<style>bold</style>
 		</font>
 		<font>
@@ -924,6 +945,11 @@
 			<size>80</size>
 		</font>
 		<font>
+			<name>Shade_170</name>
+			<filename>Walkway_SemiBold.ttf</filename>
+			<size>170</size>
+		</font>
+		<font>
 			<name>Shade_12_Bold</name>
 			<filename>Walkway_UltraBold.ttf</filename>
 			<size>12</size>
@@ -962,6 +988,11 @@
 			<name>Shade_24_Bold</name>
 			<filename>Walkway_UltraBold.ttf</filename>
 			<size>24</size>
+		</font>
+		<font>
+			<name>Shade_26_Bold</name>
+			<filename>Walkway_UltraBold.ttf</filename>
+			<size>26</size>
 		</font>
 		<font>
 			<name>Shade_30_Bold</name>
@@ -1232,6 +1263,11 @@
 			<size>50</size>
 		</font>
 		<font>
+			<name>Shade_170</name>
+			<filename>Default.ttf</filename>
+			<size>170</size>
+		</font>
+		<font>
 			<name>Shade_12_Bold</name>
 			<filename>Default.ttf</filename>
 			<size>12</size>
@@ -1265,6 +1301,11 @@
 			<name>Shade_24_Bold</name>
 			<filename>Default.ttf</filename>
 			<size>24</size>
+		</font>
+		<font>
+			<name>Shade_26_Bold</name>
+			<filename>Default.ttf</filename>
+			<size>26</size>
 		</font>
 		<font>
 			<name>Shade_30_Bold</name>

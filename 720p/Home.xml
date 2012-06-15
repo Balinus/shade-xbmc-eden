@@ -7,9 +7,10 @@
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 	  
-		  <include condition="!Skin.HasSetting(NightHome)">StandardHome</include>
+		  <include condition="!Skin.HasSetting(NightHome)+!Skin.HasSetting(SimplicityHome)">StandardHome</include>
 
 		  <include condition="Skin.HasSetting(NightHome)">NightHome</include>
+		  <include condition="Skin.HasSetting(SimplicityHome)">SimplicityHome</include>
 	</controls>
 
 </window>
