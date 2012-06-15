@@ -1157,14 +1157,14 @@
 				<height>240</height>
 			</control>
 			<control type="fadelabel">
-				<posx>60</posx>
-				<posy>0</posy>
+				<posx>40</posx>
+				<posy>-2</posy>
 				<width>654</width>
 				<height>20</height>
 				<label>Now Playing: "$INFO[VideoPlayer.Title]"</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_30</font>
+				<font>Shade_26</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
@@ -1525,7 +1525,7 @@
 <include name="HomeWeather">
 		<control type="group">
 			<posx>0</posx>
-			<posy>-30</posy>
+			<posy>-80</posy>
 			<control type="image">
 				<posx>300</posx>
 				<posy>150</posy>
