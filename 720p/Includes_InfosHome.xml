@@ -63,7 +63,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8006).HasFocus(1)+Control.HasFocus(8006)]</visible>
 						</control>	
 						<control type="image">
@@ -141,7 +141,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8006).HasFocus(2)+Control.HasFocus(8006)]</visible>
 						</control>	
 						<control type="image">
@@ -219,7 +219,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8006).HasFocus(3)+Control.HasFocus(8006)]</visible>
 						</control>	
 						<control type="image">
@@ -297,7 +297,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8006).HasFocus(4)+Control.HasFocus(8006)]</visible>
 						</control>	
 						<control type="image">
@@ -375,7 +375,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8006).HasFocus(5)+Control.HasFocus(8006)]</visible>
 						</control>	
 						<control type="image">
@@ -456,7 +456,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8005).HasFocus(1)+Control.HasFocus(8005)]</visible>
 						</control>	
 						<control type="image">
@@ -534,7 +534,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8005).HasFocus(2)+Control.HasFocus(8005)]</visible>
 						</control>	
 						<control type="image">
@@ -612,7 +612,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8005).HasFocus(3)+Control.HasFocus(8005)]</visible>
 						</control>
 						<control type="image">
@@ -690,7 +690,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8005).HasFocus(4)+Control.HasFocus(8005)]</visible>
 						</control>	
 						<control type="image">
@@ -768,7 +768,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8005).HasFocus(5)+Control.HasFocus(8005)]</visible>
 						</control>	
 						<control type="image">
@@ -849,7 +849,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8008).HasFocus(1)+Control.HasFocus(8008)]</visible>	
 						</control>
 							
@@ -863,7 +863,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8008).HasFocus(1)+Control.HasFocus(8008)]</visible>
 						</control>	-->
 						<control type="image">
@@ -941,7 +941,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8008).HasFocus(2)+Control.HasFocus(8008)]</visible>	
 						</control>
 						<control type="image">
@@ -1019,7 +1019,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8008).HasFocus(3)+Control.HasFocus(8008)]</visible>	
 						</control>
 						<control type="image">
@@ -1097,7 +1097,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8008).HasFocus(4)+Control.HasFocus(8008)]</visible>	
 						</control>
 						<control type="image">
@@ -1175,7 +1175,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8008).HasFocus(5)+Control.HasFocus(8008)]</visible>	
 						</control>
 						<control type="image">
@@ -1256,7 +1256,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>	
 						</control>
 							
@@ -1270,7 +1270,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8007).HasFocus(1)+Control.HasFocus(8007)]</visible>
 						</control>	-->
 						<control type="image">
@@ -1348,7 +1348,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8007).HasFocus(2)+Control.HasFocus(8007)]</visible>	
 						</control>
 						<control type="image">
@@ -1426,7 +1426,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8007).HasFocus(3)+Control.HasFocus(8007)]</visible>	
 						</control>
 						<control type="image">
@@ -1504,7 +1504,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8007).HasFocus(4)+Control.HasFocus(8007)]</visible>	
 						</control>
 						<control type="image">
@@ -1582,7 +1582,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Shade_20</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white</textcolor>
 							<visible>[Container(8007).HasFocus(5)+Control.HasFocus(8007)]</visible>	
 						</control>
 						<control type="image">

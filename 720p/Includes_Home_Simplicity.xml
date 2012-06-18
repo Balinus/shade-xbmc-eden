@@ -516,6 +516,7 @@
 			<width>1280</width>
 			<height>342</height>
 			<texture diffuse="top-diffuse.png">shade/home-top.png</texture>
+			<include>VisibleFadeEffect2</include>
 			<visible>!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>
 		</control>
 		<control type="label">
@@ -1534,6 +1535,7 @@
 				<width>1280</width>
 				<height>378</height>
 				<texture diffuse="bottom-diffuse.png">shade/home-bottom.png</texture>
+				<include>VisibleFadeEffect2</include>
 <!-- 				<animation effect="fade" start="0" end="100"  time="1000">Visible</animation> -->
 <!-- 				<animation effect="fade" start="100" end="0"  time="1000">Hidden</animation> -->
 				<visible>!Control.HasFocus(8005)+!Control.HasFocus(8006)+!Control.HasFocus(8007)+!Control.HasFocus(8008)</visible>

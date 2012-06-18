@@ -1635,12 +1635,15 @@
 					<posx>220</posx>
 					<posy>80</posy>
 					<height>20</height>
-					<width>320</width>
+					<width>350</width>
 					<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Shade_24_Bold</font>
 					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<scrollspeed>30</scrollspeed>
 				</control>	
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
@@ -1649,12 +1652,15 @@
 					<posx>220</posx>
 					<posy>115</posy>
 					<height>20</height>
-					<width>320</width>
+					<width>350</width>
 					<label>"$INFO[Window.Property(RandomSong.1.Title)]"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Shade_24_Bold</font>
 					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<scrollspeed>30</scrollspeed>
 				</control>	
 				<control type="label">
 				  <include>BottomSlideMusicRecent</include>
@@ -1663,12 +1669,15 @@
 					<posx>220</posx>
 					<posy>150</posy>
 					<height>20</height>
-					<width>320</width>
+					<width>350</width>
 					<label>$INFO[Window.Property(Randomsong.1.Album)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Shade_24_Bold</font>
 					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<scrollspeed>30</scrollspeed>
 				</control>
 			</control>
 
