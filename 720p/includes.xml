@@ -198,6 +198,26 @@
 			</control>	
 		</control>	
 	</include>
+	<include name="BackgroundEffectCommon">
+		<animations effect="fade" time="1000">Visible</animations>
+		<animations effect="fade" time="1000">Hidden</animations>
+		<imagepath>cerberus</imagepath>
+		<timeperimage>0</timeperimage>
+		<fadetime>0</fadetime>
+		<loop>yes</loop>
+		<randomize>false</randomize>
+		<visible>Skin.HasSetting(SimplicitySmokeEffectOn)</visible>
+	</include>
+	<include name="BackgroundEffect">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<include>BackgroundEffectCommon</include>
+		</control>
+	</include>
+	
 	<include name="CommonMediaPlayingBackground">
 		<control type="image">
 			<posx>0</posx>
@@ -1093,6 +1113,15 @@
 				<onclick>fullscreen</onclick>
 			</control>
 			<control type="image">
+				<posx>112</posx>
+				<posy>18</posy>
+				<width>140</width>
+				<height>132</height>
+				<texture fallback="shade/cd-now-playing.png">$INFO[Player.FolderPath]/cdart.png</texture>
+				<aspectratio align="center">keep</aspectratio>
+				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+			</control>
+			<control type="image">
 				<posx>40</posx>
 				<posy>2</posy>
 				<width>160</width>
@@ -1103,8 +1132,8 @@
 				<aspectratio align="center">keep</aspectratio>
 			</control>
 			<control type="fadelabel">
-				<posx>215</posx>
-				<posy>20</posy>
+				<posx>40</posx>
+				<posy>160</posy>
 				<width>370</width>
 				<height>20</height>
 				<label>"$INFO[MusicPlayer.Title]"</label>
@@ -1117,8 +1146,8 @@
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="fadelabel">
-				<posx>215</posx>
-				<posy>50</posy>
+				<posx>40</posx>
+				<posy>185</posy>
 				<width>480</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>

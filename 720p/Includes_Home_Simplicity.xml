@@ -549,7 +549,7 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(25)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="ControlGroup(9001).HasFocus">Conditional</animation>
-			<visible>!Skin.HasSetting(HideBigHomeLabel)</visible>
+			<visible>!Skin.HasSetting(SimplicityHideBigHomeLabel)</visible>
 		</control>
 
 		<!-- END New Home List Images-->
@@ -1938,7 +1938,7 @@
 		</control>
 
 
-<!-- 		<include>BackgroundEffect</include> -->
+		<include condition="Skin.HasSetting(SimplicitySmokeEffectOn)">BackgroundEffect</include>
 		<include>Clock</include>
 		<include>Weather</include>
 	      </include>
