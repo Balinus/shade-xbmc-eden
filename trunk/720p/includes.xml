@@ -1113,10 +1113,10 @@
 				<onclick>fullscreen</onclick>
 			</control>
 			<control type="image">
-				<posx>112</posx>
-				<posy>18</posy>
-				<width>140</width>
-				<height>132</height>
+				<posx>128</posx>
+				<posy>25</posy>
+				<width>120</width>
+				<height>112</height>
 				<texture fallback="shade/cd-now-playing.png">$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
@@ -1200,14 +1200,14 @@
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="fadelabel">
-				<posx>295</posx>
-				<posy>50</posy>
+				<posx>40</posx>
+				<posy>220</posy>
 				<width>370</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Shade_22</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
