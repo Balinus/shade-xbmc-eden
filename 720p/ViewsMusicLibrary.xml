@@ -972,7 +972,7 @@
 					<width>388</width>
 					<height>151</height>
 					<aligny>center</aligny>
-					<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
+					<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/logo.png]</texture>
 					<aspectratio>keep</aspectratio>
 					<include>VisibleFadeEffect</include>
 					<fadetime>IconCrossfadeTime</fadetime>
