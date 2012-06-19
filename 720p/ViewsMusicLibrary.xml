@@ -483,9 +483,19 @@
 					<visible>container.content(TVShows)</visible>
 					<textcolor>white</textcolor>
 				</control>	
+				<control type="image">
+					<posx>1050</posx>
+					<posy>208</posy>
+					<width>230</width>
+					<height>89</height>
+					<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/logo.png]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+<!-- 					<animation effect="rotate" start="0" end="345" center="auto" time="0" condition="true">Conditional</animation> -->
+		<!-- 			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(595)] + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible> -->
+				</control>
 				<control type="group">
-					<posx>900</posx>
-					<posy>280</posy>
+					<posx>880</posx>
+					<posy>300</posy>
 					<control type="label">
 						<posy>0</posy>
 						<width>160</width>
@@ -956,17 +966,17 @@
 					<align>justify</align>
 					<label>$INFO[ListItem.Property(Artist_Description)]</label>
 				</control>
-							<control type="image">
-								<posx>90</posx>
-								<posy>490</posy> 
-								<width>400</width>
-								<height>155</height>
-								<aligny>center</aligny>
-								<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
-								<aspectratio>keep</aspectratio>
-								<include>VisibleFadeEffect</include>
-								<fadetime>IconCrossfadeTime</fadetime>
-							</control>
+				<control type="image">
+					<posx>90</posx>
+					<posy>490</posy> 
+					<width>388</width>
+					<height>151</height>
+					<aligny>center</aligny>
+					<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>VisibleFadeEffect</include>
+					<fadetime>IconCrossfadeTime</fadetime>
+				</control>
 			</control>
 		</control>
 	</include>

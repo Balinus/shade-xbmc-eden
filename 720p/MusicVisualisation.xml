@@ -76,19 +76,12 @@
 <control type="image">
 
 	<description>black background shadow</description>
-
 	<posx>0</posx>
-
 	<posy>0</posy>
-
 	<width>1280</width>
-
 	<height>100</height>
-
 	<texture>home/black_bg2.png</texture>
-
 	<visible>!Visualisation.Enabled + Player.HasAudio</visible>
-
 	<animation effect="fade" time="3900" delay="900">WindowOpen</animation>
 	<animation effect="fade" time="1000">WindowClose</animation>
 </control>
@@ -116,19 +109,12 @@
 <control type="image">
 
 	<description>black background shadow</description>
-
 	<posx>0</posx>
-
 	<posy>200</posy>
-
 	<width>1280</width>
-
 	<height>535</height>
-
 	<texture>home/black_bg.png</texture>
-
 	<visible>!Visualisation.Enabled + Player.HasAudio</visible>
-
 	<animation effect="fade" time="3900" delay="900">WindowOpen</animation>
 	<animation effect="fade" time="1000">WindowClose</animation>
 </control>
@@ -141,13 +127,14 @@
 	<animation effect="slide" start="0,0" end="0,160" time="300" delay="150" tween="quadratic" easing="out">hidden</animation>
 	<control type="image">
 		<description>media info background image</description>
-		<posx>-30</posx>
-		<posy>160r</posy>
+		<posx>0</posx>
+		<posy>420</posy>
 		<width>1350</width>
-		<height>500</height>
-		<texture flipy="true">shade/contentpanel.png</texture>
+		<height>300</height>
+		<texture>homenowplayingback.png</texture>
 	</control>
 	<control type="group">
+
 		<control type="group">
 			<posx>450</posx>
 			<posy>135r</posy>
@@ -578,10 +565,10 @@
 		<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
 		<animation type="WindowClose">
 			<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
-			<effect type="fade" start="100" end="0" time="1300"/>
+			<effect type="fade" start="100" end="0" time="1000"/>
 			<condition type="!Player.Playing"/>
 		</animation>
-		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 		<width>275</width>
 		<height>260</height>
 		<posx>165</posx>
@@ -597,10 +584,10 @@
 		<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
 		<animation type="WindowClose">
 			<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
-			<effect type="fade" start="100" end="0" time="1300"/>
+			<effect type="fade" start="100" end="0" time="1000"/>
 			<condition type="!Player.Playing"/>
 		</animation>
-		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 		<width>275</width>
 		<height>260</height>
 		<posx>165</posx>
@@ -631,6 +618,18 @@
 		<aspectratio aligny="bottom">stretch</aspectratio>
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 	</control>
+	<control type="image">
+			<posx>425</posx>
+			<posy>450</posy>
+			<width>299</width>
+			<height>116</height>
+			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+<!-- 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation> -->
+<!-- 			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation> -->
+			<visible>Skin.HasSetting(ArtistLogo)</visible>
+	</control>
+<!-- 	<include>logo-artists-visualisation</include> -->
 	<!--<control type="image">
 			<description>Cover image overlay</description>
 			<posx>15</posx>
