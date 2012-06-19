@@ -85,6 +85,8 @@
   <string id="31132">Enable Custom Addon Button</string>
   <string id="31133">PATH TO ADDON</string>
   <string id="31134">Enable Custom Menu Item</string>
+  <string id="31135">Music folder path</string>
+  <string id="31136">Enable Artist Logos (set music path below)</string>
 
   <!-- Script labels -->
   <string id="31200">Shortcuts</string>
