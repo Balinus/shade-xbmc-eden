@@ -449,7 +449,7 @@
 	<visible>Player.ShowInfo</visible>
 	<animation effect="slide" start="0,0" end="-160,0" delay="0" time="300" condition="!Window.IsVisible(MusicOSD)">hidden</animation>
 	<animation effect="slide" start="-160,0" end="0,0" delay="0" time="300" condition="!Window.IsVisible(MusicOSD)">visible</animation>
-	<include>Clock</include>
+	<include condition="!Skin.HasSetting(MinMusicView)">Clock</include>
 </control>
 <control type="group" id="0">
 	<posx>240</posx>
@@ -578,6 +578,7 @@
 		<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>
 		<aspectratio align="bottom">keep</aspectratio>
 		<visible>!Skin.HasSetting(PandoraVis)</visible>
+		<visible>!Skin.HasSetting(MinMusicView)</visible>
 	</control>
 	<control type="image">
 		<description>Cd overlay</description>
@@ -597,6 +598,7 @@
 		<texture fallback="cd/default_pandora.png">$INFO[Player.FolderPath]/cdart.png</texture>
 		<aspectratio align="bottom">keep</aspectratio>
 		<visible>Skin.HasSetting(PandoraVis)</visible>
+		<visible>!Skin.HasSetting(MinMusicView)</visible>
 	</control>
 	<control type="image">
 		<description>cover image</description>
@@ -607,6 +609,7 @@
 		<texture diffuse="thumbs/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
 		<aspectratio aligny="bottom">stretch</aspectratio>
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+		<visible>!Skin.HasSetting(MinMusicView)</visible>
 	</control>
 	<control type="image">
 		<description>cover image</description>
@@ -617,6 +620,7 @@
 		<texture flipy="true" diffuse="thumbs/cdcover_mask_reflection.png">$INFO[MusicPlayer.cover]</texture>
 		<aspectratio aligny="bottom">stretch</aspectratio>
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+		<visible>!Skin.HasSetting(MinMusicView)</visible>
 	</control>
 	<control type="image">
 			<posx>450</posx>
@@ -628,6 +632,18 @@
 <!-- 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation> -->
 <!-- 			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation> -->
 			<visible>Skin.HasSetting(ArtistLogo)</visible>
+			<visible>!Skin.HasSetting(MinMusicView)</visible>
+	</control>
+	<control type="image">
+			<posx>50</posx>
+			<posy>582</posy>
+			<width>299</width>
+			<height>116</height>
+			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>
+<!-- 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation> -->
+<!-- 			<animation effect="fade" start="100" end="20" time="0" condition="[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation> -->
+			<visible>Skin.HasSetting(ArtistLogo)+Skin.HasSetting(MinMusicView)</visible>
 	</control>
 <!-- 	<include>logo-artists-visualisation</include> -->
 	<!--<control type="image">
