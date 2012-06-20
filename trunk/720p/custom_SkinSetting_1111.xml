@@ -380,7 +380,7 @@
 						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
 						<enable>Skin.HasSetting(CDArt) | Skin.HasSetting(ArtistLogo)</enable>
 					</control>
-					<control type="radiobutton" id="114">
+					<!--<control type="radiobutton" id="114">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -393,6 +393,30 @@
 						<label>Use Red Stars</label>
 						<onclick>Skin.ToggleSetting(RedStars)</onclick>
 						<selected>Skin.HasSetting(RedStars)</selected>
+					</control>-->
+					<control type="label" id="114">
+						<width>750</width>
+						<height>45</height>
+						<font>Shade_20_Bold_title</font>
+						<label>$LOCALIZE[31515]</label>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="116">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31428]</label>
+						<onclick>Skin.ToggleSetting(MinMusicView)</onclick>
+						<selected>Skin.HasSetting(MinMusicView)</selected>
 					</control>
 					<control type="label" id="106">
 						<width>750</width>
