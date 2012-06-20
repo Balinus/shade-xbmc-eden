@@ -10513,7 +10513,7 @@
 					</control>
 					<control type="button" id="10">
 						<description>trigger</description>
-						<onfocus>XBMC.PlayMedia($INFO[ListItem.Path,,theme.mp3])</onfocus>
+<!-- 						<onfocus>XBMC.PlayMedia($INFO[ListItem.Path,,theme.mp3])</onfocus> -->
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>  
