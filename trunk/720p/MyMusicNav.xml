@@ -1,7 +1,7 @@
 <window id="502">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,52,500,509,510,506,511,512,513,514,515,516</views>
+	<views>50,52,500,509,517,518,510,506,511,512,513,514,515,516</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 		<include>CommonMusicBackground</include>
@@ -121,6 +121,10 @@
 			<!-- view id = 516 -->
 			<include>AlbumSlide</include>
 			<!-- view id = 510 -->
+			<include>AltFanart</include>
+			<!-- view id = 517 -->
+			<include>ArtistLogo</include>
+			<!-- view id = 518 -->
 		</control>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>

@@ -619,7 +619,7 @@
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 	</control>
 	<control type="image">
-			<posx>425</posx>
+			<posx>450</posx>
 			<posy>450</posy>
 			<width>299</width>
 			<height>116</height>
