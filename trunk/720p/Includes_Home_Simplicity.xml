@@ -692,7 +692,7 @@
 			<content>
 				<item id="1">
 					<description>Movies</description>
-					<label>$LOCALIZE[31500]</label>
+					<label>$LOCALIZE[20342]</label>
 					<icon>special://skin/backgrounds/movies.jpg</icon>
 					<label2>$INFO[Control.GetLabel(666)]</label2>
 					<thumb>icons/moviesicon.png</thumb>
@@ -701,7 +701,7 @@
 				</item>
 				<item id="2">
 					<description>TV Shows</description>
-					<label>$LOCALIZE[31502]</label>
+					<label>$LOCALIZE[20343]</label>
 					<icon>special://skin/backgrounds/tvshows.jpg</icon>
 					<label2>$INFO[Control.GetLabel(667)]</label2>
 					<thumb>icons/tvicon.png</thumb>
@@ -710,7 +710,7 @@
 				</item>
 				<item id="3">
 					<description>Videos</description>
-					<label>$LOCALIZE[31501]</label>
+					<label>$LOCALIZE[3]</label>
 					<label2>$INFO[Control.GetLabel(668)]</label2>
 					<icon>special://skin/backgrounds/videos.jpg</icon>
 					<thumb>icons/videosicon.png</thumb>
@@ -719,7 +719,7 @@
 				</item>
 				<item id="4">
 					<description>Music</description>
-					<label>$LOCALIZE[31504]</label>
+					<label>$LOCALIZE[2]</label>
 					<label2>$INFO[Control.GetLabel(669)]</label2>
 					<icon>special://skin/backgrounds/music.jpg</icon>
 					<thumb>icons/musicicon.png</thumb>
@@ -728,7 +728,7 @@
 				</item>
 				<item id="5">
 					<description>Home</description>
-					<label>$LOCALIZE[31503]</label>
+					<label>$LOCALIZE[10000]</label>
 					<label2>$INFO[Control.GetLabel(665)]</label2>
 					<icon>special://skin/backgrounds/home.jpg</icon>
 					<thumb>icons/homeicon.png</thumb>
@@ -737,7 +737,7 @@
 				</item>					
 				<item id="6">
 					<description>Pictures</description>
-					<label>$LOCALIZE[31509]</label>
+					<label>$LOCALIZE[1]</label>
 					<label2>$INFO[Control.GetLabel(670)]</label2>
 					<icon>special://skin/backgrounds/pictures.jpg</icon>
 					<thumb>icons/picturesicon.png</thumb>
@@ -746,7 +746,7 @@
 				</item>
 				<item id="7">
 					<description>Weather</description>
-					<label>$LOCALIZE[31505]</label>
+					<label>$LOCALIZE[8]</label>
 					<label2>$INFO[Control.GetLabel(671)]</label2>
 					<onclick>ActivateWindow(2600)</onclick>
 					<icon>special://skin/backgrounds/weather.jpg</icon>
@@ -755,7 +755,7 @@
 				</item>
 				<item id="8">
 					<description>Programs</description>
-					<label>$LOCALIZE[31506]</label>
+					<label>$LOCALIZE[0]</label>
 					<label2>$INFO[Control.GetLabel(673)]</label2>
 					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>icons/programsicon.png</thumb>
@@ -764,7 +764,7 @@
 				</item>
 				<item id="9">
 					<description>Addons</description>
-					<label>$LOCALIZE[31507]</label>
+					<label>$LOCALIZE[24001]</label>
 					<label2>$INFO[Control.GetLabel(672)]</label2>
 					<icon>special://skin/backgrounds/addons.jpg</icon>
 					<thumb>icons/addonsicon.png</thumb>
@@ -773,7 +773,7 @@
 				</item>
 				<item id="10">
 					<description>Settings</description>
-					<label>$LOCALIZE[31508]</label>
+					<label>$LOCALIZE[5]</label>
 					<label2>$INFO[Control.GetLabel(676)]</label2>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>icons/settingsicon.png</thumb>
@@ -790,7 +790,7 @@
 				</item>
 				<item id="12">
 					<description>Shutdown</description>
-					<label>$LOCALIZE[31510]</label>
+					<label>$LOCALIZE[13005]</label>
 					<label2>$INFO[Control.GetLabel(677)]</label2>
 					<icon>special://skin/backgrounds/shutdown.jpg</icon>
 					<thumb>icons/shutdownicon.png</thumb>
