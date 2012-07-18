@@ -354,6 +354,13 @@
 				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="group">
+			  <posx>0</posx>
+			  <posy>-440</posy>
+			  <include>AlbumBreadCrumbs</include>
+			  <include>ArtistBreadCrumbs</include>
+		      </control>
+
+			<!--<control type="group">
 				<posx>0</posx>
 				<posy>-440</posy>
 				<control type="label">
@@ -361,7 +368,7 @@
 					<posx>20</posx>
 					<posy>120</posy>
 					<height>20</height>
-					<width>330</width>
+					<width>380</width>
 					<label>Music Albums</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -398,7 +405,7 @@
 					<textcolor>white</textcolor>
 					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
-			</control>	
+			</control>	-->
 
 			<!--Option1-->
 			<control type="group">
@@ -807,6 +814,7 @@
 				<visible>Control.IsVisible(509)</visible>
 			</control>-->
 		</control>
+		<include>Clock-Alt</include>
 	</include>
 	<include name="AltFanart">
 		<control type="group">
@@ -824,6 +832,13 @@
 				<texture>shade/vignette3.png</texture>
 			</control>
 			<control type="group">
+			  <posx>-70</posx>
+			  <posy>-400</posy>
+			  <include>AlbumBreadCrumbs</include>
+			  <include>ArtistBreadCrumbs</include>
+		      </control>
+		
+			<!--<control type="group">
 				<posx>0</posx>
 				<posy>-440</posy>
 				<control type="label">
@@ -868,7 +883,7 @@
 					<textcolor>white</textcolor>
 					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
-			</control>	
+			</control>-->	
 
 			<!--Option1-->
 			<control type="group">
@@ -1080,6 +1095,8 @@
 		<control type="group">
 		  <visible>Control.IsVisible(518)</visible>
 		  <visible>Container.content(Artists)</visible>
+		  <include condition="Container.Content(Albums)">AlbumBreadCrumbs</include>
+			<include condition="Container.Content(Artists)">ArtistBreadCrumbs</include>
 		  <control type="group">
 			<posx>640</posx>
 			<posy>400</posy>
@@ -1093,7 +1110,13 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture>shade/vignette2.png</texture>
 			</control>
-				
+			
+			<control type="group">
+			      <posx>-640</posx>
+			      <posy>-400</posy>
+			      <include>ArtistBreadCrumbs</include>
+		      </control>
+			
 			<control type="image">
 				<posx>-640</posx>
 				<posy>68</posy>
@@ -1128,7 +1151,7 @@
 					<textcolor>white</textcolor>
 				</control>				
 			</control>
-		<control type="group">
+		<!--<control type="group">
 				<posx>0</posx>
 				<posy>0</posy>
 				<control type="label">
@@ -1173,7 +1196,7 @@
 					<textcolor>white</textcolor>
 					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 				</control>	
-			</control>	
+			</control>-->	
 		<control type="image">
 			<posx>25</posx>
 			<posy>500</posy>
@@ -1285,15 +1308,16 @@
 				<control type="label" id="222">
 					<posx>30</posx>
 					<posy>20</posy>
-					<width>600</width>
+					<width>440</width>
 					<height>46</height>
 					<aligny>center</aligny>
-					<font>Shade_50_UltraThin</font>
+					<font>Shade_40_UltraThin</font>
 					<textcolor>ffffffff</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				<!--	<animation effect="slide" start="0,0" end="30,0" time="0" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + stringcompare(ListItem.Overlay,OverlayWatched.png) + [Skin.HasSetting(movieoverlays) | Skin.HasSetting(tvoverlays)]">Conditional</animation> -->
 					<visible>[!Window.IsActive(Programs) | Window.IsActive(musicplaylist)]</visible>
 					<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
+					<scroll>true</scroll>
 					
 				</control>
 					
@@ -1303,6 +1327,7 @@
 	
 	
 	      </control>
+	      <include>Clock-Alt</include>
 	</include>
 	<include name="Artist-List-View">
 		<control type="group">
@@ -2103,7 +2128,7 @@
 				<posy>120</posy>
 				<height>20</height>
 				<width>305</width>
-				<label>Music Artists</label>
+				<label>Artists</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Shade_50_UltraThin</font>
@@ -2142,15 +2167,15 @@
 				<animation effect="slide" end="40,0" time="0" reversible="false" condition="Container.Content(MusicVideos)">Conditional</animation>
 				<animation effect="slide" end="-120,0" time="0" reversible="false" condition="Container.Content(Songs)">Conditional</animation>
 				<animation effect="slide" end="20,0" time="0" reversible="false" condition="Container.Content(Artists)">Conditional</animation>
-				<posx>300</posx>
+				<posx>200</posx>
 				<posy>130</posy>
 				<height>20</height>
 				<width>275</width>
-				<label>$INFO[Container(512).NumItems] items</label>
+				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24_UltraThin</font>
-				<textcolor>white</textcolor>
+				<font>Shade_20</font>
+				<textcolor>grey2</textcolor>
 			</control>	
 			<control type="fixedlist" id="512">
 				<posx>630</posx>
@@ -2469,7 +2494,8 @@
 				<font>Shade_30_UltraThin</font>
 				<textcolor>white</textcolor>
 			</control>	
-			<control type="label">
+			<include>AlbumBreadCrumbs</include>			
+			<!--<control type="label">
 				<description>Title label</description>
 				<posx>20</posx>
 				<posy>120</posy>
@@ -2496,7 +2522,7 @@
 				<font>Shade_24_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
-			</control>	
+			</control>	-->
 			<control type="fixedlist" id="513">
 				<posx>630</posx>
 				<posy>215</posy>
@@ -2585,5 +2611,6 @@
 						<texture background="true" flipy="true">$INFO[ListItem.icon]</texture>
 			</control>-->
 		</control>
+		<include>Clock-Alt</include>
 	</include>
 </includes>

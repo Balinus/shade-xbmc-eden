@@ -696,7 +696,7 @@
 					<icon>special://skin/backgrounds/movies.jpg</icon>
 					<label2>$INFO[Control.GetLabel(666)]</label2>
 					<thumb>icons/moviesicon.png</thumb>
-					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
+					<onclick>ActivateWindow(Videos,movietitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</item>
 				<item id="2">
@@ -705,7 +705,7 @@
 					<icon>special://skin/backgrounds/tvshows.jpg</icon>
 					<label2>$INFO[Control.GetLabel(667)]</label2>
 					<thumb>icons/tvicon.png</thumb>
-					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>ActivateWindow(Videos,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</item>
 				<item id="3">
@@ -723,7 +723,7 @@
 					<label2>$INFO[Control.GetLabel(669)]</label2>
 					<icon>special://skin/backgrounds/music.jpg</icon>
 					<thumb>icons/musicicon.png</thumb>
-					<onclick>ActivateWindow(MusicLibrary,Artists)</onclick>
+					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 				</item>
 				<item id="5">
@@ -741,14 +741,14 @@
 					<label2>$INFO[Control.GetLabel(670)]</label2>
 					<icon>special://skin/backgrounds/pictures.jpg</icon>
 					<thumb>icons/picturesicon.png</thumb>
-					<onclick>ActivateWindow(Pictures,return)</onclick>
+					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 				</item>
 				<item id="7">
 					<description>Weather</description>
 					<label>$LOCALIZE[31505]</label>
 					<label2>$INFO[Control.GetLabel(671)]</label2>
-					<onclick>ActivateWindow(Weather)</onclick>
+					<onclick>ActivateWindow(2600)</onclick>
 					<icon>special://skin/backgrounds/weather.jpg</icon>
 					<thumb>icons/weathericon.png</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>

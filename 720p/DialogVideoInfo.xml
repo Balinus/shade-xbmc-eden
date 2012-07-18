@@ -1088,7 +1088,7 @@
 						    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, medianame=$INFO[ListItem.TVShowTitle])</onclick>
 		<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, medianame=$INFO[ListItem.Title],mediapath=$INFO[ListItem.Path])</onclick>
 		<visible>[Container.Content(tvshows)|Container.Content(movies)]+system.hasaddon(script.artwork.downloader)</visible>
-                                                    <label>Get Artwork</label>                                                    
+                                                    <label>$LOCALIZE[31601]</label>                                                    
                                             </control>					    
                                     </control>
                             </control>

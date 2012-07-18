@@ -47,7 +47,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Movies)</visible>				
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>6</posy>
 				
 				<control type="label">
 					<posx>30</posx>
@@ -355,8 +355,8 @@
 					</control>
 					<control type="image">
 						<description>ac3 Image</description>
-						<width>48</width>
-						<height>38</height>
+						<width>86</width>
+						<height>30</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/ac3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
@@ -403,7 +403,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>6</posy>
 				<control type="label">
 					<posx>30</posx>
 					<posy>5</posy>
@@ -683,7 +683,7 @@
 					</control>
 					<control type="image">
 						<description>ac3 Image</description>
-						<width>38</width>
+						<width>86</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
 						<texture>flags/audio/ac3.png</texture>
