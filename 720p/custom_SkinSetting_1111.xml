@@ -865,6 +865,22 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
 					</control>
+					<control type="radiobutton" id="216">
+						<description>Hide Home Button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31111] - $LOCALIZE[10000]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoHomeButton)</onclick>
+						<onclick condition="Skin.HasSetting(HomeMenuNoSettingsButton)">Skin.ToggleSetting(HomeMenuNoSettingsButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoHomeButton)</selected>
+					</control>
 					<control type="radiobutton" id="209">
 						<description>Hide Pictures Button</description>
 						<posx>0</posx>
@@ -938,6 +954,7 @@
 						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
 						<label>$LOCALIZE[31111] - Settings</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoSettingsButton)</onclick>
+						<onclick condition="Skin.HasSetting(HomeMenuNoHomeButton)">Skin.ToggleSetting(HomeMenuNoHomeButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoSettingsButton)</selected>
 					</control>
 					<control type="radiobutton" id="214">

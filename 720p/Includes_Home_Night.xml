@@ -371,16 +371,16 @@
 			<include>CommonWeatherBackground</include>
 		</control>
 	    
-			    <control type="image">
+		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>720</height>
+			<height>760</height>
 			<texture flipy="true">mainmenu/home_bottom_align2.png</texture>
 			<aspectratio>stretch</aspectratio>
 <!-- 			<colordiffuse>FFFFFFFF</colordiffuse> -->
 			<visible>![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]</visible>
-		    </control>	
+		</control>	
 		
 		<control type="fixedlist" id="9000">
 		  	
@@ -441,7 +441,7 @@
 			<content>			 
 				<item id="1">
 					<description>Movies</description>
-					<label fallback="Movies">$LOCALIZE[342]</label>
+					<label>$LOCALIZE[20342]</label>
 					<icon>homeicons/movies-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 					<onclick>ActivateWindow(Videos,movietitles)</onclick>
@@ -449,7 +449,7 @@
 				</item>
 				 <item id="2">
 					<description>TV Shows</description>
-					<label fallback="TV Shows">$LOCALIZE[31513]</label>
+					<label>$LOCALIZE[20343]</label>
 					<icon>homeicons/tv-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 					<onclick>ActivateWindow(Videos,tvshowtitles)</onclick>
@@ -457,7 +457,7 @@
 				</item>
 				<item id="3">
 					<description>Videos</description>
-					<label fallback="Videos">$LOCALIZE[31512]</label>
+					<label>$LOCALIZE[3]</label>
 					<icon>homeicons/videos-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
@@ -465,7 +465,7 @@
 				</item>
 				<item id="4">
 					<description>Music</description>
-					<label fallback="Music">$LOCALIZE[31515]</label>
+					<label>$LOCALIZE[2]</label>
 					<icon>homeicons/music-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 					<onclick>ActivateWindow(Music)</onclick>
@@ -473,14 +473,15 @@
 				</item>
 				<item id="5">
 					<description>Home</description>
-					<label fallback="Home">$LOCALIZE[31514]</label>
+					<label>$LOCALIZE[10000]</label>
 					<icon>homeicons/home-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
 					<onclick>XBMC.ActivateWindow(1115)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoHomeButton)</visible>
 				</item>					
 				<item id="6">
 					<description>Pictures</description>
-					<label fallback="Pictures">$LOCALIZE[1]</label>
+					<label>$LOCALIZE[1]</label>
 					<icon>homeicons/photos-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
@@ -488,7 +489,7 @@
 				</item>
 				<item id="7">
 					<description>Weather</description>
-					<label fallback="Weather">$LOCALIZE[8]</label>
+					<label>$LOCALIZE[8]</label>
 					<icon>homeicons/weather-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 					<onclick>ActivateWindow(2600)</onclick>
@@ -496,7 +497,7 @@
 				</item>
 				<item id="8">
 					<description>Programs</description>
-					<label fallback="Programs">$LOCALIZE[0]</label>
+					<label>$LOCALIZE[0]</label>
 					<icon>homeicons/apps-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
@@ -504,7 +505,7 @@
 				</item>
 				<item id="9">
 					<description>Addons</description>
-					<label fallback="Addons">$LOCALIZE[31518]</label>
+					<label>$LOCALIZE[24001]</label>
 					<icon>homeicons/scripts-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 					<onclick>ActivateWindow(AddonBrowser)</onclick>
@@ -512,7 +513,7 @@
 				</item>
 				<item id="10">
 					<description>Settings</description>
-					<label fallback="Settings">$LOCALIZE[5]</label>
+					<label>$LOCALIZE[5]</label>
 					<icon>homeicons/setting-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					<onclick>ActivateWindow(4)</onclick>
@@ -521,7 +522,7 @@
 				
 				<item id="11">
 					<description>Play Disc</description>
-					<label fallback="Play Disc">$LOCALIZE[341]</label>
+					<label>$LOCALIZE[341]</label>
 					<icon>homeicons/playdiscicon.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 					<onclick>PlayDVD</onclick>
@@ -529,7 +530,7 @@
 				</item>
 				<item id="12">
 					<description>Shutdown</description>
-					<label fallback="Shutdown">$LOCALIZE[13005]</label>
+					<label>$LOCALIZE[13005]</label>
 					<icon>homeicons/shutdown-full.png</icon>
 					<thumb>special://skin/backgrounds/shutdown.jpg</thumb>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
