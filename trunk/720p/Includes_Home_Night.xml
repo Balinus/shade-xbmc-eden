@@ -438,7 +438,7 @@
 					<animation effect="slide" end="0,60" time="301" condition="ControlGroup(9001).HasFocus">conditional</animation>
 				</control>
 			</focusedlayout>
-			<content>
+			<content>			 
 				<item id="1">
 					<description>Movies</description>
 					<label fallback="Movies">$LOCALIZE[342]</label>
@@ -447,7 +447,7 @@
 					<onclick>ActivateWindow(Videos,movietitles)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</item>
-				<item id="2">
+				 <item id="2">
 					<description>TV Shows</description>
 					<label fallback="TV Shows">$LOCALIZE[31513]</label>
 					<icon>homeicons/tv-full.png</icon>

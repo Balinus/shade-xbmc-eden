@@ -2,8 +2,10 @@
       <onload>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True&amp;alarm=30)</onload>
       <onload>XBMC.RunScript(script.watchlist,movies=false&amp;episodes=true&amp;albums=false&amp;limit=10)</onload>
       <onload>RunScript(script.tv.show.next.aired,backend=True&amp;alarm=60)</onload>
+      <onload>Control.SetFocus(9000,1)</onload>
 
 <defaultcontrol always="true">9000</defaultcontrol>
+ 
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 	  

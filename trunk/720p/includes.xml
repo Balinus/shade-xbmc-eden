@@ -1313,7 +1313,7 @@
 			</control>	
 			<control type="label">
 				<description>Title label</description>
-				<posx>260</posx>
+				<posx>270</posx>
 				<posy>49</posy>
 				<height>20</height>
 				<width>275</width>
@@ -1335,7 +1335,7 @@
 				<posx>90</posx>
 				<posy>40</posy>
 				<height>20</height>
-				<width>275</width>
+				<width>350</width>
 				<label>Albums</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -1347,7 +1347,7 @@
 			</control>	
 			<control type="label">
 				<description>Title label</description>
-				<posx>280</posx>
+				<posx>310</posx>
 				<posy>49</posy>
 				<height>20</height>
 				<width>275</width>
@@ -1407,7 +1407,10 @@
 			<visible>!Control.IsVisible(515)</visible>
 			<visible>!Control.IsVisible(516)</visible>
 			<visible>!Control.IsVisible(534)</visible>
-			<visible>!Control.IsVisible(510)</visible>			
+			<visible>!Control.IsVisible(510)</visible>		
+			<visible>!Control.IsVisible(509)</visible>		
+			<visible>!Control.IsVisible(518)</visible>
+			<visible>!Control.IsVisible(513)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="300" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
@@ -1434,7 +1437,7 @@
 <include name="Clock-Alt">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableClock)</visible>
-			<visible>Control.IsVisible(548) | Control.IsVisible(534) | Control.IsVisible(552) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(516) | Control.IsVisible(534) | Control.IsVisible(510) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(Movies)</visible>
+			<visible>Control.IsVisible(548) | Control.IsVisible(534) | Control.IsVisible(552) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(516) | Control.IsVisible(534) | Control.IsVisible(510) | Control.IsVisible(509) | Control.IsVisible(518) | Control.IsVisible(513) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(Movies)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Seasons) + Control.IsVisible(534) + !Skin.HasSetting(SeasonLessInfo)">conditional</animation>
