@@ -2451,6 +2451,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
+				<scroll>true</scroll>
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			</control>	
 			<control type="label">
@@ -2466,6 +2467,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
+				<scroll>true</scroll>
 				<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			</control>	
 			<control type="label">
