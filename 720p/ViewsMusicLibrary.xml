@@ -173,8 +173,10 @@
 							<width>154</width>
 							<height>30</height>
 							<align>left</align>
+<!-- 						      <texture>$INFO[ListItem.Property(Album_Rating)]</texture> -->
 							<texture>$INFO[ListItem.StarRating]</texture>
 						</control>
+						
 						<control type="image">
 							<description>Rating value</description>
 							<posx>252</posx>

@@ -46,16 +46,47 @@
 			      <texture border="20,20,20,2">shade/sidebar.png</texture>
 			      <visible>!Player.Paused</visible>
 		      </control>-->
-			<control type="largeimage">
+			<control type="largeimage" id="994">
 				<posx>970</posx>
 				<posy>-125</posy> 
 				<width>310</width>
 				<height>145</height>
-				<texture>$INFO[Player.FolderPath]../clearart.png</texture>
-				<texture>$INFO[Player.FolderPath]/clearart.png</texture>
+				<texture fallback="blank.png">$INFO[Player.FolderPath]../clearart.png</texture>				
 				<aspectratio>keep</aspectratio>
 				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart) + Player.Paused</visible>
 			</control>
+			<control type="largeimage" id="995">
+				<posx>970</posx>
+				<posy>-125</posy> 
+				<width>310</width>
+				<height>145</height>
+				<texture fallback="blank.png">$INFO[Player.FolderPath]/clearart.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart) + Player.Paused</visible>
+			</control>
+			<control type="largeimage" id="996">
+				<posx>970</posx>
+				<posy>-125</posy> 
+				<width>310</width>
+				<height>145</height>
+				<texture fallback="blank.png">$INFO[Player.FolderPath]../logo.png</texture>				
+				<aspectratio>keep</aspectratio>
+				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart) + Player.Paused</visible>
+				<visible>StringCompare(Control.GetLabel(994),blank.png)
+                 + StringCompare(Control.GetLabel(995),blank.png)</visible>
+			</control>
+			<control type="largeimage" id="997">
+				<posx>970</posx>
+				<posy>-125</posy> 
+				<width>310</width>
+				<height>145</height>
+				<texture fallback="blank.png">$INFO[Player.FolderPath]/logo.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart) + Player.Paused</visible>
+				<visible>StringCompare(Control.GetLabel(994),blank.png)
+                 + StringCompare(Control.GetLabel(995),blank.png)</visible>
+			</control>
+		
 			<control type="largeimage">
 				<posx>1020</posx>
 				<posy>-279</posy> 

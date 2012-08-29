@@ -17,51 +17,51 @@
 <!--   <include>Animation_DialogZoom</include> -->
   <controls>
 <!--     <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Home</include> -->
-    <control type="image" id="999">
-      <description>background image</description>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>350</width>
-      <height>720</height>
-      <texture>dialogs/context_middle.png</texture>
-    </control>
-    <control type="grouplist" id="996">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>350</width>
-      <height max="720">auto</height>
-      <itemgap>0</itemgap>
-    </control>
-    <control type="image" id="997">
-      <description>background top image</description>
-      <posx>0</posx>
-      <posy>-26</posy>
-      <width>350</width>
-      <height>26</height>
-      <texture>dialogs/context_top.png</texture>
-    </control>
-    <control type="image" id="998">
-      <description>background bottom image</description>
-      <posx>0</posx>
-      <posy>390</posy>
-      <width>350</width>
-      <height>27</height>
-      <texture>dialogs/context_bottom.png</texture>
-    </control>
-    <control type="button" id="1000">
-      <description>button template</description>
-      <posx>0</posx>
-      <posy>0</posy>
-      <height>39</height>
-      <width>350</width>
-      <textcolor>grey2</textcolor>
-      <focusedcolor>FFdfdfdf</focusedcolor>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus>dialogs/context_highlight.png</texturefocus>
-      <align>center</align>
-      <font>Shade_24</font>
-      <pulseonselect>no</pulseonselect>
-      <textoffsety>8</textoffsety>
-    </control>
+	  <control type="image" id="999">
+	      <description>background image</description>
+	      <posx>0</posx>
+	      <posy>0</posy>
+	      <width>350</width>
+	      <height>720</height>
+	      <texture>dialogs/context_middle.png</texture>
+	  </control>
+	  <control type="grouplist" id="996">
+	      <posx>0</posx>
+	      <posy>0</posy>
+	      <width>350</width>
+	      <height max="720">auto</height>
+	      <itemgap>0</itemgap>
+	  </control>
+	  <control type="image" id="997">
+	      <description>background top image</description>
+	      <posx>0</posx>
+	      <posy>-26</posy>
+	      <width>350</width>
+	      <height>26</height>
+	      <texture>dialogs/context_top.png</texture>
+	  </control>
+	  <control type="image" id="998">
+	      <description>background bottom image</description>
+	      <posx>0</posx>
+	      <posy>390</posy>
+	      <width>350</width>
+	      <height>27</height>
+	      <texture>dialogs/context_bottom.png</texture>
+	  </control>
+	  <control type="button" id="1000">
+	      <description>button template</description>
+	      <posx>0</posx>
+	      <posy>0</posy>
+	      <height>39</height>
+	      <width>350</width>
+	      <textcolor>grey2</textcolor>
+	      <focusedcolor>FFdfdfdf</focusedcolor>
+	      <texturenofocus>-</texturenofocus>
+	      <texturefocus>dialogs/context_highlight.png</texturefocus>
+	      <align>center</align>
+	      <font>Shade_24</font>
+	      <pulseonselect>no</pulseonselect>
+	      <textoffsety>8</textoffsety>
+	  </control>
   </controls>
 </window>
