@@ -419,6 +419,20 @@
 						<onclick>Skin.ToggleSetting(MinMusicView)</onclick>
 						<selected>Skin.HasSetting(MinMusicView)</selected>
 					</control>
+					<control type="radiobutton" id="117">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">shade/menuitemfo.png</texturefocus>
+						<texturenofocus border="0,2,0,2">shade/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31429]</label>
+						<onclick>Skin.ToggleSetting(MusicBlackBG)</onclick>
+						<selected>Skin.HasSetting(MusicBlackBG)</selected>
+					</control>
 					<control type="label" id="106">
 						<width>750</width>
 						<height>45</height>
