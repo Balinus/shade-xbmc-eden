@@ -183,6 +183,12 @@
 <string id="31600">CDart Manager</string>
 <string id="31601">Get Artwork</string>
 
+<!-- Dialog Full screen info labels -->
+<string id="31602">DIRECTOR</string>
+<string id="31603">GENRE</string>
+<string id="31604">WRITER</string>
+<string id="31605">FIRST AIRED</string>
+
 
 
 </strings>
