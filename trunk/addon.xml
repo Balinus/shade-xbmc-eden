@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.Shade_work"
-version="2.7.6"
-name="Shade-Eden-dev"
+<addon id="skin.shade"
+version="3.0.0"
+name="Shade"
 provider-name="igotdvds and Balinus">
   <requires>
-	<import addon="xbmc.gui" version="3.00"/>	 
+	<import addon="xbmc.gui" version="4.0.0"/>	 
 	<import addon="script.artwork.downloader" version="1.0.10"/>	
 	<import addon="script.randomitems" version="3.0.9"/>
 	<import addon="script.cdartmanager" version="2.5.1"/>
